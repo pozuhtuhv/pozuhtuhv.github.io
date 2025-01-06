@@ -27,7 +27,7 @@ tag: [github, upload]
 ### 1. Github에 NEW 리포지토리 git repo url 확인
 <br>
 
-![docs](/assets/images/git-3.1.png)<br>
+![docs](/assets/img/git-3.1.png)<br>
 git repo url copy<br>
 
 ### 2. Git Bash로 업로드할 폴더 설정
