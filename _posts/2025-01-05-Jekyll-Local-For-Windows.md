@@ -31,9 +31,9 @@ tag: [github, jekyll, ruby]
 ### 1. Ruby 설치
 <br>
 
-[![docs](/assets/images/blog-3.1.png)](https://rubyinstaller.org/downloads/)<br>
+[![docs](/assets/img/blog-3.1.png)](https://rubyinstaller.org/downloads/)<br>
 Ruby 홈페이지 접속 후<br><br>
-![docs](/assets/images/blog-3.2.png)<br>
+![docs](/assets/img/blog-3.2.png)<br>
 추천되어진 **Rubyinstallers** 다운<br>
 
 다운로드 파일을 실행하여 설치 후 ridk install 선택해제 후 완료<br><br>
