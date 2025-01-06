@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.git
+.jekyll-cache
+.obsidian
+.sass-cache/
+.vscode
+Gemfile.lock
+_site
+tmp/
+*.rdb
