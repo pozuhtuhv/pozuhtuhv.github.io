@@ -1,5 +1,5 @@
 ---
-title: First Github Blog
+title: 첫번째 깃허브 블로그 세팅
 description: 깃허브 블로그 세팅의 경험
 layout: post
 category: ETC
@@ -9,7 +9,6 @@ date_modified: 2024-04-08
 tag: [github, jekyll]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -24,7 +23,6 @@ tag: [github, jekyll]
 ## 기본세팅하면서 느낀것
 
 ### 1. 고통의 고통이었다
-<br>
 방법을 알아가는데만 한 몇일이 걸렸다.<br>
 구조를 몰랐던게 너무 크다.<br>
 구조를 좀 더 생각을 해보고 진행했더라면 금방 진행 했을 것 같다.<br>
@@ -34,7 +32,6 @@ commit 과정에서 오류가 났고, 과정에서 오류가 안나는 방법을
 `몇일을 계속 수정하면서 느낀것 'remote_theme' 를 적극 이용하자`
 
 ### 2. 덕분에 GitHub, Git 에 대한 사용법을 잘 숙지하게되었다
-<br>
 '한번은 배워야겠다', '해봐야겠다' 했었고, 크게 중요성을 못 느꼈었지만, 그래도 이번 기회에 잘 해낸거 같다.<br>
 GitHub, Git 에 아무런 지식도 없었던 내가 몸으로 부딪치면서 배웠다.<br>
 '정보화시대를 잘 이용하지 못하는 사람 나오라고 한다면 내가 나갈수도 있겠구나' 라고 생각했다.<br>

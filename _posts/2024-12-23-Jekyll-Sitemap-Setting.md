@@ -1,6 +1,6 @@
 ---
-title: Jekyll Sitemap Setting
-description: 깃허브 블로그의 사이트맵 세팅
+title: Jekyll 사이트맵 세팅
+description: Jekyll 사이트맵 세팅 경험
 layout: post
 category: ETC
 published: true
@@ -9,7 +9,6 @@ date_modified: 2024-12-26
 tag: [github, jekyll]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -22,16 +21,12 @@ tag: [github, jekyll]
     이후 나머지는 4개이상 -->
 
 ## 사이트맵 설정
-<br>
 사이트맵을 설정하면 검색 엔진이 사이트의 구조 정확하게 수집할 수 있다.
 <br>
 본글은 Jekyll 로 만들어진 블로그의 Sitemap을 만드는 소개글이며 2가지 방법을 소개하고자 한다. 
 
 ### 1. _config.yml plugins 추가
-<br>
-
 `_config.yml` 파일의 `plugins: ` 부분에 `- jekyll-sitemap` 추가
-
 ```yml
   {% raw %}plugins:
     - jekyll-seo-tag
@@ -43,8 +38,6 @@ tag: [github, jekyll]
 수정 -> 커밋 후 브라우저에서 sitemap.xml 접속 후 확인
 
 ### 2. sitemap.xml 커스텀 설정
-<br>
-
 ```xml
 ---
 layout: null

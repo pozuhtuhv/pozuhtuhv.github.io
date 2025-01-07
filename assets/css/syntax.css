@@ -7,7 +7,6 @@ pre.highlight {
 .highlight pre {
   background: #f9f9f9;
   overflow-x: auto;
-  padding: 1em;
 }
 
 .highlight .hll {
@@ -146,7 +145,6 @@ pre.highlight {
 
 .highlight {
   background: var(--code-bg-color);
-  border-style: none none none solid;
   border-color: var(--light-text-color);
 }
 

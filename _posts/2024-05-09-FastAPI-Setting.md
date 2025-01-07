@@ -1,6 +1,6 @@
 ---
-title: FastAPI Setting
-description: FastAPI의 세팅
+title: FastAPI 세팅
+description: FastAPI의 세팅 경험
 layout: post
 category: Python
 published: true
@@ -9,7 +9,6 @@ date_modified: 2024-05-09
 tag: [python, fastapi, framework]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 

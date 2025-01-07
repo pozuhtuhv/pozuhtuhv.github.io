@@ -1,6 +1,6 @@
 ---
-title: Django Requests
-description: 장고API의 리퀘스트 세팅
+title: Django Requests 세팅
+description: 장고API의 리퀘스트 세팅 경험
 layout: post
 category: Python
 published: true
@@ -9,7 +9,6 @@ date_modified: 2024-05-23
 tag: [python, django, framework]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -22,7 +21,6 @@ tag: [python, django, framework]
     이후 나머지는 4개이상 -->
 
 ## Django 기본 API
-<br>
 
 ### 0. 소개
 관련글 : <a href = 'https://pozuhtuhv.github.io/fpython-2'>Django 기본 구축하기</a><br>
@@ -48,7 +46,7 @@ else:
 
 ### 2. 데이터 조희
 
-1. 전체 데이터 조회
+- 전체 데이터 조회
 
 ```python
 url = f'http://localhost:8000/api/board/'
@@ -61,8 +59,8 @@ else:
     print('Failed to retrieve board detail:', response.status_code)
 ```
 
-1. 선택 데이터 조회
- 
+- 선택 데이터 조회
+
 ```python
 post_id = 1  # 조회할 데이터의 ID
 url = f'http://localhost:8000/api/board/{post_id}/'

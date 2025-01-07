@@ -1,6 +1,6 @@
 ---
-title: Jekyll Local (For Windows)
-description: 깃허브 블로그의 로컬세팅
+title: Jekyll 로컬 세팅 (For Windows)
+description: 깃허브 블로그의 로컬세팅 경험
 layout: post
 category: ETC
 published: true
@@ -9,7 +9,6 @@ date_modified: 2025-01-05
 tag: [github, jekyll, ruby]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 

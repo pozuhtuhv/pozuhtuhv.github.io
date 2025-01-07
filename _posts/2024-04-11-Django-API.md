@@ -1,6 +1,6 @@
 ---
-title: Django API
-description: 장고API의 기본 세팅
+title: Django API 세팅
+description: 장고API의 기본 세팅 경험
 layout: post
 category: Python
 published: true
@@ -9,7 +9,6 @@ date_modified: 2024-04-11
 tag: [python, django, framework]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -39,7 +38,6 @@ Python에서 제일 많이 알려진 웹프레임워크이며, 2005년 공개 �
 ---
 
 ### 1. Python 패키지 설치 및 세팅
-
 ```python
 # requirements.txt
 
@@ -62,7 +60,6 @@ django-admin startapp {appname} # django 앱 폴더 만들기
 ```
 
 ### 2. {projectname}/setting.py의 데이터베이스구성 수정
-
 ```python
 MySQL 에서 해당하는 데이터베이스의 이름을 만들어놓아야함
 
@@ -81,7 +78,6 @@ DATABASES = {
 `이걸 설정하는 이유는 Django 기본 데이터베이스는 sqlite3 로 진행되기 때문에 mysql로 연결시켜주는 것`
 
 ### 3. {projectname}/setting.py의 앱구성 수정
-
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -103,7 +99,6 @@ REST_FRAMEWORK = {
 ```
 
 ### 4. {appname}/models.py의 데이터구성 수정
-
 MySQL에 구성되어질 행, 열 구성
 
 ```python

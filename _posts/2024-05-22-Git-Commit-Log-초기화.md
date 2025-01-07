@@ -9,7 +9,6 @@ date_modified: 2024-05-22
 tag: [git, scrapbook]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 

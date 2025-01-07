@@ -1,5 +1,5 @@
 ---
-title: Github Repo Upload
+title: 깃허브 레포 업로드
 description: 깃허브 레포 업로드 방법
 layout: post
 category: ETC
@@ -9,7 +9,6 @@ date_modified: 2024-12-23
 tag: [github, upload]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -25,19 +24,13 @@ tag: [github, upload]
 <br>
 
 ### 1. Github에 NEW 리포지토리 git repo url 확인
-<br>
-
 ![docs](/assets/img/git-3.1.png)<br>
 git repo url copy<br>
 
 ### 2. Git Bash로 업로드할 폴더 설정
-<br>
-
 폴더에서 마우스 우측 -> 'Open Git Bash here'<br>
 
 ### 3. Git Bash 명령어 하나씩 수행
-<br>
-
 ```bash
 git init
 git branch -m main

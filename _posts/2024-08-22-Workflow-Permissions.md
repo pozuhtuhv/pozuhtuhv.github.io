@@ -1,6 +1,6 @@
 ---
-title: Workflow Actions Permissions
-description: 깃허브 액션 워크플로우 권한 세팅
+title: Github 워크플로우 권한 세팅
+description: Github 액션 워크플로우 권한 세팅 경험
 layout: post
 category: ETC
 published : true
@@ -9,7 +9,6 @@ date_modified: 2024-08-22
 tag: [github, actions]
 ---
 ---
-<br>
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -24,20 +23,23 @@ tag: [github, actions]
 ## Github Actions Workflow Permission
 
 ### 1. 권한 설정 하기
-<br>
 
-1. Settings 페이지
+- Settings 페이지
 
 ![docs](/assets/img/git-2.1.png)<br>
 
-1. Actions 탭 -> General 메뉴
+- Actions 탭 -> General 메뉴
 
 ![docs](/assets/img/git-2.2.png)<br>
 
-1. Workflow Permissions
+- Workflow Permissions
 
 ![docs](/assets/img/git-2.3.png)<br>
 
-Read and write permissions: 워크플로우가 레포지토리의 모든 범위에서 읽기 및 쓰기 권한을 가지도록 설정.<br>
+```
+Read and write permissions: 
+워크플로우가 레포지토리의 모든 범위에서 읽기 및 쓰기 권한을 가지도록 설정.
 
-Read repository contents and packages permissions: 워크플로우가 레포지토리의 콘텐츠 및 패키지 범위에 대해서만 읽기 권한을 가지도록 설정.
+Read repository contents and packages permissions: 
+워크플로우가 레포지토리의 콘텐츠 및 패키지 범위에 대해서만 읽기 권한을 가지도록 설정.
+```
