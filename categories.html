@@ -12,7 +12,7 @@ title: "minimal: less is more"
     </div>
 
     <h2>Categories:</h2>
-    {% assign categories = "Python,ETC,Scrapbook" | split: ',' %}
+    {% assign categories = "Python, TensorFlow, ETC, Scrapbook" | split: ', ' %}
     {% for category in categories %}
         <h3>{{ category }}</h3>
         <ul>

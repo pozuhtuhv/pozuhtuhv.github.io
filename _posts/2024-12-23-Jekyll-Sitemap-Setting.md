@@ -1,9 +1,9 @@
 ---
 title: Jekyll 사이트맵 세팅
-description: Jekyll 사이트맵 세팅 경험
+description: Jekyll 사이트맵 세팅 설명
 layout: post
 categories: ETC
-published: true
+published: false
 date_published: 2024-12-23
 date_modified: 2024-12-26
 tag: [github, jekyll]
@@ -24,7 +24,6 @@ tag: [github, jekyll]
 사이트맵을 설정하면 검색 엔진이 사이트의 구조 정확하게 수집할 수 있다.
 <br>
 본글은 Jekyll 로 만들어진 블로그의 Sitemap을 만드는 소개글이며 2가지 방법을 소개하고자 한다. 
-<br>
 
 ### 1. _config.yml plugins 추가
 `_config.yml` 파일의 `plugins: ` 부분에 `- jekyll-sitemap` 추가

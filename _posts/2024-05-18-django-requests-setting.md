@@ -1,6 +1,6 @@
 ---
 title: Django Requests 세팅
-description: 장고API의 리퀘스트 세팅 경험
+description: 장고API의 리퀘스트 세팅 설명
 layout: post
 categories: Python
 published: true

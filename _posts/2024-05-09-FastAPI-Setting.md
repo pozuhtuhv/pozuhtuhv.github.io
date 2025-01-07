@@ -1,6 +1,6 @@
 ---
 title: FastAPI 세팅
-description: FastAPI의 세팅 경험
+description: FastAPI의 세팅 설명
 layout: post
 categories: Python
 published: true
@@ -21,7 +21,6 @@ tag: [python, fastapi, framework]
     이후 나머지는 4개이상 -->
 
 ## FastAPI 기본 실행해보기
-<br>
 
 ### 0. FastAPI 소개
 Python에서 Python 3.6+ 버전을 기반으로 한 현대적이고 빠른(고성능) 웹 프레임워크로, 2018년에 처음 소개되었다.<br>

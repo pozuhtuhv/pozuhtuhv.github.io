@@ -1,6 +1,6 @@
 ---
 title: Yolov8 이미지라벨링
-description: Yolov8 에 대한 이미지라벨링 설명
+description: Yolov8 이미지라벨링 설명
 layout: post
 categories: Python
 published: false
@@ -26,8 +26,6 @@ tag: [python, yolo]
 YOLOv8(You Only Look Once version 8)는 Ultralytics에서 개발한 객체 탐지(Object Detection) 및 분할(Segmentation) 알고리즘
 YOLO 시리즈는 실시간 객체 탐지에서 높은 성능과 속도가 장점임
 활용분야로는 자율주행, 보안, 의료, 소매업, 로봇공학에 사용된다.
-
----
 
 ### 1. Python 패키지 설치 및 세팅
 ```python

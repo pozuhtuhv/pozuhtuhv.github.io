@@ -1,6 +1,6 @@
 ---
 title: Git Commit Log 초기화
-description: 커밋로그의 초기화 방법
+description: 커밋로그의 초기화 방법 설명
 layout: post
 categories: Scrapbook
 published : true

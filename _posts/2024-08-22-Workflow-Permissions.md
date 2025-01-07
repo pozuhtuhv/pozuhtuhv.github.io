@@ -1,6 +1,6 @@
 ---
 title: Github 워크플로우 권한 세팅
-description: Github 액션 워크플로우 권한 세팅 경험
+description: Github 액션 워크플로우 권한 세팅 설명
 layout: post
 categories: ETC
 published : true

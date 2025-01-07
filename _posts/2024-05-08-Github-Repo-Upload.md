@@ -1,6 +1,6 @@
 ---
 title: Github 레포 업로드
-description: 깃허브 레포 업로드 방법
+description: 깃허브 레포 업로드 방법 설명
 layout: post
 categories: ETC
 published : true
@@ -21,7 +21,6 @@ tag: [github, upload]
     이후 나머지는 4개이상 -->
 
 ## Git Bash -> Repo upload
-<br>
 
 ### 1. Github에 NEW 리포지토리 git repo url 확인
 ![docs](/assets/img/git-3.1.png)<br>

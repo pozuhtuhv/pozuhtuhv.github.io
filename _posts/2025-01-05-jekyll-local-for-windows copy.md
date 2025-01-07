@@ -1,6 +1,6 @@
 ---
 title: Jekyll 로컬 세팅 (For Windows)
-description: 깃허브 블로그의 로컬세팅 경험
+description: 깃허브 블로그의 로컬세팅 설명
 layout: post
 categories: ETC
 published: true
@@ -23,9 +23,9 @@ tag: [github, jekyll, ruby]
 ## Jekyll Ruby 로컬 구현하기
 - Jekyll Ruby 로컬로 확인하는 이유
 <br>
-기존 'github-pages'로 진행할 경우 'commit & push'를 하고 몇 초에서 몇 분이 지나야 확인이 가능하기 때문에 시간 낭비가 많아진다.<br>
-이를 해결하기 위해 로컬 환경에서 '수정 -> 확인'을 진행하면 변경 사항을 바로 확인할 수 있다.
-<br>
+1. 기존 `github-pages`로 진행할 경우 `commit & push`를 하고 몇 초에서 몇 분이 지나야 확인이 가능하기 때문에 시간 낭비가 많아진다.<br>
+2. 1에 대한 `commit & push` 를 자주하게 된다면 기록이 지저분하게 남아 빠르게 이전 자료를 확인하기 힘들수도 있다.<br>
+`이를 로컬 환경에서 '수정 -> 확인'을 진행하면 변경사항을 바로 확인할 수 있다.`
 
 ### 1. Ruby 설치
 [![docs](/assets/img/blog-3.1.png)](https://rubyinstaller.org/downloads/)<br>
