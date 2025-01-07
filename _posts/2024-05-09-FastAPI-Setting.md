@@ -2,7 +2,7 @@
 title: FastAPI 세팅
 description: FastAPI의 세팅 경험
 layout: post
-category: Python
+categories: Python
 published: true
 date_published: 2024-05-09
 date_modified: 2024-05-09

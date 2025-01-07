@@ -2,7 +2,7 @@
 title: Jekyll 사이트맵 세팅
 description: Jekyll 사이트맵 세팅 경험
 layout: post
-category: ETC
+categories: ETC
 published: true
 date_published: 2024-12-23
 date_modified: 2024-12-26

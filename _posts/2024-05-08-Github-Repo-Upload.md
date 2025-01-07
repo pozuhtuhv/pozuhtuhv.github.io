@@ -1,8 +1,8 @@
 ---
-title: 깃허브 레포 업로드
+title: Github 레포 업로드
 description: 깃허브 레포 업로드 방법
 layout: post
-category: ETC
+categories: ETC
 published : true
 date_published: 2024-05-08
 date_modified: 2024-12-23

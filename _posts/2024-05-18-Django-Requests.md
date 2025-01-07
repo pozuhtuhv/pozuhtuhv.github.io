@@ -2,7 +2,7 @@
 title: Django Requests 세팅
 description: 장고API의 리퀘스트 세팅 경험
 layout: post
-category: Python
+categories: Python
 published: true
 date_published: 2024-05-18
 date_modified: 2024-05-23

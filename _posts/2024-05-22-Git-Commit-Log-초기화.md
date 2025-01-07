@@ -2,7 +2,7 @@
 title: Git Commit Log 초기화
 description: 커밋로그의 초기화 방법
 layout: post
-category: Scrapbook
+categories: Scrapbook
 published : true
 date_published: 2024-05-22
 date_modified: 2024-05-22

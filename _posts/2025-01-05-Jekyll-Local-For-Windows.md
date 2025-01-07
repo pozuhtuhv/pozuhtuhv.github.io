@@ -2,7 +2,7 @@
 title: Jekyll 로컬 세팅 (For Windows)
 description: 깃허브 블로그의 로컬세팅 경험
 layout: post
-category: ETC
+categories: ETC
 published: true
 date_published: 2025-01-05
 date_modified: 2025-01-05

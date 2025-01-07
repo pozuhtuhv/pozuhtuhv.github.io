@@ -2,7 +2,7 @@
 title: Django API 세팅
 description: 장고API의 기본 세팅 경험
 layout: post
-category: Python
+categories: Python
 published: true
 date_published: 2024-04-11
 date_modified: 2024-04-11

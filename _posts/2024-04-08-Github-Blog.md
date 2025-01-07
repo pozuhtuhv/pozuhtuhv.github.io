@@ -2,7 +2,7 @@
 title: 첫번째 깃허브 블로그 세팅
 description: 깃허브 블로그 세팅의 경험
 layout: post
-category: ETC
+categories: ETC
 published: true
 date_published: 2024-04-08
 date_modified: 2024-04-08

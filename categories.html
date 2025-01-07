@@ -1,0 +1,28 @@
+---
+layout: default
+title: "minimal: less is more"
+---
+
+<section class="posts" id="Blog">
+    <div class="flex-row-between">
+        <a href="{{ site.url }}/">« back</a>
+      <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+        <div></div>
+      </button>
+    </div>
+
+    <h2>Categories:</h2>
+    {% assign categories = "Python,ETC,Scrapbook" | split: ',' %}
+    {% for category in categories %}
+        <h3>{{ category }}</h3>
+        <ul>
+            {% for post in site.posts %}
+                {% if post.categories contains category %}
+                    <li>
+                        - [{{ post.date | date: "%Y-%m-%d" }}] <a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</section>

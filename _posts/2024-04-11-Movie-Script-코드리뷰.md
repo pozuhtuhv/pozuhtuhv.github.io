@@ -2,7 +2,7 @@
 title: Movie Script 코드리뷰
 description: 첫파이썬 코드리뷰
 layout: post
-category: Python
+categories: Python
 published: true
 date_published: 2024-04-11
 date_modified: 2024-04-11
