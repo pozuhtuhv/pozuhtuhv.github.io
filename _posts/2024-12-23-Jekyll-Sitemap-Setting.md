@@ -24,6 +24,7 @@ tag: [github, jekyll]
 사이트맵을 설정하면 검색 엔진이 사이트의 구조 정확하게 수집할 수 있다.
 <br>
 본글은 Jekyll 로 만들어진 블로그의 Sitemap을 만드는 소개글이며 2가지 방법을 소개하고자 한다. 
+<br>
 
 ### 1. _config.yml plugins 추가
 `_config.yml` 파일의 `plugins: ` 부분에 `- jekyll-sitemap` 추가
@@ -36,6 +37,7 @@ tag: [github, jekyll]
 ```
 
 수정 -> 커밋 후 브라우저에서 sitemap.xml 접속 후 확인
+<br>
 
 ### 2. sitemap.xml 커스텀 설정
 ```xml
@@ -74,6 +76,7 @@ layout: null
 위 내용을 제일 메인폴더에 `sitemap.xml` 파일 생성<br>
 사용자가 커스텀도 가능하지만, 제일 기본적인 기능들만 추가하는게 낫고,<br><br>
 [사이트맵 유효성 검사](https://products.aspose.app/html/ko/sitemap-validator) 를 통해 에러를 고쳐가며 설정하면 된다.
+<br>
 
 #### 하루종일 잡기
 ```html

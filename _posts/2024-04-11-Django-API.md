@@ -34,8 +34,8 @@ Python에서 제일 많이 알려진 웹프레임워크이며, 2005년 공개 �
 #### 변수
 `projectname : 프로젝트 이름`<br>
 `appname : 프로젝트 내의 앱 이름`
-
 ---
+<br>
 
 ### 1. Python 패키지 설치 및 세팅
 ```python
@@ -58,6 +58,7 @@ django-admin startproject {projectname} . # django 프로젝트 폴더 만들기
 
 django-admin startapp {appname} # django 앱 폴더 만들기
 ```
+<br>
 
 ### 2. {projectname}/setting.py의 데이터베이스구성 수정
 ```python
@@ -76,6 +77,7 @@ DATABASES = {
 ```
 
 `이걸 설정하는 이유는 Django 기본 데이터베이스는 sqlite3 로 진행되기 때문에 mysql로 연결시켜주는 것`
+<br>
 
 ### 3. {projectname}/setting.py의 앱구성 수정
 ```python
@@ -97,6 +99,7 @@ REST_FRAMEWORK = {
     ),
 }
 ```
+<br>
 
 ### 4. {appname}/models.py의 데이터구성 수정
 MySQL에 구성되어질 행, 열 구성
@@ -111,12 +114,14 @@ class BoardModel(models.Model):
     def __str__(self):
         return self.name
 ```
+<br>
 
 ### 5. 마이그레이션 후 데이터베이스 적용
 ```python
 python manage.py makemigrations {appname}
 python manage.py migrate
 ```
+<br>
 
 ### 6. {appname}/urls.py API 엔드포인트 생성
 ```python 
@@ -128,6 +133,7 @@ urlpatterns = [
     path('board/<int:pk>/', views.BoardDetail.as_view(), name='board-detail'),
 ]
 ```
+<br>
 
 ### 7. {appname}/views.py 설정
 ```python 
@@ -143,6 +149,7 @@ class BoardDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = BoardModel.objects.all()
     serializer_class = BoardModelSerializer
 ```
+<br>
 
 ### 8. {appname}/serializers.py 설정
 ```python 
@@ -154,6 +161,7 @@ class BoardModelSerializer(serializers.ModelSerializer):
         model = BoardModel
         fields = '__all__'
 ```
+<br>
 
 ### 9. {projectname}/urls.py 메인 URL 설정
 ```python 
@@ -165,11 +173,13 @@ urlpatterns = [
     path('api/', include('board.urls')),
 ]
 ```
+<br>
 
 ### 10. 서버 실행하기
 ```python 
 python manage.py runserver
 ```
+<br>
 
 ### 11. 마이그레이션 후 데이터베이스 적용
 ```python

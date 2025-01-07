@@ -27,6 +27,7 @@ tag: [python, django, framework]
 이전 Django 데이터에서 진행했던 기본API 세팅의 Requests 의 코드를 작성하는 글<br>
 
 `import requests`
+<br>
 
 ### 1. 데이터 추가
 ```python
@@ -43,6 +44,7 @@ if response.status_code == 201:
 else:
     print('Failed to create new post:', response.status_code)
 ```
+<br>
 
 ### 2. 데이터 조희
 
@@ -72,6 +74,7 @@ if response.status_code == 200:
 else:
     print('Failed to retrieve board detail:', response.status_code)
 ```
+<br>
 
 ### 3. 데이터 수정
 ```python
@@ -89,6 +92,7 @@ if response.status_code == 200:
 else:
     print('Failed to update post:', response.status_code)
 ```
+<br>
 
 ### 4. 데이터 삭제
 ```python
