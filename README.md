@@ -1,6 +1,6 @@
 <div align="center">
 <h3>My personal GitBlog</h3>
-<h4>Use the <a href ='https://github.com/DavideBri/Gesko'>Gesko</a></h4>
+<!-- <h4>Use the <a href ='https://github.com/DavideBri/Gesko'>Gesko</a></h4> -->
 </div>
 
 <details>
