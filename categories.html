@@ -11,10 +11,16 @@ title: "minimal: less is more"
       </button>
     </div>
 
-    <h2>Categories:</h2>
+    
     {% assign categories = "Python, TensorFlow, ETC, Scrapbook" | split: ', ' %}
     {% for category in categories %}
-        <h3>{{ category }}</h3>
+        {% assign post_count = 0 %}
+        {% for post in site.posts %}
+            {% if post.categories contains category %}
+                {% assign post_count = post_count | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+        <h3>{{ category }} ({{ post_count }})</h3>
         <ul>
             {% for post in site.posts %}
                 {% if post.categories contains category %}
