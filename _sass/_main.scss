@@ -37,12 +37,12 @@ html[data-theme="light"] {
 	--text-font: Source Code Pro;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: rgb(0, 0, 0);
-	--light-text-color: rgb(89, 183, 255);
+	--light-text-color: #00b7c4;
 	--medium-text-color: #555;
 	--main-text-color: #333;
 	--highlight-text-color: #6cb4a0;
 	--dark-text-color: #393e46;
-	--link-color: rgb(50, 87, 209);
+	--link-color: #557dff;
   --code-bg-color: #f9f9f9;
   --post-link: rgb(50, 87, 209);
   --code-text-color: #383942;
@@ -108,12 +108,12 @@ html[data-theme="dark"] {
 	--text-font: Source Code Pro;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: #EEE;
-	--light-text-color: #c4bbf0;
+	--light-text-color: #46c2c2;
 	--medium-text-color: #52057b;
 	--main-text-color: #EAEAEA;
 	--highlight-text-color: #6cb4a0;
 	--dark-text-color: rgb(36, 38, 42);
-	--link-color: rgb(50, 87, 209);
+	--link-color: #394779;
 	--code-bg-color: #31343f;
   --post-link: rgb(255, 255, 255);
 	--code-text-color: #dee2f7;
@@ -462,7 +462,7 @@ figcaption {
 }
 
 ::selection {
-background-color: #fffba0;
+background-color: #b3b3b3;
 color: #333;
 }
 

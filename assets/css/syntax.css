@@ -42,15 +42,15 @@ pre.highlight {
 }
 
 .highlight .n {
-  color: #8cdcfe;
+  color: var(--light-text-color);
 }
 
 .highlight .o {
-  color: #ffffff;
+  color: var(--main-text-color);
 }
 
 .highlight .p {
-  color: #e2cb09;
+  color: var(--code-number-color);
 }
 
 .highlight .ge {
@@ -112,7 +112,7 @@ pre.highlight {
 }
 
 .highlight .ow {
-  font-weight: 700;
+  font-weight: 550;
 }
 
 .highlight .w {
