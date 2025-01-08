@@ -20,7 +20,7 @@ tag: [python, django, framework]
     나머지 큰 제목은 ###
     이후 나머지는 4개이상 -->
 
-## Django 기본 API
+## Django Requests 세팅
 
 ### 0. 소개
 관련글 : <a href = 'https://pozuhtuhv.github.io/fpython-2'>Django 기본 구축하기</a><br>

@@ -20,7 +20,7 @@ tag: [python, tensorflow, keras]
     나머지 큰 제목은 ###
     이후 나머지는 4개이상 -->
 
-## TensorFlow의 기본적인 세팅
+## TensorFlow, Keras 기본적인 세팅
 
 ### 0. TensorFlow 및 Keras 소개
 `TensorFlow`: Google에서 개발한 오픈소스 딥러닝 프레임워크로, 머신러닝과 딥러닝 모델을 구축, 학습, 배포할 수 있다.<br>

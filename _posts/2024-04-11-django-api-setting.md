@@ -20,7 +20,7 @@ tag: [python, django, framework]
     나머지 큰 제목은 ###
     이후 나머지는 4개이상 -->
 
-## Django 기본 구축하기
+## Django API 세팅
 
 ### 0. Django 소개
 Python에서 제일 많이 알려진 웹프레임워크이며, 2005년 공개 후 오픈소스가 가장 많다.<br>
