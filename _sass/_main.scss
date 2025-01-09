@@ -34,17 +34,17 @@ html {
 
 html,
 html[data-theme="light"] {
-	--text-font: Source Code Pro;
+	--text-font: Arial, Apple SD Gothic Neo, sans-serif;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: rgb(0, 0, 0);
-	--light-text-color: #1E90FF;
+	--light-text-color: #06f;
 	--medium-text-color: #555;
 	--main-text-color: #333;
 	--highlight-text-color: #6cb4a0;
 	--dark-text-color: #393e46;
-	--link-color: #007BFF;
+	--link-color: #06f;
   --code-bg-color: #f9f9f9;
-  --post-link: rgb(50, 87, 209);
+  --post-link: #06f;
   --code-text-color: #383942;
   --code-comment-color: #9fa0a6;
   --code-keyword-color: #a625a4;
@@ -54,7 +54,7 @@ html[data-theme="light"] {
   --code-variable-color: #ca7601;
   --code-error-bg-color: #e05151;
   --code-error-text-color: #fff;
-	background-color: rgb(255, 255, 255);
+	background-color: #ffffff;
 
 	#theme-toggle div {
 		position: relative;
@@ -105,17 +105,17 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-	--text-font: Source Code Pro;
+	--text-font: Arial, Apple SD Gothic Neo, sans-serif;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: #EEE;
 	--light-text-color: #46c2c2;
 	--medium-text-color: #52057b;
 	--main-text-color: #EAEAEA;
 	--highlight-text-color: #6cb4a0;
-	--dark-text-color: rgb(36, 38, 42);
+	--dark-text-color: #24262a;
 	--link-color: #1E90FF;
 	--code-bg-color: #31343f;
-  --post-link: rgb(255, 255, 255);
+  --post-link: #ffffff;
 	--code-text-color: #dee2f7;
 	--code-comment-color: #63677e;
 	--code-keyword-color: #e19ef5;
@@ -125,7 +125,7 @@ html[data-theme="dark"] {
 	--code-variable-color: #fdce68;
 	--code-error-bg-color: #1e0010;
 	--code-error-text-color: #960050;
-  background-color: rgb(19, 20, 24);
+  background-color: #131418;
 
 	#theme-toggle div {
 		position: relative;
@@ -176,7 +176,7 @@ html[data-theme="dark"] {
 }
 
 body {
-	font-family: var(--text-font), monospace;
+	font-family: var(--text-font);
 	text-rendering: optimizeLegibility;
 	// line-height: 1.75;
 	color: var(--main-text-color);
@@ -188,7 +188,9 @@ a {
 }
 
 .post p {
-	margin: 1rem 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .meta {
@@ -205,7 +207,7 @@ pre {
 }
 
 code {
-    font-family: var(--source-code-font), monospace;
+    font-family: var(--source-code-font);
     margin: unset;
     padding: 0.1rem;
     color: var(--highlight-text-color);
@@ -357,6 +359,7 @@ b {
 	overflow: hidden;
 	text-overflow: ellipsis;
   color: var(--post-link);
+    font-size: 14.875px;
 }
 
 .posts li time,
@@ -461,6 +464,7 @@ figcaption {
   flex: 1 1 calc(25% - 2%);
   text-align: left;
   margin: 0;
+  font-size: 14.875px;
 }
 
 ::selection {
@@ -473,14 +477,14 @@ color: #333;
  
 
   label[for="search-input"] {
-    font-family: var(--text-font), monospace;
+    font-family: var(--text-font);
     position: relative;
     top: -10px;
     left: 11px;
   }
 
   input[type="search"] {
-    font-family: var(--text-font), monospace;
+    font-family: var(--text-font);
     top: -1rem;
     left: 0;
     border: 0;
@@ -750,7 +754,7 @@ $link-color: var(--link-color);
     background: var(--code-bg-color);
     padding: 6px 10px;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
     @media(max-width: 860px) {
       background: var(--code-bg-color);
