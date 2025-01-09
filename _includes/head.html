@@ -4,7 +4,10 @@
   <meta name="description" content="just a minimalist">
   <meta name="naver-site-verification" content="565f41042384b9e0c6b69e3554fa6b58610b557c" />
   <meta name="google-adsense-account" content="ca-pub-3426230094241844">
-  
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
   <script>
@@ -22,14 +25,12 @@
 
   <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
 
-  <title>
-    {{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}
-  </title>
+  <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
-    <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}/atom.xml">
-    <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}/feed.json" />
-    <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}/sitemap.xml" />
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}/atom.xml">
+  <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}/feed.json" />
+  <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}/sitemap.xml" />
       
   {% if site.googlewebfonts %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
