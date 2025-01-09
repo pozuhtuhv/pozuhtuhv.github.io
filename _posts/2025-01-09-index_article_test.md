@@ -26,17 +26,20 @@ tag: [seo]
 SEO 색인이 언제 진행되는지<br>
 SEO 카운트 1 테스트<br>
 
-### 2. PageSpeed Insights Score
-<b>PC 인사이트 스코어</b><br>
-![score_pc](/assets/img/index_score_pc.png)<br><br>
-<b>Mobile 인사이트 스코어</b><br>
-![score_mobile](/assets/img/index_score_mobile.png)<br>
+### 2. PageSpeed Insights Score (완료)
+<b>PC 인사이트 스코어</b><br><br>
+![score_pc](/assets/img/index_score_pc_before.png)<br>
+![score_pc](/assets/img/index_score_pc_after.png)<br><br>
 
-### 3. light테마의 시인성 강화
+<b>Mobile 인사이트 스코어</b><br>
+![score_mobile](/assets/img/index_score_mobile_before.png)<br>
+![score_mobile](/assets/img/index_score_mobile_after.png)<br><br>
+
+### 3. light테마의 시인성 강화 (완료)
 light테마의 페이지에선 버튼에 대한 접근성 스코어를 개선할 필요가 있다.<br>
 저대비 텍스트에 대한 개선을 고민할 필요가 있을것 같다.<br>
 
-### 4. 리소스의 최적화
+### 4. 리소스의 최적화 (완료)
 일단 페이지 속도에 방해되는 스크립트들은 최대한 제거했다.<br>
 나중에 쓰지 않는 폰트들은 최대한 자세하게 더 제거할 예정이다.<br>
 정리하면 스코어가 개선될것 같다.<br>
