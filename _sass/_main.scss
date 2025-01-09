@@ -110,7 +110,7 @@ html[data-theme="dark"] {
 	--very-light-text-color: #EEE;
 	--light-text-color: #46c2c2;
 	--medium-text-color: #52057b;
-	--main-text-color: #EAEAEA;
+	--main-text-color: #bfbfbf;
 	--highlight-text-color: #6cb4a0;
 	--dark-text-color: #24262a;
 	--link-color: #1E90FF;
@@ -125,7 +125,7 @@ html[data-theme="dark"] {
 	--code-variable-color: #fdce68;
 	--code-error-bg-color: #1e0010;
 	--code-error-text-color: #960050;
-  background-color: #131418;
+  background-color: #202124;
 
 	#theme-toggle div {
 		position: relative;
@@ -359,7 +359,9 @@ b {
 	overflow: hidden;
 	text-overflow: ellipsis;
   color: var(--post-link);
-    font-size: 14.875px;
+  font-size: 14.875px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .posts li time,
