@@ -29,7 +29,8 @@ tag: [python, tensorflow, keras]
 `Keras`: Keras는 TensorFlow에서 제공하는 고수준 딥러닝 API로, 복잡한 딥러닝 모델을 더 간단하고 직관적으로 구현할 수 있다.<br>
 초기에 독립적인 라이브러리였지만, TensorFlow 2.0부터는 TensorFlow 내부에 통합되었다.<br>
 
-### 1. TensorFlow 및 Keras 패키지 설치 및 버전확인
+### 1. TensorFlow 및 주요 패키지 설치 및 버전확인
+
 ```bash
 pip install tensorflow
 ```

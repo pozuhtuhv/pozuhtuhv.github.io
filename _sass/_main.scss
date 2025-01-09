@@ -461,11 +461,25 @@ figcaption {
 	margin-bottom: 5rem;
 }
 
+.bio .link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2%;
+  margin: 0;
+  padding: 0;
+}
+
+.bio .link-container a {
+  flex: 1 1 calc(25% - 2%);
+  text-align: left;
+  margin: 0;
+}
+
 ::selection {
 background-color: #b3b3b3;
 color: #333;
 }
-
 
 .search-article {
   position: relative;
