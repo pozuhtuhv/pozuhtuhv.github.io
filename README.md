@@ -14,29 +14,7 @@
 </details>
 
 
-<!-- # Gesko
-
-Simple and minimal Jekyll blog. 
-Forked from [Asko](https://github.com/manuelmazzuola/asko).
-Original theme from [Sidey](https://github.com/ronv/sidey).
-
-### Features
-
-- [x] Responsive Design
-- [x] Dark/Ligh theme 🌗
-- [x] Inline CSS
-- [x] Anchor headings
-- [x] Tags & Tag pages 
-- [x] 404 page 
-- [x] Robots.txt 🤖
-- [x] Atom & Json feeds 📡
-- [x] Sass 
-- [x] About page, with Timeline! 🗣️
-- [x] PageSpeed and w3Validator tests PASSED ✔️
-- [x] Search bar 🔎
-- [x] Next & Previous Post ⏮️ ⏭️
-- [x] Automatic/Manual reading time estimation 🕐
-- [x] Disqus section (optional) ✍️ 
+<!-- 
 
 Run local server:
 
