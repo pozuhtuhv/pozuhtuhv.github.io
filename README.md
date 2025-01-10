@@ -7,7 +7,7 @@
   <summary>History</summary>
   <div align="left">
 <h4>2025-01-07 (완료)</h4>
-<h5>- 테마변경(<a href ='https://github.com/DavideBri/Gesko'>Gesko</a>) 및 재업로드 / <a href ='https://github.com/pozuhtuhv/pozuhtuhv.github.io/'>참고</a></h5>
+<h5>- 테마변경(<a href ='https://github.com/DavideBri/Gesko'>Gesko</a>) 및 재업로드 / <a href ='https://pozuhtuhv.github.io/'>참고</a></h5>
 <h4>2025-01-03 ~ 2025-01-07 (완료)</h4>
 <h5>- 테마 변경 작업 <a href='https://just-the-docs.com/'>Just the Docs</a> -> <a href ='https://github.com/DavideBri/Gesko'>Gesko</a></h5>
 </div>
