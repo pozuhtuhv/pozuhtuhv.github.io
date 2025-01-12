@@ -61,7 +61,7 @@ data = yf.download(ticker, start=before_day, end=now_day)
 data = data[['Close']]
 
 # 데이터 전처리
-scaler =MinMaxScaler(feature_range=(0,1))
+scaler = MinMaxScaler(feature_range=(0,1))
 scaled_data = scaler.fit_transform(data)
 
 # 학습데이터 테스트 데이터 지정

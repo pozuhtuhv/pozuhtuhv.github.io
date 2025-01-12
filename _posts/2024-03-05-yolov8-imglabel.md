@@ -3,7 +3,7 @@ title: Yolov8 이미지라벨링
 description: Yolov8 이미지라벨링 설명
 layout: post
 categories: Python
-published: false
+published: true
 date_published: 2024-03-05
 date_modified: 2024-03-05
 tag: [python, yolo]
@@ -93,7 +93,9 @@ results = model("https://ultralytics.com/images/bus.jpg", save = True) # 가져�
 image 1/1 C:\Users\xxxx\Desktop\yolovenv\bus.jpg: 640x480 4 persons, 1 bus, 468.4ms
 Speed: 32.2ms preprocess, 468.4ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 480)
 ```
+
 or<br>
+
 ```python
 from ultralytics import YOLO
 model = YOLO("yolov8s.pt")
