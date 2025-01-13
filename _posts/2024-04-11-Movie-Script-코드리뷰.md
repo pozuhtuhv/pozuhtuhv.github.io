@@ -1,6 +1,6 @@
 ---
-title: Movie Script 코드리뷰
-description: 첫파이썬 코드리뷰
+title: 1년전에 쓴 파이썬 코드 리뷰
+description: 1년전에 쓴 파이썬 코드 리뷰
 layout: post
 categories: Python
 published: true
@@ -21,7 +21,7 @@ tag: [python, review]
     이후 나머지는 4개이상 -->
 
 ## Movie Script 코드리뷰
-`-처음 만들어본 파이썬 코드 리뷰-`<br>
+`-1년전에 쓴 파이썬 코드 리뷰-`<br>
 `영어자막에 대한 것을 찾다가 발견한 자막 사이트`<br>
 `'자막을 그대로 저장해보고 싶다' 라는 생각에 만들어보았던 것`<br>
 <br>

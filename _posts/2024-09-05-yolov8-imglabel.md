@@ -4,8 +4,8 @@ description: Yolov8 이미지라벨링 설명
 layout: post
 categories: Python
 published: true
-date_published: 2024-03-05
-date_modified: 2024-03-05
+date_published: 2024-09-05
+date_modified: 2024-09-05
 tag: [python, yolo]
 ---
 ---
