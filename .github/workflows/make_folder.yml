@@ -1,10 +1,5 @@
-name: Fetch GitHub User Info
+name: Fetch Tag make
 
-# on:
-#    schedule:
-#      - cron: '0 0 * * *' # 한국시간 오전 9~10시에 실행
-
-# 이후 데이터 업데이트 필요시 cron 수정
 on:
   push:
     branches:
@@ -29,8 +24,6 @@ jobs:
         pip install requests bs4
 
     - name: Run Python script
-      env:
-        github_actor: ${{ github.actor }}
       run: python auto_tag.py
     
 # Git Push

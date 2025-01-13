@@ -10,9 +10,8 @@ title: Categories
         <div></div>
       </button>
     </div>
-
-    
-    {% assign categories = "Python, TensorFlow, ETC, Scrapbook" | split: ', ' %}
+    <h1>Categories</h1>
+    {% assign categories = "Python, TensorFlow, ETC, Git, Scrapbook" | split: ', ' %}
     {% for category in categories %}
         {% assign post_count = 0 %}
         {% for post in site.posts %}
@@ -20,7 +19,9 @@ title: Categories
                 {% assign post_count = post_count | plus: 1 %}
             {% endif %}
         {% endfor %}
-        <h3>{{ category }} ({{ post_count }})</h3>
+        <details>
+        <summary>{{ category }} ({{ post_count }})</summary>
+        <br>
         <ul>
             {% for post in site.posts %}
                 {% if post.categories contains category %}
@@ -30,5 +31,7 @@ title: Categories
                 {% endif %}
             {% endfor %}
         </ul>
+    </details>
+    <br>
     {% endfor %}
 </section>
