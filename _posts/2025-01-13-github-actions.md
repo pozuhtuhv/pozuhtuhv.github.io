@@ -133,6 +133,7 @@ jobs:
 <br>
 새로운 푸시가 진행되었을때 작동되도록 설정<br>
 로봇계정이 업로드 하도록 설정<br>
-매우 정상적으로 작동해서 만족<br>
+정상적으로 작동<br>
+다시 비활성화<br>
 <br>
 [권한설정에 대한 글](https://pozuhtuhv.github.io/2024/08/22/workflow-permissions)
