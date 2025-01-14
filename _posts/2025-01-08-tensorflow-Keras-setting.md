@@ -34,6 +34,7 @@ tag: [python, tensorflow, keras]
 ```bash
 pip install tensorflow
 ```
+<br>
 ```python
 import tensorflow as tf
 print(tf.__version__)

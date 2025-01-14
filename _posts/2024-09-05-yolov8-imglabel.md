@@ -93,8 +93,9 @@ results = model("https://ultralytics.com/images/bus.jpg", save = True) # 가져�
 image 1/1 C:\Users\xxxx\Desktop\yolovenv\bus.jpg: 640x480 4 persons, 1 bus, 468.4ms
 Speed: 32.2ms preprocess, 468.4ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 480)
 ```
-
+<br>
 or<br>
+<br>
 
 ```python
 from ultralytics import YOLO

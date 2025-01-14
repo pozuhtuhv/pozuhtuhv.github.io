@@ -43,6 +43,7 @@ Jekyll 의 태깅 기능은 버전 오류를 뱉어내서 포기하고 다른방
 <br>
 /Tag 페이지를 살펴보면 '{% raw %}{% assign tags = site.tags | sort %}{% endraw %}' 이 구문을 통해 Jekyll 블로그에서 모든 태그를 가져와 정렬하는 기능을 수행한다.
 이를, Github Actions 기능을 활용하여 /tag 사이트 에 나타나는 tag 를 모두 수집 후 폴더와 파일을 만들기로 결정
+<br>
 
 ### 3. 코드작성
 ```python

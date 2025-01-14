@@ -3,7 +3,7 @@ title: Jekyll 사이트맵 세팅
 description: Jekyll 사이트맵 세팅 설명
 layout: post
 categories: ETC
-published: false
+published: true
 date_published: 2024-12-23
 date_modified: 2024-12-26
 tag: [github, jekyll]
@@ -34,7 +34,7 @@ tag: [github, jekyll]
     - jekyll-include-cache
     - jekyll-sitemap{% endraw %}
 ```
-
+<br>
 수정 -> 커밋 후 브라우저에서 sitemap.xml 접속 후 확인
 <br>
 
@@ -71,7 +71,7 @@ layout: null
   {% endfor %}{% endraw %}
 </urlset>
 ```
-
+<br>
 위 내용을 제일 메인폴더에 `sitemap.xml` 파일 생성<br>
 사용자가 커스텀도 가능하지만, 제일 기본적인 기능들만 추가하는게 낫고,<br><br>
 [사이트맵 유효성 검사](https://products.aspose.app/html/ko/sitemap-validator) 를 통해 에러를 고쳐가며 설정하면 된다.
