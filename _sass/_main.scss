@@ -190,7 +190,7 @@ a {
 .post p {
   font-size: 14px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .meta {
@@ -756,7 +756,7 @@ $link-color: var(--link-color);
     background: var(--code-bg-color);
     padding: 6px 10px;
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
     @media(max-width: 860px) {
       background: var(--code-bg-color);
