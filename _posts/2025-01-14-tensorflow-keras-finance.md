@@ -3,7 +3,7 @@ title: TensorFlow, Keras 주가예상 코드
 description: TensorFlow, Keras 주가예상 코드
 layout: post
 categories: TensorFlow
-published: false
+published: true
 date_published: 2025-01-08
 date_modified: 2025-01-14
 tag: [python, tensorflow, keras, scrapbook]
