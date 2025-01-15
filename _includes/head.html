@@ -7,13 +7,15 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
-
   <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
-  <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
-  <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}/sitemap.xml" />
+  <link rel="shortcut icon" href="/favicon.png">
+  <!-- 사이트맵 커스텀 -->
+  <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
+  <!-- 기본 폰트 및 코드블록 지정 -->
   <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <script src="/assets/js/custom.js"></script>
 
   <style>
     {% capture include_to_scssify %}
