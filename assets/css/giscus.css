@@ -133,6 +133,12 @@ main .gsc-main {
   width: 100%;
 }
 
+.gsc-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
 .gsc-comment-box:not(.gsc-comment-box-is-reply) {
   border-radius: 0px !important;
   border-width: 0px !important;
