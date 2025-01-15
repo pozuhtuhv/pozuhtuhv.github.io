@@ -23,7 +23,7 @@ url: "https://pozuhtuhv.github.io" # Domain Name of host. [username].github.io f
 baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
 permalink: pretty
 
-vscode_path: "C:/Users/pozuhtuhv/Desktop/pozuhtuhv.github.io" # path to your vscode workspace
+vscode_path: "C:/Users/pozuhtuhv/Desktop/pozuhtuhv.github.io" # path to your vscode workspace (for footer link)
 
 markdown: kramdown
 kramdown:

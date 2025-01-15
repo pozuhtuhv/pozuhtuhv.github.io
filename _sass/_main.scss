@@ -406,6 +406,12 @@ main {
 	justify-content: space-between;
 }
 
+.social-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--link-color);
+}
+
 .social-footer {
   padding: 1rem;
   display: flex;
