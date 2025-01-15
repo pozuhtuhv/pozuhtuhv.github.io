@@ -133,6 +133,11 @@ main .gsc-main {
   width: 100%;
 }
 
+.gsc-comment-box:not(.gsc-comment-box-is-reply) {
+  border-radius: 0px !important;
+  border-width: 0px !important;
+}
+
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-dimmed.gif");
 }
