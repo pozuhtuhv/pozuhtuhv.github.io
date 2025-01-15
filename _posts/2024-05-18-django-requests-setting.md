@@ -16,20 +16,20 @@ tag: [python, django, framework]
 {:toc}
 ---
 
-<!-- 글의 제목은 ##
-    나머지 큰 제목은 ###
-    이후 나머지는 4개이상 -->
+<!-- 글의 제목은 #
+    나머지 큰 제목은 ##
+    이후 나머지는 3개이상 -->
 
-## Django Requests 세팅
+# Django Requests 세팅
 
-### 0. 소개
+## 0. 소개
 관련글 : <a href = 'https://pozuhtuhv.github.io/fpython-2'>Django 기본 구축하기</a><br>
 이전 Django 데이터에서 진행했던 기본API 세팅의 Requests 의 코드를 작성하는 글<br>
 
 `import requests`
 <br>
 
-### 1. 데이터 추가
+## 1. 데이터 추가
 ```python
 url = 'http://localhost:8000/api/board/'
 data = {
@@ -46,7 +46,7 @@ else:
 ```
 <br>
 
-### 2. 데이터 조희
+## 2. 데이터 조희
 
 - 전체 데이터 조회
 
@@ -76,7 +76,7 @@ else:
 ```
 <br>
 
-### 3. 데이터 수정
+## 3. 데이터 수정
 ```python
 post_id = 1  # 수정할 데이터의 ID
 url = f'http://localhost:8000/api/board/{post_id}/'
@@ -94,7 +94,7 @@ else:
 ```
 <br>
 
-### 4. 데이터 삭제
+## 4. 데이터 삭제
 ```python
 post_id = 1  # 삭제할 데이터의 ID
 url = f'http://localhost:8000/api/board/{post_id}/'

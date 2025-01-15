@@ -16,16 +16,16 @@ tag: [git, jekyll, tag]
 {:toc}
 ---
 
-<!-- 글의 제목은 ##
-    나머지 큰 제목은 ###
-    이후 나머지는 4개이상 -->
+<!-- 글의 제목은 #
+    나머지 큰 제목은 ##
+    이후 나머지는 3개이상 -->
 
-## Github Actions 활용 Tag 자동화
+# Github Actions 활용 Tag 자동화
 
-### 1. Jekyll 블로그의 Jekyll-tagging
+## 1. Jekyll 블로그의 Jekyll-tagging
 Jekyll 의 태깅 기능은 버전 오류를 뱉어내서 포기하고 다른방법을 쓰기로함
 
-### 2. /Tag 페이지 살펴보기
+## 2. /Tag 페이지 살펴보기
 ```bash
 {% raw %}
   {% assign tags = site.tags | sort %}
@@ -45,7 +45,7 @@ Jekyll 의 태깅 기능은 버전 오류를 뱉어내서 포기하고 다른방
 이를, Github Actions 기능을 활용하여 /tag 사이트 에 나타나는 tag 를 모두 수집 후 폴더와 파일을 만들기로 결정
 <br>
 
-### 3. 코드작성
+## 3. 코드작성
 ```python
 from bs4 import BeautifulSoup
 import requests
@@ -89,7 +89,7 @@ tag: {tag_name}
 <br>
 루트디렉토리에 저장<br>
 
-### 4. Github Actions 진행을 위해 워크플로우 작성   
+## 4. Github Actions 진행을 위해 워크플로우 작성   
 .github -> workflows -> [yml 작성](https://github.com/pozuhtuhv/pozuhtuhv.github.io/blob/main/.github/workflows/make_folder.yml)
 <br>
 

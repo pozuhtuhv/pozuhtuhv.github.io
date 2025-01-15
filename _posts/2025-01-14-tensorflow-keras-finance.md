@@ -16,15 +16,15 @@ tag: [python, tensorflow, keras, scrapbook]
 {:toc}
 ---
 
-<!-- 글의 제목은 ##
-    나머지 큰 제목은 ###
-    이후 나머지는 4개이상 -->
+<!-- 글의 제목은 #
+    나머지 큰 제목은 ##
+    이후 나머지는 3개이상 -->
 
-## TensorFlow, Keras 모듈 세팅
+# TensorFlow, Keras 모듈 세팅
 ```bash
 pip install tensorflow yfinance pandas numpy python-dateutil scikit-learn matplotlib
 ```
-### 0. TensorFlow 주가예상 코드
+## 0. TensorFlow 주가예상 코드
 [원본글](https://blog.naver.com/dorergiverny/223550520432)
 ```python
 import yfinance as yf

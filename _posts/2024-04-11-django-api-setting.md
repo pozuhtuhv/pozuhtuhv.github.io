@@ -16,13 +16,13 @@ tag: [python, django, framework]
 {:toc}
 ---
 
-<!-- 글의 제목은 ##
-    나머지 큰 제목은 ###
-    이후 나머지는 4개이상 -->
+<!-- 글의 제목은 #
+    나머지 큰 제목은 ##
+    이후 나머지는 3개이상 -->
 
-## Django API 세팅
+# Django API 세팅
 
-### 0. Django 소개
+## 0. Django 소개
 Python에서 제일 많이 알려진 웹프레임워크이며, 2005년 공개 후 오픈소스가 가장 많다.<br>
 웹 개발에 필요한 거의 모든것을 포함되어있고, 기본디자인이나 인터페이스를 구현하기 쉽다.
 1. 모델, 템플릿, 뷰 구성요소를 통해 애플리케이션을 구성한다. (MTV)
@@ -30,13 +30,13 @@ Python에서 제일 많이 알려진 웹프레임워크이며, 2005년 공개 �
 3. 웹 보안 문제로부터 보호하는 기능을 내장하고 있다.
 
 ---
-#### 변수
+### 변수
 `projectname : 프로젝트 이름`<br>
 `appname : 프로젝트 내의 앱 이름`
 ---
 <br>
 
-### 1. Python 패키지 설치 및 세팅
+## 1. Python 패키지 설치 및 세팅
 ```python
 # requirements.txt
 
@@ -59,7 +59,7 @@ django-admin startapp {appname} # django 앱 폴더 만들기
 ```
 <br>
 
-### 2. {projectname}/setting.py의 데이터베이스구성 수정
+## 2. {projectname}/setting.py의 데이터베이스구성 수정
 ```python
 MySQL 에서 해당하는 데이터베이스의 이름을 만들어놓아야함
 
@@ -78,7 +78,7 @@ DATABASES = {
 `이걸 설정하는 이유는 Django 기본 데이터베이스는 sqlite3 로 진행되기 때문에 mysql로 연결시켜주는 것`
 <br>
 
-### 3. {projectname}/setting.py의 앱구성 수정
+## 3. {projectname}/setting.py의 앱구성 수정
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -100,7 +100,7 @@ REST_FRAMEWORK = {
 ```
 <br>
 
-### 4. {appname}/models.py의 데이터구성 수정
+## 4. {appname}/models.py의 데이터구성 수정
 MySQL에 구성되어질 행, 열 구성
 
 ```python
@@ -115,14 +115,14 @@ class BoardModel(models.Model):
 ```
 <br>
 
-### 5. 마이그레이션 후 데이터베이스 적용
+## 5. 마이그레이션 후 데이터베이스 적용
 ```python
 python manage.py makemigrations {appname}
 python manage.py migrate
 ```
 <br>
 
-### 6. {appname}/urls.py API 엔드포인트 생성
+## 6. {appname}/urls.py API 엔드포인트 생성
 ```python 
 from django.urls import path
 from . import views
@@ -134,7 +134,7 @@ urlpatterns = [
 ```
 <br>
 
-### 7. {appname}/views.py 설정
+## 7. {appname}/views.py 설정
 ```python 
 from rest_framework import generics
 from .models import BoardModel
@@ -150,7 +150,7 @@ class BoardDetail(generics.RetrieveUpdateDestroyAPIView):
 ```
 <br>
 
-### 8. {appname}/serializers.py 설정
+## 8. {appname}/serializers.py 설정
 ```python 
 from rest_framework import serializers
 from .models import BoardModel
@@ -162,7 +162,7 @@ class BoardModelSerializer(serializers.ModelSerializer):
 ```
 <br>
 
-### 9. {projectname}/urls.py 메인 URL 설정
+## 9. {projectname}/urls.py 메인 URL 설정
 ```python 
 from django.contrib import admin
 from django.urls import include, path
@@ -174,13 +174,13 @@ urlpatterns = [
 ```
 <br>
 
-### 10. 서버 실행하기
+## 10. 서버 실행하기
 ```python 
 python manage.py runserver
 ```
 <br>
 
-### 11. 마이그레이션 후 데이터베이스 적용
+## 11. 마이그레이션 후 데이터베이스 적용
 ```python
 python manage.py makemigrations {appname}
 python manage.py migrate
