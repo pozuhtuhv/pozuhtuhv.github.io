@@ -1,5 +1,5 @@
 ---
-title: SQL의 내림차순과 오름차순
+title: SQL의 내림차순과 오름차순 (Feat. 서브쿼리)
 description: SQL의 내림차순과 오름차순 코드
 layout: post
 categories: SQL
