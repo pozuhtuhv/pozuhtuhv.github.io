@@ -32,10 +32,12 @@ kramdown:
 
 exclude:
   - .jekyll-cache
+  - .obsidian
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - CONTRIBUTING.md
   
 compress_html:
   clippings: all
