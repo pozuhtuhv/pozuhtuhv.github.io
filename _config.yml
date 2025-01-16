@@ -32,12 +32,10 @@ kramdown:
 
 exclude:
   - .jekyll-cache
-  - .obsidian
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
   - README.md
-  - CONTRIBUTING.md
   
 compress_html:
   clippings: all
@@ -78,13 +76,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "tag"
 
 relative_links:
-  enabled:     true
+  enabled: true
   collections: false
