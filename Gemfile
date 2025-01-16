@@ -11,3 +11,6 @@ gem 'wdm', '>= 0.1.0'
 
 # update ruby version
 gem 'webrick'
+
+# GitHub Pages
+gem 'github-pages', group: :jekyll_plugins
