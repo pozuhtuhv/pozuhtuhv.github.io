@@ -1,6 +1,6 @@
 ---
-title: SQL의 내림차순과 오름차순 (Feat. 서브쿼리)
-description: SQL의 내림차순과 오름차순 코드
+title: SQL의 역순정렬의 순차정렬 (Feat. 서브쿼리)
+description: SQL의 역순정렬의 순차정렬 코드
 layout: post
 categories: SQL
 published: true
@@ -20,8 +20,8 @@ tag: [sql, database, subquery]
     나머지 큰 제목은 ##
     이후 나머지는 3개이상 -->
 
-# SQL의 내림차순과 오름차순에 관한 코드
-회사에서 내림차순과 오름차순을 위해 사용했던 한 사례의 코드를 소개하는 글.
+# SQL의 역순정렬의 순차정렬에 관한 코드
+회사에서 역순정렬의 순차정렬을 위해 사용했던 한 사례의 코드를 소개하는 글.
 <br>
 
 ## 0. 코드 설명

@@ -2,7 +2,7 @@
 title: Git Bash protocol 오류
 description: Git Bash의 에러 경험
 layout: post
-categories: ETC
+categories: Git
 published : true
 date_published: 2024-05-22
 date_modified: 2024-05-22
