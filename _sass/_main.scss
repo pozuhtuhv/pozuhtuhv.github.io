@@ -207,6 +207,8 @@ b {
   line-height: 1.5;
   overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
   width: 100%;
+  margin-top: 4px;
+  font-size: 14px;
 }
 
 .posts ul li a {
@@ -305,22 +307,12 @@ figcaption {
 	margin-bottom: 5rem;
 }
 
-// 링크 컨테이너 비활성화
-// .bio .link-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   gap: 2%;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .bio .link-container a {
-//   flex: 1 1 calc(25% - 2%);
-//   text-align: left;
-//   margin: 0;
-//   font-size: 13px;
-// }
+// 링크
+.bio a {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 5px;
+}
 
 ::selection {
 background-color: #b3b3b3;
