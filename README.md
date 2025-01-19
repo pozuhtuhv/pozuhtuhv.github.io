@@ -10,6 +10,7 @@
 <h5>- SEO 추가</a></h5>
 <h5>- light 테마 삭제 (only "dark" theme)</a></h5>
 <h5>- giscus.css 설정</a></h5>
+<h5>- markdown Table css 설정</a></h5>
 
 <h4>2025-01-14</h4>
 <h5>- SEO 최적화를 위한 스니펫 제거</a></h5>

@@ -754,3 +754,51 @@ pre:hover .copy-button {
     padding-left: 0px !important;
   }
 }
+
+// Table
+
+/* 테이블 전체 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  color: #e0e0e0; /* 어두운 배경에 밝은 텍스트 색 */
+}
+
+/* 셀 안의 텍스트 정렬 및 패딩 */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #444; /* 테두리 색을 조금 더 밝은 색으로 */
+}
+
+/* 헤더 스타일 */
+th {
+  background-color: #333; /* 어두운 배경에 적합한 밝은 그레이 */
+  font-weight: bold;
+  color: #ffffff; /* 흰색 텍스트 */
+}
+
+/* 짝수 행 배경색 */
+tr:nth-child(even) {
+  background-color: #2c2f34; /* 어두운 색상으로 짝수 행 구분 */
+}
+
+/* 마우스 오버 시 색 변경 */
+tr:hover {
+  background-color: #444;
+}
+
+/* 테이블 제목 스타일 (있을 경우) */
+caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff; /* 제목도 흰색으로 */
+}
+
+/* 기본 테이블 셀 스타일 */
+td {
+  color: #e0e0e0; /* 텍스트 색은 밝은 회색 */
+}
