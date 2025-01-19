@@ -146,24 +146,24 @@ h5 {
 }
 
 h2 {
-  font-size: 1.5rem !important;
+  font-size: 1.75rem !important; /* h1의 87.5% */
   line-height: 1;
 }
 
 h3 {
-	font-size: 1.125rem !important;
+  font-size: 1.5rem !important; /* h1의 75% */
 }
 
 h4 {
-	font-size: 0.75rem !important;
+  font-size: 1.25rem !important; /* h1의 62.5% */
 }
 
 h5 {
-  font-size: 0.875rem !important;
+  font-size: 1rem !important; /* h1의 50% */
 }
 
 h6 {
-	font-size: 0.75rem !important;
+  font-size: 0.875rem !important; /* h1의 43.75% */
 }
 
 section h1:first-child {
