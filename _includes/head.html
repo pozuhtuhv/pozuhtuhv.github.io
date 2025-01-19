@@ -11,14 +11,21 @@
   <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
   <link rel="shortcut icon" href="/favicon.png">
-  <!-- custom_sitemap -->
-  <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
-  <!-- base_font -->
-  <link rel="stylesheet" href="/assets/css/fonts.css">
-  <!-- code_block_set -->
-  <link rel="stylesheet" href="/assets/css/syntax.css">
-  <link rel="stylesheet" href="/assets/css/giscus.css">
-  <script src="/assets/js/copy-button.js"></script>
+<!-- custom_sitemap -->
+<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
+
+<!-- base_font -->
+<link rel="preload" href="/assets/css/fonts.css" as="style">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+
+<!-- code_block_set -->
+<link rel="preload" href="/assets/css/syntax.css" as="style">
+<link rel="stylesheet" href="/assets/css/syntax.css">
+
+<link rel="preload" href="/assets/css/giscus.css" as="style">
+<link rel="stylesheet" href="/assets/css/giscus.css">
+
+<script src="/assets/js/copy-button.js" defer></script>
 
   <style>
     {% capture include_to_scssify %}
