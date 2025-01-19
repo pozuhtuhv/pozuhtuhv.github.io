@@ -342,18 +342,17 @@ b {
 
 .posts ul li {
   display: flex;
-  align-items: center;
+  align-items: center; /* 텍스트와 내용 수직 정렬 */
   line-height: 1.5;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
 }
 
 .posts ul li a {
-  vertical-align: middle;
-  line-height: 1.5;
-  text-decoration: none;
-  padding-left: 5px;
+  display: inline-block;  /* 블록 요소로 변경 */
+  white-space: nowrap;    /* 줄바꿈 방지 */
+  overflow: hidden;       /* 넘치는 텍스트 숨기기 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 표시 */
+  max-width: 70%;       /* 링크의 최대 너비 설정 */
 }
 
 time {
@@ -504,18 +503,32 @@ color: #333;
 
 #search-results {
   list-style: none;
-  text-align: left;
-  li {
-    text-align: left;
-  }
+  padding: 0;
+  margin: 0;
+}
+
+#search-results li {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #search-results li::before {
-	content: "›";
-	display: inline-block;
-	margin-left: -1.3em;
-	width: 1.3em;
+  content: "›";
+  display: inline-block;
   color: var(--link-color);
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+#search-results li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  flex-grow: 1;
 }
 
 .post-nav {
