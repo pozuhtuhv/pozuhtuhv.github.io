@@ -343,21 +343,19 @@ b {
 .posts ul li {
   display: flex;
   align-items: center; /* 텍스트와 내용 수직 정렬 */
+  white-space: nowrap;
   line-height: 1.5;
   overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
+  width: 100%;
 }
 
 .posts ul li a {
-  display: inline-block;  /* 블록 요소로 변경 */
+  display: inline-block;
   white-space: nowrap;    /* 줄바꿈 방지 */
   overflow: hidden;       /* 넘치는 텍스트 숨기기 */
   text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 표시 */
-}
-
-@media (max-width: 768px) {
-  .posts ul li a {
-    max-width: 90%; /* 모바일 화면에서 링크의 최대 너비 조정 */
-  }
+  max-width: 100%; /* 부모 요소의 너비에 맞게 최대 너비 설정 */
+  margin-left: 5px; /* 텍스트와 링크 사이에 간격 추가 */
 }
 
 time {
