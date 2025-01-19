@@ -47,16 +47,16 @@
     --color-btn-active-border: #636e7b;
     --color-btn-selected-bg: #2d333b;
     --color-btn-primary-text: #fff;
-    --color-btn-primary-bg: #347d39;
+    --color-btn-primary-bg: #99c3ff;
     --color-btn-primary-border: #cdd9e51a;
     --color-btn-primary-shadow: 0 0 #0000;
     --color-btn-primary-inset-shadow: 0 0 #0000;
-    --color-btn-primary-hover-bg: #46954a;
+    --color-btn-primary-hover-bg: #99c3ff99;
     --color-btn-primary-hover-border: #cdd9e51a;
-    --color-btn-primary-selected-bg: #347d39;
+    --color-btn-primary-selected-bg: #99c3ff;
     --color-btn-primary-selected-shadow: 0 0 #0000;
     --color-btn-primary-disabled-text: #cdd9e580;
-    --color-btn-primary-disabled-bg: #347d3999;
+    --color-btn-primary-disabled-bg: #99c3ff99;
     --color-btn-primary-disabled-border: #cdd9e51a;
   
     --color-action-list-item-default-hover-bg: #909dab1f;
@@ -67,10 +67,10 @@
     --color-fg-default: #adbac7;
     --color-fg-muted: #768390;
     --color-fg-subtle: #545d68;
-    --color-canvas-default: #192734;
+    --color-canvas-default: #ffffff00; /* 변경 */
     --color-canvas-overlay: #161b22;
-    --color-canvas-inset: #15202b;
-    --color-canvas-subtle: #253341;
+    --color-canvas-inset: #ffffff00; /* 변경 */
+    --color-canvas-subtle: #ffffff00; /* 변경 */  
     --color-border-default: #444c56;
     --color-border-muted: #373e47;
     --color-neutral-muted: #636e7b66;
@@ -107,83 +107,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0rem;
 }
 
-  /* Giscus Header */
-  .giscus-header {
-    background-color: var(--dark-text-color);
-    color: var(--highlight-text-color);
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.1rem;
-  }
-
-  /* Giscus Comments */
-  .giscus-comment {
-    background-color: var(--code-bg-color);
-    color: var(--main-text-color);
-    border: 1px solid var(--code-bg-color);
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  /* Giscus User Name */
-  .giscus-comment .giscus-comment-author {
-    color: var(--light-text-color);
-    font-weight: bold;
-  }
-
-  /* Giscus Links */
-  .giscus-comment a {
-    color: var(--link-color);
-  }
-
-  .giscus-comment a:hover {
-    color: var(--highlight-text-color);
-  }
-
-  /* Giscus Code Block */
-  .giscus-comment pre {
-    background-color: var(--code-bg-color);
-    color: var(--code-text-color);
-    border-radius: 8px;
-    padding: 10px;
-    font-family: var(--source-code-font);
-  }
-
-  .giscus-comment pre code {
-    color: var(--code-text-color);
-  }
-
-  /* Giscus Highlighted Text */
-  .giscus-comment .giscus-highlight {
-    background-color: var(--code-keyword-color);
-    color: var(--code-text-color);
-  }
-
-  /* Giscus Comment Box */
-  .giscus-comment-box {
-    background-color: var(--code-bg-color);
-    color: var(--main-text-color);
-    border: 1px solid var(--code-bg-color);
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 15px;
-  }
-
-  /* Giscus Button (Like, Dislike, etc.) */
-  .giscus-button {
-    background-color: var(--code-keyword-color);
-    color: var(--code-text-color);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  .giscus-button:hover {
-    background-color: var(--code-string-color);
-  }
+.color-bg-primary {
+  background-color: #00000000;
+}
