@@ -1,0 +1,189 @@
+/*!
+ * Modified from GitHub's Dark Dimmed theme, licensed under the MIT License
+ * Copyright (c) 2018 GitHub Inc.
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ */
+
+ main {
+    --color-prettylights-syntax-comment: #768390;
+    --color-prettylights-syntax-constant: #6cb6ff;
+    --color-prettylights-syntax-entity: #dcbdfb;
+    --color-prettylights-syntax-storage-modifier-import: #adbac7;
+    --color-prettylights-syntax-entity-tag: #8ddb8c;
+    --color-prettylights-syntax-keyword: #f47067;
+    --color-prettylights-syntax-string: #96d0ff;
+    --color-prettylights-syntax-variable: #f69d50;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+    --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+    --color-prettylights-syntax-invalid-illegal-bg: #922323;
+    --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+    --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+    --color-prettylights-syntax-string-regexp: #8ddb8c;
+    --color-prettylights-syntax-markup-list: #eac55f;
+    --color-prettylights-syntax-markup-heading: #316dca;
+    --color-prettylights-syntax-markup-italic: #adbac7;
+    --color-prettylights-syntax-markup-bold: #adbac7;
+    --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+    --color-prettylights-syntax-markup-deleted-bg: #78191b;
+    --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+    --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+    --color-prettylights-syntax-markup-changed-text: #ffddb0;
+    --color-prettylights-syntax-markup-changed-bg: #682d0f;
+    --color-prettylights-syntax-markup-ignored-text: #adbac7;
+    --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+    --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+    --color-prettylights-syntax-brackethighlighter-angle: #768390;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+    --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  
+    --color-btn-text: #adbac7;
+    --color-btn-bg: #373e47;
+    --color-btn-border: #cdd9e51a;
+    --color-btn-shadow: 0 0 #0000;
+    --color-btn-inset-shadow: 0 0 #0000;
+    --color-btn-hover-bg: #444c56;
+    --color-btn-hover-border: #768390;
+    --color-btn-active-bg: #3d444d;
+    --color-btn-active-border: #636e7b;
+    --color-btn-selected-bg: #2d333b;
+    --color-btn-primary-text: #fff;
+    --color-btn-primary-bg: #347d39;
+    --color-btn-primary-border: #cdd9e51a;
+    --color-btn-primary-shadow: 0 0 #0000;
+    --color-btn-primary-inset-shadow: 0 0 #0000;
+    --color-btn-primary-hover-bg: #46954a;
+    --color-btn-primary-hover-border: #cdd9e51a;
+    --color-btn-primary-selected-bg: #347d39;
+    --color-btn-primary-selected-shadow: 0 0 #0000;
+    --color-btn-primary-disabled-text: #cdd9e580;
+    --color-btn-primary-disabled-bg: #347d3999;
+    --color-btn-primary-disabled-border: #cdd9e51a;
+  
+    --color-action-list-item-default-hover-bg: #909dab1f;
+    --color-segmented-control-bg: #636e7b1a;
+    --color-segmented-control-button-bg: #22272e;
+    --color-segmented-control-button-selected-border: #636e7b;
+  
+    --color-fg-default: #adbac7;
+    --color-fg-muted: #768390;
+    --color-fg-subtle: #545d68;
+    --color-canvas-default: #192734;
+    --color-canvas-overlay: #161b22;
+    --color-canvas-inset: #15202b;
+    --color-canvas-subtle: #253341;
+    --color-border-default: #444c56;
+    --color-border-muted: #373e47;
+    --color-neutral-muted: #636e7b66;
+  
+    --color-accent-fg: #539bf5;
+    --color-accent-emphasis: #316dca;
+    --color-accent-muted: #4184e466;
+    --color-accent-subtle: #388bfd1a;
+  
+    --color-success-fg: #57ab5a;
+    --color-attention-fg: #c69026;
+    --color-attention-muted: #ae7c1466;
+    --color-attention-subtle: #ae7c1426;
+    --color-danger-fg: #e5534b;
+    --color-danger-muted: #e5534b66;
+    --color-danger-subtle: #e5534b1a;
+  
+    --color-primer-shadow-inset: 0 0 #0000;
+    --color-scale-gray-7: #373e47;
+    --color-scale-blue-8: #143d79;
+  }
+  
+  main .pagination-loader-container {
+    background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg);
+  }
+  
+  /* Giscus Container */
+  .giscus {
+    color: var(--main-text-color);
+    border-radius: 10px;
+  }
+
+  .gsc-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+  /* Giscus Header */
+  .giscus-header {
+    background-color: var(--dark-text-color);
+    color: var(--highlight-text-color);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+  }
+
+  /* Giscus Comments */
+  .giscus-comment {
+    background-color: var(--code-bg-color);
+    color: var(--main-text-color);
+    border: 1px solid var(--code-bg-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Giscus User Name */
+  .giscus-comment .giscus-comment-author {
+    color: var(--light-text-color);
+    font-weight: bold;
+  }
+
+  /* Giscus Links */
+  .giscus-comment a {
+    color: var(--link-color);
+  }
+
+  .giscus-comment a:hover {
+    color: var(--highlight-text-color);
+  }
+
+  /* Giscus Code Block */
+  .giscus-comment pre {
+    background-color: var(--code-bg-color);
+    color: var(--code-text-color);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: var(--source-code-font);
+  }
+
+  .giscus-comment pre code {
+    color: var(--code-text-color);
+  }
+
+  /* Giscus Highlighted Text */
+  .giscus-comment .giscus-highlight {
+    background-color: var(--code-keyword-color);
+    color: var(--code-text-color);
+  }
+
+  /* Giscus Comment Box */
+  .giscus-comment-box {
+    background-color: var(--code-bg-color);
+    color: var(--main-text-color);
+    border: 1px solid var(--code-bg-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  /* Giscus Button (Like, Dislike, etc.) */
+  .giscus-button {
+    background-color: var(--code-keyword-color);
+    color: var(--code-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .giscus-button:hover {
+    background-color: var(--code-string-color);
+  }
