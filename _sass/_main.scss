@@ -745,3 +745,12 @@ pre {
 pre:hover .copy-button {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  div .contact {
+    flex-direction: column;
+  }
+  div .links {
+    padding-left: 0px !important;
+  }
+}
