@@ -5,10 +5,9 @@ layout: default
 <section class="post">
   <div class="flex-row-between">
 	  <a href="{{ site.url }}/">« back</a>
-      <div></div>
-    </button>
   </div>
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
+  <h4 style="font-weight: lighter;">Categories : {{page.categories}}</h4>
   <h1 class="title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }} - {% if page.minute %} {{page.minute}}{% else %}{{minute}}{% endif %}min read</time>
   {{ content }}
