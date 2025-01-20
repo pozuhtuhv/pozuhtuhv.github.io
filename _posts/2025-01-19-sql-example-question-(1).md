@@ -1,5 +1,5 @@
 ---
-title: SQL 예시문제 - 1
+title: SQL 예시문제 - (1)
 description: SQL 예시문제에 대한 글
 layout: post
 categories: SQL
@@ -82,7 +82,7 @@ WHERE sale_date BETWEEN '2023-01-01' AND '2023-03-31'
 ```
 <br>
 - WHERE : 쿼리에 조건을 추가.
-- BETWEEN : sale_date가 2023-01-01부터 2023-03-31 사이인 데이터를 선택. (BETWEEN 'A' AND 'B')
+- BETWEEN : sale_date를 2023-01-01부터 2023-03-31 데이터를 선택. (BETWEEN 'A' AND 'B')
 <br>
 <br>
 
