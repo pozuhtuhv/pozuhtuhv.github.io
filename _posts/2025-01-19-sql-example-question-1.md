@@ -1,5 +1,5 @@
 ---
-title: SQL 예시문제 (1)
+title: SQL 예시문제 - 1
 description: SQL 예시문제에 대한 글
 layout: post
 categories: SQL
@@ -20,7 +20,7 @@ tag: [sql, example, question]
     나머지 큰 제목은 ##
     이후 나머지는 3개이상 -->
 
-# SQL 예시문제 (1)
+# 제품의 월별 판매량 합계 및 매출 합계 구하기
 SQL에 대한 공부를 시작해야할 것 같아서 올리는 글
 <br>
 
@@ -33,33 +33,64 @@ SQL에 대한 공부를 시작해야할 것 같아서 올리는 글
 | quantity | 판매 수량 |
 | price | 제품 * 가격 |
 
-`sales`테이블에서 2023년 1월부터 3월까지의 전체 제품의 월별 판매량 합계와 매출 합계를 구하는 쿼리를 작성하세요.
 <br>
-제약 사항:<br>
-- sale_date는 날짜 형식으로 저장되어 있습니다.
-- 결과는 월별로 정렬되어야 합니다.
-- 월별 총 매출 = (판매 수량) * (가격)
+`sales` 테이블에서 2023년 1월부터 3월까지의 전체 제품의 월별 판매량 합계와 매출 합계를 구하는 쿼리를 작성하시오.
 <br>
-<br>
+
+## 1. 각 단계와 기능을 자세히 설명한 내용
 ```sql
 SELECT
     DATE_FORMAT(sale_date, '%Y-%m') AS month,  -- 연도-월 형식으로 변환
     SUM(quantity) AS total_quantity,          -- 월별 총 판매량
     SUM(quantity * price) AS total_revenue    -- 월별 총 매출
-FROM
-    sales
-WHERE
-    sale_date BETWEEN '2023-01-01' AND '2023-03-31'  -- 2023년 1월 1일부터 3월 31일까지 `BETWEEN A AND B`
-GROUP BY
-    month  -- 월별 그룹화
-ORDER BY
-    month;  -- 월별로 정렬
+FROM sales
+WHERE sale_date BETWEEN '2023-01-01' AND '2023-03-31'  -- `BETWEEN A AND B`
+GROUP BY month  -- 월별 그룹화
+ORDER BY month;  -- 월별로 정렬
 ```
 
-설명:
-- DATE_FORMAT(sale_date, '%Y-%m'): sale_date를 연도-월(YYYY-MM) 형식으로 변환하여 그룹화 기준으로 사용합니다.
-- SUM(quantity): 월별 총 판매량을 구합니다.
-- SUM(quantity * price): 월별 매출 합계를 계산합니다. quantity와 price를 곱하여 총 매출을 구합니다.
-- WHERE sale_date BETWEEN '2023-01-01' AND '2023-03-31': 2023년 1월부터 3월까지의 데이터를 필터링합니다.
-- GROUP BY month: 월별로 데이터를 그룹화합니다.
-- ORDER BY month: 결과를 월별로 오름차순 정렬합니다.
+1. 월별 데이터 추출 
+```sql
+DATE_FORMAT(sale_date, '%Y-%m') AS month
+```
+<br>
+- DATE_FORMAT 함수: sale_date를 연도-월 형식(YYYY-MM)으로 변환.
+<br>
+<br>
+
+2. 월별 총 판매량 계산
+```sql
+SUM(quantity) AS total_quantity
+```
+<br>
+- SUM(quantity): 각 월에 판매된 수량(quantity)을 모두 합계.
+<br>
+<br>
+
+3. 월별 총 매출 계산
+```sql
+SUM(quantity * price) AS total_revenue
+```
+<br>
+- SUM(quantity * price): 각 판매 기록의 매출을 계산 후 모두 합계.
+<br>
+<br>
+
+4. 필터 조건 추가 (1월 ~ 3월 데이터만 포함)
+```sql
+WHERE sale_date BETWEEN '2023-01-01' AND '2023-03-31'
+```
+<br>
+- WHERE : 쿼리에 조건을 추가.
+- BETWEEN : sale_date가 2023-01-01부터 2023-03-31 사이인 데이터를 선택. (BETWEEN 'A' AND 'B')
+<br>
+<br>
+
+5. 데이터 그룹화
+```sql
+GROUP BY month
+ORDER BY month
+```
+<br>
+- GROUP BY : 데이터를 month별로 묶음.
+- ORDER BY : 총 결과를 month 기준으로 오름차순(기본 설정) 정렬.
