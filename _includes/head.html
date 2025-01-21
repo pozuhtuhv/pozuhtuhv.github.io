@@ -9,6 +9,16 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GG3MZ8XE1E');
+  </script>
+
   <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
   <link rel="shortcut icon" href="/favicon.png">
