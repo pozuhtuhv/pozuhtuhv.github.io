@@ -2,7 +2,7 @@
 title: SEO 최적화 진행중
 description: SEO 최적화 진행 경험
 layout: post
-categories: ETC
+categories: SEO
 published : true
 date_published: 2025-01-09
 date_modified: 2025-01-09

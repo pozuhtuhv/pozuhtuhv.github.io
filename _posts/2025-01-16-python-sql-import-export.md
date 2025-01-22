@@ -1,6 +1,6 @@
 ---
 title: Python 을 이용한 SQL의 데이터 임포트 / 엑스포트
-description: MySQL import export code
+description: MySQL 입출력 코드
 layout: post
 categories: Python
 published: true
