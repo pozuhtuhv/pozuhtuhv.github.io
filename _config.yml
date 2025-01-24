@@ -1,7 +1,7 @@
 site: pozuhtuhv
-title: "m: less + minimal"
-greetings: "m: less + minimal"
-description: "minimal: less in more and more minimal"
+title: "mnml: less ∴ more."
+greetings: "mnml: less ∴ more."
+description: "minimal: less in more"
 lang: en-US
 timezone: Asia/Seoul
 repo: https://github.com/pozuhtuhv/pozuhtuhv.github.io # site repo [optional]
@@ -9,7 +9,7 @@ data-theme: dark # default theme "dark" | "light"
 
 author:
   name: pozuhtuhv
-  bio: "minimal: less in more and more minimal"
+  bio: "minimal: less in more"
   userpicture: /assets/img/computersolo.jpg # img path
   username: Hyeounseok-Cho # general username
   github: pozuhtuhv # github username
