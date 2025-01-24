@@ -1,7 +1,7 @@
 site: pozuhtuhv
 title: pozuhtuhv
-greetings: "minimal: less is more"
-description: "minimal: less is more"
+greetings: "minimal: more minimal"
+description: "minimal: more minimal"
 lang: en-US
 timezone: Asia/Seoul
 repo: https://github.com/pozuhtuhv/pozuhtuhv.github.io # site repo [optional]
@@ -9,7 +9,7 @@ data-theme: dark # default theme "dark" | "light"
 
 author:
   name: pozuhtuhv
-  bio: "minimal: less is more"
+  bio: "minimal: more minimal"
   userpicture: /assets/img/computersolo.jpg # img path
   username: Hyeounseok-Cho # general username
   github: pozuhtuhv # github username
