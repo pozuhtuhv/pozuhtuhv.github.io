@@ -1,6 +1,6 @@
 ---
-title: SQL 예시문제 - (1)
-description: SQL 예시문제에 대한 글
+title: SQL 예시 - (2)
+description: SQL 예시에 대한 글
 layout: post
 categories: SQL
 published: true
@@ -46,6 +46,7 @@ WHERE sale_date BETWEEN '2023-01-01' AND '2023-03-31'  -- `BETWEEN A AND B`
 GROUP BY month  -- 월별 그룹화
 ORDER BY month;  -- 월별로 정렬
 ```
+<br>
 
 1. 월별 데이터 추출 
 ```sql

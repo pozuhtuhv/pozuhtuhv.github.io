@@ -1,6 +1,6 @@
 ---
-title: SQL의 역순정렬의 순차정렬 (Feat. 서브쿼리)
-description: SQL의 역순정렬의 순차정렬 코드
+title: SQL 예시 - (1) (Feat. 서브쿼리)
+description: SQL 서브쿼리 예시에 대한 글
 layout: post
 categories: SQL
 published: true
