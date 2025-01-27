@@ -1,12 +1,12 @@
 ---
-title: SQL 예시 - (4) (feat. IF문 과 CASE문)
+title: SQL 예시 - (4) (feat. IF, CASE)
 description: SQL 예시에 대한 글
 layout: post
 categories: SQL
 published: true
 date_published: 2025-01-25
 date_modified: 2025-01-25
-tag: [sql, example, question]
+tag: [sql, example, question, if, case]
 ---
 ---
 ## Table of contents
