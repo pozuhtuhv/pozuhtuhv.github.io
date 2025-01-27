@@ -26,21 +26,21 @@ tag: [sql, example, question]
 ```sql
 SELECT column 
 from table 
-WHERE 'word' in (column_1, column_2, column_3)
+WHERE 'word' IN (column_1, column_2, column_3);
 ```
 <br>
 
 ```sql
 SELECT column 
 FROM table 
-WHERE column_1 = 'word' 
-   OR column_2 = 'word' 
-   OR column_3 = 'word';
+WHERE column = 'word_1' 
+   or column = 'word_2' 
+   or column = 'word_3';
 ```
 <br>
 
 - 둘다 같은 기능을 한다.
-- GPT 말로는 '일부 데이터베이스에서는 이 쿼리가 지원되지 않을 수 있다' 라고함.
+- '일부 데이터베이스에서는 이 쿼리가 지원되지 않을 수 있다' 라고함.
 
 ## 1. 쿼리 구성요소
 ```sql

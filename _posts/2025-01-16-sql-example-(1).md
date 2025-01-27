@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (1) (Feat. 서브쿼리)
+title: SQL 예시 - (1) (feat. 서브쿼리)
 description: SQL 서브쿼리 예시에 대한 글
 layout: post
 categories: SQL
