@@ -4,8 +4,8 @@ description: SQL 예시에 대한 글
 layout: post
 categories: SQL
 published: true
-date_published: 2025-01-25
-date_modified: 2025-01-25
+date_published: 2025-01-27
+date_modified: 2025-01-27
 tag: [sql, example, question, if, case]
 ---
 ---

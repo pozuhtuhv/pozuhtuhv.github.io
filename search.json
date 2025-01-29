@@ -8,6 +8,7 @@ layout: none
       "description": "{{ post.description | escape }}",
       "categories": "{{ post.categories }}",
       "tags": "{{ post.tags | join: ', ' }}",
+      "url": "{{ site.baseurl }}{{ post.url }}",
       "date": "{{ post.date | date: "%Y-%m-%d" }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
