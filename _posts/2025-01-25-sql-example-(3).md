@@ -49,6 +49,6 @@ Result : <br>
 - 조건을 만족하는 행의 개수 별칭을 'example' 로 지정.
 - 데이터를 가져올 테이블의 이름 'table'.
 3. `GROUP BY columns_type`
-- 'SELECT columns_type, COUNT(*)'을 사용할 경우, 'GROUP BY columns_type' 이 필요.
+- 'SELECT columns_type, COUNT(*)'을 사용할 경우, 'GROUP BY columns_type' 필요.
 4. `ORDER BY columns_type ASC`
 - 데이터를 'columns_type'를 오름차순 기준으로 지정.
