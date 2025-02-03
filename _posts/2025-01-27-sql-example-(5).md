@@ -65,3 +65,4 @@ USING (column_name):
 ON table1.column = table2.column:
 - 컬럼 이름이 다를 때도 사용할 수 있음
 - 테이블명을 명확하게 지정해야 함
+- 웬만하면 모든 데이터의 테이블을 명시적으로 기입하는게 좋음
