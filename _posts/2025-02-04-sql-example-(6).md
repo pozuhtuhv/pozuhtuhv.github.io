@@ -1,12 +1,12 @@
 ---
-title: SQL 예시 - (5) (feat. UNION)
+title: SQL 예시 - (6) (feat. UNION)
 description: SQL 예시에 대한 글
 layout: post
 categories: SQL
 published: true
 date_published: 2025-02-03
 date_modified: 2025-02-03
-tag: [sql, example, question, join]
+tag: [sql, example, question, union]
 ---
 ---
 ## Table of contents
