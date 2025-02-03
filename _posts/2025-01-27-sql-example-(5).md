@@ -24,17 +24,43 @@ tag: [sql, example, question, join]
 
 ## 0. SQL 쿼리 설명
 ```sql
-SELECT column_1, SUM(TOTAL_ORDER) AS TOTAL_ORDER
-FROM FIRST_HALF 
-JOIN ICECREAM_INFO USING(FLAVOR)
-GROUP BY column_1
-ORDER BY TOTAL_ORDER;
+SELECT ICECREAM_INFO.FLAVOR FROM ICECREAM_INFO
+INNER JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
+WHERE FIRST_HALF.TOTAL_ORDER > 3000 AND ICECREAM_INFO.INGREDIENT = 'fruit_based'
+ORDER BY FIRST_HALF.TOTAL_ORDER DESC;
 ```
 <br>
-- CASE문은 SQL 표준이므로 대부분의 데이터베이스에서 호환.
-- 확장성이 좋음. 추가 조건을 WHEN 으로 쉽게 추가 가능.
+- 정석으로 이루어진 코드
+<br>
 
+```sql
+SELECT FLAVOR FROM ICECREAM_INFO
+INNER JOIN FIRST_INFO USING (FLAVOR)
+WHERE TOTLA_ORDER > 3000 AND INGREDIENT = 'fruit_based'
+ORDER BY TOTLA_ORDER DESC;
+```
+<br>
+
+- USING 을 이용하여 코드가 간결해짐
+- 두 테이블에 같은 열이 해당하기에 적용가능
 <br>
 <br>
 
-## 1. 쿼리 구성요소
+## 1. USING vs ON 차이점
+```sql
+INNER JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
+```
+<br>
+
+```sql
+INNER JOIN FIRST_INFO USING (FLAVOR)
+```
+<br>
+
+USING (column_name):
+- 같은 이름의 컬럼이 두 테이블에 있을 때 자동으로 매칭
+- SELECT에서 해당 컬럼을 사용할 때 테이블명을 명시할 필요 없음
+<br>
+ON table1.column = table2.column:
+- 컬럼 이름이 다를 때도 사용할 수 있음
+- 테이블명을 명확하게 지정해야 함
