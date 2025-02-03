@@ -7,16 +7,6 @@
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:url" content="{{ site.url | default: '' }}{{ page.url }}">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
-  </script>
-
   <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
   <link rel="icon" href="/favicon.png" type="image/png">
@@ -27,6 +17,19 @@
   <!-- code_block_set -->
   <link rel="stylesheet" href="/assets/css/syntax.css">
   <link rel="stylesheet" href="/assets/css/giscus.css">
+
+  <!-- Google adsense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3426230094241844"
+  crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
+  </script>
 
   <script src="/assets/js/custom.js" defer></script>
 
