@@ -39,6 +39,7 @@ ORDER BY ANIMAL_ID;
 - CASE문은 SQL 표준이므로 대부분의 데이터베이스에서 호환.
 - 확장성이 좋음. 추가 조건을 WHEN 으로 쉽게 추가 가능.
 <br>
+<br>
 
 ```sql
 SELECT 
@@ -63,9 +64,11 @@ ORDER BY ANIMAL_ID;
   END
 ```
 <br>
+<br>
 
 ```sql
   IF(Column_2 LIKE 'Neutered' OR Column_2 LIKE 'Spayed', 'O', 'X')
 ```
+<br>
 <br>
 `Column_2` 열에 `Neutered, Spayed` 가 포함되어있다면 `O` 로 표시 아닐시 `X` 로 표시

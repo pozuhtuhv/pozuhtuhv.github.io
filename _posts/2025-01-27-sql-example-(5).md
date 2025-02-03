@@ -32,6 +32,7 @@ ORDER BY FIRST_HALF.TOTAL_ORDER DESC;
 <br>
 - 정석으로 이루어진 코드
 <br>
+<br>
 
 ```sql
 SELECT FLAVOR FROM ICECREAM_INFO
