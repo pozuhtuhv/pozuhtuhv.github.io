@@ -4,10 +4,9 @@
   <meta name="description" content="just a minimalist">
   <meta name="naver-site-verification" content="565f41042384b9e0c6b69e3554fa6b58610b557c" />
   <meta name="google-site-verification" content="iD1CAgKMzTXNTOmz_cbPmrHX7Nxd4toYeCwBC5ZAdKM" />
-  <meta name="google-adsense-account" content="ca-pub-3426230094241844">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ site.url | default: '' }}{{ page.url }}">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
@@ -15,30 +14,26 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'G-GG3MZ8XE1E');
+    gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
   </script>
 
   <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
-  <link rel="shortcut icon" href="/favicon.png">
-  
+  <link rel="icon" href="/favicon.png" type="image/png">
+
   <!-- custom_sitemap -->
   <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
-  
-  <!-- code_block_set -->
-  <link rel="preload" href="/assets/css/syntax.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/assets/css/syntax.css"></noscript>
 
-  <link rel="preload" href="/assets/css/giscus.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/assets/css/giscus.css"></noscript>
+  <!-- code_block_set -->
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/css/giscus.css">
 
   <script src="/assets/js/custom.js" defer></script>
 
-<style>
-  {% capture include_to_scssify %}
-    {% include inline.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-</style>
+  <style>
+    {% capture include_to_scssify %}
+      {% include inline.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
 </head>
