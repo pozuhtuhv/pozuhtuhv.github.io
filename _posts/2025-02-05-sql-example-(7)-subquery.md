@@ -63,6 +63,8 @@ WHERE salary = (
 )
 ORDER BY salary DESC;
 ```
+<br>
+
 1. 각 부서별 최고 연봉을 받는 직원 조회 (WHERE salary = (서브쿼리))
 - 서브쿼리: 같은 부서(department)에서 최고 연봉(MAX(salary))을 찾음.
 - HERE department = e.department : 각 직원이 속한 부서에서 최고 연봉을 찾도록 함.
