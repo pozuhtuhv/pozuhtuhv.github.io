@@ -1,6 +1,6 @@
 ---
-title: SQL 예시 - (1) (feat. 서브쿼리)
-description: SQL 서브쿼리 예시에 대한 글
+title: SQL 예시 - (1) (feat. subquery)
+description: SQL subquery 예시에 대한 글
 layout: post
 categories: SQL
 published: true

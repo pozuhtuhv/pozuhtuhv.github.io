@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (3) (feat. LIKE)
-description: SQL 예시에 대한 글
+description: SQL LIKE 예시에 대한 글
 layout: post
 categories: SQL
 published: true
@@ -33,7 +33,6 @@ GROUP BY columns_type
 ORDER BY columns_type ASC;
 ```
 <br>
-
 Result : <br>
 
 | columns_type | example |
@@ -41,6 +40,8 @@ Result : <br>
 | A | 10 |
 | B | 5 |
 | C | 8 |
+
+<br>
 
 ## 1. 쿼리 구성요소
 1. `WHERE columns LIKE '%word%' ~`

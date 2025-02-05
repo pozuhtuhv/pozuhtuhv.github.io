@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (6) (feat. UNION)
-description: SQL 예시에 대한 글
+description: SQL UNION 예시에 대한 글
 layout: post
 categories: SQL
 published: true
@@ -20,7 +20,7 @@ tag: [sql, example, question, union]
     나머지 큰 제목은 ##
     이후 나머지는 3개이상 -->
 
-# JOIN문
+# UNION문
 
 ## 0. SQL 쿼리 설명
 ```sql

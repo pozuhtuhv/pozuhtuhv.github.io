@@ -1,12 +1,12 @@
 ---
-title: SQL 예시 - (5) (feat. JOIN)
-description: SQL 예시에 대한 글
+title: SQL 예시 - (5) (feat. INNER JOIN)
+description: SQL INNER JOIN 예시에 대한 글
 layout: post
 categories: SQL
 published: true
 date_published: 2025-02-03
 date_modified: 2025-02-03
-tag: [sql, example, question, join]
+tag: [sql, example, question, inner_join]
 ---
 ---
 ## Table of contents
