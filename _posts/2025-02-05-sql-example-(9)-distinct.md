@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (7) (feat. DISTINCT)
+title: SQL 예시 - (9) (feat. DISTINCT)
 description: SQL DISTINCT (홀, 짝) 예시에 대한 글
 layout: post
 categories: SQL
