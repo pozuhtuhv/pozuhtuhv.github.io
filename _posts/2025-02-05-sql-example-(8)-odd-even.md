@@ -1,6 +1,6 @@
 ---
-title: SQL 예시 - (7) (feat. ODD, EVEN)
-description: SQL ODD, EVEN (홀, 짝) 예시에 대한 글
+title: SQL 예시 - (8) (feat. ODD, EVEN)
+description: SQL ODD, EVEN (홀, 짝) 예시
 layout: post
 categories: SQL
 published: true
