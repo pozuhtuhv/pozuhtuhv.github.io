@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (3) (feat. LIKE)
-description: SQL LIKE 예시에 대한 글
+description: SQL LIKE 예시
 layout: post
 categories: SQL
 published: true

@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (6) (feat. UNION)
-description: SQL UNION 예시에 대한 글
+description: SQL UNION 예시
 layout: post
 categories: SQL
 published: true

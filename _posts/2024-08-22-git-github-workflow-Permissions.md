@@ -2,7 +2,7 @@
 title: Github 워크플로우 권한 세팅
 description: Github 액션 워크플로우 권한 세팅 설명
 layout: post
-categories: ETC
+categories: Git
 published : true
 date_published: 2024-08-22
 date_modified: 2024-08-22

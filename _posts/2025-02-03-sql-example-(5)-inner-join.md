@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (5) (feat. INNER JOIN)
-description: SQL INNER JOIN 예시에 대한 글
+description: SQL INNER JOIN 예시
 layout: post
 categories: SQL
 published: true

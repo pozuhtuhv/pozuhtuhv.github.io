@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (2)
-description: SQL 예시에 대한 글
+description: SQL 예시
 layout: post
 categories: SQL
 published: true

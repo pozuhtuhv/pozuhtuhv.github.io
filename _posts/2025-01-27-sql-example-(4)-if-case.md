@@ -1,6 +1,6 @@
 ---
 title: SQL 예시 - (4) (feat. IF, CASE)
-description: SQL IF, CASE 예시에 대한 글
+description: SQL IF, CASE 예시
 layout: post
 categories: SQL
 published: true
