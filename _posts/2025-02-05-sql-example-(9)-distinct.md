@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (8) (feat. DISTINCT)
+title: SQL 예시 - (9) (feat. DISTINCT)
 description: SQL DISTINCT 예시
 layout: post
 categories: SQL
