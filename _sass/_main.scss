@@ -821,6 +821,6 @@ td {
 }
 
 ol#markdown-toc ::marker  {
-  content: "";
-  display: none;
+  content: "" !important;
+  display: none !important;
 }
