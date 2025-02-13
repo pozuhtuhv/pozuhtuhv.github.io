@@ -1,6 +1,6 @@
 ---
-title: SQL 예시 - (5) (feat. INNER JOIN)
-description: SQL INNER JOIN 예시
+title: SQL 예시 - (5) (feat. JOIN)
+description: SQL JOIN 예시
 layout: post
 categories: SQL
 published: true
@@ -25,7 +25,7 @@ tag: [sql, example, question, inner_join]
 ## 0. SQL 쿼리 설명
 ```sql
 SELECT ICECREAM_INFO.FLAVOR FROM ICECREAM_INFO
-INNER JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
+JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
 WHERE FIRST_HALF.TOTAL_ORDER > 3000 AND ICECREAM_INFO.INGREDIENT = 'fruit_based'
 ORDER BY FIRST_HALF.TOTAL_ORDER DESC;
 ```
@@ -36,7 +36,7 @@ ORDER BY FIRST_HALF.TOTAL_ORDER DESC;
 
 ```sql
 SELECT FLAVOR FROM ICECREAM_INFO
-INNER JOIN FIRST_INFO USING (FLAVOR)
+JOIN FIRST_INFO USING (FLAVOR)
 WHERE TOTLA_ORDER > 3000 AND INGREDIENT = 'fruit_based'
 ORDER BY TOTLA_ORDER DESC;
 ```
@@ -49,12 +49,12 @@ ORDER BY TOTLA_ORDER DESC;
 
 ## 1. USING vs ON 차이점
 ```sql
-INNER JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
+JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
 ```
 <br>
 
 ```sql
-INNER JOIN FIRST_INFO USING (FLAVOR)
+JOIN FIRST_INFO USING (FLAVOR)
 ```
 <br>
 
@@ -66,3 +66,7 @@ ON table1.column = table2.column:
 - 컬럼 이름이 다를 때도 사용할 수 있음
 - 테이블명을 명확하게 지정해야 함
 - 웬만하면 모든 데이터의 테이블을 명시적으로 기입하는게 좋음
+<br>
+<br>
+
+`대부분 데이터 베이스들의 JOIN 은 INNER JOIN 이 기본값이긴하지만 명시적으로 적는 것이 좋음`

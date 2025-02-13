@@ -4,8 +4,8 @@ description: SQL 정규표현식 예시
 layout: post
 categories: SQL
 published: true
-date_published: 2025-02-07
-date_modified: 2025-02-07
+date_published: 2025-02-08
+date_modified: 2025-02-08
 tag: [sql, example, regexp]
 ---
 ---
