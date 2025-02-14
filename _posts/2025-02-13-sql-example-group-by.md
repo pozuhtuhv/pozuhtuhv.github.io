@@ -29,6 +29,7 @@ FROM USERS
 GROUP BY AGE_GROUP
 ORDER BY AGE_GROUP;
 ```
+<br>
 
 ## 2. 월별(Year-Month) 매출 집계
 ```sql
@@ -37,6 +38,7 @@ FROM SALES
 GROUP BY SALE_MONTH
 ORDER BY SALE_MONTH;
 ```
+<br>
 
 ## 3. 급여 구간별 직원수 구하기
 ```sql
@@ -45,6 +47,7 @@ FROM EMPLOYEES
 GROUP BY SALARY_GROUP
 ORDER BY SALARY_GROUP;
 ```
+<br>
 
 ## 4. 코드 설명
 구간 그룹화를 나타내게 하는 방법
@@ -54,6 +57,7 @@ ORDER BY SALARY_GROUP;
 - `9900 / 10000` 를 진행 할 경우 답은 `0.99`
 - `FLOOR` 를 진행하면 `0` 을 반환 (내림)
 - `10000` 을 곱하면 `0` 으로 지정됨, `GROUP BY` 을 진행하면 `0`의 그룹으로 속함
+<br>
 
 `FLOOR(19000 / 10000) * 10000 = 1.9`
 - `19000 / 10000` 를 진행 할 경우 답은 `1.9`
