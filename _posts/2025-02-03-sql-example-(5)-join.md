@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (5) (feat. JOIN)
+title: SQL 예시 - (5) JOIN문 예시 (feat. JOIN)
 description: SQL JOIN 예시
 layout: post
 categories: SQL

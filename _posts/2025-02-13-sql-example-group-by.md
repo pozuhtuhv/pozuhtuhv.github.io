@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (11) (feat. GROUP BY)
+title: SQL 예시 - (11) 구간 GROUP화 (feat. GROUP BY)
 description: SQL 구간 GROUP화 예시
 layout: post
 categories: SQL

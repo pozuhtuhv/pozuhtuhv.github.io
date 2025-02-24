@@ -30,5 +30,3 @@ SELECT DISTINCT name FROM employees;
 
 - 중복된 열의 데이터를 제외.
 - ex) 주문번호에 대한 주문건수를 수집할때
-- 'COUNT(*)' 는 상품 수를 셈.
-- 'COUNT(DISTINCT order_id)' 는 주문 건수를 셈.

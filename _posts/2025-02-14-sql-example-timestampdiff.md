@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (12) (feat. TIMESTAMPDIFF)
+title: SQL 예시 - (12) 두개의 날짜 간의 차이 (feat. TIMESTAMPDIFF)
 description: SQL TIMESTAMPIDFF 예시
 layout: post
 categories: SQL

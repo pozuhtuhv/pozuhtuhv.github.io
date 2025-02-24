@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (6) (feat. UNION)
+title: SQL 예시 - (6) UNION문 예시 (feat. UNION)
 description: SQL UNION 예시
 layout: post
 categories: SQL

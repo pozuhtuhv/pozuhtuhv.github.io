@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (10) (feat. REGEXP)
+title: SQL 예시 - (10) 정규표현식 (feat. REGEXP)
 description: SQL 정규표현식 예시
 layout: post
 categories: SQL

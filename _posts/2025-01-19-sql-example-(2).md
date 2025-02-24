@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (2)
+title: SQL 예시 - (2) 제품의 월별 판매량 합계 및 매출 합계
 description: SQL 예시
 layout: post
 categories: SQL

@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (8) (feat. ODD, EVEN)
+title: SQL 예시 - (8) 홀짝 (feat. ODD, EVEN)
 description: SQL ODD, EVEN (홀, 짝) 예시
 layout: post
 categories: SQL

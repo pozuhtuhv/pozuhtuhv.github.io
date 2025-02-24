@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (7) (feat. SUBQUERY)
+title: SQL 예시 - (7) 부서별 최고 연봉을 받는 직원 (feat. SUBQUERY)
 description: SQL SUBQUERY 예시
 layout: post
 categories: SQL
@@ -24,16 +24,16 @@ tag: [sql, example, question, subquery]
 
 ## 0. SQL 문제
 
-| emp_id | emp_name | department | salary | hire_date |
-| --- | --- | --- | --- | --- |
-| 1 | Alice | HR | 5000000 | 2020-03-15 |
-| 2 | Bob | IT | 7000000 | 2018-07-24 |
-| 3 | Charlie | IT | 8000000 | 2017-10-10 |
-| 4 | David | Sales | 6000000 | 2019-06-30 |
-| 5 | Emily | HR | 5500000 | 2021-09-12 |
-| 6 | Frank | IT | 7500000 | 2022-01-20 |
-| 7 | Grace | Sales | 6500000 | 2018-11-18 |
-| 8 | Henry | IT | 7200000 | 2015-05-05 |
+| emp_name | department | salary | hire_date |
+| --- | --- | --- | --- |
+| Alice | HR | 5000000 | 2020-03-15 |
+| Bob | IT | 7000000 | 2018-07-24 |
+| Charlie | IT | 8000000 | 2017-10-10 |
+| David | Sales | 6000000 | 2019-06-30 |
+| Emily | HR | 5500000 | 2021-09-12 |
+| Frank | IT | 7500000 | 2022-01-20 |
+| Grace | Sales | 6500000 | 2018-11-18 |
+| Henry | IT | 7200000 | 2015-05-05 |
 
 <br>
 
