@@ -6,7 +6,7 @@ categories: SQL
 published: true
 date_published: 2025-02-03
 date_modified: 2025-02-03
-tag: [sql, example, question, inner_join]
+tag: [sql, example, inner_join]
 ---
 ---
 ## Table of contents

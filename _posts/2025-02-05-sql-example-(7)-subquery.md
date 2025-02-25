@@ -6,7 +6,7 @@ categories: SQL
 published: true
 date_published: 2025-02-05
 date_modified: 2025-02-05
-tag: [sql, example, question, subquery]
+tag: [sql, example, subquery]
 ---
 ---
 ## Table of contents

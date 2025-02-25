@@ -6,7 +6,7 @@ categories: SQL
 published: true
 date_published: 2025-01-27
 date_modified: 2025-01-27
-tag: [sql, example, question, if, case]
+tag: [sql, example, if, case]
 ---
 ---
 ## Table of contents

@@ -1,6 +1,6 @@
 ---
-title: SQL 예시 - (12) 두개의 날짜 간의 차이 (feat. TIMESTAMPDIFF)
-description: SQL TIMESTAMPIDFF 예시
+title: SQL 예시 - (12) 두개의 날짜 간의 차이 (feat. TIMESTAMPDIFF, JOIN)
+description: SQL TIMESTAMPIDFF, JOIN 예시
 layout: post
 categories: SQL
 published: true
@@ -22,7 +22,7 @@ tag: [sql, example, timestampdiff, join]
 
 # SQL에서의 두개의 날짜 간의 차이 구하기 
 
-## 1. 두개의 날짜 간의 차이 구하기
+## 0. SQL 문제
 ```sql
 TIMESTAMPDIFF(단위, 시작시간, 종료시간)
 ```
@@ -31,7 +31,6 @@ TIMESTAMPDIFF(단위, 시작시간, 종료시간)
 - 종료시간: 차이를 계산할 날짜
 <br>
 
-## 2. 예제 테이블
 CUSTOMER_INS (손님 입장)
 
 | ID | DATETIE |
@@ -39,6 +38,7 @@ CUSTOMER_INS (손님 입장)
 | A | 2024-01-01 08:00:00
 | B | 2024-01-05 08:00:00
 
+<br>
 
 CUSTOMER_OUTS (손님 퇴장)
 
@@ -52,12 +52,12 @@ CUSTOMER_OUTS (손님 퇴장)
 ## 계산 진행
 ```sql
 SELECT 
-    ai.ID, 
-    ai.DATETIME AS 입장시간, 
-    ao.DATETIME AS 퇴장시간,
-    TIMESTAMPDIFF(SECOND, ai.DATETIME, ao.DATETIME) AS 초
-FROM CUSTOMER_INS ai
-JOIN CUSTOMER_OUTS ao ON ai.ID = ao.ID;
+    ci.ID, 
+    ci.DATETIME AS 입장시간, 
+    co.DATETIME AS 퇴장시간,
+    TIMESTAMPDIFF(SECOND, ci.DATETIME, co.DATETIME) AS 초
+FROM CUSTOMER_INS ci
+JOIN CUSTOMER_OUTS co ON ci.ID = co.ID;
 ```
 <br>
 
