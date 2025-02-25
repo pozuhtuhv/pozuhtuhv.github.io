@@ -26,15 +26,15 @@ tag: [github, actions]
 
 - Settings 페이지
 
-![docs](/assets/img/git-2.1.png)<br>
+![docs](/assets/img/git-2.1.png){: class="zoom-img"}<br>
 
 - Actions 탭 -> General 메뉴
 
-![docs](/assets/img/git-2.2.png)<br>
+![docs](/assets/img/git-2.2.png){: class="zoom-img"}<br>
 
 - Workflow Permissions
 
-![docs](/assets/img/git-2.3.png)<br>
+![docs](/assets/img/git-2.3.png){: class="zoom-img"}<br>
 
 ```
 Read and write permissions: 

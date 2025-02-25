@@ -42,6 +42,5 @@ import tensorflow as tf
 <br>
 
 - 시스템 환경변수에 변수 지정하기
-![tensor_error](/assets/img/tensor_error.png)
-<br>
+![tensor_error](/assets/img/tensor_error.png){: class="zoom-img"}<br>
 이 방법은 오류 그대로 뱉어냈었음.

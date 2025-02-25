@@ -23,7 +23,7 @@ tag: [github, upload]
 # Git Bash -> Repo upload
 
 ## 1. Github에 NEW 리포지토리 git repo url 확인
-![docs](/assets/img/git-3.1.png)<br>
+![docs](/assets/img/git-3.1.png){: class="zoom-img"}<br>
 git repo url copy
 <br>
 
