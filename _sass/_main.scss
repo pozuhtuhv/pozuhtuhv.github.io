@@ -86,7 +86,8 @@ pre {
     overflow-x: auto; // 가로 스크롤 추가
 }
 
-.main img {
+// 포스트 영역 img 적용
+.post img {
   max-width: 100%;
   height: auto;
   display: block;
