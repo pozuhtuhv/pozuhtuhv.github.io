@@ -742,51 +742,67 @@ pre:hover .copy-button {
 
 // Table Start
 
-/* 테이블 전체 스타일 */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-family: Arial, sans-serif;
-  color: #e0e0e0; /* 어두운 배경에 밝은 텍스트 색 */
+/* 테이블을 감싸는 div에만 가로 스크롤 적용 */
+.table-container {
+  display: block;
+  overflow-x: auto; /* 가로 스크롤 활성화 */
+  max-width: 100%;  /* 컨테이너를 넘지 않도록 제한 */
+  margin: 20px 0;   /* 위아래 여백 추가 */
+  padding-bottom: 5px; /* 스크롤바가 글자와 겹치지 않도록 여백 추가 */
 }
 
-/* 셀 안의 텍스트 정렬 및 패딩 */
-th, td {
+/* 테이블 스타일 */
+table {
+  width: 100%;                /* 부모 요소에 맞게 자동 조정 */
+  border-collapse: collapse;  /* 테두리 간격 제거 */
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;             /* 밝은 글씨 */
+  background-color: #222;     /* 어두운 테마에 맞는 배경 */
+}
+
+/* 테이블 헤더 스타일 */
+th {
+  background-color: #333;  /* 헤더 배경 */
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #444; /* 테두리 색상 */
+}
+
+/* 테이블 본문 스타일 */
+td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #444; /* 테두리 색을 조금 더 밝은 색으로 */
-}
-
-/* 헤더 스타일 */
-th {
-  background-color: #333; /* 어두운 배경에 적합한 밝은 그레이 */
-  font-weight: bold;
-  color: #ffffff; /* 흰색 텍스트 */
+  border: 1px solid #444;
 }
 
 /* 짝수 행 배경색 */
 tr:nth-child(even) {
-  background-color: #2c2f34; /* 어두운 색상으로 짝수 행 구분 */
+  background-color: #2c2f34;
 }
 
-/* 마우스 오버 시 색 변경 */
+/* 마우스 오버 시 강조 */
 tr:hover {
   background-color: #444;
 }
 
-/* 테이블 제목 스타일 (있을 경우) */
-caption {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #ffffff; /* 제목도 흰색으로 */
-}
+/* 반응형: 작은 화면에서도 테이블만 가로 스크롤 */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto; /* 테이블 부분만 스크롤 */
+  }
 
-/* 기본 테이블 셀 스타일 */
-td {
-  color: #e0e0e0; /* 텍스트 색은 밝은 회색 */
+  table {
+    width: max-content; /* 표가 내용에 맞춰 늘어나도록 설정 */
+    min-width: 100%; /* 최소한 부모 컨테이너 크기 유지 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 // Table End
