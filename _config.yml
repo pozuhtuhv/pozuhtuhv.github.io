@@ -25,6 +25,9 @@ permalink: pretty
 
 vscode_path: "C:/Users/pozuhtuhv/Desktop/pozuhtuhv.github.io" # path to your vscode workspace (for footer link)
 
+# SEO Related
+google_site_verification: "iD1CAgKMzTXNTOmz_cbPmrHX7Nxd4toYeCwBC5ZAdKM"
+
 markdown: kramdown
 kramdown:
   input: GFM
