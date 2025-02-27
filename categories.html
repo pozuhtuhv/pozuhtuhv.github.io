@@ -8,29 +8,27 @@ title: Categories
     <br>
     <h1>Categories</h1>
     
-    <!-- 카테고리 목록 -->
-    <div class="category-list">
-        {% assign categories_list = site.categories | sort %}
-        {% for category in categories_list %}
-            <a href="#{{ category[0] | slugify }}">
-                {{ category[0] | capitalize }} ({{ category[1].size }})
-            </a>
-            {% unless forloop.last %} / {% endunless %}
+    <!-- 카테고리 버튼 목록 -->
+    <div id="category-buttons">
+        {% for category in site.categories %}
+            <button class="category-btn" data-target="{{ category[0] | slugify }}">
+                {{ category[0] | upcase }}
+            </button>
         {% endfor %}
     </div>
 
-    <!-- 카테고리별 포스트 목록 -->
-    {% for category in categories_list %}
-        <div id="{{ category[0] | slugify }}">
-            <h2>{{ category[0] | capitalize }}</h2>
-            <ul>
-                {% for post in category[1] %}
-                    <li>
-                        <span>[{{ post.date | date: "%Y-%m-%d" }}]</span>
-                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endfor %}
-</section>
+    <!-- 카테고리 목록 -->
+    <div id="category-list">
+        {% for category in site.categories %}
+            <div class="category-item" data-count="{{ category[1] | size }}" id="{{ category[0] | slugify }}">
+                <h3>{{ category[0] | upcase }} ({{ category[1] | size }})</h3>
+                <ul class="post-list">
+                    {% for post in category[1] %}
+                        <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>

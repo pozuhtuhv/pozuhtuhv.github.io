@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
-  // 🎯 이미지 내부 클릭 시 확대 / 축소
+  // 이미지 내부 클릭 시 확대 / 축소
   overlayImg.addEventListener("click", function (e) {
       if (!isZoomed) {
           const rect = overlayImg.getBoundingClientRect();
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 
-  // 🎯 바깥 영역 클릭 시 닫기
+  // 바깥 영역 클릭 시 닫기
   overlay.addEventListener("click", function (e) {
       if (e.target === overlay) {
           overlay.style.display = "none";
@@ -90,3 +90,45 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+// zoom-img effect end
+
+// category order start
+document.addEventListener("DOMContentLoaded", function () {
+  const categoryList = document.getElementById("category-list");
+  const categoryButtonsContainer = document.getElementById("category-buttons");
+
+  if (!categoryList || !categoryButtonsContainer) return;
+
+  const categories = Array.from(categoryList.getElementsByClassName("category-item"));
+  const buttons = Array.from(categoryButtonsContainer.getElementsByClassName("category-btn"));
+
+  // 게시글 개수를 기준으로 내림차순 정렬
+  categories.sort((a, b) => {
+      return parseInt(b.getAttribute("data-count")) - parseInt(a.getAttribute("data-count"));
+  });
+
+  // 기존 목록을 비우고 정렬된 항목을 다시 추가
+  categoryList.innerHTML = "";
+  categories.forEach(category => categoryList.appendChild(category));
+
+  // 버튼 정렬 (카테고리 순서와 동일하게 맞추기)
+  const sortedButtons = buttons.sort((a, b) => {
+      const countA = parseInt(document.getElementById(a.dataset.target).getAttribute("data-count"));
+      const countB = parseInt(document.getElementById(b.dataset.target).getAttribute("data-count"));
+      return countB - countA;
+  });
+
+  categoryButtonsContainer.innerHTML = "";
+  sortedButtons.forEach(button => categoryButtonsContainer.appendChild(button));
+
+  // 버튼 클릭 시 해당 카테고리로 스크롤 이동
+  buttons.forEach(button => {
+      button.addEventListener("click", function () {
+          const targetCategory = document.getElementById(this.dataset.target);
+          if (targetCategory) {
+              targetCategory.scrollIntoView({ behavior: "smooth" });
+          }
+      });
+  });
+});
+// category order end
