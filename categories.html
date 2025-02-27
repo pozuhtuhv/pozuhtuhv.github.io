@@ -3,48 +3,6 @@ layout: default
 title: Categories
 ---
 
-<script>
-    // category order start
-    document.addEventListener("DOMContentLoaded", function () {
-      const categoryList = document.getElementById("category-list");
-      const categoryButtonsContainer = document.getElementById("category-buttons");
-    
-      if (!categoryList || !categoryButtonsContainer) return;
-    
-      const categories = Array.from(categoryList.getElementsByClassName("category-item"));
-      const buttons = Array.from(categoryButtonsContainer.getElementsByClassName("category-btn"));
-    
-      // 게시글 개수를 기준으로 내림차순 정렬
-      categories.sort((a, b) => {
-          return parseInt(b.getAttribute("data-count")) - parseInt(a.getAttribute("data-count"));
-      });
-    
-      // 기존 목록을 비우고 정렬된 항목을 다시 추가
-      categoryList.innerHTML = "";
-      categories.forEach(category => categoryList.appendChild(category));
-    
-      // 버튼 정렬 (카테고리 순서와 동일하게 맞추기)
-      const sortedButtons = buttons.sort((a, b) => {
-          const countA = parseInt(document.getElementById(a.dataset.target).getAttribute("data-count"));
-          const countB = parseInt(document.getElementById(b.dataset.target).getAttribute("data-count"));
-          return countB - countA;
-      });
-    
-      categoryButtonsContainer.innerHTML = "";
-      sortedButtons.forEach(button => categoryButtonsContainer.appendChild(button));
-    
-      // 버튼 클릭 시 해당 카테고리로 스크롤 이동
-      buttons.forEach(button => {
-          button.addEventListener("click", function () {
-              const targetCategory = document.getElementById(this.dataset.target);
-              if (targetCategory) {
-                  targetCategory.scrollIntoView({ behavior: "smooth" });
-              }
-          });
-      });
-    });
-    </script>
-
 <section class="posts">
     <a href="{{ site.url }}/">← Home</a>
     <br>
@@ -75,3 +33,40 @@ title: Categories
         {% endfor %}
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const categoryList = document.getElementById("category-list");
+      const categoryButtonsContainer = document.getElementById("category-buttons");
+    
+      if (!categoryList || !categoryButtonsContainer) return;
+    
+      const categories = Array.from(categoryList.getElementsByClassName("category-item"));
+      const buttons = Array.from(categoryButtonsContainer.getElementsByClassName("category-btn"));
+    
+      categories.sort((a, b) => {
+          return parseInt(b.getAttribute("data-count")) - parseInt(a.getAttribute("data-count"));
+      });
+    
+      categoryList.innerHTML = "";
+      categories.forEach(category => categoryList.appendChild(category));
+    
+      const sortedButtons = buttons.sort((a, b) => {
+          const countA = parseInt(document.getElementById(a.dataset.target).getAttribute("data-count"));
+          const countB = parseInt(document.getElementById(b.dataset.target).getAttribute("data-count"));
+          return countB - countA;
+      });
+    
+      categoryButtonsContainer.innerHTML = "";
+      sortedButtons.forEach(button => categoryButtonsContainer.appendChild(button));
+    
+      buttons.forEach(button => {
+          button.addEventListener("click", function () {
+              const targetCategory = document.getElementById(this.dataset.target);
+              if (targetCategory) {
+                  targetCategory.scrollIntoView({ behavior: "smooth" });
+              }
+          });
+      });
+    });
+</script>
