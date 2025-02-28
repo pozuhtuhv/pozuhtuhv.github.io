@@ -9,7 +9,6 @@ date_modified: 2024-12-23
 tag: [github, upload]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

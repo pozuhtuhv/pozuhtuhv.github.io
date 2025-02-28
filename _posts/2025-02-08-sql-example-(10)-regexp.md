@@ -9,7 +9,6 @@ date_modified: 2025-02-08
 tag: [sql, example, regexp]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

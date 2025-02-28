@@ -9,7 +9,6 @@ date_modified: 2025-02-07
 tag: [daily, codingtest]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

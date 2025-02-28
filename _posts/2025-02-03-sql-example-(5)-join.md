@@ -9,7 +9,6 @@ date_modified: 2025-02-03
 tag: [sql, example, inner_join]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

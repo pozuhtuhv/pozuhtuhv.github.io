@@ -9,7 +9,6 @@ date_modified: 2025-01-27
 tag: [sql, example, if, case]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

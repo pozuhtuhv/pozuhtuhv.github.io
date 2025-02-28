@@ -9,7 +9,6 @@ date_modified: 2024-04-11
 tag: [python, review]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

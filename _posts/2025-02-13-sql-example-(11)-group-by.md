@@ -9,7 +9,6 @@ date_modified: 2025-02-13
 tag: [sql, example, group]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

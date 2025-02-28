@@ -9,7 +9,6 @@ date_modified: 2025-02-14
 tag: [sql, example, timestampdiff, join]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

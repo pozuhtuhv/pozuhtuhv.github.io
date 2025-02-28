@@ -9,7 +9,6 @@ date_modified: 2025-01-16
 tag: [python, sql, database]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

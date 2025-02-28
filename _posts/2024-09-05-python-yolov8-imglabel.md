@@ -9,7 +9,6 @@ date_modified: 2024-09-05
 tag: [python, yolo]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

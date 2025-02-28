@@ -9,7 +9,6 @@ date_modified: 2025-01-14
 tag: [python, tensorflow, keras, scrapbook]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

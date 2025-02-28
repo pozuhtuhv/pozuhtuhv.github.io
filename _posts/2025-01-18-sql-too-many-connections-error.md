@@ -9,7 +9,6 @@ date_modified: 2025-01-18
 tag: [sql, error, connections]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

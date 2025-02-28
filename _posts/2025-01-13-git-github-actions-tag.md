@@ -9,7 +9,6 @@ date_modified: 2025-01-13
 tag: [git, jekyll, tag]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

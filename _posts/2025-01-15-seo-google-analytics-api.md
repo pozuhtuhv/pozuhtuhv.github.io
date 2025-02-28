@@ -9,7 +9,6 @@ date_modified: 2025-01-15
 tag: [python, google, seo]
 ---
 ---
-## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
