@@ -24,7 +24,7 @@ tag: [sql, example]
 ## 0. SQL 문제
 
 | 컬럼 | 설명 |
-| --- | --- |
+| -- | -- |
 | product_id | 제품 ID |
 | sale_date | 판매 일자 (YYYY-MM-DD 형식) |
 | quantity | 판매 수량 |
@@ -55,7 +55,6 @@ DATE_FORMAT(sale_date, '%Y-%m') AS month
 <br>
 - DATE_FORMAT 함수: sale_date를 연도-월 형식(YYYY-MM)으로 변환.
 <br>
-<br>
 
 2. 월별 총 판매량 계산
 ```sql
@@ -63,7 +62,6 @@ SUM(quantity) AS total_quantity
 ```
 <br>
 - SUM(quantity): 각 월에 판매된 수량(quantity)을 모두 합계.
-<br>
 <br>
 
 3. 월별 총 매출 계산
@@ -73,7 +71,6 @@ SUM(quantity * price) AS total_revenue
 <br>
 - SUM(quantity * price): 각 판매 기록의 매출을 계산 후 모두 합계.
 <br>
-<br>
 
 4. 필터 조건 추가 (1월 ~ 3월 데이터만 포함)
 ```sql
@@ -82,7 +79,6 @@ WHERE sale_date BETWEEN '2023-01-01' AND '2023-03-31'
 <br>
 - WHERE : 쿼리에 조건을 추가.
 - BETWEEN : sale_date를 2023-01-01부터 2023-03-31 데이터를 선택. (BETWEEN 'A' AND 'B')
-<br>
 <br>
 
 5. 데이터 그룹화

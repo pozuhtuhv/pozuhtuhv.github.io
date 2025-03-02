@@ -24,7 +24,7 @@ tag: [sql, example, subquery]
 ## 0. SQL 문제
 
 | emp_name | department | salary | hire_date |
-| --- | --- | --- | --- |
+| -------- | ---------- | ------ | --------- |
 | Alice | HR | 5000000 | 2020-03-15 |
 | Bob | IT | 7000000 | 2018-07-24 |
 | Charlie | IT | 8000000 | 2017-10-10 |
@@ -43,7 +43,7 @@ tag: [sql, example, subquery]
 Result Example : <br>
 
 | emp_name | department | salary | 
-| --- | --- | --- |  
+| -------- | ---------- | ------ |  
 | Charlie | IT | 8000000 | 
 | Frank | IT | 7500000 | 
 | Grace | Sales | 6500000 | 

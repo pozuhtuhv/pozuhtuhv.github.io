@@ -35,7 +35,7 @@ ORDER BY columns_type ASC;
 Result : <br>
 
 | columns_type | example |
-|---|---|
+| ------------ | ------- |
 | A | 10 |
 | B | 5 |
 | C | 8 |
