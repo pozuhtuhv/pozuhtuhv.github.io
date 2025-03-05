@@ -47,7 +47,7 @@ LAST_MONTH (저번달 제품별 매출액)
 
 <br>
 
-## 2. 계산 진행
+## 1. 계산 진행
 ```sql
 SELECT fh.flavor -- 4. flavor 만 지정 출력
 FROM HALF_ORDER fh
@@ -58,9 +58,7 @@ LIMIT 3
 ```
 <br>
 
-## 3. 실행 결과
-
-Result : 
+## 2. 실행 결과
 
 | FLAVOR |
 | ------ |

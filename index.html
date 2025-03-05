@@ -37,7 +37,7 @@ layout: default
         <a href="{{ site.url }}/categories/" class="blog-more">+</a>
     </h2>
     <ul>
-        {% for post in site.posts limit:4 %}
+        {% for post in site.posts limit:10 %}
         <li>
             - [{{ post.date | date: "%Y-%m-%d" }}] <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
         </li>
