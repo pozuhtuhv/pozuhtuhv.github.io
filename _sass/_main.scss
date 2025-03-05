@@ -688,3 +688,43 @@ ol#markdown-toc ::marker {
     display: none;
   }
 }
+
+/* 카테고리 버튼 플로팅 */
+#category-buttons {
+  position: fixed;
+  top: 20px;
+  right: 5%;
+  display: flex;
+  flex-direction: row; /* 가로 정렬 유지 */
+  flex-wrap: wrap; /* 버튼이 너무 많으면 자동 줄바꿈 */
+  gap: 8px; /* 버튼 간격 조정 */
+  background: #25262b;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: auto; /* 너비를 자동 조정 */
+  max-width: 90%; /* 화면의 90% 이상 차지하지 않도록 */
+}
+
+/* 버튼 스타일 */
+.category-btn {
+  padding: 6px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  height: auto; /* 버튼 높이를 자동 조정 */
+  min-height: 30px; /* 최소 높이 지정 */
+  white-space: nowrap; /* 버튼 내 텍스트 줄바꿈 방지 */
+}
+
+/* 마우스 오버 시 효과 */
+.category-btn:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}

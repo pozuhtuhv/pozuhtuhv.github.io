@@ -45,7 +45,7 @@ REST_REVIEW (리뷰 목록)
 
 <br>
 
-## 계산 진행
+## 1. 계산 진행
 ```sql
 SELECT 
     MR.USER_NAME, 
@@ -62,6 +62,8 @@ WHERE MR.USER_ID = ( -- 2. 제일 많은 리뷰를 가진 사람을 확인
 ORDER BY REVIEW_DATE, REVIEW_TEXT;
 ```
 <br>
+
+## 2. 실행 결과
 
 | USER_NAME | REVIEW_TEXT | REVIEW_DATE |
 | --------- | ----------- | ----------- |

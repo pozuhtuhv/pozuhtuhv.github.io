@@ -30,9 +30,7 @@ tag: [sql, example, recursive]
 데이터가 없는 시간대도 0으로 표시되도록 처리.
 <br>
 
-## 1. 예제 데이터 테이블
-다음과 같은 `CUSTOMER_OUT` 테이블이 있다고 가정.
-<br>
+CUSTOMER_OUT (고객 퇴장시간)
 
 | CUSTOMER_ID | DATETIME |
 | ----------- | -------- |
@@ -45,7 +43,7 @@ tag: [sql, example, recursive]
 
 <br>
 
-## 2. RECURSIVE CTE를 이용한 시간대별 고객 퇴장 수 집계
+## 1. 계산 진행
 ```sql
 WITH RECURSIVE HOURS AS ( -- 1. 0시부터 23시까지의 시간을 생성
     SELECT 0 AS HOUR
@@ -63,7 +61,7 @@ GROUP BY H.HOUR;
 ```
 <br>
 
-## 3. 실행 결과 예시
+## 2. 실행 결과
 
 | HOUR | CUSTOMER_COUNT |
 | ---- | -------------- |
