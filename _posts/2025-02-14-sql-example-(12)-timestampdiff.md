@@ -40,7 +40,7 @@ CUSTOMER_OUTS (손님 퇴장)
 
 <br>
 
-## 계산 진행
+## 1. 계산 진행
 ```sql
 SELECT 
     ci.ID, 
@@ -51,6 +51,8 @@ FROM CUSTOMER_INS ci
 JOIN CUSTOMER_OUTS co ON ci.ID = co.ID;
 ```
 <br>
+
+## 2. 실행 결과
 
 | ID | 입장시간 | 퇴장시간 | 초 |
 | -- | ---- | ---- | - |
