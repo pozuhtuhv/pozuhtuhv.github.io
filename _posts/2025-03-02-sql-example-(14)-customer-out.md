@@ -23,13 +23,6 @@ tag: [sql, example, recursive]
 
 ## 0. SQL 문제
 
-재귀 CTE(Common Table Expression)를 사용하여 0시부터 23시까지의 시간을 생성하고,<br>
-`CUSTOMER_OUT` 테이블과 조인하여 시간대별 고객 퇴장 수를 집계하는 SQL 예제.
-<br>
-
-데이터가 없는 시간대도 0으로 표시되도록 처리.
-<br>
-
 CUSTOMER_OUT (고객 퇴장시간)
 
 | CUSTOMER_ID | DATETIME |

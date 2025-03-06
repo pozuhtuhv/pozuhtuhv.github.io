@@ -22,6 +22,7 @@ tag: [sql, example, timestampdiff, join]
 # SQL에서의 두개의 날짜 간의 차이 구하기 
 
 ## 0. SQL 문제
+
 CUSTOMER_INS (손님 입장)
 
 | ID | DATETIE |
