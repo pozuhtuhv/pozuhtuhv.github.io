@@ -31,6 +31,7 @@ ORDER BY FIRST_HALF.TOTAL_ORDER DESC;
 <br>
 - 정석으로 이루어진 코드
 <br>
+<br>
 
 ```sql
 SELECT FLAVOR FROM ICECREAM_INFO
@@ -42,6 +43,7 @@ ORDER BY TOTLA_ORDER DESC;
 
 - USING 을 이용하여 코드가 간결해짐
 - 두 테이블에 같은 열이 해당하기에 적용가능
+<br>
 <br>
 
 ## 1. USING vs ON 차이점
@@ -58,6 +60,7 @@ JOIN FIRST_INFO USING (FLAVOR)
 USING (column_name):
 - 같은 이름의 컬럼이 두 테이블에 있을 때 자동으로 매칭
 - SELECT에서 해당 컬럼을 사용할 때 테이블명을 명시할 필요 없음
+<br>
 <br>
 ON table1.column = table2.column:
 - 컬럼 이름이 다를 때도 사용할 수 있음

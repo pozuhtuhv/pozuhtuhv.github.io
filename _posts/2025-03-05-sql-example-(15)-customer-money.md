@@ -49,11 +49,11 @@ LAST_MONTH (저번달 제품별 매출액)
 
 ## 1. 계산 진행
 ```sql
-SELECT fh.flavor -- 4. flavor 만 지정 출력
-FROM HALF_ORDER fh
-JOIN LAST_MONTH ho USING(flavor) -- 2. JOIN 으로 데이터 참조
-GROUP BY fh.FLAVOR -- 3. flavor을 그룹으로 지정
-ORDER BY SUM(fh.TOTAL_ORDER) DESC -- 1. TOTAL_ORDER 의 합계순 으로 정렬
+SELECT HO.FLAVOR -- 4. FLAVOR 만 지정 출력
+FROM HALF_ORDER HO
+JOIN LAST_MONTH ho USING(FLAVOR) -- 2. JOIN 으로 데이터 참조
+GROUP BY HO.FLAVOR -- 3. FLAVOR을 그룹으로 지정
+ORDER BY SUM(HO.TOTAL_ORDER) DESC -- 1. TOTAL_ORDER 의 합계순 으로 정렬
 LIMIT 3
 ```
 <br>

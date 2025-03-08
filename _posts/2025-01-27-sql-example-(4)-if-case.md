@@ -38,6 +38,7 @@ ORDER BY ANIMAL_ID;
 - CASE문은 SQL 표준이므로 대부분의 데이터베이스에서 호환.
 - 확장성이 좋음. 추가 조건을 WHEN 으로 쉽게 추가 가능.
 <br>
+<br>
 
 ```sql
 SELECT 
@@ -50,6 +51,7 @@ ORDER BY ANIMAL_ID;
 
 - IF문은 MySQL에 특화된 문법.
 - 간결함. 단순한 조건일 때 코드가 짧아짐.
+<br>
 <br>
 
 ## 1. 쿼리 구성요소

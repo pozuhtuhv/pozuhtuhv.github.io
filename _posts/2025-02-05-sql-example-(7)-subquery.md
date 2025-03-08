@@ -23,7 +23,7 @@ tag: [sql, example, subquery]
 
 ## 0. SQL 문제
 
-| emp_name | department | salary | hire_date |
+| EMP_NAME | DEPARTMENT | SALARY | HIRE_DATE |
 | -------- | ---------- | ------ | --------- |
 | Alice | HR | 5000000 | 2020-03-15 |
 | Bob | IT | 7000000 | 2018-07-24 |
@@ -36,36 +36,24 @@ tag: [sql, example, subquery]
 
 <br>
 
-- 부서별(department) 최고 연봉(salary)을 받는 직원의 정보를 조회.
-- 같은 부서에서 최고 연봉을 받는 직원이 여러 명이면 모두 포함.
-- 연봉이 높은 순으로 정렬.
+## 1. 계산 진행
+```sql
+SELECT EMP_NAME, DEPARTMENT, SALARY -- 1. 직원 이름, 부서, 급여를 선택하여 출력
+FROM EMPLOYEES E
+WHERE SALARY = ( -- 2. 각 부서별로 가장 높은 급여를 받는 직원만 필터링
+    SELECT MAX(SALARY) -- 3. 같은 부서에서 가장 높은 급여를 조회
+    FROM EMPLOYEES E2 -- 4. 동일한 EMPLOYEES 테이블을 서브쿼리로 사용
+    WHERE E2.DEPARTMENT = E.DEPARTMENT -- 5. 메인 쿼리와 같은 부서의 급여만 비교
+)
+ORDER BY SALARY DESC;
+```
 <br>
-Result Example : <br>
 
-| emp_name | department | salary | 
+## 2. 실행 결과
+
+| EMP_NAME | DEPARTMENT | SALARY | 
 | -------- | ---------- | ------ |  
 | Charlie | IT | 8000000 | 
 | Frank | IT | 7500000 | 
 | Grace | Sales | 6500000 | 
 | Emily | HR | 5500000 | 
-
-<br>
-
-## 1. 쿼리 설명
-```sql
-SELECT emp_name, department, salary
-FROM employees e
-WHERE salary = (
-    SELECT MAX(salary)
-    FROM employees
-    WHERE department = e.department
-)
-ORDER BY salary DESC;
-```
-<br>
-
-1. 각 부서별 최고 연봉을 받는 직원 조회 (WHERE salary = (서브쿼리))
-- 서브쿼리: 같은 부서(department)에서 최고 연봉(MAX(salary))을 찾음.
-- HERE department = e.department : 각 직원이 속한 부서에서 최고 연봉을 찾도록 함.
-2. 연봉이 높은 순서로 정렬 (ORDER BY salary DESC)
-- 연봉이 높은 순서대로 결과를 정렬하여 출력.
