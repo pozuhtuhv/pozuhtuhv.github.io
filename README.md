@@ -6,6 +6,9 @@
 <details>
   <summary>History</summary>
   <div align="left">
+<h4>2025-03-12</h4>
+<h5>- Something Edit</a></h5>
+
 <h4>2025-01-19</h4>
 <h5>- SEO 추가</a></h5>
 <h5>- light 테마 삭제 (only "dark" theme)</a></h5>
