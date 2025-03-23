@@ -1,5 +1,5 @@
 ---
-title: SQL 예시 - (9) (feat. DISTINCT)
+title: SQL 예시 - (9) 중복된 값을 제거하고 고유한 값만 선택(feat. DISTINCT)
 description: SQL DISTINCT 예시
 layout: post
 categories: SQL

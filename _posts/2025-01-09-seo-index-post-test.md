@@ -27,12 +27,12 @@ SEO 카운트 1 테스트<br>
 
 ## 2. PageSpeed Insights Score (완료)
 <b>PC 인사이트 스코어</b><br><br>
-![score_pc](/assets/img/index_score_pc_before.png){: class="zoom-img"}<br>
-![score_pc](/assets/img/index_score_pc_after.png){: class="zoom-img"}<br><br>
+![score_pc](/assets/img/2025-01-09-seo-index-post-test-1.png)<br>
+![score_pc](/assets/img/2025-01-09-seo-index-post-test-2.png)<br><br>
 
 <b>Mobile 인사이트 스코어</b><br>
-![score_mobile](/assets/img/index_score_mobile_before.png){: class="zoom-img"}<br>
-![score_mobile](/assets/img/index_score_mobile_after.png){: class="zoom-img"}<br><br>
+![score_mobile](/assets/img/2025-01-09-seo-index-post-test-3.png)<br>
+![score_mobile](/assets/img/2025-01-09-seo-index-post-test-4.png)<br><br>
 
 ## 3. light테마의 시인성 강화 (완료)
 light테마의 페이지에선 버튼에 대한 접근성 스코어를 개선할 필요가 있다.<br>
@@ -46,7 +46,7 @@ light테마의 페이지에선 버튼에 대한 접근성 스코어를 개선할
 ## 5. SEO 관련 자료
 일단 Google 관련, 네이버 관련 스니펫들은 다 기본에 등록해놓은 상태이고, 정상작동중이다.<br>
 사이트맵은 커스텀이 아닌 <b>'Jekyll-plugin'</b> 으로 표시해놓은 상태지만<br>
-구글 콘솔의 사이트맵 등록 잘 진행되었으면 좋겠다. (몇일째 수집불가){: class="zoom-img"}<br>
+구글 콘솔의 사이트맵 등록 잘 진행되었으면 좋겠다. (몇일째 수집불가)<br>
 
 ## 6. 이외의 것들 (완료)
 하나더 개선하고 싶은건 Tag 시스템을 조금 개선하고 싶다.<br>

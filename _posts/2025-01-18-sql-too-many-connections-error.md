@@ -29,14 +29,14 @@ MySQL애 클라이언트의 수가 일정수치 이상인 경우 나타는 에�
 SHOW STATUS LIKE 'Threads_connected';
 ```
 <br>
-![sql_error_1](/assets/img/sql-1.1.png){: class="zoom-img"}<br><br>
+![sql_error_1](/assets/img/2025-01-18-sql-too-many-connections-error-1.png)<br><br>
 
 2. 현재 설정된 max_connections 확인
 ```sql
 SHOW VARIABLES LIKE 'max_connections';
 ```
 <br>
-![sql_error_2](/assets/img/sql-1.2.png){: class="zoom-img"}<br>
+![sql_error_2](/assets/img/2025-01-18-sql-too-many-connections-error-2.png)<br>
 'max_connections'가 숫자가 작으면 3번째 순서로 적용<br>
 <br>
 

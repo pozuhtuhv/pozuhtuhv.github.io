@@ -27,9 +27,9 @@ tag: [github, jekyll, ruby]
 `이를 로컬 환경에서 '수정 -> 확인'을 진행하면 변경사항을 바로 확인할 수 있다.`
 
 ## 1. Ruby 설치
-[![docs](/assets/img/blog-3.1.png)](https://rubyinstaller.org/downloads/)<br>
+[![docs](/assets/img/2025-01-05-etc-jekyll-local-for-windows-1.png)](https://rubyinstaller.org/downloads/)<br>
 Ruby 홈페이지 접속 후<br><br>
-![docs](/assets/img/blog-3.2.png)<br>
+![docs](/assets/img/2025-01-05-etc-jekyll-local-for-windows-2.png)<br>
 추천되어진 **Rubyinstallers** 다운<br>
 
 다운로드 파일을 실행하여 설치 후 ridk install 선택해제 후 완료

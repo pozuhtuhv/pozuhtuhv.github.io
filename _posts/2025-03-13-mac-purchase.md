@@ -37,15 +37,15 @@ tag: [mac, m1]
 냅다 쿨거래시작 오랜만에하는 중고거래에 주소도 안보내주고 입금<br> 
 하지만 판매자는 많은 거래경력이 있는걸 보고, 거래를 신청했기에 원활하게 진행했다.<br>
 우체국택배로 무사히 배송 하루만에 물건 받음.<br>
-![macbook](/assets/img/mac-3.jpg)
+![macbook](/assets/img/2025-03-13-mac-purchase-1.jpg)
 상태도 매우 좋고 맥북케이스까지 덤으로 더 보내주셨음. (서울방향으로 절한번했음.)
 
 <br>
 
 ## 1. 새로운 중고 맥북에어
 <div class = 'image-gallery'>
-    <img src ='/assets/img/mac-1.jpg'>
-    <img src ='/assets/img/mac-2.jpg'>
+    <img src ='/assets/img/2025-03-13-mac-purchase-2.jpg'>
+    <img src ='/assets/img/2025-03-13-mac-purchase-3.jpg'>
 </div>
 <br>
 
