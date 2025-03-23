@@ -4,8 +4,8 @@ description: MacBook 백그라운드 어플 관리
 layout: post
 categories: Mac
 published: true
-date_published: 2025-03-14
-date_modified: 2025-03-14
+date_published: 2025-03-23
+date_modified: 2025-03-23
 tags: [mac, background]
 ---
 ---
@@ -22,26 +22,28 @@ tags: [mac, background]
 # 맥북 백그라운드 알림 관리
 
 ## 0. 개요
-일반적으로 배터리 관리를 위해 `Aldente`, `Batfi` 등의 소프트웨어가 사용되지만, 다음과 같은 단점이 있음.
-
-- `Aldente`와 `Batfi`는 상단 메뉴바에 아이콘을 표시하여 작업 환경을 방해할 수 있음.
-- `Batfi`는 초기에는 무료였으나 이후 유료로 전환됨.
-
-대체할 수 있는 오픈소스 프로그램을 찾던 중, `actuallymentor/battery` 프로젝트를 발견.
-
+여러 앱을 설치하다보면 백그라운드 권한을 가지는 앱들은<br>
+부팅시 알림이 뜨는데 이게 생각보다 많이 지저분하다.<br>
+설정 창에서 보여지는것도 꽤나 필요 없는게 많기 때문에 정리가 필요하다.<br>
 <br>
 
-## 1. 설치 방법
-해당 오픈소스 도구는 [GitHub 페이지](https://github.com/actuallymentor/battery)에서 다운로드 진행.<br>
-설치 방법은 두가지가 있고, 본인이 편한방법으로 진행하면됨.<br>
+## 1. 설정창 확인 방법
+<div class = 'image-gallery'>
+    <img src ='/assets/img/2025-03-23-mac-background-1.png'>
+    <img src ='/assets/img/2025-03-23-mac-background-2.png'>
+</div>
 <br>
 
-### 1.1 GUI(그래픽 인터페이스) 버전 설치
-1. GitHub 페이지에서 `Releases` 섹션으로 이동하여 최신 버전의 `.dmg` 파일을 다운로드.
-2. 다운로드한 파일을 실행하여 설치를 진행.
-![img](/assets/img/2025-03-14-mac-battery-limiter-1.png)
-3. 설치 완료 후, 상단 메뉴바에서 프로그램을 실행하고 `Enable or Disable` 설정
+## 2. 직접 경로 확인
 
-<br>
+| No. | 명령어 | 용도 | 비고 |
+| --- | --- | -- | -- |
+| 1 | open ~/Library/LaunchAgents | 부팅시 root 권한이 필요한 앱이나 스트립트의 경로 | - |
+| 2 | open /Library/LaunchAgents | 일반 사용자 권한의 앱이나 스트립트의 경로 | - |
+| 3 | open /Library/LaunchDaemons | 일반 사용자 권한의 앱이나 스트립트의 경로 | - |
 
-### 1.2 CLI(터미널 기반) 버전 설치
+1. ⌘ + space(spotlight) -> Terminal 열기
+2. 위 3개의 명령어 중 하나를 한단계씩 진행.
+3. 명령어를 진행하면 Finder 앱이 해당 경로에 열릴텐데 .plist 의 확장자로 파일들이 있음.
+4. 정리하고싶은 앱 이름 스크립트를 잘보고 필요없는것들, 삭제할것만 삭제하기
+5. 재부팅
