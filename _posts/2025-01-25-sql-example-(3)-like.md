@@ -15,13 +15,13 @@ tag: [sql, example, like]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# 특정 조건에 맞는 데이터 COUNT
+## 특정 조건에 맞는 데이터 COUNT
 
-## 0. SQL 쿼리
+### 0. SQL 쿼리
 ```sql
 SELECT columns_type, COUNT(*) AS example
 FROM table
@@ -42,7 +42,7 @@ Result : <br>
 
 <br>
 
-## 1. 쿼리 구성요소
+### 1. 쿼리 구성요소
 1. `WHERE columns LIKE '%word%' ~`
 - 'columns' 열에 '%word%'가 포함되어있는 조건.
 2. `SELECT columns_type, COUNT(*) AS example FROM table`

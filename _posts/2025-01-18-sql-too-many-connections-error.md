@@ -15,15 +15,15 @@ tag: [sql, error, connections]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# MySQL Error 소개
+## MySQL Error 소개
 MySQL애 클라이언트의 수가 일정수치 이상인 경우 나타는 에러메시지이다.
 <br>
 
-## 0. MySQL 에러해결
+### 0. MySQL 에러해결
 1. 현재 연결된 커넥션 확인
 ```sql
 SHOW STATUS LIKE 'Threads_connected';

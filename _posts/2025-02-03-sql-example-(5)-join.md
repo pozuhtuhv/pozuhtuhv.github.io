@@ -15,13 +15,13 @@ tag: [sql, example, inner_join]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# JOIN문
+## JOIN문
 
-## 0. SQL 쿼리 설명
+### 0. SQL 쿼리 설명
 ```sql
 SELECT ICECREAM_INFO.FLAVOR FROM ICECREAM_INFO
 JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
@@ -46,7 +46,7 @@ ORDER BY TOTLA_ORDER DESC;
 <br>
 <br>
 
-## 1. USING vs ON 차이점
+### 1. USING vs ON 차이점
 ```sql
 JOIN FIRST_HALF ON ICECREAM_INFO.FLAVOR = FIRST_HALF.FLAVOR
 ```

@@ -15,11 +15,11 @@ tag: [sql, example, regexp]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# SQL에서의 정규표현식 사용
+## SQL에서의 정규표현식 사용
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |
@@ -48,7 +48,7 @@ tag: [sql, example, regexp]
 
 <br>
 
-## 1. 위치 지정자 (Anchors)
+### 1. 위치 지정자 (Anchors)
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |
@@ -61,7 +61,7 @@ SELECT * FROM users WHERE username REGEXP 'admin$';
 ```
 <br>
 
-## 2. 반복 연산자 (Quantifiers)
+### 2. 반복 연산자 (Quantifiers)
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |
@@ -78,7 +78,7 @@ SELECT * FROM users WHERE username REGEXP '^a{2,4}'; -- 'a'가 2~4번 반복되�
 ```
 <br>
 
-## 3. 그룹 및 OR 연산 (Group & OR)
+### 3. 그룹 및 OR 연산 (Group & OR)
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |
@@ -91,7 +91,7 @@ SELECT * FROM words WHERE word REGEXP '(abc)+'; -- 'abc'가 반복되는 단어 
 ```
 <br>
 
-## 4. 문자 클래스 (Character Classes)
+### 4. 문자 클래스 (Character Classes)
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |
@@ -106,7 +106,7 @@ SELECT * FROM messages WHERE content REGEXP '[^A-Za-z0-9]'; -- 특수문자가 �
 ```
 <br>
 
-## 5. 공백 및 특수문자
+### 5. 공백 및 특수문자
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |
@@ -124,7 +124,7 @@ SELECT * FROM messages WHERE content REGEXP '\\W'; -- 특수문자가 포함된 
 ```
 <br>
 
-## 6. 탈출 문자 (Escape Character)
+### 6. 탈출 문자 (Escape Character)
 
 | 기호 | 설명 | 예제 | 의미 |
 | -- | -- | -- | -- |

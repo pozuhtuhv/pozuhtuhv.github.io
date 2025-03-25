@@ -15,18 +15,18 @@ tag: [python, yolo]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# Yolov8 이미지라벨링 튜토리얼 (for windows)
+## Yolov8 이미지라벨링 튜토리얼 (for windows)
 
-## 0. Yolov8 소개
+### 0. Yolov8 소개
 YOLOv8(You Only Look Once version 8)는 Ultralytics에서 개발한 객체 탐지(Object Detection) 및 분할(Segmentation) 알고리즘
 YOLO 시리즈는 실시간 객체 탐지에서 높은 성능과 속도가 장점임
 활용분야로는 자율주행, 보안, 의료, 소매업, 로봇공학에 사용된다.
 
-## 1. Python 패키지 설치 및 세팅
+### 1. Python 패키지 설치 및 세팅
 ```python
 python venv [folder] # 가상환경 세팅
 
@@ -34,14 +34,14 @@ pip install ultralytics opencv-python labelme2yolo numpy
 ```
 <br>
 
-## 2. 라벨링 프로그램 다운로드
+### 2. 라벨링 프로그램 다운로드
 [Download](https://github.com/wkentaro/labelme)
 
 ![docs](/assets/img/2024-09-05-python-yolov8-imglabel-1.png)<br>
 ![docs](/assets/img/2024-09-05-python-yolov8-imglabel-2.png)<br>
 <br>
 
-## 3. 라벨링 실행
+### 3. 라벨링 실행
 Open Dir -> 학습할 이미지가 있는 폴더<br>
 ![docs](/assets/img/2024-09-05-python-yolov8-imglabel-3.png)<br>
 ![docs](/assets/img/2024-09-05-python-yolov8-imglabel-4.png)<br>
@@ -50,12 +50,12 @@ A : 이전이미지<br>
 D : 다음이미지
 <br>
 
-## 4. 라벨링 결과 확인
+### 4. 라벨링 결과 확인
 ![docs](/assets/img/2024-09-05-python-yolov8-imglabel-5.png)<br>
 json과 함께 같이 저장됨<br>
 <br>
 
-## 5. 라벨링 데이터셋 만들기
+### 5. 라벨링 데이터셋 만들기
 ```bash
 labelme2yolo --json_dir [라벨링 저장된 json파일있는 폴더] --val_size 0.15 --test_size 0.15
 ```
@@ -66,7 +66,7 @@ labelme2yolo --json_dir [라벨링 저장된 json파일있는 폴더] --val_size
 train, val, test
 <br>
 
-## 6. 학습시키기
+### 6. 학습시키기
 ```bash
 yolo detect train data=[dataset.yaml파일위치 .yaml까지] model=yolov8n.pt epochs=100 imgsz=640`
 ```
@@ -80,7 +80,7 @@ n 에서 x로 갈수록 학습 속도 느려짐<br>
 runs > detect > train > weights > best.pt 로 저장됨
 <br>
 
-## 7. pt 활용 방법 예시
+### 7. pt 활용 방법 예시
 ```python
 from ultralytics import YOLO
 
@@ -103,19 +103,19 @@ model = YOLO("yolov8s.pt")
 results = model("https://ultralytics.com/images/bus.jpg", save = True)
 
 for result in results:
-    ## xyxy
+    ### xyxy
     print(result.boxes.xyxy)
-    ## conf
+    ### conf
     print(result.boxes.conf)
-    ## cls
+    ### cls
     print(result.boxes.cls)
-    ## id
+    ### id
     print(result.boxes.id)
-    ## xywh
+    ### xywh
     print(result.boxes.xywh)
-    ## xyxyn
+    ### xyxyn
     print(result.boxes.xyxyn)
-    ## xywhn
+    ### xywhn
     print(result.boxes.xywhn)
     
 # 결과
@@ -171,13 +171,13 @@ print(convert)
 ```
 <br>
 
-## 8. 참고자료
+### 8. 참고자료
 [1번](https://made-by-kyu.tistory.com/entry/OpenCV-YOLOv8-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B02)<br>
 
 [2번](https://velog.io/@choonsik_mom/Object-Detection-with-yolo-NAS-zpetis4o)
 <br>
 
-## 9. pt 활용 하면서 생긴 것들
+### 9. pt 활용 하면서 생긴 것들
 ```bash
 labelme2yolo --json_dir C:\Users\aaaa\Desktop\images --val_size 0.15 --test_size 0.15 yaml만들기
 

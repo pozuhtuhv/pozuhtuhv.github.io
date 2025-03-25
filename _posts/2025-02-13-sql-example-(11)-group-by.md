@@ -15,13 +15,13 @@ tag: [sql, example, group]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# SQL에서의 구간 그룹화 문제 패턴
+## SQL에서의 구간 그룹화 문제 패턴
 
-## 1. 나이 구간별 인원수 구하기
+### 1. 나이 구간별 인원수 구하기
 ```sql
 SELECT FLOOR(AGE / 10) * 10 AS AGE_GROUP, COUNT(*) AS PEOPLE
 FROM USERS
@@ -30,7 +30,7 @@ ORDER BY AGE_GROUP;
 ```
 <br>
 
-## 2. 월별(Year-Month) 매출 집계
+### 2. 월별(Year-Month) 매출 집계
 ```sql
 SELECT DATE_FORMAT(SALE_DATE, '%Y-%m') AS SALE_MONTH, SUM(AMOUNT) AS TOTAL_SALES
 FROM SALES
@@ -39,7 +39,7 @@ ORDER BY SALE_MONTH;
 ```
 <br>
 
-## 3. 급여 구간별 직원수 구하기
+### 3. 급여 구간별 직원수 구하기
 ```sql
 SELECT FLOOR(SALARY / 1000000) * 1000000 AS SALARY_GROUP, COUNT(*) AS EMPLOYEES
 FROM EMPLOYEES
@@ -48,7 +48,7 @@ ORDER BY SALARY_GROUP;
 ```
 <br>
 
-## 4. 코드 설명
+### 4. 코드 설명
 구간 그룹화를 나타내게 하는 방법
 <br>
 

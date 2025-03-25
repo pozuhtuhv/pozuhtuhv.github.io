@@ -15,11 +15,11 @@ tag: [python, tensorflow, keras, error]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# TensorFlow Error 소개
+## TensorFlow Error 소개
 ```bash
 2025-01-14 17:54:21.357200: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 2025-01-14 17:54:23.565144: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
@@ -28,7 +28,7 @@ tag: [python, tensorflow, keras, error]
 'TF_ENABLE_ONEDNN_OPTS=0' 오류의 해결방법
 <br>
 
-## 0. TensorFlow 에러해결
+### 0. TensorFlow 에러해결
 
 - tensorflow 를 import 하기전 os 변수를 지정시켜주기
 ```python

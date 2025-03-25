@@ -15,17 +15,17 @@ tag: [python, google, seo]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# Google Analytics Data
+## Google Analytics Data
 ```bash
 pip install google-analytics-data
 ```
 <br>
 
-## 0. Google Analytics Data API 코드
+### 0. Google Analytics Data API 코드
 ```python
 from google.oauth2 import service_account
 from google.analytics.data_v1beta import BetaAnalyticsDataClient

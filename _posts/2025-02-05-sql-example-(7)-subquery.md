@@ -15,13 +15,13 @@ tag: [sql, example, subquery]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# SUBQUERY문
+## SUBQUERY문
 
-## 0. SQL 문제
+### 0. SQL 문제
 
 | EMP_NAME | DEPARTMENT | SALARY | HIRE_DATE |
 | -------- | ---------- | ------ | --------- |
@@ -36,7 +36,7 @@ tag: [sql, example, subquery]
 
 <br>
 
-## 1. 계산 진행
+### 1. 계산 진행
 ```sql
 SELECT EMP_NAME, DEPARTMENT, SALARY -- 1. 직원 이름, 부서, 급여를 선택하여 출력
 FROM EMPLOYEES E
@@ -49,7 +49,7 @@ ORDER BY SALARY DESC;
 ```
 <br>
 
-## 2. 실행 결과
+### 2. 실행 결과
 
 | EMP_NAME | DEPARTMENT | SALARY | 
 | -------- | ---------- | ------ |  

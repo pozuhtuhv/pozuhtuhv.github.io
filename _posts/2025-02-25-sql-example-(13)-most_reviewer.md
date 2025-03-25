@@ -15,13 +15,13 @@ tag: [sql, example, subquery, join]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# SQL에서의 가장 많이 글쓴사람 리뷰만 출력
+## SQL에서의 가장 많이 글쓴사람 리뷰만 출력
 
-## 0. SQL 문제
+### 0. SQL 문제
 
 USER_PROFILE (유저 프로필)
 
@@ -45,7 +45,7 @@ REST_REVIEW (리뷰 목록)
 
 <br>
 
-## 1. 계산 진행
+### 1. 계산 진행
 ```sql
 SELECT 
     MR.USER_NAME, 
@@ -63,7 +63,7 @@ ORDER BY REVIEW_DATE, REVIEW_TEXT;
 ```
 <br>
 
-## 2. 실행 결과
+### 2. 실행 결과
 
 | USER_NAME | REVIEW_TEXT | REVIEW_DATE |
 | --------- | ----------- | ----------- |

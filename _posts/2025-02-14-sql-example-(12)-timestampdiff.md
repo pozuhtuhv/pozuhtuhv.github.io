@@ -15,13 +15,13 @@ tag: [sql, example, timestampdiff, join]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# SQL에서의 두개의 날짜 간의 차이 구하기 
+## SQL에서의 두개의 날짜 간의 차이 구하기 
 
-## 0. SQL 문제
+### 0. SQL 문제
 
 CUSTOMER_INS (손님 입장)
 
@@ -41,7 +41,7 @@ CUSTOMER_OUTS (손님 퇴장)
 
 <br>
 
-## 1. 계산 진행
+### 1. 계산 진행
 ```sql
 SELECT 
     ci.ID, 
@@ -53,7 +53,7 @@ JOIN CUSTOMER_OUTS co ON ci.ID = co.ID;
 ```
 <br>
 
-## 2. 실행 결과
+### 2. 실행 결과
 
 | ID | 입장시간 | 퇴장시간 | 초 |
 | -- | ---- | ---- | - |

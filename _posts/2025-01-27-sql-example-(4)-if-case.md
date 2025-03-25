@@ -15,13 +15,13 @@ tag: [sql, example, if, case]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# IF문 과 CASE문
+## IF문 과 CASE문
 
-## 0. SQL 쿼리 설명
+### 0. SQL 쿼리 설명
 ```sql
 SELECT 
     Column_1,
@@ -54,7 +54,7 @@ ORDER BY ANIMAL_ID;
 <br>
 <br>
 
-## 1. 쿼리 구성요소
+### 1. 쿼리 구성요소
 ```sql
   CASE 
     WHEN 

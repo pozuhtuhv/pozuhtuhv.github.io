@@ -15,13 +15,13 @@ tag: [sql, example, recursive]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# SQL에서의 시간대별 고객 퇴장 수 조회
+## SQL에서의 시간대별 고객 퇴장 수 조회
 
-## 0. SQL 문제
+### 0. SQL 문제
 
 CUSTOMER_OUT (고객 퇴장시간)
 
@@ -36,7 +36,7 @@ CUSTOMER_OUT (고객 퇴장시간)
 
 <br>
 
-## 1. 계산 진행
+### 1. 계산 진행
 ```sql
 WITH RECURSIVE HOURS AS ( -- 1. 0시부터 23시까지의 시간을 생성
     SELECT 0 AS HOUR
@@ -54,7 +54,7 @@ GROUP BY H.HOUR;
 ```
 <br>
 
-## 2. 실행 결과
+### 2. 실행 결과
 
 | HOUR | CUSTOMER_COUNT |
 | ---- | -------------- |

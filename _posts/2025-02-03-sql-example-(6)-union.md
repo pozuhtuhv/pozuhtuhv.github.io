@@ -15,13 +15,13 @@ tag: [sql, example, union]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# UNION문
+## UNION문
 
-## 0. SQL 쿼리 설명
+### 0. SQL 쿼리 설명
 ```sql
 select 
     date_format(os.sales_date, '%Y-%m-%d') sales_date,

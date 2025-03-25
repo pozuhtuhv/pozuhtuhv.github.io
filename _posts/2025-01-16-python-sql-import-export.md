@@ -15,15 +15,15 @@ tag: [python, sql, database]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# MySQL 데이터 입출력
+## MySQL 데이터 입출력
 데이터 임포트 / 엑스포트 할때 사용했던 명령어
 <br>
 
-## 0. Import
+### 0. Import
 ```python
 import pandas as pd
 from sqlalchemy import create_engine
@@ -42,7 +42,7 @@ df.to_sql('table_name', con=engine, if_exists='append', index=False)
 - `A.csv` 를 읽고 `mysql`의 `database` 에 `table_name` 이라는 이름으로 Import
 <br>
 
-## 0. Export
+### 0. Export
 ```python
 import pandas as pd
 from sqlalchemy import create_engine

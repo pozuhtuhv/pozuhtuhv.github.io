@@ -15,13 +15,13 @@ tag: [github, actions]
 {:toc}
 ---
 
-<!-- 글의 제목은 #
-    나머지 큰 제목은 ##
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-# Github Actions Workflow Permission
+## Github Actions Workflow Permission
 
-## 1. 권한 설정 하기
+### 1. 권한 설정 하기
 
 - Settings 페이지
 
