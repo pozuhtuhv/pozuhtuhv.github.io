@@ -129,12 +129,6 @@ pre {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .image-gallery img {
-    width: 100%; /* 작은 화면에서는 한 줄 1개씩 표시 */
-  }
-}
-
 /* 기타 요소 */
 hr {
   background: var(--light-text-color);
