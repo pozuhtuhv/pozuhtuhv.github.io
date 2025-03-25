@@ -76,12 +76,63 @@ pre {
   overflow-x: auto;
 }
 
-/* 이미지 */
+/* 본문 이미지 */
 .post img {
-  max-width: 50%;
+  max-width: 100%; /* 이미지 크기를 더 유연하게 조정 */
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: calc(50% - 5px); /* 한 줄에 2개 배치 (5px 간격 포함) */
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-gallery img:only-child {
+  width: 100%;
+  max-width: 600px; /* 너무 커지는 걸 방지 */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.overlay img {
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(1);
+  cursor: zoom-in;
+}
+
+.zoom-img {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .image-gallery img {
+    width: 100%; /* 작은 화면에서는 한 줄 1개씩 표시 */
+  }
 }
 
 /* 기타 요소 */
@@ -550,42 +601,6 @@ tr:hover {
 }
 #topButton:hover {
   background-color: #333;
-}
-
-/* img 갤러리 및 확대 */
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-.image-gallery img {
-  width: 49%;
-  max-width: 300px;
-  height: auto;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-.overlay img {
-  width: auto;
-  height: auto;
-  max-width: 90vw;
-  max-height: 90vh;
-  transform: scale(1);
-  cursor: zoom-in;
-}
-.zoom-img {
-  cursor: pointer;
 }
 
 /* 블로그 more 버튼 */

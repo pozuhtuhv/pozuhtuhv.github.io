@@ -49,12 +49,6 @@ ol#markdown-toc ::marker {
   <h1 class="title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }} - {% if page.minute %} {{page.minute}}{% else %}{{minute}}{% endif %}min read</time>
   {{ content }}
-  <!-- Tag disable -->
-  <!-- <span class="meta">
-    Tag : 
-    {% for tag in page.tags %}
-    <a href="{{ site.url }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
-  </span> -->
 </section>
 
 <section>
@@ -99,45 +93,54 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".post img");
   const overlay = document.getElementById("overlay");
   const overlayImg = document.getElementById("overlay-img");
-
   let isZoomed = false;
   let scale = 2;
+  let currentIndex = 0;
+  const imageArray = Array.from(images);
 
-  images.forEach(img => {
+  images.forEach((img, index) => {
       img.classList.add("zoom-img");
-      img.addEventListener("click", function (e) {
-          overlay.style.display = "flex";
-          overlayImg.src = this.src;
-          overlayImg.style.transform = `scale(1)`;
-          overlayImg.style.cursor = "zoom-in";
+      img.addEventListener("click", function () {
+          currentIndex = index;
+          showImage(img.src);
       });
   });
+
+  function showImage(src) {
+      overlay.style.display = "flex";
+      overlayImg.src = src;
+      overlayImg.style.transform = `scale(1)`;
+      overlayImg.style.cursor = "zoom-in";
+  }
+
+  function closeOverlay() {
+      overlay.style.display = "none";
+      overlayImg.style.transform = "scale(1)";
+      overlayImg.style.cursor = "zoom-in";
+      isZoomed = false;
+  }
 
   overlayImg.addEventListener("click", function (e) {
       if (!isZoomed) {
           const rect = overlayImg.getBoundingClientRect();
           const clickX = (e.clientX - rect.left) / rect.width;
           const clickY = (e.clientY - rect.top) / rect.height;
-
           overlayImg.style.transformOrigin = `${clickX * 100}% ${clickY * 100}%`;
           overlayImg.style.transform = `scale(${scale})`;
           overlayImg.style.cursor = "zoom-out";
           isZoomed = true;
       } else {
-          overlayImg.style.transformOrigin = "center center";
           overlayImg.style.transform = "scale(1)";
           overlayImg.style.cursor = "zoom-in";
           isZoomed = false;
       }
   });
 
-  overlay.addEventListener("click", function (e) {
-      if (e.target === overlay) {
-          overlay.style.display = "none";
-          overlayImg.style.transform = "scale(1)";
-          overlayImg.style.cursor = "zoom-in";
-          isZoomed = false;
-      }
+  overlay.addEventListener("click", (e) => e.target === overlay && closeOverlay());
+  document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeOverlay();
+      if (e.key === "ArrowRight" && currentIndex < imageArray.length - 1) showImage(imageArray[++currentIndex].src);
+      if (e.key === "ArrowLeft" && currentIndex > 0) showImage(imageArray[--currentIndex].src);
   });
 });
 </script>
