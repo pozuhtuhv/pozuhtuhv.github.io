@@ -239,12 +239,19 @@ time {
 main {
   margin-top: 1%;
 }
+
 submain {
   display: flex;
   max-width: 55rem;
   margin: -5rem auto 0;
   padding: 2.4rem 2rem;
   flex-direction: column;
+}
+
+/* hits */
+.m_description { 
+  display: flex;
+  justify-content: space-between;
 }
 
 /* 소셜 아이콘 및 푸터 */
