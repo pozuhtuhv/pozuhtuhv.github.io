@@ -248,22 +248,22 @@ submain {
   flex-direction: column;
 }
 
-/* hits */
-.m_description { 
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 소셜 아이콘 및 푸터 */
-.social-icon {
-  width: 15px;
-  height: 15px;
-}
 .social-footer {
   padding: 1rem;
   display: flex;
   justify-content: center;
   position: initial;
+}
+
+.social-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/* hits */
+.m_description { 
+  display: flex;
+  justify-content: space-between;
 }
 
 /* 미디어 쿼리 */
