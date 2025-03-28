@@ -164,33 +164,41 @@ blockquote {
   border-left: 5px solid var(--dark-text-color);
   padding-left: 1rem;
 }
+
 h1 {
   color: var(--main-text-color);
   text-transform: uppercase;
-  font-size: 2rem;
-  margin-top: 1.5rem;
+  font-size: 2.5rem; /* SEO 최적화를 위해 크기 증가 */
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
-h2, h3, h4, h5 {
+
+h2, h3, h4, h5, h6 {
   position: relative;
-  margin: 0.5em 0;
+  margin: 0.75em 0;
 }
+
 h2 {
-  font-size: 1.75rem !important;
-  line-height: 1;
+  font-size: 2rem !important; /* 크기 증가하여 h1과 명확한 구분 */
+  line-height: 1.2;
 }
+
 h3 {
+  font-size: 1.75rem !important;
+}
+
+h4 {
   font-size: 1.5rem !important;
 }
-h4 {
+
+h5 {
   font-size: 1.25rem !important;
 }
-h5 {
+
+h6 {
   font-size: 1rem !important;
 }
-h6 {
-  font-size: 0.875rem !important;
-}
+
 section h1:first-child {
   margin-top: 0;
 }
