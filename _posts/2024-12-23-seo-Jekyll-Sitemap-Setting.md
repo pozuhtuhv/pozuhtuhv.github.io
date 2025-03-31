@@ -44,29 +44,8 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% raw %}{% for page in site.pages %}
-    {% if page.layout == "default" %}
-      {% if page.published != false %}
-        <url>
-          <loc>{{ site.url }}{{ page.url }}?title={{ page.title }}</loc>
-          {% if page.sitemap.last_modified_date == null %}
-            <lastmod>{{ page.last_modified_date | date: "%Y-%m-%d" }}</lastmod>
-          {% else %}
-            <lastmod>2024-04-06</lastmod>
-          {% endif %}
-          {% if page.sitemap.changefreq == null %}
-            <changefreq>daily</changefreq>
-          {% else %}
-            <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-          {% endif %}
-          {% if page.sitemap.priority == null %}
-            <priority>0.5</priority>
-          {% else %}
-            <priority>{{ page.sitemap.priority }}</priority>
-          {% endif %}
-        </url>
-      {% endif %}
-    {% endif %}
+  {% raw }{% for doc in site.documents %}
+  <url><loc>{{ site.url }}{{ doc.url }}</loc></url>
   {% endfor %}{% endraw %}
 </urlset>
 ```
