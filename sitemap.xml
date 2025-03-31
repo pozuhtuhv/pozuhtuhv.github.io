@@ -7,7 +7,7 @@ layout: null
     {% if page.layout == "default" %}
       {% if page.published != false %}
         <url>
-          <loc>{{ site.url }}{{ page.url }}?title={{ page.title }}</loc>
+          <loc>{{ site.url }}{{ page.url }}</loc>
         </url>
       {% endif %}
     {% endif %}
