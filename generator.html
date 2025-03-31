@@ -67,6 +67,7 @@ title: Yt-Generator
         let quality = document.getElementById("quality").value;
         let audioOnly = document.getElementById("audioOnly").checked ? "--extract-audio" : "";
         let parallel = document.getElementById("parallel").checked ? "-N 4" : "";
+        let file_extension = document.getElementById("audioOnly").checked ? ".mp3" : "mp4";
 
         let folder = selectedOS === "windows" 
             ? `C:\\Users\\${username}\\Desktop`
