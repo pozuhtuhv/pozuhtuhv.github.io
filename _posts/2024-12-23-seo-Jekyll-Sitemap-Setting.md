@@ -44,7 +44,7 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% raw }{% for doc in site.documents %}
+  {% raw %}{% for doc in site.documents %}
   <url><loc>{{ site.url }}{{ doc.url }}</loc></url>
   {% endfor %}{% endraw %}
 </urlset>
