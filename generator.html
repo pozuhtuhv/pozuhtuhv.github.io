@@ -1,0 +1,127 @@
+---
+layout: default
+title: Yt-Generator
+---
+
+<style>
+    .posts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-link {
+        align-self: flex-start;  /* 좌측 정렬 */
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        display: inline-block;
+        text-align: center;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    input, select, textarea, .bluebutton {
+        margin-top: 10px;
+        width: calc(100% - 16px);
+        padding: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: #252525;
+        color: #e0e0e0;
+    }
+
+    .bluebutton {
+        background-color: var(--link-color);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s, border 0.3s;
+    }
+
+    .checkbox-container label {
+        white-space: nowrap;
+    }
+</style>
+
+<script>
+    let selectedOS = "windows";
+
+    function toggleOS() {
+        selectedOS = selectedOS === "windows" ? "mac" : "windows";
+        document.getElementById("selectedOS").textContent = selectedOS === "windows" ? "Windows" : "Mac";
+        document.getElementById("installCommand").textContent = selectedOS === "windows"
+            ? "choco install yt-dlp ffmpeg"
+            : "brew install yt-dlp ffmpeg";
+    }
+
+    function generateAndCopyCommand() {
+        let url = document.getElementById("url").value.trim();
+        let username = document.getElementById("username").value.trim();
+        let quality = document.getElementById("quality").value;
+        let audioOnly = document.getElementById("audioOnly").checked ? "--extract-audio" : "";
+        let parallel = document.getElementById("parallel").checked ? "-N 4" : "";
+
+        let folder = selectedOS === "windows" 
+            ? `C:\\Users\\${username}\\Desktop`
+            : `/Users/${username}/Desktop`;
+
+        let now = new Date();
+        let timestamp = now.getFullYear() + "-" +
+            String(now.getMonth() + 1).padStart(2, "0") + "-" +
+            String(now.getDate()).padStart(2, "0") + "_" +
+            String(now.getHours()).padStart(2, "0") + "-" +
+            String(now.getMinutes()).padStart(2, "0");
+
+        let filename = document.getElementById("filename").value.trim() || `${timestamp}.mp4`;
+
+        if (!url || !username) {
+            alert("URL과 사용자 계정 이름을 입력해주세요.");
+            return;
+        }
+
+        let command = `yt-dlp -o "${folder}/${filename}" ${quality} ${audioOnly} ${parallel} "${url}"`;
+        document.getElementById("commandOutput").value = command;
+        document.getElementById("commandOutput").select();
+        document.execCommand("copy");
+        alert("명령어가 복사되었습니다.");
+    }
+</script>
+
+<section class="posts">
+    <a href="{{ site.url }}/" class="home-link">← Home</a>
+    <br>
+    <div class="container">
+        <div class="install-box">
+            <pre id="installCommand">choco install yt-dlp ffmpeg</pre>
+            <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
+        </div>
+        
+        <input type="text" id="username" placeholder="운영체제 사용자 계정 이름 입력">
+        <input type="text" id="url" placeholder="다운로드할 URL (일반 또는 M3U8 지원)">
+        <input type="text" id="filename" placeholder="파일 이름 (기본: (현재날짜시간).mp4)">
+        <div><br></div>
+        <label>화질 선택:</label>
+        <select id="quality">
+            <option value="-f best">최고 화질</option>
+            <option value="-f worst">최저 화질</option>
+            <option value="-f bestvideo">최고 영상 화질</option>
+            <option value="-f bestaudio">최고 오디오 화질</option>
+        </select>
+
+        <!-- 체크박스 정렬 문제 해결 -->
+        <div class="checkbox-container">
+            <label><input type="checkbox" id="audioOnly" style="width: auto;"> 오디오만 다운로드</label>
+            <label><input type="checkbox" id="parallel" style="width: auto;"> 병렬 다운로드</label>
+        </div>
+
+        <button class="bluebutton" onclick="generateAndCopyCommand()">명령어 생성 및 복사</button>
+        <textarea id="commandOutput" rows="3" readonly></textarea>
+    </div>
+</section>
