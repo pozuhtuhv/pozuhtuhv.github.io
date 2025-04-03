@@ -33,6 +33,7 @@ tags: [mac, background]
     <img src ='/assets/img/2025-03-23-mac-background-2.png'>
 </div>
 <br>
+<br>
 
 ### 2. 직접 경로 확인
 

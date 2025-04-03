@@ -32,6 +32,7 @@ M1 맥북에어에는 좌측에 C 타입 2개, 우측엔 3.5mm 이어폰 이 있
     <img src = '/assets/img/2025-03-25-mac-ugreen-1.png'>
 </div>
 <br>
+<br>
 
 ### 1. 배송현황
 
