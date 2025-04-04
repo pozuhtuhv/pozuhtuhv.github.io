@@ -3,25 +3,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="naver-site-verification" content="565f41042384b9e0c6b69e3554fa6b58610b557c">
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:url" content="{{ site.url | append: page.url }}">
-  <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
+  <link rel="canonical" href="{{ site.url | append: page.url }}">
+
+  <title>
+    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+  </title>
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <!-- custom_sitemap -->
-  <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml">
-
-  <!-- code_block_set -->
   <link rel="stylesheet" href="/assets/css/syntax.css">
   <link rel="stylesheet" href="/assets/css/giscus.css">
 
-  <!-- Google Tag Manager -->
-  <!-- Del -->
-  <!-- End Google Tag Manager -->
-
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -29,9 +22,8 @@
     gtag('js', new Date());
     gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
   </script>
-  <!-- Google tag (gtag.js) -->
 
-  <script src="/assets/js/custom.js" defer></script>
+  <script src="/assets/js/custom.js"></script>
 
   <style>
     {% capture include_to_scssify %}
