@@ -1,3 +1,5 @@
+@import "fonts";
+
 /* 공통 리셋 */
 *,
 :after,
@@ -205,19 +207,18 @@ strong, b {
 }
 
 /* 메인 리스트 */
-.posts {
-  margin-top: 20px;
-}
 .posts ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 .posts ul li {
-  display: block;
-  margin: 4px 0;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.5;
   overflow: hidden;
+  width: 100%;
+  font-size: 14px;
 }
 .posts ul li a {
   display: inline-block;
@@ -225,8 +226,9 @@ strong, b {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  position: relative;
+  top: 1px;
 }
-
 
 /* 시간, 타이틀 */
 time {
@@ -301,10 +303,74 @@ figcaption {
 }
 
 /* Bio */
+
+.bio {
+  margin-bottom: 2rem;
+}
+
 .bio a {
   display: inline-block;
   font-size: 14px;
   margin-top: 5px;
+}
+
+/* 검색 영역 */
+.search-article {
+  position: relative;
+}
+.search-article label[for="search-input"] {
+  font-family: var(--text-font);
+  position: relative;
+  top: -10px;
+  left: 11px;
+}
+.search-article input[type="search"] {
+  font-family: var(--text-font);
+  top: -1rem;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 30px;
+  outline: none;
+  position: absolute;
+  border-radius: 5px;
+  padding: 10px 10px 10px 35px;
+  color: var(--main-text-color);
+  background-color: rgba(128, 128, 128, 0.1);
+  border: 1px solid rgba(128, 128, 128, 0.1);
+}
+.search-article input[type="search"]::-webkit-input-placeholder {
+  color: #808080;
+}
+.search-article input[type="search"]::-webkit-search-decoration,
+.search-article input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#search-results li {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#search-results li::before {
+  content: "›";
+  display: inline-block;
+  color: var(--link-color);
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+#search-results li a {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
 }
 
 /* ::selection */

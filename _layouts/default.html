@@ -44,6 +44,23 @@ layout: compress
   </div>
 </footer>
 
+{% if page.url == '/' %}
+    <script defer src="{{ site.url }}/assets/js/simple-jekyll-search.js"></script>
+    <script defer>
+      window.addEventListener('DOMContentLoaded', function () {
+        SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('search-results'),
+          json: '{{ site.url }}/search.json',
+          searchResultTemplate: '<li><a href="{url}" title="{description}">[{date}] {title}</a></li>',
+          noResultsText: 'No results found..',
+          limit: 10,
+          fuzzy: true,
+        });
+      });
+    </script>
+  {% endif %}
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const vscodeLink = document.getElementById('vscode-link');
