@@ -31,11 +31,11 @@ layout: default
 
 <section class="posts">
     <h2 class="blog-header">
-        Recent POST [{{ site.posts | size }}]
+        Recent POST
         <a href="{{ site.url }}/categories/" class="blog-more">+</a>
     </h2>
     <ul>
-        {% for post in site.posts limit:10 %}
+        {% for post in site.posts %}
         <li>
             - [{{ post.date | date: "%Y-%m-%d" }}] ﾠ<a href="{{ site.url }}{{ post.url }}"> {{ post.title }}</a>
         </li>
