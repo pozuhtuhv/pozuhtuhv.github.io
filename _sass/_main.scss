@@ -220,13 +220,13 @@ strong, b {
   overflow: hidden;
 }
 .posts ul li a {
-  display: block;
+  display: inline-block;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  color: inherit;
-  text-decoration: none;
+  max-width: 100%;
 }
+
 
 /* 시간, 타이틀 */
 time {
