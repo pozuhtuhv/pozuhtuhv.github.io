@@ -521,27 +521,6 @@ figcaption {
   background: #27262B;
 }
 
-/* 코드블럭 복사 버튼 */
-.copy-button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  padding: 5px 10px;
-  background-color: #55505048;
-  color: var(--link-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.copy-button:hover {
-  background-color: #55505048;
-}
-pre:hover .copy-button {
-  opacity: 1;
-}
-
 /* 테이블 */
 .table-container {
   display: block;

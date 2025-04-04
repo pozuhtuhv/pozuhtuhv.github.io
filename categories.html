@@ -59,11 +59,13 @@ font-size: 14px;
 }
 </style>
 
+<section class="post">
+  <div class="flex-row-between">
+      <a href="{{ site.url }}">« Home</a>
+  </div>
+  <h2>Categories</h2>
+
 <section class="posts">
-    <a href="{{ site.url }}/">← Home</a>
-    <br>
-    <h1>Categories</h1>
-    
     <!-- 카테고리 버튼 목록 -->
     <div id="category-buttons">
         {% for category in site.categories %}
