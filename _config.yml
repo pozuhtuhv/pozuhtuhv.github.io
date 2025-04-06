@@ -5,7 +5,6 @@ description: "minimal less in more"
 lang: en-US
 timezone: Asia/Seoul
 repo: https://github.com/pozuhtuhv/pozuhtuhv.github.io # site repo [optional]
-data-theme: dark # default theme "dark" | "light"
 
 author:
   name: pozuhtuhv

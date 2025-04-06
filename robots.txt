@@ -1,3 +1,5 @@
+---
+layout: none
+---
 User-agent: *
-Allow: /
-Sitemap: https://pozuhtuhv.github.io/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
