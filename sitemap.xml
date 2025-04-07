@@ -3,7 +3,21 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for doc in site.documents %}
-  <url><loc>{{ site.url }}{{ doc.url }}</loc></url>
+  {%- comment -%} 정적 페이지 (html_pages) {%- endcomment -%}
+  {% for page in site.html_pages %}
+    {% unless page.url contains '404.html' or page.sitemap == false %}
+  <url>
+    <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
+  </url>
+    {% endunless %}
+  {% endfor %}
+
+  {%- comment -%} 블로그 글 (posts) {%- endcomment -%}
+  {% for post in site.posts %}
+    {% unless post.sitemap == false %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+  </url>
+    {% endunless %}
   {% endfor %}
 </urlset>
