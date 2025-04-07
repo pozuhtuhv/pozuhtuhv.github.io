@@ -2,365 +2,91 @@
 layout: default
 ---
 
-<style>
-    /* 기존 스타일 유지하되 GitHub 블로그에 맞게 조정 */
-    input[type="text"], .btn-primary, .btn-success {
-        margin-top: 10px;
-        width: calc(100% - 16px);
+<section class="post">
+  <div>
+      <a href="{{ site.url }}">« Home</a>
+  </div>
+  <h2>Youtube 썸네일 가져오기</h2>
+
+  <div>
+    <style>
+      #url {
+        width: 100%;
         padding: 10px;
-        border: 1px solid #444;
-        border-radius: 5px;
-        background: #252525;
-        color: #e0e0e0;
-    }
-    
-    .btn-primary {
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      #generate {
+        padding: 10px 20px;
         background-color: var(--link-color);
         color: white;
+        border: none;
+        border-radius: 4px;
         cursor: pointer;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s, border 0.3s;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .btn-primary:hover {
-        opacity: 0.8;
-    }
-    
-    .btn-success {
-        background-color: #ff9500;
-        color: white;
-        cursor: pointer;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background 0.3s, border 0.3s;
-        display: inline-block;
-        width: auto;
-    }
-    
-    .btn-success:hover {
-        opacity: 0.8;
-    }
-    
-    .error-message {
-        color: #ff5252;
-        margin-top: 1rem;
-        padding: 1rem;
-        background-color: rgba(255, 82, 82, 0.1);
-        border-radius: 8px;
-        display: none;
-        font-weight: 500;
-        text-align: center;
-    }
-    
-    .thumbnails-grid {
-        display: none;
-        margin-top: 2rem;
-    }
-    
-    .thumbnails-container {
+      }
+      
+      .thumbnail {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
-    }
+        margin: 10px 0;
+      }
+
+    </style>
+    <div>
+      <input type="text" id="url" name="url" placeholder="https://www.youtube.com/watch?v=VIDEO_ID" /><br>
+      <button style="width: 100%;" id="generate" type="button">썸네일 가져오기</button><br>
     
-    .thumbnail-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all 0.3s ease;
-        width: 100%;
-        max-width: 800px;
-        background-color: #252525;
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        border: 1px solid #3a3a45;
-        margin-bottom: 20px;
-    }
-    
-    .thumbnail-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .thumbnail-title {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #e0e0e0;
-        margin: 0;
-    }
-    
-    .size-info {
-        font-size: 0.9rem;
-        color: #a0a0a0;
-        background-color: rgba(255, 255, 255, 0.05);
-        padding: 0.3rem 0.8rem;
-        border-radius: 20px;
-        font-weight: 500;
-        border: 1px solid #3a3a45;
-    }
-    
-    .thumbnail-wrapper {
-        position: relative;
-        width: 100%;
-        margin-bottom: 1rem;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        border: 1px solid #3a3a45;
-    }
-    
-    .thumbnail {
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
-    }
-    
-    .download-btn-wrapper {
-        margin-top: 1rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    @media (max-width: 768px) {
-        .thumbnail-item {
-            padding: 1rem;
-        }
-    }
-</style>
+    </div>
+
+    <div id="output"></div>
+  </div>
+</section>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const videoUrlInput = document.getElementById('video-url');
-        const extractBtn = document.getElementById('extract-btn');
-        const errorMessage = document.getElementById('error-message');
-        const thumbnailsGrid = document.getElementById('thumbnails-grid');
-        
-        // 썸네일 이미지 요소들
-        const thumbnailMaxres = document.getElementById('thumbnail-maxres');
-        const thumbnailHq = document.getElementById('thumbnail-hq');
-        const thumbnailMq = document.getElementById('thumbnail-mq');
-        const thumbnailSd = document.getElementById('thumbnail-sd');
-        const thumbnailDefault = document.getElementById('thumbnail-default');
-        
-        // 다운로드 링크 요소들
-        const downloadMaxres = document.getElementById('download-maxres');
-        const downloadHq = document.getElementById('download-hq');
-        const downloadMq = document.getElementById('download-mq');
-        const downloadSd = document.getElementById('download-sd');
-        const downloadDefault = document.getElementById('download-default');
-        
-        let currentVideoId = '';
-        
-        // YouTube 영상 ID 추출 함수
-        function extractVideoId(url) {
-            // URL에서 직접 ID 추출 시도
-            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-            const match = url.match(regExp);
-            
-            if (match && match[2].length === 11) {
-                return match[2];
-            } else if (url.length === 11) {
-                // 사용자가 직접 영상 ID를 입력한 경우
-                return url;
-            } else {
-                return null;
-            }
-        }
-        
-        // 썸네일 URL 생성 함수
-        function getThumbnailUrl(videoId, quality) {
-            return `https://img.youtube.com/vi/${videoId}/${quality}default.jpg`;
-        }
-        
-        // 모든 썸네일 표시 함수
-        function displayAllThumbnails(videoId) {
-            // 최대 해상도
-            thumbnailMaxres.src = getThumbnailUrl(videoId, 'maxres');
-            downloadMaxres.href = getThumbnailUrl(videoId, 'maxres');
-            downloadMaxres.download = `youtube_thumbnail_${videoId}_maxres.jpg`;
-            
-            // 고화질
-            thumbnailHq.src = getThumbnailUrl(videoId, 'hq');
-            downloadHq.href = getThumbnailUrl(videoId, 'hq');
-            downloadHq.download = `youtube_thumbnail_${videoId}_hq.jpg`;
-            
-            // 중화질
-            thumbnailMq.src = getThumbnailUrl(videoId, 'mq');
-            downloadMq.href = getThumbnailUrl(videoId, 'mq');
-            downloadMq.download = `youtube_thumbnail_${videoId}_mq.jpg`;
-            
-            // 표준 화질
-            thumbnailSd.src = getThumbnailUrl(videoId, 'sd');
-            downloadSd.href = getThumbnailUrl(videoId, 'sd');
-            downloadSd.download = `youtube_thumbnail_${videoId}_sd.jpg`;
-            
-            // 기본 화질
-            thumbnailDefault.src = getThumbnailUrl(videoId, '');
-            downloadDefault.href = getThumbnailUrl(videoId, '');
-            downloadDefault.download = `youtube_thumbnail_${videoId}_default.jpg`;
-            
-            // 썸네일 그리드 표시
-            thumbnailsGrid.style.display = 'block';
-            
-            // 스크롤 애니메이션
-            setTimeout(() => {
-                thumbnailsGrid.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-            
-            currentVideoId = videoId;
-        }
-        
-        // 썸네일 추출 버튼 클릭 이벤트
-        extractBtn.addEventListener('click', function() {
-            const videoUrl = videoUrlInput.value.trim();
-            const videoId = extractVideoId(videoUrl);
-            
-            if (videoId) {
-                errorMessage.style.display = 'none';
-                displayAllThumbnails(videoId);
-            } else {
-                errorMessage.style.display = 'block';
-                thumbnailsGrid.style.display = 'none';
-            }
-        });
-        
-        // 엔터 키 이벤트
-        videoUrlInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                extractBtn.click();
-            }
-        });
-        
-        // 이미지 로드 오류 처리
-        function handleImageError(img, quality) {
-            img.onerror = function() {
-                img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e8d59c115%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e8d59c115%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23373940%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.45%22%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%86%EC%9D%8C%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E';
-                console.log(`${quality} 썸네일을 불러올 수 없습니다.`);
-            };
-        }
-        
-        // 이미지 오류 처리 등록
-        handleImageError(thumbnailMaxres, '최대 해상도');
-        handleImageError(thumbnailHq, '고화질');
-        handleImageError(thumbnailMq, '중화질');
-        handleImageError(thumbnailSd, '표준 화질');
-        handleImageError(thumbnailDefault, '기본 화질');
-    });
-</script>
+  document.getElementById("generate").addEventListener("click", () => {
+    const input = document.getElementById("url").value.trim();
+    const output = document.getElementById("output");
+    output.innerHTML = "";
 
-<section class="post">
-    <div class="flex-row-between">
-        <a href="{{ site.url }}">« Home</a>
-    </div>
-    <h2>YouTube 썸네일 추출기</h2>
-    
-    <div class="input-section">
-        <div class="input-group">
-            <label for="video-url">YouTube 영상 URL 또는 ID 입력:</label>
-            <input type="text" id="video-url" placeholder="https://www.youtube.com/watch?v=xxxxxxxxxxx 또는 xxxxxxxxxxx">
+    if (!input) {
+      output.textContent = "URL을 입력하세요.";
+      return;
+    }
+
+    try {
+      const url = new URL(input);
+      const videoId = url.searchParams.get("v");
+
+      if (!videoId) {
+        output.textContent = "유효한 YouTube URL이 아닙니다.";
+        return;
+      }
+
+      const sizes = ["maxresdefault", "sddefault", "hqdefault", "mqdefault", "default"];
+      const size_num = ["1280x720", "640x480", "480x360", "320x180", "120x90"];
+      sizes.forEach((size, index) => {
+        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/${size}.jpg`;
+        const section = document.createElement("div");
+        section.innerHTML = `
+        <div class="thumbnail">
+          <p>${size_num[index]}</p>
+          <div>
+          <a href="${thumbnailUrl}">
+            <img src="${thumbnailUrl}">
+          </a>
+          </div>
+          <br>
         </div>
-        
-        <button id="extract-btn" class="btn-primary">썸네일 추출하기</button>
-        
-        <div class="error-message" id="error-message">
-            올바른 YouTube URL 또는 영상 ID를 입력해주세요.
-        </div>
-    </div>
-    
-    <div class="thumbnails-grid" id="thumbnails-grid">
-        <h2>크기별 썸네일</h2>
-        
-        <div class="thumbnails-container">
-            <!-- 최대 해상도 -->
-            <div class="thumbnail-item">
-                <div class="thumbnail-header">
-                    <h3 class="thumbnail-title">최대 해상도</h3>
-                    <span class="size-info" id="size-maxres">1280 x 720 픽셀</span>
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img id="thumbnail-maxres" class="thumbnail" alt="최대 해상도 썸네일">
-                </div>
-                <div class="download-btn-wrapper">
-                    <a id="download-maxres" href="#" download="youtube_thumbnail_maxres.jpg">
-                        <button class="btn-success">다운로드</button>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- 표준 화질 -->
-            <div class="thumbnail-item">
-                <div class="thumbnail-header">
-                    <h3 class="thumbnail-title">표준 화질 (SD)</h3>
-                    <span class="size-info" id="size-sd">640 x 480 픽셀</span>
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img id="thumbnail-sd" class="thumbnail" alt="표준 화질 썸네일">
-                </div>
-                <div class="download-btn-wrapper">
-                    <a id="download-sd" href="#" download="youtube_thumbnail_sd.jpg">
-                        <button class="btn-success">다운로드</button>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- 고화질 -->
-            <div class="thumbnail-item">
-                <div class="thumbnail-header">
-                    <h3 class="thumbnail-title">고화질 (HQ)</h3>
-                    <span class="size-info" id="size-hq">480 x 360 픽셀</span>
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img id="thumbnail-hq" class="thumbnail" alt="고화질 썸네일">
-                </div>
-                <div class="download-btn-wrapper">
-                    <a id="download-hq" href="#" download="youtube_thumbnail_hq.jpg">
-                        <button class="btn-success">다운로드</button>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- 중화질 -->
-            <div class="thumbnail-item">
-                <div class="thumbnail-header">
-                    <h3 class="thumbnail-title">중화질 (MQ)</h3>
-                    <span class="size-info" id="size-mq">320 x 180 픽셀</span>
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img id="thumbnail-mq" class="thumbnail" alt="중화질 썸네일">
-                </div>
-                <div class="download-btn-wrapper">
-                    <a id="download-mq" href="#" download="youtube_thumbnail_mq.jpg">
-                        <button class="btn-success">다운로드</button>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- 기본 화질 -->
-            <div class="thumbnail-item">
-                <div class="thumbnail-header">
-                    <h3 class="thumbnail-title">기본 화질</h3>
-                    <span class="size-info" id="size-default">120 x 90 픽셀</span>
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img id="thumbnail-default" class="thumbnail" alt="기본 화질 썸네일">
-                </div>
-                <div class="download-btn-wrapper">
-                    <a id="download-default" href="#" download="youtube_thumbnail_default.jpg">
-                        <button class="btn-success">다운로드</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        `;
+        output.appendChild(section);
+      });
+
+    } catch (e) {
+      output.textContent = "URL 형식이 잘못되었습니다.";
+    }
+  });
+</script>
