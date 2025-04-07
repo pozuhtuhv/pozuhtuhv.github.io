@@ -136,4 +136,4 @@ jobs:
 정상적으로 작동<br>
 다시 비활성화<br>
 <br>
-[권한설정에 대한 글](https://pozuhtuhv.github.io/2024/08/22/workflow-permissions)
+[권한설정에 대한 글](https://pozuhtuhv.github.io/2024/08/22/git-github-workflow-permissions)

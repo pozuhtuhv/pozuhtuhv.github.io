@@ -28,9 +28,8 @@ M1 맥북에어에는 좌측에 C 타입 2개, 우측엔 3.5mm 이어폰 이 있
 알리는 할인없이는 1만4천원 정도 였다. 생각보다 큰 금액차이.<br>
 마침 알리에서 15주년 웰컴 이벤트 기간이었었고, 알리에서의 첫구매를 해서 그런가 1~2천원대로 할인이 되어서 구매했다.<br>
 <br>
-<div class = 'image-gallery'>
-    <img src = '/assets/img/2025-03-25-mac-ugreen-1.png'>
-</div>
+
+![mac-ugreen-1](/assets/img/2025-03-25-mac-ugreen-1.png)
 <br>
 <br>
 

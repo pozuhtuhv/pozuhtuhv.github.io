@@ -1,0 +1,44 @@
+---
+title: Python의 venv 가상환경 세팅
+description: Python의 가상환경 세팅
+layout: post
+categories: Python
+published: true
+date_published: 2025-04-07
+date_modified: 2025-04-07
+tags: [python, venv]
+---
+---
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+---
+
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
+    이후 나머지는 3개이상 -->
+
+## Python의 venv 가상환경 세팅
+
+### 0. 개요
+개발을 진행하면서 프로젝트마다 폴더정리 및 라이브러리 정리를 잘 못하게 되는데,<br>
+이 부분에서 꼭 필요한게 가상환경 세팅이다.<br>
+<br>
+
+### 1. 세팅
+처음 진행할꺼는 바탕화면에 지정할 새로운 폴더 만들어놓기<br>
+터미널 켜서 명령어 실행하기<br>
+<br>
+```
+cd Desktop
+python3 -m venv [지정한 폴더이름]
+```
+<br>
+<div class = 'image-gallery'>
+    <img src ='/assets/img/2025-04-07-python-venv-1.png'>
+    <img src ='/assets/img/2025-04-07-python-venv-2.png'>
+</div>
+<br>
+위 터미널을 실행하면 이미지와 같이 폴더들이 생겨있는걸 알수 있다.<br>
+이상태에서 vscode로 폴더 열면 정상적으로 프로젝트 분리하여 실행가능
