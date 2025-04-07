@@ -1,6 +1,6 @@
 ---
-title: Python의 venv 가상환경 세팅
-description: Python의 가상환경 세팅
+title: venv 가상환경 세팅
+description: 가상환경 세팅
 layout: post
 categories: Python
 published: true
@@ -19,7 +19,7 @@ tags: [python, venv]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Python의 venv 가상환경 세팅
+## venv 가상환경 세팅
 
 ### 0. 개요
 개발을 진행하면서 프로젝트마다 폴더정리 및 라이브러리 정리를 잘 못하게 되는데,<br>
@@ -30,7 +30,7 @@ tags: [python, venv]
 처음 진행할꺼는 바탕화면에 지정할 새로운 폴더 만들어놓기<br>
 터미널 켜서 명령어 실행하기<br>
 <br>
-```
+```cmd
 cd Desktop
 python3 -m venv [지정한 폴더이름]
 ```
