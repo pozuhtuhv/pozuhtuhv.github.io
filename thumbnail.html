@@ -41,7 +41,7 @@ layout: default
       <button style="width: 100%;" id="generate" type="button">썸네일 가져오기</button><br>
     
     </div>
-
+    <br>
     <div id="output"></div>
   </div>
 </section>
@@ -53,16 +53,27 @@ layout: default
     output.innerHTML = "";
 
     if (!input) {
-      output.textContent = "URL을 입력하세요.";
+      output.textContent = "URL 또는 동영상 ID를 입력하세요.";
+      return;
+    }
+
+    const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)?[a-zA-Z0-9_-]{11}$/;
+    if (!youtubeRegex.test(input)) {
+      output.textContent = "유효한 YouTube URL 또는 동영상 ID가 아닙니다.";
       return;
     }
 
     try {
-      const url = new URL(input);
-      const videoId = url.searchParams.get("v");
+      let videoId;
+      if (input.includes("youtube.com") || input.includes("youtu.be")) {
+        const url = new URL(input);
+        videoId = url.searchParams.get("v") || input.split("/").pop();
+      } else {
+        videoId = input;
+      }
 
-      if (!videoId) {
-        output.textContent = "유효한 YouTube URL이 아닙니다.";
+      if (!videoId || videoId.length !== 11) {
+        output.textContent = "유효한 YouTube 동영상 ID가 아닙니다.";
         return;
       }
 
@@ -87,6 +98,12 @@ layout: default
 
     } catch (e) {
       output.textContent = "URL 형식이 잘못되었습니다.";
+    }
+  });
+
+  document.getElementById("url").addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      document.getElementById("generate").click();
     }
   });
 </script>
