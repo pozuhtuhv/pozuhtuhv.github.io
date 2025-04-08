@@ -1,11 +1,11 @@
 ---
-title: Yolov8 이미지라벨링
-description: Yolov8 이미지라벨링 설명
+title: "Yolov8 이미지라벨링"
+description: "Yolov8 이미지라벨링 설명"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2024-09-05
-date_modified: 2024-09-05
+date: 2024-09-05
+last_modified_at: 2024-09-05
 tag: [python, yolo]
 ---
 ---

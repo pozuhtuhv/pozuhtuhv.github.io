@@ -1,11 +1,11 @@
 ---
-title: Git Commit Log 초기화
-description: 커밋로그의 초기화 방법 설명
+title: "Git Commit Log 초기화"
+description: "커밋로그의 초기화 방법 설명"
 layout: post
-categories: Scrapbook
+categories: ["Scrapbook"]
 published : true
-date_published: 2024-05-22
-date_modified: 2024-05-22
+date: 2024-05-22
+last_modified_at: 2024-05-22
 tag: [git, scrapbook]
 ---
 ---

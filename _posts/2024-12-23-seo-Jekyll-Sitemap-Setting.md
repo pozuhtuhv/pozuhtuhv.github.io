@@ -1,11 +1,11 @@
 ---
-title: Jekyll 사이트맵 세팅
-description: Jekyll 사이트맵 세팅 설명
+title: "Jekyll 사이트맵 세팅"
+description: "Jekyll 사이트맵 세팅 설명"
 layout: post
-categories: SEO
+categories: ["SEO"]
 published: true
-date_published: 2024-12-23
-date_modified: 2024-12-26
+date: 2024-12-23
+last_modified_at: 2024-12-26
 tag: [github, jekyll]
 ---
 ---

@@ -1,11 +1,11 @@
 ---
-title: 1년전에 쓴 파이썬 코드 리뷰
-description: 1년전에 쓴 파이썬 코드 리뷰
+title: "1년전에 쓴 파이썬 코드 리뷰"
+description: "1년전에 쓴 파이썬 코드 리뷰"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2024-04-11
-date_modified: 2024-04-11
+date: 2024-04-11
+last_modified_at: 2024-04-11
 tag: [python, review]
 ---
 ---

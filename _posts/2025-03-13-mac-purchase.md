@@ -1,11 +1,11 @@
 ---
-title: 맥북에어 M1 스페이스그레이 중고 구매
-description: macbook air m1 구매 경험
+title: "맥북에어 M1 스페이스그레이 중고 구매"
+description: "macbook air m1 구매 경험"
 layout: post
-categories: Daily
+categories: ["Daily"]
 published: true
-date_published: 2025-03-13
-date_modified: 2025-03-13
+date: 2025-03-13
+last_modified_at: 2025-03-13
 tag: [mac, m1]
 ---
 ---

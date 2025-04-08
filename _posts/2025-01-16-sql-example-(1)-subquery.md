@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (1) 역순정렬의 순차정렬 (feat. SUBQUERY)
-description: SQL SUBQUERY 예시
+title: "SQL 예시 - (1) 역순정렬의 순차정렬 (feat. SUBQUERY)"
+description: "SQL SUBQUERY 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-01-16
-date_modified: 2025-01-16
+date: 2025-01-16
+last_modified_at: 2025-01-16
 tag: [sql, database, subquery]
 ---
 ---

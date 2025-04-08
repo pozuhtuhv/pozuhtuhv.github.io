@@ -1,11 +1,11 @@
 ---
-title: TensorFlow 'tf_enable_onednn_opts=0' Error
-description: TensorFlow Error 경험
+title: "TensorFlow 'tf_enable_onednn_opts=0' Error"
+description: "TensorFlow Error 경험"
 layout: post
-categories: TensorFlow
+categories: ["TensorFlow"]
 published: true
-date_published: 2025-01-14
-date_modified: 2025-01-14
+date: 2025-01-14
+last_modified_at: 2025-01-14
 tag: [python, tensorflow, keras, error]
 ---
 ---

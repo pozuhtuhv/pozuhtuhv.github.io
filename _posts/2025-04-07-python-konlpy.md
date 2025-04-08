@@ -1,11 +1,11 @@
 ---
-title: Konlpy 설치 및 예시
-description: Konlpy 튜토리얼
+title: "Konlpy 설치 및 예시"
+description: "Konlpy 튜토리얼"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2025-04-07
-date_modified: 2025-04-07
+date: 2025-04-07
+last_modified_at: 2025-04-07
 tags: [python, konlpy, 형태소]
 ---
 ---

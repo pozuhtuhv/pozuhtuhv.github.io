@@ -1,11 +1,11 @@
 ---
-title: Mac 환경 Homebrew 터미널 세팅
-description: Mac 환경 터미널 세팅
+title: "Mac 환경 Homebrew 터미널 세팅"
+description: "Mac 환경 터미널 세팅"
 layout: post
-categories: Mac
+categories: ["Mac"]
 published: true
-date_published: 2025-04-07
-date_modified: 2025-04-07
+date: 2025-04-07
+last_modified_at: 2025-04-07
 tags: [mac, homebrew]
 ---
 ---

@@ -1,11 +1,11 @@
 ---
-title: 맥북 유그린 C 타입 허브 (5 in 1)
-description: MacBook UGREEN HUB Type C
+title: "맥북 유그린 C 타입 허브 (5 in 1)"
+description: "MacBook UGREEN HUB Type C"
 layout: post
-categories: Mac
+categories: ["Mac"]
 published: true
-date_published: 2025-03-25
-date_modified: 2025-03-25
+date: 2025-03-25
+last_modified_at: 2025-03-25
 tags: [mac, background]
 ---
 ---

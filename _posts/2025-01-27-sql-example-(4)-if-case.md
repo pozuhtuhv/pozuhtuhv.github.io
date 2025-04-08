@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (4) CASE 예시 (feat. IF, CASE)
-description: SQL IF, CASE 예시
+title: "SQL 예시 - (4) CASE 예시 (feat. IF, CASE)"
+description: "SQL IF, CASE 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-01-27
-date_modified: 2025-01-27
+date: 2025-01-27
+last_modified_at: 2025-01-27
 tag: [sql, example, if, case]
 ---
 ---

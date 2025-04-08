@@ -1,11 +1,11 @@
 ---
-title: Git 푸시 전 마지막 커밋 메시지 수정
-description: 마지막 커밋 메시지 수정
+title: "Git 푸시 전 마지막 커밋 메시지 수정"
+description: "마지막 커밋 메시지 수정"
 layout: post
-categories: Git
+categories: ["Git"]
 published : true
-date_published: 2025-01-12
-date_modified: 2025-01-12
+date: 2025-01-12
+last_modified_at: 2025-01-12
 tag: [git, comment]
 ---
 ---

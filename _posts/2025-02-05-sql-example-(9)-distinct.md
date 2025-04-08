@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (9) 중복된 값을 제거하고 고유한 값만 선택(feat. DISTINCT)
-description: SQL DISTINCT 예시
+title: "SQL 예시 - (9) 중복된 값을 제거하고 고유한 값만 선택(feat. DISTINCT)"
+description: "SQL DISTINCT 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-02-05
-date_modified: 2025-02-05
+date: 2025-02-05
+last_modified_at: 2025-02-05
 tag: [sql, example, distinct]
 ---
 ---

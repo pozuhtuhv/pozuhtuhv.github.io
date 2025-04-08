@@ -1,11 +1,11 @@
 ---
-title: Github 워크플로우 권한 세팅
-description: Github 액션 워크플로우 권한 세팅 설명
+title: "Github 워크플로우 권한 세팅"
+description: "Github 액션 워크플로우 권한 세팅 설명"
 layout: post
-categories: Git
+categories: ["Git"]
 published : true
-date_published: 2024-08-22
-date_modified: 2024-08-22
+date: 2024-08-22
+last_modified_at: 2024-08-22
 tag: [github, actions]
 ---
 ---

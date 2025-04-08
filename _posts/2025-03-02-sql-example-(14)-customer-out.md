@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (14) 시간대별 고객 퇴장 수 조회 (feat. RECURSIVE)
-description: SQL RECURSIVE 예시
+title: "SQL 예시 - (14) 시간대별 고객 퇴장 수 조회 (feat. RECURSIVE)"
+description: "SQL RECURSIVE 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-03-02
-date_modified: 2025-03-02
+date: 2025-03-02
+last_modified_at: 2025-03-02
 tag: [sql, example, recursive]
 ---
 ---

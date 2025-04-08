@@ -1,11 +1,11 @@
 ---
-title: 코딩테스트 공부를 하며 느낀것
-description: 코딩테스트에 대한 경험
+title: "코딩테스트 공부를 하며 느낀것"
+description: "코딩테스트에 대한 경험"
 layout: post
-categories: Daily
+categories: ["Daily"]
 published: true
-date_published: 2025-02-07
-date_modified: 2025-02-07
+date: 2025-02-07
+last_modified_at: 2025-02-07
 tag: [daily, codingtest]
 ---
 ---

@@ -1,11 +1,11 @@
 ---
-title: Django Requests 세팅
-description: 장고API의 리퀘스트 세팅 설명
+title: "Django Requests 세팅"
+description: "장고API의 리퀘스트 세팅 설명"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2024-05-18
-date_modified: 2024-05-23
+date: 2024-05-18
+last_modified_at: 2024-05-23
 tag: [python, django, framework]
 ---
 ---

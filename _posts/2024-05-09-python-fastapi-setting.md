@@ -1,11 +1,11 @@
 ---
-title: FastAPI 세팅
-description: FastAPI의 세팅 설명
+title: "FastAPI 세팅"
+description: "FastAPI의 세팅 설명"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2024-05-09
-date_modified: 2024-05-09
+date: 2024-05-09
+last_modified_at: 2024-05-09
 tag: [python, fastapi, framework]
 ---
 ---

@@ -1,11 +1,11 @@
 ---
-title: 맥북에어 M1 구매 기념 단축키 모음
-description: MAC shortcut
+title: "맥북에어 M1 구매 기념 단축키 모음"
+description: "MAC shortcut"
 layout: post
-categories: Mac
+categories: ["Mac"]
 published: true
-date_published: 2025-03-13
-date_modified: 2025-03-13
+date: 2025-03-13
+last_modified_at: 2025-03-13
 tag: [mac, shortcut]
 ---
 ---

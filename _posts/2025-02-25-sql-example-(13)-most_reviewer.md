@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (13) 가장 많이 글쓴사람 리뷰만 출력 (feat. SUBQUERY, JOIN)
-description: SQL SUBQUERY, JOIN 예시
+title: "SQL 예시 - (13) 가장 많이 글쓴사람 리뷰만 출력 (feat. SUBQUERY, JOIN)"
+description: "SQL SUBQUERY, JOIN 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-02-25
-date_modified: 2025-02-25
+date: 2025-02-25
+last_modified_at: 2025-02-25
 tag: [sql, example, subquery, join]
 ---
 ---

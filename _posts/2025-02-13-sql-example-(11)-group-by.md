@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (11) 구간 GROUP화 (feat. GROUP BY)
-description: SQL 구간 GROUP화 예시
+title: "SQL 예시 - (11) 구간 GROUP화 (feat. GROUP BY)"
+description: "SQL 구간 GROUP화 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-02-13
-date_modified: 2025-02-13
+date: 2025-02-13
+last_modified_at: 2025-02-13
 tag: [sql, example, group]
 ---
 ---

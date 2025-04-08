@@ -1,11 +1,11 @@
 ---
-title: Git Bash protocol 오류
-description: Git Bash의 에러 경험
+title: "Git Bash protocol 오류"
+description: "Git Bash의 에러 경험"
 layout: post
-categories: Git
+categories: ["Git"]
 published : true
-date_published: 2024-05-22
-date_modified: 2024-05-22
+date: 2024-05-22
+last_modified_at: 2024-05-22
 tag: [git, error]
 ---
 ---

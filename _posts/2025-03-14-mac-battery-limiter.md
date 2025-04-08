@@ -1,11 +1,11 @@
 ---
-title: 맥북에어 M1 배터리 관리
-description: MacBook Air M1의 배터리 충전 제한 설정 및 최적화된 관리 방법
+title: "맥북에어 M1 배터리 관리"
+description: "MacBook Air M1의 배터리 충전 제한 설정 및 최적화된 관리 방법"
 layout: post
-categories: Mac
+categories: ["Mac"]
 published: true
-date_published: 2025-03-14
-date_modified: 2025-03-14
+date: 2025-03-14
+last_modified_at: 2025-03-14
 tags: [mac, battery, power management]
 ---
 ---

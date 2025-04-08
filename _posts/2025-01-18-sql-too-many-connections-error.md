@@ -1,11 +1,11 @@
 ---
-title: MySQL 'Too many connections' Error
-description: MySQL Error 경험
+title: "MySQL 'Too many connections' Error"
+description: "MySQL Error 경험"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-01-18
-date_modified: 2025-01-18
+date: 2025-01-18
+last_modified_at: 2025-01-18
 tag: [sql, error, connections]
 ---
 ---

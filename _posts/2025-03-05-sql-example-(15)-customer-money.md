@@ -1,11 +1,11 @@
 ---
-title: SQL 예시 - (15) 여러 테이블의 제품 판매액 합계
-description: SQL RECURSIVE 예시
+title: "SQL 예시 - (15) 여러 테이블의 제품 판매액 합계"
+description: "SQL RECURSIVE 예시"
 layout: post
-categories: SQL
+categories: ["SQL"]
 published: true
-date_published: 2025-03-05
-date_modified: 2025-03-05
+date: 2025-03-05
+last_modified_at: 2025-03-05
 tag: [sql, example, recursive]
 ---
 ---

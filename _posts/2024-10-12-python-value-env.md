@@ -1,11 +1,11 @@
 ---
-title: 변수.env
-description: 환경변수 모듈의 설명
+title: "변수.env"
+description: "환경변수 모듈의 설명"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2024-10-12
-date_modified: 2024-10-12
+date: 2024-10-12
+last_modified_at: 2024-10-12
 tag: [python, module]
 ---
 ---

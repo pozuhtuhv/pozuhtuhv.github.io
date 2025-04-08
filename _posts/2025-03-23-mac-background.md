@@ -1,11 +1,11 @@
 ---
-title: 맥북 설정 백그라운드 어플 관리
-description: MacBook 백그라운드 어플 관리
+title: "맥북 설정 백그라운드 어플 관리"
+description: "MacBook 백그라운드 어플 관리"
 layout: post
-categories: Mac
+categories: ["Mac"]
 published: true
-date_published: 2025-03-23
-date_modified: 2025-03-23
+date: 2025-03-23
+last_modified_at: 2025-03-23
 tags: [mac, background]
 ---
 ---

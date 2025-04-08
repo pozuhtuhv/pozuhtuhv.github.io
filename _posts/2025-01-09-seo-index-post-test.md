@@ -1,11 +1,11 @@
 ---
-title: SEO 최적화 진행중
-description: SEO 최적화 진행 경험
+title: "SEO 최적화 진행중"
+description: "SEO 최적화 진행 경험"
 layout: post
-categories: SEO
+categories: ["SEO"]
 published : true
-date_published: 2025-01-09
-date_modified: 2025-01-09
+date: 2025-01-09
+last_modified_at: 2025-01-09
 tag: [seo]
 ---
 ---

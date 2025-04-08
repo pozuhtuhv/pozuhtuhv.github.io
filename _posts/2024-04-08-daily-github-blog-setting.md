@@ -1,11 +1,11 @@
 ---
-title: 첫번째 깃허브 블로그 세팅
-description: 깃허브 블로그 세팅의 경험
+title: "첫번째 깃허브 블로그 세팅"
+description: "깃허브 블로그 세팅의 경험"
 layout: post
-categories: Daily
+categories: ["Daily"]
 published: true
-date_published: 2024-04-08
-date_modified: 2024-04-08
+date: 2024-04-08
+last_modified_at: 2024-04-08
 tag: [github, jekyll]
 ---
 ---

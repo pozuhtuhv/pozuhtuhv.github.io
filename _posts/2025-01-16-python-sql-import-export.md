@@ -1,11 +1,11 @@
 ---
-title: Python 을 이용한 SQL의 데이터 임포트 / 엑스포트
-description: MySQL 입출력 코드
+title: "Python 을 이용한 SQL의 데이터 임포트 / 엑스포트"
+description: "MySQL 입출력 코드"
 layout: post
-categories: Python
+categories: ["Python"]
 published: true
-date_published: 2025-01-16
-date_modified: 2025-01-16
+date: 2025-01-16
+last_modified_at: 2025-01-16
 tag: [python, sql, database]
 ---
 ---

@@ -1,11 +1,11 @@
 ---
-title: Jekyll 로컬 세팅 (For Windows)
-description: 깃허브 블로그의 로컬세팅 설명
+title: "Jekyll 로컬 세팅 (For Windows)"
+description: "깃허브 블로그의 로컬세팅 설명"
 layout: post
-categories: Git
+categories: ["Git"]
 published: true
-date_published: 2025-01-05
-date_modified: 2025-01-05
+date: 2025-01-05
+last_modified_at: 2025-01-05
 tag: [github, jekyll, ruby]
 ---
 ---

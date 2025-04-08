@@ -1,11 +1,11 @@
 ---
-title: 구글은 생각보다 빠르지 않다.
-description: 태그를 설치 경험
+title: "구글은 생각보다 빠르지 않다."
+description: "태그를 설치 경험"
 layout: post
-categories: SEO
+categories: ["SEO"]
 published: true
-date_published: 2025-01-22
-date_modified: 2025-01-22
+date: 2025-01-22
+last_modified_at: 2025-01-22
 tag: [sql, example, question]
 ---
 ---
