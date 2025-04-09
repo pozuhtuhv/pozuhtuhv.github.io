@@ -165,12 +165,15 @@ blockquote {
 
 section.head {
   display: block;
-  gap: 1rem; /* 링크 간 간격 */
+  row-gap: 0.5rem; /* 또는 gap: 0.5rem; */
   margin-top: 5.5rem;
   text-align: left;
 }
 
+
 section.head a {
+  display: inline-block;
+  margin-bottom: 0.5rem; /* 줄 간 간격 추가 */
   padding: 0.5rem 1rem;
   background-color: #f5f5f5;
   color: #333;
