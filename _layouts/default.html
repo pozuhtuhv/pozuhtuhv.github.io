@@ -3,12 +3,22 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 {% include head.html %}
 
 <body>
   <main>
   <submain>
+    <div id="specButton">Spec</div>
+    <div id="specTooltip">
+      CPU: {{ site.spec.cpu }}<br>
+      RAM: {{ site.spec.ram }}<br>
+      Storage: {{ site.spec.storage }}<br>
+      OS: {{ site.spec.os }}<br>
+      Python: {{ site.spec.python }}<br>
+      Python_venv_path: {{ site.spec.python_venv_path }}<br>
+      IDE: {{ site.spec.ide }}<br>
+    </div>
     <section class="head">
       <a href="{{ site.url }}"> &rsaquo; Home</a>
       <a href="{{ site.url }}/about/"> &rsaquo; About</a>
@@ -28,7 +38,6 @@ layout: compress
   </submain>
 </main>
 </body>
-
 
 <footer>
   <div class="social-footer">

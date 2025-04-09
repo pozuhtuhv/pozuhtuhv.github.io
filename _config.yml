@@ -12,10 +12,16 @@ author:
   userpicture: /assets/img/computersolo.jpg # img path
   username: Hyeounseok-Cho # general username
   github: pozuhtuhv # github username
-  twitter: pozuhtuhv # twitter username
-  mastodon: # mastodon profile (ex. mastodon.social/@my_username)
-  linkedin: # linkedin profile
   email: pozuhtuhv@email.com # email adress
+
+spec:
+  cpu: Apple M1 or Intel i5
+  ram: 8GB
+  storage: 256GB SSD
+  os: macOS or Windows 11
+  python: 3.11.5 and 3.8.7
+  python_venv_path: Only /desktop/[folder]
+  ide: Visual Studio Code
 
 # URL settings
 url: "https://pozuhtuhv.github.io" # Domain Name of host. [username].github.io for github pages
