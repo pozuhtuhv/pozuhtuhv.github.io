@@ -2,7 +2,7 @@
 layout: default
 ---
 <section id="intro">
-        <div class="m_description">{{ site.description }}</span></div>
+        <h1 class="m_description">{{ site.description }}</span></h1>
     <div class="bio">
     </div>
 </section>
@@ -24,10 +24,10 @@ layout: default
 </div>
 
 <section class="posts">
-    <h2 class="blog-header">
+    <h4 class="blog-header">
         Recent POST [{{ site.posts | size }}]
         <a href="{{ site.url }}/categories/" class="blog-more">+</a>
-    </h2>
+    </h4>
     <ul>
         {% for post in site.posts limit:5 %}
         <li>
