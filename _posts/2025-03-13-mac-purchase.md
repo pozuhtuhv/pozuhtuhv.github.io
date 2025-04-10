@@ -43,8 +43,8 @@ tag: [mac, m1]
 
 ### 1. 새로운 중고 맥북에어
 <div class = 'image-gallery'>
-    <img src ='/assets/img/2025-03-13-mac-purchase-2.jpg'>
-    <img src ='/assets/img/2025-03-13-mac-purchase-3.jpg'>
+    <img src ='/assets/img/2025-03-13-mac-purchase-2.jpg' alt='mac-purchase-2'>
+    <img src ='/assets/img/2025-03-13-mac-purchase-3.jpg' alt='mac-purchase-3'>
 </div>
 <br>
 

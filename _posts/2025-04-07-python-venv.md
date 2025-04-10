@@ -36,8 +36,8 @@ python3 -m venv [지정한 폴더이름]
 ```
 <br>
 <div class = 'image-gallery'>
-    <img src ='/assets/img/2025-04-07-python-venv-1.png'>
-    <img src ='/assets/img/2025-04-07-python-venv-2.png'>
+    <img src ='/assets/img/2025-04-07-python-venv-1.png' alt='venv-1'>
+    <img src ='/assets/img/2025-04-07-python-venv-2.png' alt='venv-2'>
 </div>
 <br>
 위 터미널을 실행하면 이미지와 같이 폴더들이 생겨있는걸 알수 있다.<br>

@@ -29,8 +29,8 @@ tags: [mac, background]
 
 ### 1. 설정창 확인 방법
 <div class = 'image-gallery'>
-    <img src ='/assets/img/2025-03-23-mac-background-1.png'>
-    <img src ='/assets/img/2025-03-23-mac-background-2.png'>
+    <img src ='/assets/img/2025-03-23-mac-background-1.png' alt='mac-background-1'>
+    <img src ='/assets/img/2025-03-23-mac-background-2.png' alt='mac-background-2'>
 </div>
 <br>
 <br>

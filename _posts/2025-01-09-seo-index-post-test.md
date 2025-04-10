@@ -27,8 +27,8 @@ SEO 카운트 1 테스트<br>
 
 ### 2. PageSpeed Insights Score (완료)
 <b>PC 인사이트 스코어</b><br><br>
-![seo-index-post-test-1](/assets/img/2025-01-09-seo-index-post-test-1.png)<br>
-![seo-index-post-test-2](/assets/img/2025-01-09-seo-index-post-test-2.png)<br><br>
+![index-post-test-1](/assets/img/2025-01-09-seo-index-post-test-1.png)<br>
+![index-post-test-2](/assets/img/2025-01-09-seo-index-post-test-2.png)<br><br>
 
 <b>Mobile 인사이트 스코어</b><br>
 ![index-post-test-3](/assets/img/2025-01-09-seo-index-post-test-3.png)<br>

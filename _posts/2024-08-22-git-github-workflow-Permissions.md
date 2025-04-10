@@ -25,15 +25,15 @@ tag: [github, actions]
 
 - Settings 페이지
 
-![docs](/assets/img/2024-08-22-git-github-workflow-permissions-1.png)<br>
+![github-workflow-permissions-1](/assets/img/2024-08-22-git-github-workflow-permissions-1.png)<br>
 
 - Actions 탭 -> General 메뉴
 
-![docs](/assets/img/2024-08-22-git-github-workflow-permissions-2.png)<br>
+![github-workflow-permissions-2](/assets/img/2024-08-22-git-github-workflow-permissions-2.png)<br>
 
 - Workflow Permissions
 
-![docs](/assets/img/2024-08-22-git-github-workflow-permissions-3.png)<br>
+![github-workflow-permissions-3](/assets/img/2024-08-22-git-github-workflow-permissions-3.png)<br>
 
 ```
 Read and write permissions: 
