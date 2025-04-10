@@ -1,12 +1,12 @@
 ---
 title: "Github Actions 활용 Tag 자동화"
-description: "Github Actions 활용 Tag 자동화"
+description: "Github Actions 활용 Tag 자동화 코드 예시"
 layout: post
 categories: ["Git"]
 published : true
 date: 2025-01-13
 last_modified_at: 2025-01-13
-tag: [git, jekyll, tag]
+tag: [git, actions, jekyll, tag]
 ---
 ---
 {: .no_toc .text-delta }

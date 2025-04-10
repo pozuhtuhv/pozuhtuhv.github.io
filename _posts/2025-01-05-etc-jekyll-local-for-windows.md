@@ -1,6 +1,6 @@
 ---
 title: "Jekyll 로컬 세팅 (For Windows)"
-description: "깃허브 블로그의 로컬세팅 설명"
+description: "깃허브 블로그의 로컬세팅의 설치와 테스트 방법"
 layout: post
 categories: ["Git"]
 published: true

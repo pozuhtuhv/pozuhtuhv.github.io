@@ -1,6 +1,6 @@
 ---
 title: "구글은 생각보다 빠르지 않다."
-description: "태그를 설치 경험"
+description: "태그를 설치와 경험 공유"
 layout: post
 categories: ["SEO"]
 published: true

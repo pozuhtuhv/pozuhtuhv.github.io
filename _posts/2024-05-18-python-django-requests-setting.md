@@ -1,6 +1,6 @@
 ---
 title: "Django Requests 세팅"
-description: "장고API의 리퀘스트 세팅 설명"
+description: "장고API의 리퀘스트 세팅 및 예시 코드"
 layout: post
 categories: ["Python"]
 published: true

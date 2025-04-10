@@ -6,7 +6,7 @@ categories: ["Git"]
 published : true
 date: 2024-08-22
 last_modified_at: 2024-08-22
-tag: [github, actions]
+tag: [github, workflow, actions]
 ---
 ---
 {: .no_toc .text-delta }

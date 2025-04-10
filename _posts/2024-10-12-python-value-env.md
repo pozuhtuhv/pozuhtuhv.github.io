@@ -1,6 +1,6 @@
 ---
 title: "변수.env"
-description: "환경변수 모듈의 설명"
+description: "환경변수 모듈의 설치와 예시 코드"
 layout: post
 categories: ["Python"]
 published: true

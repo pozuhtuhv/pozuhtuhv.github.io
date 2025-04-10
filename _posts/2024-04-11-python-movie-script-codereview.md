@@ -1,6 +1,6 @@
 ---
 title: "1년전에 쓴 파이썬 코드 리뷰"
-description: "1년전에 쓴 파이썬 코드 리뷰"
+description: "초반에 진행했던 코딩 코드를 리뷰하는 글"
 layout: post
 categories: ["Python"]
 published: true

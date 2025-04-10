@@ -1,6 +1,6 @@
 ---
 title: "SEO 최적화 진행중"
-description: "SEO 최적화 진행 경험"
+description: "SEO 최적화 진행 경험 설명"
 layout: post
 categories: ["SEO"]
 published : true

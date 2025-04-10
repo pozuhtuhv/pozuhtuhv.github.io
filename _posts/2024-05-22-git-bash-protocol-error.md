@@ -1,6 +1,6 @@
 ---
 title: "Git Bash protocol 오류"
-description: "Git Bash의 에러 경험"
+description: "Git Bash의 에러에 대한 해결법"
 layout: post
 categories: ["Git"]
 published : true

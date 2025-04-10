@@ -1,6 +1,6 @@
 ---
 title: "첫번째 깃허브 블로그 세팅"
-description: "깃허브 블로그 세팅의 경험"
+description: "깃허브 블로그 세팅의 경험에 대한 포스팅"
 layout: post
 categories: ["Daily"]
 published: true

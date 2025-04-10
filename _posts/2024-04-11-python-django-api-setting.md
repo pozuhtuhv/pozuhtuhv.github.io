@@ -1,6 +1,6 @@
 ---
 title: "Django API 세팅"
-description: "장고API의 기본 세팅 설명"
+description: "장고API의 기본 세팅 설명과 예시 코드"
 layout: post
 categories: ["Python"]
 published: true

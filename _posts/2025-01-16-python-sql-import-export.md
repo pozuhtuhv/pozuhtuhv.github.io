@@ -1,6 +1,6 @@
 ---
 title: "Python 을 이용한 SQL의 데이터 임포트 / 엑스포트"
-description: "MySQL 입출력 코드"
+description: "MySQL 입출력 코드에 대한 예시 코드"
 layout: post
 categories: ["Python"]
 published: true

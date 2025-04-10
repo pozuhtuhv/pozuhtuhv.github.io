@@ -1,6 +1,6 @@
 ---
 title: "FastAPI 세팅"
-description: "FastAPI의 세팅 설명"
+description: "FastAPI의 세팅 및 예시 코드"
 layout: post
 categories: ["Python"]
 published: true

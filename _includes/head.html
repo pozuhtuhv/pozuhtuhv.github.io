@@ -1,36 +1,35 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="naver-site-verification" content="565f41042384b9e0c6b69e3554fa6b58610b557c">
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="canonical" href="{{ site.url | append: page.url }}">
 
-  <title>
-    {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
-  </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="565f41042384b9e0c6b69e3554fa6b58610b557c">
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ site.url | append: page.url }}">
 
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/assets/css/syntax.css">
-  <link rel="stylesheet" href="/assets/css/giscus.css">
+<title>
+  {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+</title>
 
-  <link rel="alternate" type="application/atom+xml" title="atom" href="/atom.xml">
-  <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/assets/css/syntax.css">
+<link rel="stylesheet" href="/assets/css/giscus.css">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
-  </script>
+<link rel="alternate" type="application/atom+xml" title="atom" href="/atom.xml">
+<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
 
-  <script src="/assets/js/custom.js" defer></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
+</script>
 
-  <style>
-    {% capture include_to_scssify %}
-      {% include inline.scss %}
-    {% endcapture %}
-    {{ include_to_scssify | scssify }}
-  </style>
-</head>
+<script src="/assets/js/custom.js" defer></script>
+
+<style>
+  {% capture include_to_scssify %}
+    {% include inline.scss %}
+  {% endcapture %}
+  {{ include_to_scssify | scssify }}
+</style>
