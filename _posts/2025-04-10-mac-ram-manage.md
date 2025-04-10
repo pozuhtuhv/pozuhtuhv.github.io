@@ -37,7 +37,7 @@ tags: [mac, ram, manage]
 ![mac-ram-manage-2](/assets/img/2025-04-10-mac-ram-manage-2.png)<br>
 [CPU 9%, RAM 70%]<br>
 현재 글 작성을 진행하는 상황, 글작성은 VSCODE 로 진행하고 있다.<br>
-대충 몇개 더 켜도 차이는 [±3%, ±15%]
+대충 몇개 더 켜도 차이는 [±9%, ±15%]
 <br>
 
 ### 2. '활성 상태 보기'에서 보는 현재 상태
