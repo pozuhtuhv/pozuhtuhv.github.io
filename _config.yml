@@ -59,7 +59,8 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-relative-links
-
+  - jekyll-seo-tag
+  
 collections:
   pages:
     output: true

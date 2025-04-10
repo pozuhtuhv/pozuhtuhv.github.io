@@ -9,12 +9,12 @@
   {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
 </title>
 
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="/assets/css/syntax.css">
-<link rel="stylesheet" href="/assets/css/giscus.css">
+<link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/giscus.css">
+<script src="{{ site.url }}/assets/js/custom.js" defer></script>
 
-<link rel="alternate" type="application/atom+xml" title="atom" href="/atom.xml">
-<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
+<link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}/sitemap.xml" />
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
@@ -24,8 +24,6 @@
   gtag('js', new Date());
   gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
 </script>
-
-<script src="/assets/js/custom.js" defer></script>
 
 <style>
   {% capture include_to_scssify %}
