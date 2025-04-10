@@ -639,16 +639,21 @@ tr:hover {
   border-radius: 5px;
   white-space: nowrap;
   min-width: 200px;
-  max-height: 0;
-  opacity: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+  visibility: hidden;
   z-index: 99;
 }
 
 #specButton:hover + #specTooltip {
-  max-height: 500px;
+  max-height: 500px; /* 즉시 나타남 */
   opacity: 1;
+  visibility: visible;
+  transition: none; /* 나타날 때는 transition 없음 */
+}
+
+#specButton:not(:hover) + #specTooltip {
+  transition: opacity 0.3s ease-out;
 }
 
 /* main post more 버튼 */
