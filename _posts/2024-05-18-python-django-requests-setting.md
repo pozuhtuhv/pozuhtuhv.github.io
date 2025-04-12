@@ -105,3 +105,5 @@ if response.status_code == 204:
 else:
     print('Failed to delete post:', response.status_code)
 ```
+<br>
+<br>

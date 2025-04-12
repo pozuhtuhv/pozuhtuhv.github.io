@@ -46,7 +46,8 @@ ol#markdown-toc ::marker {
   <h1 class="title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }} - {% if page.minute %} {{page.minute}}{% else %}{{minute}}{% endif %}min read</time>
   {{ content }}
-
+  <br>
+  
   <nav class="post-nav">
     {% if page.previous %}
     <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">

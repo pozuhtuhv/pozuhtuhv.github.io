@@ -51,4 +51,5 @@ Result : <br>
 3. `GROUP BY columns_type`
 - 'SELECT columns_type, COUNT(*)'을 사용할 경우, 'GROUP BY columns_type' 필요.
 4. `ORDER BY columns_type ASC`
-- 데이터를 'columns_type'를 오름차순 기준으로 지정.
+- 데이터를 'columns_type'를 오름차순 기준으로 지정.<br>
+<br>

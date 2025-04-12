@@ -176,3 +176,5 @@ main 브랜치를 그대로 다른 브랜치에 복제 떠서 백업한 후 main
 브랜치가 삭제될 때 그 안에 포함된 모든 커밋 로그도 같이 삭제된다는 점을 명심하세요.<br>
 
 원글: [https://younsl.github.io](https://younsl.github.io/blog/initialize-entire-commit-log/)
+<br>
+<br>

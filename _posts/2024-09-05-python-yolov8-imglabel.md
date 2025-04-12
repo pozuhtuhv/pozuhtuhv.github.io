@@ -191,3 +191,5 @@ yolo predict model=C:\Users\aaaa\Desktop\yolovenv\runs\detect\train\weights\best
 ```bash
 pip install torch==1.7.0+cu92 torchvision==0.8.1+cu92 -f https://download.pytorch.org/whl/torch_stable.html
 ```
+<br>
+<br>

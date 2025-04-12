@@ -68,4 +68,5 @@ ON table1.column = table2.column:
 - 웬만하면 모든 데이터의 테이블을 명시적으로 기입하는게 좋음
 <br>
 
-`대부분 데이터 베이스들의 JOIN 은 INNER JOIN 이 기본값이긴하지만 명시적으로 적는 것이 좋음`
+`대부분 데이터 베이스들의 JOIN 은 INNER JOIN 이 기본값이긴하지만 명시적으로 적는 것이 좋음`<br>
+<br>

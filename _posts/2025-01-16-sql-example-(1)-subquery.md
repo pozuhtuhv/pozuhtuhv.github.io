@@ -44,4 +44,5 @@ ORDER BY timestamp_column ASC;
 3. 서브쿼리 결과를 다시 `timestamp_column` 기준으로 오래된 순서대로 재정렬.
 <br>
 `DESC` : 내림차순<br>
-`ASC` : 오름차순
+`ASC` : 오름차순<br>
+<br>

@@ -33,4 +33,5 @@ git commit --amend
 ```bash
 git push --force
 ```
-편집기를 사용한다면, 그대로 푸시해도 됨.
+편집기를 사용한다면, 그대로 푸시해도 됨.<br>
+<br>

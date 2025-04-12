@@ -68,4 +68,5 @@ ORDER BY ANIMAL_ID;
   IF(Column_2 LIKE 'Neutered' OR Column_2 LIKE 'Spayed', 'O', 'X')
 ```
 <br>
-`Column_2` 열에 `Neutered, Spayed` 가 포함되어있다면 `O` 로 표시 아닐시 `X` 로 표시
+`Column_2` 열에 `Neutered, Spayed` 가 포함되어있다면 `O` 로 표시 아닐시 `X` 로 표시<br>
+<br>

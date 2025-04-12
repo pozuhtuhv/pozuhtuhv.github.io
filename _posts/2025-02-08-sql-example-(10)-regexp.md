@@ -137,4 +137,4 @@ SELECT * FROM websites WHERE url REGEXP '\\.com$'; -- '.com'으로 끝나는 도
 SELECT * FROM messages WHERE content REGEXP '\\(test\\)'; -- '(test)'가 포함된 메시지 찾기
 ```
 <br>
-
+<br>

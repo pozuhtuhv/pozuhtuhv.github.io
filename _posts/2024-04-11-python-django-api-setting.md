@@ -184,3 +184,5 @@ python manage.py runserver
 python manage.py makemigrations {appname}
 python manage.py migrate
 ```
+<br>
+<br>

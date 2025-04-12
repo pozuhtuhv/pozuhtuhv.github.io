@@ -89,3 +89,5 @@ uvicorn main:app --reload --host=0.0.0.0 --port=80
 # --host : 모든 접근 가능 0.0.0.0
 # --port : 열린포트 설정하기
 ```
+<br>
+<br>

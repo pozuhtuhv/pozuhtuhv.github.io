@@ -70,3 +70,5 @@ tags: [mac, battery, power management]
 ### 3. 주의 사항
 - 이 도구는 Apple 실리콘(M1, M2 등) 기반의 Mac에서만 동작하며, Intel 기반 Mac에서는 사용할 수 없음.
 - 시스템 설정에서 `최적화된 배터리 충전` 기능을 비활성화해야 올바르게 작동.
+<br>
+<br>

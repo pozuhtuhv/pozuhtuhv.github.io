@@ -88,4 +88,5 @@ ORDER BY month
 ```
 <br>
 - GROUP BY : 데이터를 month별로 묶음.
-- ORDER BY : 총 결과를 month 기준으로 오름차순(기본 설정) 정렬.
+- ORDER BY : 총 결과를 month 기준으로 오름차순(기본 설정) 정렬.<br>
+<br>

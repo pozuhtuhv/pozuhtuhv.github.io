@@ -28,4 +28,5 @@ SELECT DISTINCT name FROM employees;
 <br>
 
 - 중복된 열의 데이터를 제외.
-- ex) 주문번호에 대한 주문건수를 수집할때
+- ex) 주문번호에 대한 주문건수를 수집할때<br>
+<br>

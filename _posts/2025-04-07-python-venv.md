@@ -48,3 +48,4 @@ python3 -m venv [지정한 폴더이름]
 ![python-venv-3](/assets/img/2025-04-07-python-venv-3.png)<br>
 VSCode 로 해당폴더 열고, `.py` 확장자 하나 만들어 편집열기<br>
 VSCode 내의 터미널을 열어보면 터미널 커맨드 라인의 앞에 `(폴더이름)` 형식으로 폴더 이름으로 가상환경 이름이 붙음<br>
+<br>
