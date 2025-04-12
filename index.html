@@ -24,10 +24,10 @@ layout: default
 </div>
 
 <section class="posts">
-    <h3 class="blog-header">
+    <h2 class="blog-header">
         Recent POST [{{ site.posts | size }}]
         <a href="{{ site.url }}/categories/" class="blog-more">+</a>
-    </h3>
+    </h2>
     <ul>
         {% for post in site.posts limit:5 %}
         <li>
