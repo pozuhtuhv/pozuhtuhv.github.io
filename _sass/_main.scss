@@ -157,21 +157,15 @@ section {
   padding: 1rem 0;
 }
 
-blockquote {
-  font-style: italic;
-  border-left: 5px solid var(--dark-text-color);
-  padding-left: 1rem;
-}
-
 /* hede */
-section.head {
+.head {
   display: block;
   row-gap: 0.5rem; /* 또는 gap: 0.5rem; */
   margin-top: 5.5rem;
   text-align: left;
 }
 
-section.head a {
+.head a {
   display: inline-block;
   margin-bottom: 0.5rem; /* 줄 간 간격 추가 */
   padding: 0.5rem 1rem;
@@ -181,7 +175,7 @@ section.head a {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-section.head a:hover {
+.head a:hover {
   background-color: #e0e0e0;
   color: #0073e6;
 }

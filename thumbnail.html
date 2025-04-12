@@ -2,8 +2,39 @@
 layout: default
 ---
 
-<section class="post">
-  <h2>Youtube 썸네일 가져오기</h2>
+<style>
+  #url {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #generate {
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+</style>
+
+<section class="page_title">
+  <h1>Youtube 썸네일 가져오기</h1>
+</section>
+
+<section class="posts">
   <p>- YouTube 동영상의 썸네일을 가져오는 도구입니다.</p>
   <p>- 아래의 URL을 입력하고 "썸네일 가져오기" 버튼을 클릭하세요.</p>
   <p>- 썸네일을 클릭하면 원본 크기로 열립니다.</p>
@@ -11,33 +42,6 @@ layout: default
   <p>- 썸네일을 클릭하면 원본 크기로 열립니다.</p>
   <br>   
   <div>
-    <style>
-      #url {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      #generate {
-        padding: 10px 20px;
-        background-color: var(--link-color);
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      .thumbnail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-      }
-
-    </style>
     <div>
       <input type="text" id="url" name="url" placeholder="https://www.youtube.com/watch?v=VIDEO_ID" /><br>
       <button style="width: 100%;" id="generate" type="button">썸네일 가져오기</button><br>
