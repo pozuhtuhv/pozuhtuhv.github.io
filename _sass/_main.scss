@@ -204,12 +204,14 @@ section {
   overflow: hidden;
   opacity: 0;
   z-index: 99;
+  pointer-events: none;
 }
 
 #specButton:hover + #specTooltip {
   opacity: 1;
   visibility: visible;
   transition: none;
+  pointer-events: auto;
 }
 
 #specButton:hover {
