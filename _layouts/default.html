@@ -10,7 +10,7 @@ layout: compress
 <body>
   <main>
   <submain>
-    <div id="specButton">Spec</div>
+    <div id="specButton"> &rsaquo; Spec</div>
     <div id="specTooltip">
       CPU: {{ site.spec.cpu }}<br>
       RAM: {{ site.spec.ram }}<br>
@@ -25,9 +25,16 @@ layout: compress
       <a href="{{ site.url }}/about/"> &rsaquo; About</a>
       <a href="{{ site.url }}/categories/"> &rsaquo; Categories</a>
       <a href="{{ site.url }}/guestbook/"> &rsaquo; Guestbook</a>
-      <a href="{{ site.url }}/generator/"> &rsaquo; Yt-Generator</a>
-      <a href="{{ site.url }}/thumbnail/"> &rsaquo; Youtube Thumbnail</a>
+    
+      <div class="dropdown" tabindex="0">
+        <span class="dropbtn"> &rsaquo; Tools</span>
+        <div class="dropdown-content">
+          <a href="{{ site.url }}/generator/"> &rsaquo; Yt-Generator</a>
+          <a href="{{ site.url }}/thumbnail/"> &rsaquo; Youtube Thumbnail</a>
+        </div>
+      </div>
     </section>
+
     <button id="topButton" title="Go to top">Top</button>
     
     <div>
