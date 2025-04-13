@@ -3,17 +3,34 @@ layout: default
 ---
 
 <style>
+  .centered-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   #canvas-container {
     position: relative;
     width: 100%;
     max-width: 800px;
     margin: auto;
   }
+
   canvas {
     width: 100%;
     height: auto;
     display: block;
     border: 1px solid #ccc;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="range"] {
+    width: 300px;
   }
 </style>
 
@@ -22,18 +39,43 @@ layout: default
 </section>
 
 <section class="posts">
-  <input type="file" id="imageUploader" accept="image/*" />
-  <br>
-  <input type="text" id="coverText" placeholder="표지 제목 입력" />
-  <br>
-  <label>어두운 배경 투명도:</label>
-  <input type="range" id="opacitySlider" min="0" max="1" step="0.05" value="0.5" />
-  <br><br>
+  <div class="centered-controls">
+    <input type="file" id="imageUploader" accept="image/*" />
+    <label for="coverText">표지 텍스트 입력</label>
+    <textarea id="coverText" rows="4" cols="40" placeholder="여러 줄 텍스트 입력 가능"></textarea>
+
+    <label for="fontSizeSlider">폰트 크기</label>
+    <input type="range" id="fontSizeSlider" min="10" max="100" step="1" value="30" />
+
+    <label for="fontFamilySelect">폰트 패밀리</label>
+    <select id="fontFamilySelect">
+      <option value="sans-serif">Sans Serif</option>
+      <option value="serif">Serif</option>
+      <option value="monospace">Monospace</option>
+    </select>
+
+    <label for="fontWeightSelect">폰트 두께</label>
+    <select id="fontWeightSelect">
+      <option value="normal">정상</option>
+      <option value="bold">굵게</option>
+      <option value="lighter">가늘게</option>
+    </select>
+
+    <label for="opacitySlider">어두운 배경 투명도</label>
+    <input type="range" id="opacitySlider" min="0" max="1" step="0.05" value="0.5" />
+
+    <label for="textXSlider">텍스트 수평 위치</label>
+    <input type="range" id="textXSlider" min="0" max="1" step="0.01" value="0.5" />
+
+    <label for="textYSlider">텍스트 수직 위치</label>
+    <input type="range" id="textYSlider" min="0" max="1" step="0.01" value="0.5" />
+
+    <button id="saveBtn">이미지 저장</button>
+  </div>
+
   <div id="canvas-container">
     <canvas id="coverCanvas"></canvas>
   </div>
-  <br>
-  <button id="saveBtn">이미지 저장</button>
 
   <script>
     const uploader = document.getElementById("imageUploader");
@@ -42,6 +84,30 @@ layout: default
     const opacitySlider = document.getElementById("opacitySlider");
     const coverTextInput = document.getElementById("coverText");
     const saveBtn = document.getElementById("saveBtn");
+    const textXSlider = document.getElementById("textXSlider");
+    const textYSlider = document.getElementById("textYSlider");
+    const fontSizeSlider = document.getElementById("fontSizeSlider");
+    const fontFamilySelect = document.getElementById("fontFamilySelect");
+    const fontWeightSelect = document.getElementById("fontWeightSelect");
+
+    let fontSize = parseInt(fontSizeSlider.value, 10);
+    let fontFamily = fontFamilySelect.value;
+    let fontWeight = fontWeightSelect.value;
+
+    fontSizeSlider.addEventListener("input", (e) => {
+      fontSize = parseInt(e.target.value, 10);
+      draw();
+    });
+
+    fontFamilySelect.addEventListener("change", (e) => {
+      fontFamily = e.target.value;
+      draw();
+    });
+
+    fontWeightSelect.addEventListener("change", (e) => {
+      fontWeight = e.target.value;
+      draw();
+    });
 
     let img = new Image();
 
@@ -71,14 +137,23 @@ layout: default
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = "white";
-      ctx.font = `${canvas.width / 15}px sans-serif`;
+      ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.fillText(coverTextInput.value, canvas.width / 2, canvas.height / 2);
+
+      const lines = coverTextInput.value.split("\n");
+      const x = canvas.width * parseFloat(textXSlider.value);
+      const yStart = canvas.height * parseFloat(textYSlider.value) - ((lines.length - 1) * fontSize) / 2;
+
+      lines.forEach((line, i) => {
+        ctx.fillText(line, x, yStart + i * fontSize);
+      });
     }
 
-    opacitySlider.addEventListener("input", draw);
-    coverTextInput.addEventListener("input", draw);
+
+    [opacitySlider, coverTextInput, textXSlider, textYSlider].forEach(el => {
+      el.addEventListener("input", draw);
+    });
 
     saveBtn.addEventListener("click", () => {
       const link = document.createElement('a');
