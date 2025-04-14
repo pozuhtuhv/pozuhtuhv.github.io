@@ -6,7 +6,7 @@ categories: ["SEO"]
 published: true
 date: 2025-01-15
 last_modified_at: 2025-01-15
-tag: [python, google, seo]
+tag: [python, google, analytics, seo]
 ---
 ---
 {: .no_toc .text-delta }
@@ -19,7 +19,7 @@ tag: [python, google, seo]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Google Analytics Data
+## 구글 애널리틱스 라이브러리 설치
 ```bash
 pip install google-analytics-data
 ```
