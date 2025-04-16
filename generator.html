@@ -38,13 +38,18 @@ layout: default
             : "brew install yt-dlp ffmpeg";
     }
 
+    function toggleTimeInputs() {
+        const timeDiv = document.getElementById("timeInputs");
+        timeDiv.style.display = document.getElementById("cutAB").checked ? "block" : "none";
+    }
+
     function generateAndCopyCommand() {
         let url = document.getElementById("url").value.trim();
         let username = document.getElementById("username").value.trim();
         let quality = document.getElementById("quality").value;
         let audioOnly = document.getElementById("audioOnly").checked ? "--extract-audio" : "";
         let parallel = document.getElementById("parallel").checked ? "-N 4" : "";
-        let file_extension = document.getElementById("audioOnly").checked ? ".mp3" : "mp4";
+        let file_extension = document.getElementById("audioOnly").checked ? ".mp3" : ".mp4";
 
         let folder = selectedOS === "windows" 
             ? `C:\\Users\\${username}\\Desktop`
@@ -57,14 +62,28 @@ layout: default
             String(now.getHours()).padStart(2, "0") + "-" +
             String(now.getMinutes()).padStart(2, "0");
 
-        let filename = document.getElementById("filename").value.trim() || `${timestamp}.mp4`;
+        let filename = document.getElementById("filename").value.trim() || `${timestamp}${file_extension}`;
 
         if (!url || !username) {
             alert("URL과 사용자 계정 이름을 입력해주세요.");
             return;
         }
 
-        let command = `yt-dlp -o "${folder}/${filename}" ${quality} ${audioOnly} ${parallel} "${url}"`;
+        let command = `yt-dlp -o \"${folder}/full${file_extension}\" ${quality} ${audioOnly} ${parallel} \"${url}\"`;
+
+        if (document.getElementById("cutAB").checked) {
+            let startTime = document.getElementById("startTime").value.trim();
+            let endTime = document.getElementById("endTime").value.trim();
+
+            if (!startTime || !endTime) {
+                alert("AB 구간을 지정했지만 시간 값이 없습니다.");
+                return;
+            }
+
+            let cutCommand = `ffmpeg -ss ${startTime} -to ${endTime} -i \"${folder}/full${file_extension}\" -c copy \"${folder}/${filename}\"`;
+            command += ` && \\\n${cutCommand}`;
+        }
+
         document.getElementById("commandOutput").value = command;
         document.getElementById("commandOutput").select();
         document.execCommand("copy");
@@ -78,27 +97,21 @@ layout: default
 
 <section class="posts">
     <p>- YouTube 및 기타 사이트에서 비디오를 다운로드하는 명령어를 생성하는 도구입니다.</p>
-    <p>- 이 도구는 yt-dlp와 ffmpeg가 설치되어 있어야 작동.</p> 
-    <p>- 아래의 설치 명령어를 사용하여 설치하세요.</p>
-    <p>- Windows 사용자는 명령프롬프트를 사용하여 설치.</p> 
-    <p>- Mac 사용자는 터미널의 <a href="https://pozuhtuhv.github.io/2025/04/07/mac-homebrew">Homebrew</a> 사용하여 설치.</p>
-    <p>- 설치 후, 아래의 입력란에 필요한 정보를 입력하고 "명령어 생성 및 복사" 버튼을 클릭하여 명령어 생성.</p>
-    <p>- 명령어는 자동으로 클립보드에 복사.</p>
-    <p>- 다운로드할 URL과 사용자 계정 이름을 입력 필수.</p>
-    <p>- 명령 프롬프트(Windows) 또는 터미널(Mac)에서 붙여넣기하여 실행.</p>
-    <p>- URL은 일반 YouTube, M3U8 링크 지원.</p>
-    <p>- 파일 이름을 지정하지 않으면 현재 날짜와 시간이 포함된 기본 파일 이름이 사용됨.</p>
-    <br>    
+    <p>- yt-dlp와 ffmpeg가 설치되어 있어야 합니다.</p>
+    <p>- 아래 명령어로 설치할 수 있습니다.</p>
+    <p>- Windows: 명령프롬프트 사용</p>
+    <p>- Mac: <a href="https://pozuhtuhv.github.io/2025/04/07/mac-homebrew">Homebrew</a> 사용</p>
 
     <div class="install-box">
         <pre id="installCommand">choco install yt-dlp ffmpeg</pre>
         <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
     </div>
-    
+
     <input type="text" id="username" placeholder="운영체제 사용자 계정 이름 입력">
     <input type="text" id="url" placeholder="다운로드할 URL (일반 또는 M3U8 지원)">
     <input type="text" id="filename" placeholder="파일 이름 (기본: (현재날짜시간).mp4)">
-    <div><br></div>
+    <br>
+    <br>
     <label>화질 선택:</label>
     <select id="quality">
         <option value="-f best">최고 화질</option>
@@ -107,28 +120,33 @@ layout: default
         <option value="-f bestaudio">최고 오디오 화질</option>
     </select>
 
-    <!-- 체크박스 정렬 문제 해결 -->
     <div class="checkbox-container">
         <label><input type="checkbox" id="audioOnly" style="width: auto;"> 오디오만 다운로드</label>
         <label><input type="checkbox" id="parallel" style="width: auto;"> 병렬 다운로드</label>
+        <label><input type="checkbox" id="cutAB" style="width: auto;" onchange="toggleTimeInputs()"> AB 구간 나누어 저장</label>
+    </div>
+
+    <div id="timeInputs" style="display: none;">
+        <input type="text" id="startTime" placeholder="시작 시간 (예: 00:01:23)">
+        <input type="text" id="endTime" placeholder="종료 시간 (예: 00:02:34)">
     </div>
 
     <button class="bluebutton" onclick="generateAndCopyCommand()">명령어 생성 및 복사</button>
-    <textarea id="commandOutput" rows="3" readonly></textarea>
+    <textarea id="commandOutput" rows="4" readonly></textarea>
 </section>
 
 <script src="https://giscus.app/client.js"
-data-repo="pozuhtuhv/pozuhtuhv.github.io"
-data-repo-id="R_kgDONmo7OQ"
-data-category="General"
-data-category-id="DIC_kwDONmo7Oc4CmCEh"
-data-mapping="pathname"
-data-strict="0"
-data-reactions-enabled="1"
-data-emit-metadata="0"
-data-input-position="bottom"
-data-theme="https://pozuhtuhv.github.io/assets/css/giscus.css"
-data-lang="en"
-crossorigin="anonymous"
-async>
+        data-repo="pozuhtuhv/pozuhtuhv.github.io"
+        data-repo-id="R_kgDONmo7OQ"
+        data-category="General"
+        data-category-id="DIC_kwDONmo7Oc4CmCEh"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="https://pozuhtuhv.github.io/assets/css/giscus.css"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
 </script>
