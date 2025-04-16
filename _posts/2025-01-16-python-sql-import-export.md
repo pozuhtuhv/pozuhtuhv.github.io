@@ -41,6 +41,7 @@ df.to_sql('table_name', con=engine, if_exists='append', index=False)
 <br>
 - `A.csv` 를 읽고 `mysql`의 `database` 에 `table_name` 이라는 이름으로 Import
 <br>
+<br>
 
 ### 0. Export
 ```python

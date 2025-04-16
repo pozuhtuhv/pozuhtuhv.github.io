@@ -52,6 +52,7 @@ Apple Silicon (M1/M2/M3 등) :
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
+<br>
 
 
 ### 3. 설치 확인

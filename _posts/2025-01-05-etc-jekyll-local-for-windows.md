@@ -25,6 +25,8 @@ tag: [github, jekyll, ruby]
 1. 기존 `github-pages`로 진행할 경우 `commit & push`를 하고 몇 초에서 몇 분이 지나야 확인이 가능하기 때문에 시간 낭비가 많아진다.<br>
 2. 1에 대한 `commit & push` 를 자주하게 된다면 기록이 지저분하게 남아 빠르게 이전 자료를 확인하기 힘들수도 있다.<br>
 `이를 로컬 환경에서 '수정 -> 확인'을 진행하면 변경사항을 바로 확인할 수 있다.`
+<br>
+<br>
 
 ### 1. Ruby 설치
 [![jekyll-local-for-windows-1](/assets/img/2025-01-05-etc-jekyll-local-for-windows-1.png)](https://rubyinstaller.org/downloads/)<br>
@@ -33,6 +35,7 @@ Ruby 홈페이지 접속 후<br><br>
 추천되어진 **Rubyinstallers** 다운<br>
 
 다운로드 파일을 실행하여 설치 후 ridk install 선택해제 후 완료
+<br>
 <br>
 
 ### 2. Jekyll 설치
