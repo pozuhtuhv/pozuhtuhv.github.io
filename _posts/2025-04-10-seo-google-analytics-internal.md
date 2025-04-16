@@ -39,26 +39,27 @@ Terminal(터미널) -> curl ipinfo.io/ip
 ### 2. 아이피 필터링 설정하기
 
 1. 관리 -> 데이터 스트림
-![seo-google-analytics-internal-2](/assets/img/2025-04-14-seo-google-analytics-internal-2.png)
+![seo-google-analytics-internal-2](/assets/img/2025-04-14-seo-google-analytics-internal-2.png)<br>
 2. 설정할 스트림 선택
-![seo-google-analytics-internal-3](/assets/img/2025-04-14-seo-google-analytics-internal-3.png)
+![seo-google-analytics-internal-3](/assets/img/2025-04-14-seo-google-analytics-internal-3.png)<br>
 3. 태그 설정 구성
-![seo-google-analytics-internal-4](/assets/img/2025-04-14-seo-google-analytics-internal-4.png)
+![seo-google-analytics-internal-4](/assets/img/2025-04-14-seo-google-analytics-internal-4.png)<br>
 4. 내부 트래픽 정의
-![seo-google-analytics-internal-5](/assets/img/2025-04-14-seo-google-analytics-internal-5.png)
+![seo-google-analytics-internal-5](/assets/img/2025-04-14-seo-google-analytics-internal-5.png)<br>
 5. 구성 아이피 설정하기
-![seo-google-analytics-internal-6](/assets/img/2025-04-14-seo-google-analytics-internal-6.png)
+![seo-google-analytics-internal-6](/assets/img/2025-04-14-seo-google-analytics-internal-6.png)<br>
 - 규칙이름 (예시: 내부아이피, 인터널 아이피, 집 주소 등등)
 - traffic_type 값: internal
 - ip 주소 (검색 유형) - 특정 집단 인터넷을 따로 쓰지 않는 이상 (IP 주소가 다음과 같음) 으로 설정
-- 값: [아이피주소 확인](/2025/04/14/seo-google-analytics-internal#1-아이피-확인)에서 진행했던 아이피 입력
+- 값: [아이피주소 확인](/2025/04/14/seo-google-analytics-internal#1-아이피-확인)에서 진행했던 아이피 입력<br>
 6. 설정이 만들어졌는지 확인
-![seo-google-analytics-internal-7](/assets/img/2025-04-14-seo-google-analytics-internal-7.png)
+![seo-google-analytics-internal-7](/assets/img/2025-04-14-seo-google-analytics-internal-7.png)<br>
 7. 관리 -> 데이터 필터
-![seo-google-analytics-internal-8](/assets/img/2025-04-14-seo-google-analytics-internal-8.png)
+![seo-google-analytics-internal-8](/assets/img/2025-04-14-seo-google-analytics-internal-8.png)<br>
 8. 기본적으로 만들어진 필터 클릭
-![seo-google-analytics-internal-9](/assets/img/2025-04-14-seo-google-analytics-internal-9.png)
+![seo-google-analytics-internal-9](/assets/img/2025-04-14-seo-google-analytics-internal-9.png)<br>
 9. 필터 상태 -> '사용중' 으로 변경
-![seo-google-analytics-internal-10](/assets/img/2025-04-14-seo-google-analytics-internal-10.png)
+![seo-google-analytics-internal-10](/assets/img/2025-04-14-seo-google-analytics-internal-10.png)<br>
 10. 저장 -> 필터 활성화
-![seo-google-analytics-internal-11](/assets/img/2025-04-14-seo-google-analytics-internal-11.png)
+![seo-google-analytics-internal-11](/assets/img/2025-04-14-seo-google-analytics-internal-11.png)<br>
+<br>
