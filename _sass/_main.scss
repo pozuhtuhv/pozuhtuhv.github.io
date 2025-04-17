@@ -1,5 +1,9 @@
 @import "fonts";
 
+html {
+  overflow-y: scroll;
+}
+
 /* 공통 리셋 */
 *,
 :after,
@@ -37,7 +41,7 @@ html {
 
 body {
   font-family: var(--text-font);
-  text-rendering: optimizeLegibility;
+  text-rendering: auto;
   color: var(--main-text-color);
 }
 
@@ -74,6 +78,7 @@ pre {
   border-style: none none none solid;
   border-color: var(--light-text-color);
   overflow-x: auto;
+  max-width: fit-content;
 }
 
 /* 본문 이미지 */

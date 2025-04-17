@@ -6,7 +6,7 @@ categories: ["SEO"]
 published: true
 date: 2025-04-14
 last_modified_at: 2025-04-14
-tags: [google, google, analytics, internalip]
+tags: [seo, google, analytics, internalip]
 ---
 ---
 {: .no_toc .text-delta }

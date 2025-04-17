@@ -6,7 +6,7 @@ categories: ["SEO"]
 published: true
 date: 2025-01-22
 last_modified_at: 2025-01-22
-tag: [sql, example, question]
+tag: [seo, analytics, sitemap]
 ---
 ---
 {: .no_toc .text-delta }
