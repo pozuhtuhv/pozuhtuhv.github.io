@@ -5,7 +5,7 @@ layout: default
 <style>
     input, select, textarea, .bluebutton {
         margin-top: 10px;
-        width: calc(100% - 16px);
+        width: 100%;
         padding: 10px;
         border: 1px solid #444;
         border-radius: 5px;
@@ -19,11 +19,15 @@ layout: default
         cursor: pointer;
         border-radius: 5px;
         font-weight: bold;
-        transition: background 0.3s, border 0.3s;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+        padding: 0;
     }
 
     .checkbox-container label {
-        white-space: nowrap;
+        margin-right: 20px;
     }
 </style>
 
@@ -121,9 +125,9 @@ layout: default
     </select>
 
     <div class="checkbox-container">
-        <label><input type="checkbox" id="audioOnly" style="width: auto;"> 오디오만 다운로드</label>
-        <label><input type="checkbox" id="parallel" style="width: auto;"> 병렬 다운로드</label>
-        <label><input type="checkbox" id="cutAB" style="width: auto;" onchange="toggleTimeInputs()"> AB 구간 나누어 저장</label>
+        <label><input type="checkbox" id="audioOnly"> 오디오만 다운로드</label>
+        <label><input type="checkbox" id="parallel"> 병렬 다운로드</label>
+        <label><input type="checkbox" id="cutAB" onchange="toggleTimeInputs()"> AB 구간 나누어 저장</label>
     </div>
 
     <div id="timeInputs" style="display: none;">
