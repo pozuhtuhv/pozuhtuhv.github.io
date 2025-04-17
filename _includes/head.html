@@ -10,8 +10,12 @@
 </title>
 
 <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/giscus.css">
+<link rel="preload" href="{{ site.url }}/assets/css/syntax.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css"></noscript>
+
+<link rel="preload" href="{{ site.url }}/assets/css/giscus.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ site.url }}/assets/css/giscus.css"></noscript>
+
 <script src="{{ site.url }}/assets/js/custom.js" defer></script>
 <link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap.xml" />
 
