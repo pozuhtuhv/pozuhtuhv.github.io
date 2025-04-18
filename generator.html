@@ -73,7 +73,7 @@ layout: default
             return;
         }
 
-        let command = `yt-dlp -o \"${folder}/full${file_extension}\" ${quality}${audioOnly}${parallel} \"${url}\"`;
+        let command = `yt-dlp -o \"${folder}/full${file_extension}\" ${quality} ${audioOnly} ${parallel} \"${url}\"`;
 
         if (document.getElementById("cutAB").checked) {
             let startTime = document.getElementById("startTime").value.trim();
