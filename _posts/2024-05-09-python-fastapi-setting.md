@@ -34,7 +34,7 @@ API 개발에 최적화되어 있으며, Python 타입 힌트를 사용하여 �
 ```python
 python venv [folder] # 가상환경 세팅
 
-pip install fastapi, uvicorn # 패키지 설치
+pip install fastapi uvicorn # 패키지 설치
 ```
 <br>
 

@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+<style>
+    input, select, textarea, .bluebutton {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: #252525;
+        color: #e0e0e0;
+    }
+
+    .bluebutton {
+        background-color: var(--link-color);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+        padding: 0;
+    }
+
+    .checkbox-container label {
+        margin-right: 20px;
+    }
+</style>
+
+<script>
+    let selectedOS = "windows";
+
+    function toggleOS() {
+      selectedOS = selectedOS === "windows" ? "mac" : "windows";
+      document.getElementById("selectedOS").textContent = selectedOS === "windows" ? "Windows" : "Mac";
+      document.getElementById("installCommand").textContent = selectedOS === "windows"
+        ? "choco install yt-dlp ffmpeg"
+        : "brew install yt-dlp ffmpeg";
+    }
+
+    function toggleTimeInputs() {
+      const timeDiv = document.getElementById("timeInputs");
+      timeDiv.style.display = document.getElementById("cutAB").checked ? "block" : "none";
+    }
+
+    function convertCurlToFfmpeg() {
+      const input = document.getElementById("curlInput").value;
+      const urlMatch = input.match(/curl\s+'([^']+)'/);
+      const headers = [...input.matchAll(/-H\s+'([^']+)'/g)].map(m => m[1]);
+
+      if (!urlMatch) {
+          document.getElementById("ffmpegOutput").textContent = "❌ URL을 찾을 수 없습니다.";
+          return;
+      }
+
+      const url = urlMatch[1];
+      const useRe = document.getElementById("useRe").checked;
+      const cutAB = document.getElementById("cutAB").checked;
+      const startTime = document.getElementById("startTime").value;
+      const endTime = document.getElementById("endTime").value;
+
+      const filteredHeaders = headers.filter(h => !h.toLowerCase().startsWith("range:"));
+      const headerLines = filteredHeaders.map(h => h + "\\r\\n").join('');
+      const reLine = useRe ? `-re \\\n` : "";
+
+      let timeOptions = "";
+      if (cutAB && startTime && endTime) {
+          timeOptions = `-ss ${startTime} -to ${endTime} \\\n`;
+      }
+
+      const ffmpeg = `ffmpeg \\\n${reLine}-headers $'${headerLines}' \\\n-i "${url}" \\\n${timeOptions}-c copy \\\noutput.mp4`;
+
+      document.getElementById("ffmpegOutput").textContent = ffmpeg;
+      document.getElementById("ffmpegOutput").select();
+      document.execCommand("copy");
+      alert("명령어가 복사되었습니다.");
+    }
+</script>
+
+<section class="page_title">
+  <h1>FFmpeg-Generator</h1>
+</section>
+
+<section class="posts">    
+  <p>- cURL 형식을 FFMPEG를 통해 비디오를 다운로드하는 명령어를 생성하는 도구입니다.</p>
+  <p>- yt-dlp와 ffmpeg가 설치되어 있어야 합니다.</p>
+  <p>- 아래 명령어로 설치할 수 있습니다.</p>
+  <p>- Windows: 명령프롬프트 사용</p>
+  <p>- Mac: <a href="https://pozuhtuhv.github.io/2025/04/07/mac-homebrew">Homebrew</a> 사용</p>
+  <br>
+  <div class="install-box">
+    <pre id="installCommand">choco install yt-dlp ffmpeg</pre>
+    <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
+  </div>
+</section>
+<hr>
+<section>
+  <textarea id="curlInput" rows="10" placeholder="curl 'https://...' -H 'Header: ...' ..."></textarea>
+  
+  <div class="checkbox-container">
+    <label><input type="checkbox" id="useRe"> 스트리밍처럼 다운로드 서버 부하방지</label>
+    <label><input type="checkbox" id="cutAB" onchange="toggleTimeInputs()"> AB 구간 나누어 저장</label>
+  </div>
+
+  <div id="timeInputs" style="display: none;">
+      <input type="text" id="startTime" placeholder="시작 시간 (예: 00:01:23)">
+      <input type="text" id="endTime" placeholder="종료 시간 (예: 00:02:34)">
+  </div>
+
+  <button class="bluebutton" onclick="convertCurlToFfmpeg()">FFmpeg 명령어 생성</button>
+
+  <textarea id="ffmpegOutput" rows="5" readonly></textarea>
+</section>
+
+<script src="https://giscus.app/client.js"
+        data-repo="pozuhtuhv/pozuhtuhv.github.io"
+        data-repo-id="R_kgDONmo7OQ"
+        data-category="General"
+        data-category-id="DIC_kwDONmo7Oc4CmCEh"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="https://pozuhtuhv.github.io/assets/css/giscus.css"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

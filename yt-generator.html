@@ -110,7 +110,9 @@ layout: default
         <pre id="installCommand">choco install yt-dlp ffmpeg</pre>
         <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
     </div>
-
+</section>
+<hr>
+<section>
     <input type="text" id="username" placeholder="운영체제 사용자 계정 이름 입력">
     <input type="text" id="url" placeholder="다운로드할 URL (일반 또는 M3U8 지원)">
     <input type="text" id="filename" placeholder="파일 이름 (기본: (현재날짜시간).mp4)">
@@ -136,7 +138,7 @@ layout: default
     </div>
 
     <button class="bluebutton" onclick="generateAndCopyCommand()">명령어 생성 및 복사</button>
-    <textarea id="commandOutput" rows="4" readonly></textarea>
+    <textarea id="commandOutput" rows="5" readonly></textarea>
 </section>
 
 <script src="https://giscus.app/client.js"
