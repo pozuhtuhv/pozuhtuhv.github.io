@@ -19,7 +19,7 @@ tag: [sql, example, like]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## 특정 조건에 맞는 데이터 COUNT
+## {{ page.description }}
 
 ### 0. SQL 쿼리
 ```sql

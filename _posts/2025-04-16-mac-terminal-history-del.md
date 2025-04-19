@@ -19,7 +19,7 @@ tags: [mac, terminal, zsh, history]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Mac 환경 터미널의 기록 삭제
+## {{ page.description }}
 
 ### 0. 개요
 Mac 에서 터미널을 사용하다보면 기록이 남는데<br>

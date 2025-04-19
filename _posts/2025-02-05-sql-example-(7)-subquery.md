@@ -19,7 +19,7 @@ tag: [sql, example, subquery]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## SUBQUERY문
+## {{ page.description }}
 
 ### 0. SQL 문제
 

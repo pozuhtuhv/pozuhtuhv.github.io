@@ -19,7 +19,7 @@ tag: [sql, example, subquery, join]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## SQL에서의 가장 많이 글쓴사람 리뷰만 출력
+## {{ page.description }}
 
 ### 0. SQL 문제
 

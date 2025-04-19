@@ -19,7 +19,7 @@ tag: [python, sql, database]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## MySQL 데이터 입출력
+## {{ page.description }}
 데이터 임포트 / 엑스포트 할때 사용했던 명령어
 <br>
 

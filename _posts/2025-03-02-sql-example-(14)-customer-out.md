@@ -19,7 +19,7 @@ tag: [sql, example, recursive]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## SQL에서의 시간대별 고객 퇴장 수 조회
+## {{ page.description }}
 
 ### 0. SQL 문제
 

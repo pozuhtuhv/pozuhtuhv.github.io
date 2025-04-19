@@ -19,7 +19,9 @@ tag: [github, seo, jekyll]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Jekyll 사이트맵 세팅
+## {{ page.description }}
+
+### Jekyll 사이트맵 세팅
 사이트맵을 설정하면 검색 엔진이 사이트의 구조 정확하게 수집할 수 있다.
 <br>
 본글은 Jekyll 로 만들어진 블로그의 Sitemap을 만드는 소개글이며 2가지 방법을 소개하고자 한다. 

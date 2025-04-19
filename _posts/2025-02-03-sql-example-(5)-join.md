@@ -19,7 +19,7 @@ tag: [sql, example, inner_join]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## JOIN문
+## {{ page.description }}
 
 ### 0. SQL 쿼리 설명
 ```sql

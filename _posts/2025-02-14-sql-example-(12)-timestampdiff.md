@@ -19,7 +19,7 @@ tag: [sql, example, timestampdiff, join]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## SQL에서의 두개의 날짜 간의 차이 구하기 
+## {{ page.description }}
 
 ### 0. SQL 문제
 

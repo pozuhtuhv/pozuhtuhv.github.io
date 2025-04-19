@@ -19,7 +19,7 @@ tag: [github, jekyll]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## 첫번째 깃허브 블로그 세팅
+## {{ page.description }}
 
 ### 1. 고통의 고통이었다.
 ![githubbanner](/assets/img/githubbanner.png)<br>

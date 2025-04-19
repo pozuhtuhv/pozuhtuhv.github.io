@@ -19,7 +19,7 @@ tag: [sql, example, recursive]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## SQL에서의 여러 테이블의 제품 판매액 합계
+## {{ page.description }}
 
 ### 0. SQL 문제
 

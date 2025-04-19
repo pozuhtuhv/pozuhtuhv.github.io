@@ -19,7 +19,7 @@ tag: [github, workflow, actions]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Github Actions Workflow Permission
+## {{ page.description }}
 
 ### 1. 권한 설정 하기
 

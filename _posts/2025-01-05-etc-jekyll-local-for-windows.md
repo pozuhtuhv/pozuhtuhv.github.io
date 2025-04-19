@@ -19,7 +19,9 @@ tag: [github, jekyll, ruby]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Jekyll 로컬 세팅 (For Windows)
+## {{ page.description }}
+
+### Jekyll 로컬 세팅 (For Windows)
 - Jekyll Ruby 로컬로 확인하는 이유
 <br>
 1. 기존 `github-pages`로 진행할 경우 `commit & push`를 하고 몇 초에서 몇 분이 지나야 확인이 가능하기 때문에 시간 낭비가 많아진다.<br>

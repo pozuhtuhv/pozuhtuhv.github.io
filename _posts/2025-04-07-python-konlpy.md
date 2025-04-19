@@ -19,11 +19,11 @@ tags: [python, konlpy, 형태소]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## Konlpy 설치 및 예시
+## {{ page.description }}
 
 ### 0. 개요
 한글에 대한 분석에 필요한 Python에서 제일 잘 알려진 Konlpy.<br>
-오늘은 기본적인 Konlpy 사용방법을 작성할려 한다.<br>
+이 글은 기본적인 Konlpy 사용방법을 소개하는 글이다.<br>
 <br>
 
 ### 1. 세팅

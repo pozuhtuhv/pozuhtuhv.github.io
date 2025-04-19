@@ -19,7 +19,9 @@ tag: [python, google, analytics, seo]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## 구글 애널리틱스 라이브러리 설치
+## {{ page.description }}
+
+### 구글 애널리틱스 라이브러리 설치
 ```bash
 pip install google-analytics-data
 ```

@@ -19,7 +19,7 @@ tag: [daily, codingtest]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## 코딩테스트 공부를 하며 느낀것
+## {{ page.description }}
 
 ### 1. SQL 경험에 대한 부족.
 데이터를 SQL에 저장하지만, 정작 데이터 정제는 Excel을 이용해왔어서<br>

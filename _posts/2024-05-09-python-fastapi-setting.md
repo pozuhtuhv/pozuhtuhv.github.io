@@ -19,7 +19,7 @@ tag: [python, fastapi, framework]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## FastAPI 세팅
+## {{ page.description }}
 
 ### 0. FastAPI 소개
 Python에서 Python 3.6+ 버전을 기반으로 한 현대적이고 빠른(고성능) 웹 프레임워크로, 2018년에 처음 소개되었다.<br>
