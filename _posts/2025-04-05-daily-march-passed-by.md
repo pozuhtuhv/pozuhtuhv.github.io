@@ -1,0 +1,168 @@
+---
+title: "스쳐지나간 3월"
+description: "스쳐지나간 3월의 정리"
+layout: post
+categories: ["Daily"]
+published: true
+date: 2025-04-05
+last_modified_at: 2025-04-05
+tags: [daily]
+---
+---
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+---
+
+<!-- 글의 제목은 ##
+    나머지 큰 제목은 ###
+    이후 나머지는 3개이상 -->
+
+## {{ page.description }}
+
+### 1. 전 직장 동료 결혼식
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-1.jpg' alt='daily-march-passed-by-1'>
+</div><br>
+이건 2월이긴하지만<br>
+특별한 이벤트가 없던 생활에서 날라온 새로운 이벤트.<br>
+활기가 생기는 특별한 날이었다.<br>
+내가 퇴사하고도 연락을 이어주셔서 참 고마운분이다.<br>
+축의금도 내고 전 직장 사람들도 오랜만에 봤고 기분이 좋았다.<br>
+오랜만에 정장도 입어보고 했던날이다.<br>
+행복한 결혼생활하시길~!<br>
+<br>
+
+### 2. 친구들 만나러 진주간 날
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-2.jpg' alt='daily-march-passed-by-2'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-3.jpg' alt='daily-march-passed-by-3'>
+</div><br>
+진주에사는 친구들 보러갔다.<br>
+이직하고나서 적응 잘하고 잘 지내나보다.<br>
+항공우주박물관가서 이것저것 구경한날.<br>
+<br>
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-4.jpg' alt='daily-march-passed-by-4'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-5.jpg' alt='daily-march-passed-by-5'>
+</div><br>
+날씨가 거의 앞이 안보이는 가시거리였는데<br>
+날이 비가 많이와서 여기저기 구경하는건 못갔다.<br>
+순천만습지 갈려 했는데 날씨도 날씬데 입장료 1인 1만원이라서 포기.<br>
+담엔 밀양을 가보자라는 말을 하며<br>
+고기구워먹고, 근황이야기하면서 보냈다.<br>
+<br>
+
+### 3. 맥북 구매를 진행했던 날
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-6.jpg' alt='daily-march-passed-by-6'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-7.jpg' alt='daily-march-passed-by-7'>
+</div><br>
+3월 초 부터 맥북을 찾아봤다.<br>
+괜찮은 금액이 나와있어 바로 구매<br>
+한번쯤은 제대로 쓰고싶었고, 신품보단 중고로 구매하는게 맘편할거 같아서 중고로 샀다.<br>
+이전에 쓰던 노트북은 이제 정리할때가 된거같아서 고민 좀 했다.<br>
+3/11 무려 경기도에서부터 오는 중고 맥북에어<br>
+받기전에는 박스랑 파우치만 보내주시겠지 하고 있었는데<br>
+플라스틱 케이스도 같이 보내주셨다.<br>
+<br>
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-8.jpg' alt='daily-march-passed-by-8'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-9.jpg' alt='daily-march-passed-by-9'>
+</div><br>
+받고 거의 새거라고 봐도 컨디션이 좋은 제품을 받았다.<br>
+(판매자님 방향으로 절 한번)<br>
+늘 그렇듯 뭐든 초반 적응은 어려워도 잘쓸만하다.<br>
+2~3주 써본결과로는 써본후기로는 아이폰을 크게 쓰는 느낌<br>
+3~4년 된거다라고 해도 내구성이 딴딴한 느낌이고<br>
+구성이 꽉찬느낌이다. 굉장히 만족하는중<br>
+<br>
+
+### 4. 산책하고 마트 갔다온 사진
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-10.jpg' alt='daily-march-passed-by-10'>
+</div><br>
+진해루 산책중에 바닷물이 많이 빠졌네~ 하면서 걷고있었는데<br>
+왜가리 발견<br>
+<br>
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-11.jpg' alt='daily-march-passed-by-11'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-12.jpg' alt='daily-march-passed-by-12'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-13.jpg' alt='daily-march-passed-by-13'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-14.jpg' alt='daily-march-passed-by-14'>
+</div><br>
+날씨도 따뜻해지고있고,<br>
+벚꽃이 이렇게까지 하얗더라.<br>
+이날 날씨가 많이 따뜻했다.<br>
+<br>
+<div class="image-gallery cols-3">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-14.jpg' alt='daily-march-passed-by-15'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-15.jpg' alt='daily-march-passed-by-16'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-16.jpg' alt='daily-march-passed-by-17'>
+</div><br>
+마트에서 사온 아몬드와 호두 그리고 상추<br>
+아몬드랑 호두는 간식겸해서 샀다.<br>
+오랜만에 먹었는데 아몬드가 그렇게 맛있더라.<br>
+​<br>
+상추는 단상추로 샀다.<br>
+예전부터 마트에서 단상추를 자주 판매했다.<br>
+가격도 싸다 2천원대에 6단이었고 3단씩 철사에 묶여서 팔고있어서 바로 샀다.<br>
+손질할때도 그냥 편하고 양도 많아서 좋다.<br>
+3번째 사진은 속에 있는 부분인데<br>
+얘네들이 단맛이랑 상추향이 강해서 좋다.<br>
+<br>
+
+### 5. 유튜브 보다가 발견한 댓글
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-18.png' alt='daily-march-passed-by-18'>
+</div><br>
+이건 유튜브 보다가 본 적당히 공감된 글<br>
+​<br>
+감정의 교루라는게 완전히 없는 건 아니지만,<br>
+나도 그런 가벼운 교류가 편하고 좋다.<br>
+침묵이 편하고, 가벼운 대화도 즐거운<br>
+그런거면 충분한 느낌<br>
+​<br>
+다른 이야기지만, 예전에 잠깐 했던 물류 일을 했을 때 참 잘 맞았다.<br>
+지게차도 재밌게 운전했고, 의외로 꽤 적성에 맞는 일이었다.<br>
+그 단순하고 명확한 흐름이 지금도 자주 생각나곤한다.<br>
+<br>
+
+### 6. 취업계획과 이후 계획
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-19.png' alt='daily-march-passed-by-19'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-20.png' alt='daily-march-passed-by-20'>
+</div><br>
+요즘은 취업준비를 하면서 진주와 대구에 대해서 생각을 한다.<br>
+어디로 가야할지<br>
+​<br>
+후보지에선 부산도 있었긴 했지만<br>
+주변사람들은 알고있는 <br>
+3월말에 관계를 정리했다는 이유가 1순위<br>
+​<br>
+괜찮은 기업이 있다고 해도 위치가 애매한 부분이 있기에<br>
+부산은 생각보다 손이 잘 안가게 된다.<br>
+​<br>
+진주는 아직 내가 찾는 일은 거의 없었다.<br>
+'여긴 친구가 2명이 있기에 적응도 편하겠다'<br>
+라고 잠깐 생각을 해볼만 했다.<br>
+그렇다고 친구들이 있다 라는 이유만으로는 정하긴 어려운곳.<br>
+​<br>
+대구는 특별한 연고지가 없지만, 느낌상으로 꽤 괜찮아 보였고,<br>
+기업들이 꽤 많아서 괜찮을것 같았다.<br>
+나의 미래를 생각해본다면 대구가 더 나을지도 모르겠다.<br>
+물론.. 아직 미정이다...<br>
+​<br>
+
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-21.png' alt='daily-march-passed-by-21'>
+</div><br>
+만약에 대구에 가게된다면 가고싶은곳도 많다. 저장해놓은곳이 있기에​<br>
+사전답사로 한번 가봐야하나...​<br>
+​​<br>
+4월 시작의 날씨가 비가 오지만​<br>
+다들 즐거운 4월 되시길​<br>
+​​<br>
+긴글 읽어주셔서 감사합니다.​<br>
+​<br>
