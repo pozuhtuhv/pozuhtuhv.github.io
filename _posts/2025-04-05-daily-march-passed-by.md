@@ -97,9 +97,9 @@ tags: [daily]
 이날 날씨가 많이 따뜻했다.<br>
 <br>
 <div class="image-gallery cols-3">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-14.jpg' alt='daily-march-passed-by-15'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-15.jpg' alt='daily-march-passed-by-16'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-16.jpg' alt='daily-march-passed-by-17'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-15.jpg' alt='daily-march-passed-by-15'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-16.jpg' alt='daily-march-passed-by-16'>
+    <img src ='/assets/img/2025-04-05-daily-march-passed-by-17.jpg' alt='daily-march-passed-by-17'>
 </div><br>
 마트에서 사온 아몬드와 호두 그리고 상추<br>
 아몬드랑 호두는 간식겸해서 샀다.<br>
