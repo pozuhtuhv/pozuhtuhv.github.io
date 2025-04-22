@@ -6,7 +6,7 @@ categories: ["Daily"]
 published: true
 date: 2024-04-08
 last_modified_at: 2024-04-08
-tag: [github, jekyll]
+tag: [daily, github, jekyll]
 ---
 ---
 {: .no_toc .text-delta }

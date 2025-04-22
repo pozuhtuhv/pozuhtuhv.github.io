@@ -37,7 +37,7 @@ tags: [python, pip, upgrade, uninstall, install, library]
 <br>
 ![python-pip-2](/assets/img/2025-04-19-python-pip-2.png)<br>
 
-<div class = 'image-gallery'>
+<div class="image-gallery cols-2">
     <img src ='/assets/img/2025-04-19-python-pip-3.png' alt='python-pip-3'>
     <img src ='/assets/img/2025-04-19-python-pip-4.png' alt='python-pip-4'>
 </div><br>

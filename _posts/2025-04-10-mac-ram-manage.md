@@ -41,7 +41,7 @@ tags: [mac, ram, manage]
 <br>
 
 ### 2. '활성 상태 보기'에서 보는 현재 상태
-<div class = 'image-gallery'>
+<div class="image-gallery cols-2">
     <img src ='/assets/img/2025-04-10-mac-ram-manage-3.png' alt='mac-ram-manage-3'>
     <img src ='/assets/img/2025-04-10-mac-ram-manage-4.png' alt='mac-ram-manage-4'>
 </div>

@@ -36,7 +36,7 @@ cd Desktop
 python3 -m venv [지정한 폴더이름]
 ```
 <br>
-<div class = 'image-gallery'>
+<div class="image-gallery cols-2">
     <img src ='/assets/img/2025-04-07-python-venv-1.png' alt='venv-1'>
     <img src ='/assets/img/2025-04-07-python-venv-2.png' alt='venv-2'>
 </div>
