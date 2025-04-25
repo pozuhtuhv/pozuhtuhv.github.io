@@ -54,10 +54,9 @@ tags: [mac, battery, power management]
 3. 경우에 따라 설치 중 사용자 계정의 비밀번호 입력이 필요
 4. 설치 완료 후, 다음 명령어를 입력하여 충전 제한을 설정
 
-   ```sh
-   battery maintain 80
-   ```
-<br>
+```sh
+battery maintain 80
+```
 <br>
 
 ### 2. 참고

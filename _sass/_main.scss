@@ -1,4 +1,17 @@
-@import "fonts";
+// @font-face {
+// 	font-family: Questrial;
+// 	src: url(/assets/fonts/Questrial-Regular.woff2) format("woff2"), url(/assets/fonts/Questrial-Regular.woff) format("woff");
+// 	font-style: normal;
+// 	font-display: swap
+// }
+
+@font-face {
+    font-family: 'PretendardVariable';
+    src: url('/assets/fonts/PretendardVariable.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 100 900; /* 가변 폰트 */
+    font-display: swap;
+  }
 
 .bio a,
 .post p,
@@ -23,7 +36,7 @@ b,
 header a.active,
 strong,
 th {
-    font-weight: 700
+    font-weight: 500
 }
 
 .head,
@@ -41,8 +54,8 @@ th {
 html {
     overflow-y: scroll;
     font-size: 12px;
-    --text-font: Questrial, sans-serif;
-    --source-code-font: Questrial, sans-serif;
+    --text-font: PretendardVariable, sans-serif;
+    --source-code-font: PretendardVariable, sans-serif;
     --very-light-text-color: #EEE;
     --light-text-color: #677DC1;
     --medium-text-color: #52057b;
@@ -61,7 +74,7 @@ html {
     --code-variable-color: #fdce68;
     --code-error-bg-color: #1e0010;
     --code-error-text-color: #960050;
-    background-color: #202124
+    background-color: #202124;
 }
 
 *,
@@ -79,6 +92,48 @@ body {
     color: var(--main-text-color)
 }
 
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin: .75em 0;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem !important;
+    line-height: 1.2
+}
+
+h3 {
+    font-size: 1.75rem !important
+}
+
+h4 {
+    font-size: 1.5rem !important
+}
+
+h5 {
+    font-size: 1.25rem !important
+}
+
+h6 {
+    font-size: 1rem !important
+}
+
+section h1:first-child {
+    margin-top: 0
+}
+
 #topButton,
 code {
     font-family: var(--source-code-font)
@@ -90,11 +145,6 @@ a {
 
 .post p {
     line-height: 22px;
-    font-weight: 300
-}
-
-.meta {
-    margin: 1.4rem 0
 }
 
 code,
@@ -229,7 +279,7 @@ section {
 .head a {
     margin-bottom: .5rem;
     border-radius: .4rem;
-    transition: background-color .2s, color .2s
+    transition: var(background-color) .2s, color .2s
 }
 
 #specButton:hover,
@@ -285,47 +335,6 @@ time {
     pointer-events: auto
 }
 
-h1 {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    position: relative;
-    margin: .75em 0
-}
-
-h2 {
-    font-size: 2rem !important;
-    line-height: 1.2
-}
-
-h3 {
-    font-size: 1.75rem !important
-}
-
-h4 {
-    font-size: 1.5rem !important
-}
-
-h5 {
-    font-size: 1.25rem !important
-}
-
-h6 {
-    font-size: 1rem !important
-}
-
-section h1:first-child {
-    margin-top: 0
-}
-
 .posts ul {
     list-style: none;
     padding: 0
@@ -345,13 +354,8 @@ section h1:first-child {
     max-width: 100%
 }
 
-.post>h1.title {
-    font-size: x-large;
+.post h1.title {
     margin: 0
-}
-
-.post>time {
-    margin: 1rem 0 2rem
 }
 
 .highlight {
@@ -520,7 +524,7 @@ submain {
 
 .post-nav .nav-arrow {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 3px
 }
 

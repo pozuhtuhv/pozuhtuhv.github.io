@@ -1,0 +1,391 @@
+---
+layout: default
+---
+<style>
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contact > div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-card {
+    background-color: #202124;
+    border: 1px solid var(--border-color, #7c7d7e);
+    border-radius: 6px;
+    padding: 16px;
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    box-shadow: var(--shadow, 0 1px 3px rgba(0,0,0,0.1));
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--link-color);
+  }
+
+  .project-date {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .project-description {
+    margin-bottom: 12px;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  p {
+    font-size: 1.06rem;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-bg, rgba(0,0,0,0.5));
+    overflow-y: auto;
+  }
+
+  .modal-content {
+    background-color: #202124;
+    margin: 5% auto;
+    padding: 24px;
+    border: 1px solid var(--border-color, #e1e4e8);
+    border-radius: 6px;
+    width: 85%;
+    max-width: 700px;
+    animation: modalFadeIn 0.3s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+
+  @keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .close-button {
+    color: #777;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color, #e1e4e8);
+  }
+
+  .modal-title {
+    font-size: 22px;
+    margin: 0;
+    color: var(--link-color);
+  }
+
+  .modal-body {
+    margin-bottom: 24px;
+  }
+
+  .project-detail-section {
+    margin-bottom: 20px;
+  }
+
+  .project-detail-section h4 {
+    margin-bottom: 8px;
+    color: var(--link-color);
+  }
+
+  .screenshot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+  }
+
+  .screenshot-gallery.one .screenshot-gallery-img {
+    width: 100%;
+  }
+
+  .screenshot-gallery.two .screenshot-gallery-img {
+    width: calc(50% - 8px);
+  }
+
+  .screenshot-gallery.three .screenshot-gallery-img {
+    width: calc(33.333% - 10.67px);
+  }
+
+  .screenshot-gallery-img {
+    border-radius: 6px;
+    border: 1px solid var(--border-color, #e1e4e8);
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .screenshot-gallery-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+    }
+    
+    .modal-content {
+      width: 85%;
+      margin: auto;
+    }
+  }
+</style>
+
+<section>
+  <h1>Hyeonseok Cho</h1>
+  <p>안녕하세요! 데이터 개발자 <q style="text-shadow:0 0 10px #1d9bf0;color:#1d9bf0">조현석</q>입니다.</p>
+  <br>
+  <p>- <strong>단순하고 직관적인 설계</strong>를 추구합니다. <strong>미니멀한 개발</strong>을 지향하며, 본질에 집중하는 것을 중요하게 생각합니다.</p>
+  <p>- 개발을 <strong>데이터 분석</strong>에 응용하며, 더욱 더 의미있는, 가치있는 데이터 찾기를 좋아합니다.</p>
+  <p>- 문제를 인식하고 <strong>해결해나가는 방식</strong>을 좋아하여 필요하다면 <strong>직접 적용 및 개발</strong>을 진행합니다.</p>
+  <p>- <strong>주어진 리소스 내에서 최선의 해결책을 찾고 적용하는 것을 목표로 합니다.</strong></p>
+  <p>- 분석을 통해 사용자들에게 더 나은 경험을 위해 고민합니다.</p><br>
+  
+  <hr>
+  <h3>Contact</h3>
+  <div class="contact">
+    <div>
+      <br>
+      <p>Email:<br><a href="mailto:pozuhtuhv@gmail.com">pozuhtuhv@gmail.com</a></p>
+      <p>Instagram:<br><a href="https://instagram.com/pozuhtuhv">https://instagram.com/pozuhtuhv</a></p>
+    </div>
+    <div class="links">
+      <br>
+      <p>GitHub:<br><a href="https://github.com/pozuhtuhv">https://github.com/pozuhtuhv</a></p>
+      <p>Blog:<br><a href="https://pozutuhv.github.io">https://pozutuhv.github.io</a></p>
+    </div>
+  </div>
+  
+  <br>
+  <hr>
+  
+  <h3>Tech Stack</h3>
+  
+  <h4>Main</h4>
+  <div class="tech-stack">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
+  </div>
+  
+  <h4>DB</h4>
+  <div class="tech-stack">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white">
+    <img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+    <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white">
+    <img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
+  </div>
+  
+  <h4>Visualization</h4>
+  <div class="tech-stack">
+    <img src="https://img.shields.io/badge/Looker-4285F4?style=flat-square&logo=Looker&logoColor=white">
+    <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white">
+    <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white">
+  </div>
+  
+  <h4>Application</h4>
+  <div class="tech-stack">
+    <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white">
+    <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white">
+    <img src="https://img.shields.io/badge/Actions-181717?style=flat-square&logo=GithubActions&logoColor=white">
+    <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white">
+    <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white">
+  </div>
+  
+  <h4>Data & Framework (Edu ~ing)</h4>
+  <div class="tech-stack">
+    <img src="https://img.shields.io/badge/TensorFlow-FF3F06?style=flat-square&logo=tensorflow&logoColor=white">
+    <img src="https://img.shields.io/badge/Pytorch-ee4c2c?style=flat-square&logo=pytorch&logoColor=white">
+    <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
+    <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white">
+  </div>
+  
+  <br>
+  <hr>
+  
+  <h3>Work Experience</h3>
+  <h4>(주) 킥더허들 / 피토틱스 [2021.02 - 2023.12]</h4>
+  <p>이커머스 건강기능식품 사업부 / Growth Team (Data)</p>
+  <p>- Google Analytics, Google Tagmanager / 트래킹 구축</p>
+  <p>- Google Looker Studio / 시각화 설계 및 운영</p>
+  <p>- MySQL 기반 사내 데이터베이스 기획/개발/배포</p>
+  <p>- 데이터 수집 자동화 구축(BeautifulSoup, Selenium, API)으로 50개 제품관리의 마케팅팀 주당 50시간 개선 </p>
+  <p>- 검색어 순위 추적 및 API 데이터 수집을 위한 GUI 프로그램 개발</p>
+  <p>- Slack / 기반 일일 데이터 자동 알림 시스템 구축 (DAU, Turnover, MAU 등)</p>
+  <p>- 커뮤니티 사용자 이용시간 및 행동 분석</p>
+  
+  <br>
+  <h4>(주) 테라프릭스 / 메디톨드 [2023.12 - 2024.03]</h4>
+  <p>화장품 제조업 / Logistics Team (Data)</p>
+  <p>- 재고관리, 생산출고, 입출고 데이터 입력 자동화</p>
+  <p>- 창고 이동 최적화 제품별 로케이션 지정</p>
+  
+  <br>
+  <hr>
+  
+  <h3>Projects</h3>
+  <div class="projects-container">
+    <div class="project-card" data-project="project1">
+      <div class="project-header">
+        <span class="project-title">데이터 수집 자동화 시스템</span>
+        <span class="project-date">2021년 04월 - 2023년 11월 (2년 7개월)</span>
+      </div>
+      <div class="project-description">
+        BeautifulSoup과 Selenium을 활용한 웹 크롤링 및 API 연동 데이터 수집 자동화 시스템
+      </div>
+      <div class="project-tags">
+        <span class="badge">Python</span>
+        <span class="badge">Selenium</span>
+        <span class="badge">BeautifulSoup</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">SpreadSheet</span>
+        <span class="badge">Analytics</span>
+        <span class="badge">Tagmanager</span>
+        <span class="badge">API</span>
+      </div>
+    </div>
+    
+    <div class="project-card" data-project="project2">
+      <div class="project-header">
+        <span class="project-title">BI 대시보드 구축</span>
+        <span class="project-date">2021년 04월 - 2023년 11월 (2년 7개월)</span>
+      </div>
+      <div class="project-description">
+        BI 대시보드 구축 및 운영
+      </div>
+      <div class="project-tags">
+        <span class="badge">Python</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">Looker Studio</span>
+        <span class="badge">Streamlit</span>
+        <span class="badge">Tableau</span>
+      </div>
+    </div>
+    
+    <div class="project-card" data-project="project3">
+      <div class="project-header">
+        <span class="project-title">Slack 데이터 자동 알림 시스템</span>
+        <span class="project-date">2022년 07월 - 2023년 11월 (1년 4개월)</span>
+      </div>
+      <div class="project-description">
+        Slack API를 활용한 일일 핵심 데이터 지표 자동 알림 시스템 구축
+      </div>
+      <div class="project-tags">
+        <span class="badge">Python</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">Slack API</span>
+      </div>
+    </div>
+    
+    <div class="project-card" data-project="project4">
+      <div class="project-header">
+        <span class="project-title">검색어 순위 추적 GUI 프로그램</span>
+        <span class="project-date">2022년 04월 - 2023년 11월 (1년 7개월)</span>
+      </div>
+      <div class="project-description">
+        검색어 순위 추적 및 API 데이터 수집을 위한 GUI 프로그램 개발
+      </div>
+      <div class="project-tags">
+        <span class="badge">Python</span>
+        <span class="badge">Tkinter</span>
+        <span class="badge">BeautifulSoup</span>
+        <span class="badge">API</span>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <hr>
+  
+  <h3>ETC</h3>
+  <p>- 컴퓨터 활용능력 2급</p>
+  <p>- 2종 보통운전면허</p>
+  <p>- 사회복지사 2급</p>
+  <p>- 유소년 스포츠지도사</p>
+  <p>- 생활스포츠지도사 2급</p>
+  <p>- 3톤미만 지게차 운용</p>
+  
+  <br>
+  <hr>
+  
+  <h3>Interest</h3>
+  <p>- 자동화</p>
+  <p>- 생산성과 효율성</p>
+  <p>- Clean Code</p>
+  <p>- Make Manual</p>
+</section>
+
+<!-- 프로젝트 모달 -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modalTitle">프로젝트 제목</h3>
+      <span class="close-button">&times;</span>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <!-- 모달 내용은 JavaScript로 동적 삽입 -->
+    </div>
+  </div>
+</div>
