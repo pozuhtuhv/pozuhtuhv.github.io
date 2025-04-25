@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       goal: "데이터 수집 후 정제 및 저장 프로세스 구축 & 운영 <br> 이커머스 판매처별 대규모 데이터 수집 로직 구현 <br> 정기 수집 작업의 자동화 및 오류 감지 시스템 구축",
       solutions: "Python 기반 Selenium, BeautifulSoup 조합으로 웹 크롤러 개발 <br> MySQL 연동을 통해 수집 데이터의 정형화 및 정기 백업 구조 구현 <br> 에러 모니터링 및 로깅 시스템, 관리자용 Google Spreadsheet 인터페이스 제공",
       results: [
-        "<strong>주당 50시간</strong> 이상의 마케팅팀 수작업 업무 제거 (약 45개 제품 대상)",
+        "<strong>주당 25시간</strong> 이상의 마케팅팀 수작업 업무 제거 (약 45개 제품 대상)",
         "인력 소모 감소 및 데이터 수집 오류율 대폭 감소",
         "여러 부서에서 필요한 데이터에 대한 실시간 접근성 확보",
         "마케팅 보고 및 의사 결정 속도 개선 및 KPI 기반 전략 강화",
