@@ -147,6 +147,10 @@ a {
     line-height: 22px;
 }
 
+.post img {
+    max-width: 600px;
+}
+
 code,
 pre {
     background: var(--code-bg-color)
