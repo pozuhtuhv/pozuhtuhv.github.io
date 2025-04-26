@@ -26,6 +26,8 @@ tag: [daily]
     <img src ='/assets/img/2025-01-25-daily-6days-rest-1.jpg' alt='2025-01-25-daily-6days-rest-1'>
     <img src ='/assets/img/2025-01-25-daily-6days-rest-2.jpg' alt='2025-01-25-daily-6days-rest-2'>
     <img src ='/assets/img/2025-01-25-daily-6days-rest-3.jpg' alt='2025-01-25-daily-6days-rest-3'>
+</div><br>
+<div class="image-gallery cols-2">
     <img src ='/assets/img/2025-01-25-daily-6days-rest-4.jpg' alt='2025-01-25-daily-6days-rest-4'>
     <img src ='/assets/img/2025-01-25-daily-6days-rest-5.jpg' alt='2025-01-25-daily-6days-rest-5'>
 </div><br>

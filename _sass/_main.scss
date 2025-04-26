@@ -171,13 +171,6 @@ pre {
     overflow-x: auto
 }
 
-.post img {
-    max-width: 70%;
-    height: auto;
-    display: block;
-    margin: 0 auto
-}
-
 #search-results li a,
 .bio a,
 .head a,
@@ -193,7 +186,6 @@ pre {
 
 .image-gallery {
     display: grid;
-    gap: 5px;
     justify-items: center;
 }
 
@@ -217,15 +209,8 @@ pre {
 }
 
 .image-gallery img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-}
-
-.image-gallery img:only-child {
-    grid-column: 1 / -1;
-    max-width: 600px;
+    width: 90%;
+    height: 95%;
 }
 
 .overlay {
