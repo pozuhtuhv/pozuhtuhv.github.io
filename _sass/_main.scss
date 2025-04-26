@@ -36,7 +36,8 @@ b,
 header a.active,
 strong,
 th {
-    font-weight: 500
+    font-weight: 700;
+    color: #66bfff;
 }
 
 .head,
@@ -57,12 +58,12 @@ html {
     --text-font: PretendardVariable, sans-serif;
     --source-code-font: PretendardVariable, sans-serif;
     --very-light-text-color: #EEE;
-    --light-text-color: #677DC1;
+    --light-text-color: #66bfff;
     --medium-text-color: #52057b;
     --main-text-color: #bfbfbf;
-    --highlight-text-color: #677DC1;
+    --highlight-text-color: #66bfff;
     --dark-text-color: #24262a;
-    --link-color: #99c3ff;
+    --link-color: #66bfff;
     --code-bg-color: #31343f;
     --post-link: #ffffff;
     --code-text-color: #dee2f7;
