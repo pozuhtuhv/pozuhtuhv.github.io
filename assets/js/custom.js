@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "수동화 리포트 작성 시간 <b>80% 단축 (주당 5시간 절감)</b>",
         "다양한 부서의 요구에 맞는 맞춤형 데이터 시각화 제공",
         "API를 통한 내부 시스템과의 연동으로 데이터 혼동 해소",
-        "<b>마케팅 캠페인 ROI 35% 향상</b> 및 예산 최적화"
+        "<b>ROAS 250% 유지</b> 및 예산 최적화"
       ],
       imageUrls: [
         "/assets/img/portfolio/portfolio-project-2.png",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       solutions: "Schedule 기반 스케줄러 예약 시스템 구현<br> MySQL 핵심 지표 추출 및 분석 <br> <b>직관적으로 이해할 수 있도록 메시지 구성</b>",
       results: [
         "팀 전체의 데이터 인식 및 이해도 향상",
-        "<b>실시간 캠페인 모니터링</b>으로 마케팅 대응 속도 40% 향상",
+        "<b>실시간 보고서 모니터링</b>으로 마케팅 대응 속도 40% 향상",
         "이슈 발생 시 즉각적인 알림으로 <b>리스크 대응 시간 65% 단축</b>",
         "데이터 기반 논의 활성화 및 <b>팀 커뮤니케이션 효율성 증대</b>"
       ],
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "마케팅팀의 키워드 분석 시간 <b>65% 단축</b> 및 검색 과정 단순화",
         "<b>경쟁사 키워드 전략 실시간 모니터링</b>으로 마케팅 효율성 증대",
         "데이터 기반 SEO 전략 수립, <b>월 CPC 50% 절감 및 안정화</b>",
-        "<b>유기적 트래픽 30% 증가</b>와 키워드 검색 노출 순위 <b>1위 유지</b>"
+        "키워드 검색 노출 순위 <b>1위 유지</b>"
       ],
       imageUrls: [
         "/assets/img/portfolio/portfolio-project-5.png"
