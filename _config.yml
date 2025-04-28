@@ -1,7 +1,7 @@
 site: pozuhtuhv
-title: "포장되지 않는 간결함."
-greetings: "포장되지 않는 간결함."
-description: "less in more"
+title: "less in more." # 타이틀
+greetings: "포장되지 않는 간결함." # 인삿말 
+description: "minimal: less in more"
 lang: en-US
 timezone: Asia/Seoul
 repo: https://github.com/pozuhtuhv/pozuhtuhv.github.io # site repo [optional]
