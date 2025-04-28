@@ -1,5 +1,5 @@
 ---
-title: "맥북에어 M1 구매 기념 단축키 모음"
+title: "맥북에어 M1 단축키 모음"
 description: "MAC shortcut"
 layout: post
 categories: ["Mac"]
@@ -38,6 +38,8 @@ tag: [mac, shortcut]
 | ⌘ + Z | 실행취소 | - |
 | ⌘ + ⇧ + Z | 되돌리기 | - |
 | ⌘ + ⌫ | 파일 삭제 | 바탕화면 및 Finder 에서 사용 |
+| ⌘ + [ | 폴더 뒤로가기 | Finder 에서 사용 |
+| ⌘ + ] | 폴더 뒤로가기 | Finder 에서 사용 |
 | ⌘ + Q | 어플 종료 | 완전종료 |
 | ⌘ + W | 창닫기 | 창만종료 |
 | ` or ₩ | `백틱 과 원` 표시 | 영어일땐 `, 한글일땐 ₩ |
