@@ -17,13 +17,6 @@ layout: default
   color: #0073e6;
 }
 
-.category-item > h3,
-.category-item > ul {
-  background-color: #25262b;
-  padding: 1% 5% 1% 2%;
-  border-radius: 5px;
-}
-
 #category-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -33,6 +26,14 @@ layout: default
   border-radius: 6px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+.category-item li {
+  margin-bottom: 0.5rem;
+}
+
+.category-item li a:hover {
+    text-decoration: underline;
+  }
 
 </style>
 
@@ -54,14 +55,14 @@ layout: default
     <div id="category-list">
         {% for category in site.categories %}
             <div class="category-item" data-count="{{ category[1] | size }}" id="{{ category[0] | slugify }}">
-                <h3>{{ category[0] | upcase }} ({{ category[1] | size }})</h3>
-                <ul class="post-list">
-                    {% for post in category[1] %}
+                <h2>{{ category[0] | upcase }} ({{ category[1] | size }})</h2>
+                    <ul>
+                        {% for post in category[1] %}
                         <li>
                             <a href="{{ post.url }}">{{ post.title }}</a>
                         </li>
-                    {% endfor %}
-                </ul>
+                        {% endfor %}
+                    </ul>
             </div>
         {% endfor %}
     </div>
