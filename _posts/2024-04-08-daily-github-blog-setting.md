@@ -22,7 +22,7 @@ tag: [daily]
 ## {{ page.description }}
 
 ### 1. 고통의 고통이었다.
-![githubbanner](/assets/img/githubbanner.png)<br>
+![githubbanner](/assets/img/githubbanner.webp)<br>
 방법을 알아가는데만 한 몇일이 걸렸다.<br>
 구조를 몰랐던게 너무 크다.<br>
 구조를 좀 더 생각을 해보고 진행했더라면 금방 진행 했을 것 같다.<br>

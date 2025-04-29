@@ -38,7 +38,7 @@ tags: [mac, battery, power management]
 #### 1.1 GUI(그래픽 인터페이스) 버전 설치
 1. GitHub 페이지에서 `Releases` 섹션으로 이동하여 최신 버전의 `.dmg` 파일을 다운로드.
 2. 다운로드한 파일을 실행하여 설치를 진행.
-![mac-battery-limiter-1](/assets/img/2025-03-14-mac-battery-limiter-1.png)
+![mac-battery-limiter-1](/assets/img/2025-03-14-mac-battery-limiter-1.webp)
 3. 설치 완료 후, 상단 메뉴바에서 프로그램을 실행하고 `Enable or Disable` 설정<br>
 <br>
 

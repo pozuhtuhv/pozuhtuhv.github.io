@@ -22,9 +22,9 @@ tag: [daily]
 ## {{ page.description }}
 
 <div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-01-25-daily-life-check-1.jpg' alt='2025-01-25-daily-life-check-1'>
-    <img src ='/assets/img/2025-01-25-daily-life-check-2.jpg' alt='2025-01-25-daily-life-check-2'>
-    <img src ='/assets/img/2025-01-25-daily-life-check-3.png' alt='2025-01-25-daily-life-check-3'>
+    <img src ='/assets/img/2025-01-25-daily-life-check-1.webp' alt='2025-01-25-daily-life-check-1'>
+    <img src ='/assets/img/2025-01-25-daily-life-check-2.webp' alt='2025-01-25-daily-life-check-2'>
+    <img src ='/assets/img/2025-01-25-daily-life-check-3.webp' alt='2025-01-25-daily-life-check-3'>
 </div><br>
 ​<br>
 

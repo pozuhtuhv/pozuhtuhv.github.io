@@ -22,7 +22,7 @@ tag: [github, upload]
 ## {{ page.description }}
 
 ### 1. Github에 NEW 리포지토리 git repo url 확인
-![git-github-repo-upload-1](/assets/img/2024-05-08-git-github-repo-upload-1.png)<br>
+![git-github-repo-upload-1](/assets/img/2024-05-08-git-github-repo-upload-1.webp)<br>
 git repo url copy
 <br>
 
