@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "<b>마케팅 의사결정 속도 60% 향상</b> 및 KPI 기반 전략 강화",
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-1.png"
+        "/assets/portfolio/portfolio-project-1.webp"
     ]},
     project2: {
       title: "BI 대시보드 구축 및 운영",
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "<b>ROAS 250% 유지</b> 및 예산 최적화"
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-2.png",
-        "/assets/img/portfolio/portfolio-project-3.png"
+        "/assets/portfolio/portfolio-project-2.webp",
+        "/assets/portfolio/portfolio-project-3.webp"
     ]},
     project3: {
       title: "Slack 데이터 자동 알림 시스템",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "데이터 기반 논의 활성화 및 <b>팀 커뮤니케이션 효율성 증대</b>"
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-4.png"
+        "/assets/portfolio/portfolio-project-4.webp"
     ]},
     project4: {
       title: "검색어 순위 추적 GUI 프로그램",
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "키워드 검색 노출 순위 <b>1위 유지</b>"
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-5.png"
+        "/assets/portfolio/portfolio-project-5.webp"
     ]}
   };
 
