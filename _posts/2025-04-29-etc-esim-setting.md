@@ -27,7 +27,7 @@ tags: [skt, esim]
     <img src ='/assets/img/2025-04-29-etc-esim-setting-1.webp' alt='metc-esim-setting-1'>
 </div><br>
 
-최근 SKT가 eSIM 정보가 해킹을 당하면서 신경쓸게 또 하나 생겼다.<br>
+최근 SKT가 USIM/eSIM 정보가 해킹을 당하면서 신경쓸게 또 하나 생겼다.<br>
 결국엔 이미 다 유출된 상황이고, 밖에 줄서는 상황까지 나오니<br>
 굳이 시간들여 가야하나 싶은 생각도 들었지만<br>
 마침 무료교체지원에 포함 된 eSIM 으로 이참에 교체 할려고 한다.<br>
