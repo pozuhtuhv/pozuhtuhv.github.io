@@ -37,8 +37,8 @@ Mac 에서 터미널을 사용하다보면 기록이 남는데<br>
 ### 2. 기록방식
 
 <div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-16-mac-terminal-history-del-2.webp' alt='mmac-terminal-history-del-2'>
-    <img src ='/assets/img/2025-04-16-mac-terminal-history-del-3.webp' alt='mmac-terminal-history-del-3'>
+    <img src ='/assets/img/2025-04-16-mac-terminal-history-del-2.webp' alt='mac-terminal-history-del-2'>
+    <img src ='/assets/img/2025-04-16-mac-terminal-history-del-3.webp' alt='mac-terminal-history-del-3'>
 </div>
 
 기록 방식이 사용자의 `홈` 폴더에 `.zsh_history` 파일로 저장됩니다.<br>
