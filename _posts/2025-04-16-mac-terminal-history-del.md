@@ -28,8 +28,9 @@ Mac 에서 터미널을 사용하다보면 기록이 남는데<br>
 <br>
 
 ### 1. 터미널 환경 확인
-![mac-terminal-history-del-1](/assets/img/2025-04-16-mac-terminal-history-del-1.webp)
-<br>
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-16-mac-terminal-history-del-1.webp' alt='mac-terminal-history-del-1'>
+</div>
 터미널을 실행시켜보면 상태창에 본인의 터미널 환경이 표시되는데 이부분의 확인이 필요함.<br>
 `macOS`는 `Catalina(10.15)` 부터 기본 쉘을 `bash` → `zsh`로 변경되었습니다.<br>
 <br>
@@ -48,5 +49,8 @@ Mac 에서 터미널을 사용하다보면 기록이 남는데<br>
 
 ### 3. 명령어 실행
 `rm -rf .zsh_history` 명령어를 실행하고 터미널을 재실행하면 이전에 있는 기록들이 다 삭제 됩니다.<br>
-![mac-terminal-history-del-4](/assets/img/2025-04-16-mac-terminal-history-del-4.webp)
+
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-16-mac-terminal-history-del-4.webp' alt='mac-terminal-history-del-4'>
+</div>
 <br>

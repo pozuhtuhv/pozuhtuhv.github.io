@@ -29,12 +29,16 @@ tags: [mac, ram, manage]
 <br>
 
 ### 1. Stats로 보는 현재 상태
-![mac-ram-manage-1](/assets/img/2025-04-10-mac-ram-manage-1.webp)<br>
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-10-mac-ram-manage-1.webp' alt='mac-ram-manage-1'>
+</div>
 [CPU 3%, RAM 48%]<br>
 진짜 아무런 작업을 진행하지 않는, 기본적인 백그라운드 프로그램만 설정해놓은 상태이다.<br>
 <br>
 
-![mac-ram-manage-2](/assets/img/2025-04-10-mac-ram-manage-2.webp)<br>
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-10-mac-ram-manage-2.webp' alt='mac-ram-manage-2'>
+</div>
 [CPU 9%, RAM 70%]<br>
 현재 글 작성을 진행하는 상황, 글작성은 VSCODE 로 진행하고 있다.<br>
 대충 몇개 더 켜도 차이는 [±9%, ±15%]<br>

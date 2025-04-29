@@ -33,7 +33,9 @@ M1 맥북에어에는 좌측에 C 타입 2개, 우측엔 3.5mm 이어폰 이 있
 마침 알리에서 15주년 웰컴 이벤트 기간이었었고, 알리에서의 첫구매를 해서 그런가 1~2천원대로 할인이 되어서 구매했다.<br>
 <br>
 
-![mac-ugreen-1](/assets/img/2025-03-25-mac-ugreen-1.webp)
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-03-25-mac-ugreen-1.webp' alt='mac-ugreen-1'>
+</div>
 <br>
 <br>
 

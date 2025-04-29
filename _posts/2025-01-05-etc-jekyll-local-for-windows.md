@@ -31,9 +31,13 @@ tag: [github, jekyll, ruby]
 <br>
 
 ### 1. Ruby 설치
-[![jekyll-local-for-windows-1](/assets/img/2025-01-05-etc-jekyll-local-for-windows-1.webp)](https://rubyinstaller.org/downloads/)<br>
-Ruby 홈페이지 접속 후<br><br>
-![jekyll-local-for-windows-2](/assets/img/2025-01-05-etc-jekyll-local-for-windows-2.webp)<br>
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-01-05-etc-jekyll-local-for-windows-1.webp' alt='jekyll-local-for-windows-1'>
+</div>
+[Ruby 홈페이지](https://rubyinstaller.org/downloads/) 접속 후<br><br>
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-01-05-etc-jekyll-local-for-windows-2.webp' alt='jekyll-local-for-windows-2'>
+</div>
 추천되어진 **Rubyinstallers** 다운<br>
 
 다운로드 파일을 실행하여 설치 후 ridk install 선택해제 후 완료
