@@ -55,6 +55,9 @@ th {
 html {
     overflow-y: scroll;
     font-size: 12px;
+    font-family: var(--text-font);
+    font-variant-numeric: tabular-nums;
+    background-color: #202124;
     --text-font: PretendardVariable, sans-serif;
     --source-code-font: PretendardVariable, sans-serif;
     --very-light-text-color: #EEE;
@@ -75,7 +78,6 @@ html {
     --code-variable-color: #fdce68;
     --code-error-bg-color: #1e0010;
     --code-error-text-color: #960050;
-    background-color: #202124;
 }
 
 *,
