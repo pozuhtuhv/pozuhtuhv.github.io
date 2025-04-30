@@ -23,13 +23,13 @@ tag: [daily]
 
 ### 1. 이직을 하고 긴 휴식을 맛보는 친구의 반응
 <div class="image-gallery cols-3">
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-1.jpg' alt='2025-01-25-daily-6days-rest-1'>
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-2.jpg' alt='2025-01-25-daily-6days-rest-2'>
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-3.jpg' alt='2025-01-25-daily-6days-rest-3'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-1.webp' alt='2025-01-25-daily-6days-rest-1'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-2.webp' alt='2025-01-25-daily-6days-rest-2'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-3.webp' alt='2025-01-25-daily-6days-rest-3'>
 </div><br>
 <div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-4.jpg' alt='2025-01-25-daily-6days-rest-4'>
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-5.jpg' alt='2025-01-25-daily-6days-rest-5'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-4.webp' alt='2025-01-25-daily-6days-rest-4'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-5.webp' alt='2025-01-25-daily-6days-rest-5'>
 </div><br>
 추석때 못쉬고 일하던 그 친구이다.<br>
 이직에 성공한 것<br>
@@ -42,7 +42,7 @@ tag: [daily]
 
 ### 2. 요즘 집에서 유튜브를 틀면 보는 것
 <div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-6.png' alt='2025-01-25-daily-6days-rest-6'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-6.webp' alt='2025-01-25-daily-6days-rest-6'>
 </div><br>
 런닝맨<br>
 노트북을 켜고, 옆에는 아이패드를 거치해두고, 런닝맨을 본다.<br>
@@ -53,7 +53,7 @@ tag: [daily]
 
 ### 3. 새로운 보일러러님 교체
 <div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-01-25-daily-6days-rest-7.jpg' alt='2025-01-25-daily-6days-rest-7'>
+    <img src ='/assets/img/2025-01-25-daily-6days-rest-7.webp' alt='2025-01-25-daily-6days-rest-7'>
 </div><br>
 매년 겨울 한번씩 멈추던 보일러를 교체했다.<br>
 거진 일주일 동안은 찬물로 샤워했다. (면역력 다 떨어짐)<br>

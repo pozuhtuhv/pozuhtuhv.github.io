@@ -22,7 +22,7 @@ tag: [python, django, framework]
 ## {{ page.description }}
 
 ### 0. 소개
-관련글 : <a href = 'https://pozuhtuhv.github.io/fpython-2'>Django 기본 구축하기</a><br>
+관련글 : [Django 기본 구축하기]({{site.url}}/2024/04/11/python-django-api-setting)<br>
 이전 Django 데이터에서 진행했던 기본API 세팅의 Requests 의 코드를 작성하는 글<br>
 
 `import requests`

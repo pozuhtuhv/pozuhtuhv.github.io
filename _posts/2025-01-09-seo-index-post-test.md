@@ -28,12 +28,18 @@ SEO 카운트 1 테스트<br>
 
 ### 2. PageSpeed Insights Score (완료)
 <b>PC 인사이트 스코어</b><br><br>
-![index-post-test-1](/assets/img/2025-01-09-seo-index-post-test-1.png)<br>
-![index-post-test-2](/assets/img/2025-01-09-seo-index-post-test-2.png)<br><br>
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-01-09-seo-index-post-test-1.webp' alt='index-post-test-1'>
+    <img src ='/assets/img/2025-01-09-seo-index-post-test-2.webp' alt='index-post-test-2'>
+</div>
+<br>
 
 <b>Mobile 인사이트 스코어</b><br>
-![index-post-test-3](/assets/img/2025-01-09-seo-index-post-test-3.png)<br>
-![index-post-test-4](/assets/img/2025-01-09-seo-index-post-test-4.png)<br><br>
+<div class="image-gallery cols-2">
+    <img src ='/assets/img/2025-01-09-seo-index-post-test-3.webp' alt='index-post-test-3'>
+    <img src ='/assets/img/2025-01-09-seo-index-post-test-4.webp' alt='index-post-test-4'>
+</div>
+<br>
 
 ### 3. light테마의 시인성 강화 (완료)
 light테마의 페이지에선 버튼에 대한 접근성 스코어를 개선할 필요가 있다.<br>

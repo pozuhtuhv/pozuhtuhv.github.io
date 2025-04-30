@@ -90,7 +90,7 @@ tag: {tag_name}
 <br>
 
 ### 4. Github Actions 진행을 위해 워크플로우 작성   
-.github -> workflows -> [yml 작성](https://github.com/pozuhtuhv/pozuhtuhv.github.io/blob/main/.github/workflows/make_folder.yml)
+.github -> workflows -> yml 작성
 <br>
 
 ```bash

@@ -37,8 +37,8 @@ python3 -m venv [지정한 폴더이름]
 ```
 <br>
 <div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-07-python-venv-1.png' alt='venv-1'>
-    <img src ='/assets/img/2025-04-07-python-venv-2.png' alt='venv-2'>
+    <img src ='/assets/img/2025-04-07-python-venv-1.webp' alt='venv-1'>
+    <img src ='/assets/img/2025-04-07-python-venv-2.webp' alt='venv-2'>
 </div>
 <br>
 위 터미널을 실행하면 이미지와 같이 폴더들이 생겨있는걸 알수 있다.<br>
@@ -46,7 +46,9 @@ python3 -m venv [지정한 폴더이름]
 <br>
 
 ### 2. 활성화 확인
-![python-venv-3](/assets/img/2025-04-07-python-venv-3.png)<br>
+<div class="image-gallery cols-1">
+    <img src ='/assets/img/2025-04-07-python-venv-3.webp' alt='venv-3'>
+</div><br>
 VSCode 로 해당폴더 열고, `.py` 확장자 하나 만들어 편집열기<br>
 VSCode 내의 터미널을 열어보면 터미널 커맨드 라인의 앞에 `(폴더이름)` 형식으로 폴더 이름으로 가상환경 이름이 붙음<br>
 <br>

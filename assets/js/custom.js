@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "<b>마케팅 의사결정 속도 60% 향상</b> 및 KPI 기반 전략 강화",
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-1.png"
+        "/assets/portfolio/portfolio-project-1.webp"
     ]},
     project2: {
       title: "BI 대시보드 구축 및 운영",
       period: "2021년 04월 - 2023년 11월 (2년 7개월)",
       description: "자동화된 데이터 수집 시스템을 통해 확보된 대량의 비즈니스 데이터를 효과적으로 분석하고 시각화하기 위한 BI 솔루션을 기획했습니다. <br> <b>매출, 전환율, 마케팅 ROAS, 고객 행동</b> 등 핵심 비즈니스 지표를 직관적으로 파악할 수 있는 대시보드를 설계했습니다. <br> 쉽게 이해하고 활용할 수 있도록 사용자 친화적인 인터페이스를 구현했으며, <b>실시간 모니터링</b>이 가능한 데이터 파이프라인을 구축했습니다. <br> 특히 부서별 맞춤형 대시보드를 제공하여 각 팀이 필요로 하는 특정 인사이트를 효율적으로 얻을 수 있도록 지원했습니다.",
       tags: ["Python", "MySQL", "Looker Studio", "Streamlit", "Tableau", "KPI 추적", "성과 시각화", "크로스 채널 분석"],
-      role: "BI 대시보드 기획 및 개발",
+      role: "BI 대시보드 기획 및 개발(2인)",
       goal: "다양한 데이터 소스 통합 <br> 로컬 환경에서 개발 및 배포 간소화 <br> 대시보드 UX 최적화 및 <b>데이터 인식의 직관성 확보</b> <br> 부서별 맞춤형 KPI 모니터링 뷰 제공 <br> <b>데이터 기반 의사결정 문화</b> 정착 지원",
       solutions: "MySQL을 활용한 주요지표 데이터 구성 및 파이프라인 구축 <br> Streamlit 내부 웹 인터페이스 개발 및 테스트 환경 확보 <br> Looker Studio를 활용한 <b>데이터 시각화</b> <br> 사용자 활동 로그 분석을 통한 대시보드 지속적 개선",
       results: [
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "<b>ROAS 250% 유지</b> 및 예산 최적화"
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-2.png",
-        "/assets/img/portfolio/portfolio-project-3.png"
+        "/assets/portfolio/portfolio-project-2.webp",
+        "/assets/portfolio/portfolio-project-3.webp"
     ]},
     project3: {
       title: "Slack 데이터 자동 알림 시스템",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "데이터 기반 논의 활성화 및 <b>팀 커뮤니케이션 효율성 증대</b>"
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-4.png"
+        "/assets/portfolio/portfolio-project-4.webp"
     ]},
     project4: {
       title: "검색어 순위 추적 GUI 프로그램",
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "키워드 검색 노출 순위 <b>1위 유지</b>"
       ],
       imageUrls: [
-        "/assets/img/portfolio/portfolio-project-5.png"
+        "/assets/portfolio/portfolio-project-5.webp"
     ]}
   };
 

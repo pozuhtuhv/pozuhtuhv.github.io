@@ -44,6 +44,6 @@ import tensorflow as tf
 <br>
 
 - 시스템 환경변수에 변수 지정하기
-![error-1](/assets/img/2025-01-14-tensorflow-error-1.png)<br>
+![error-1](/assets/img/2025-01-14-tensorflow-error-1.webp)<br>
 이 방법은 오류 그대로 뱉어냈었음.<br>
 <br>
