@@ -656,7 +656,7 @@ tr:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #25262b;
+    background-color: var(--code-bg-color);
     padding-left: 3%;
     border-radius: 30px
 }
