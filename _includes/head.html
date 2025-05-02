@@ -19,15 +19,32 @@
 <script src="{{ site.url }}/assets/js/custom.js" defer></script>
 <link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap.xml" />
 
-<!-- Google Analytics -->
+<!-- Google Analytics (optimized) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG3MZ8XE1E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
+  window.addEventListener('DOMContentLoaded', function() {
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GG3MZ8XE1E', { 'anonymize_ip': true });
+  });
 </script>
 
+<!-- Google Tag Manager (optimized) -->
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WLL5ZQH6');
+  });
+</script>
 
 <style>
   {% capture include_to_scssify %}
