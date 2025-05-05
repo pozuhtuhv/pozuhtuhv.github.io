@@ -63,7 +63,7 @@ os.makedirs(output_folder, exist_ok=True)
 supported_extensions = ('.jpg', '.jpeg', '.png')
 
 for filename in os.listdir(input_folder):
-    if f.lower().endswith(('.jpg', '.jpeg', '.png')):
+    if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
         img = Image.open(os.path.join(input_folder, filename))
         ext = os.path.splitext(filename)[1].lower()
 
