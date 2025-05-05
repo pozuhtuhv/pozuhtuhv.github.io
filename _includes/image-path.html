@@ -1,0 +1,19 @@
+{% comment %}
+이미지 갤러리를 자동으로 생성하는 include 파일
+사용 예시:
+  {% include image-path.html cols=1 start=1 end=1 %}
+  {% include image-path.html cols=2 start=1 end=2 %}
+  {% include image-path.html cols=3 start=1 end=6 %}
+{% endcomment %}
+
+{% assign filename = page.path | split: '/' | last | split: '.' | first %}
+{% assign cols = include.cols | default: 1 %}
+{% assign start_num = include.start | default: 1 %}
+{% assign end_num = include.end | default: start_num %}
+
+<div class="image-gallery cols-{{ cols }}">
+  {% for i in (start_num..end_num) %}
+    {% capture image_path %}{{ "/assets/img/" | append: filename | append: "-" | append: i | append: ".webp" }}{% endcapture %}
+    <img src="{{ image_path }}" alt="{{ filename }}-{{ i }}">
+  {% endfor %}
+</div><br>

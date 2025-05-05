@@ -22,44 +22,33 @@ tag: [daily]
 ## {{ page.description }}
 
 ### 1. 고향 휴일을 보는 친구들
-<div class="image-gallery cols-3">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-1.webp' alt='2025-02-11-daily-6days-rest-friend-1'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-2.webp' alt='2025-02-11-daily-6days-rest-friend-2'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-3.webp' alt='2025-02-11-daily-6days-rest-friend-3'>
-</div><br>
+{% include image-path.html cols=3 start=1 end=3 %}
+
 설날 연휴 고향을 온 친구들의 한탄<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-4.webp' alt='2025-02-11-daily-6days-rest-friend-4'>
-</div><br>
+{% include image-path.html cols=1 start=4 end=4 %}
+
 ~~거의 노예~~ 였던 친구가 인생 장기 연휴를 즐기고 좋아하는 모습이다.<br>
 진짜 이직 잘한거 같다.<br>
 <br>
 
 ### 2. 연휴의 동물원
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-5.webp' alt='2025-02-11-daily-6days-rest-friend-5'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-6.webp' alt='2025-02-11-daily-6days-rest-friend-6'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-7.webp' alt='2025-02-11-daily-6days-rest-friend-7'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-8.webp' alt='2025-02-11-daily-6days-rest-friend-8'>
-</div><br>
+{% include image-path.html cols=2 start=5 end=8 %}
+
 연휴날 친구들이랑 경남 진주 진양호 동물원가서 본것<br>
 원숭이, 호랑이, 양, 원숭이, 조랑말, 독수리, 공작, 라쿤 등등 많았다.<br>
 워낙 사진찍고 하는 편이 아니라 찍어놓은게 없다<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-9.webp' alt='2025-02-11-daily-6days-rest-friend-9'>
-</div><br>
+{% include image-path.html cols=1 start=9 end=9 %}
+
 선진리성가는길 의자  놓여있길래 찍었다.<br>
 여긴 봄에 벚꽃필때 가야 예쁘다고...<br>
 겨울이라 볼게 없었다.<br>
 <br>
 
 ### 3. 대전가서 한것
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-10.webp' alt='2025-02-11-daily-6days-rest-friend-10'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-11.webp' alt='2025-02-11-daily-6days-rest-friend-11'>
-</div><br>
+{% include image-path.html cols=2 start=10 end=11 %}
+
 대전 가서 한것 : <br>
 국립중앙과학관, 화폐박물관 구경, 성심당 가서 튀소사오기<br>
 겨울인데도 가족끼리 많이 왔고, 넓어서 볼게 많긴했다.<br>
@@ -78,18 +67,15 @@ tag: [daily]
 ​<br>
 기본 튀소가 제일 나은편이었다.<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-12.webp' alt='2025-02-11-daily-6days-rest-friend-12'>
-</div><br>
+{% include image-path.html cols=1 start=12 end=12 %}
+
 이후 집와서 하는 말<br>
 진짜 순삭이긴했다.<br>
 <br>
 
 ### 4. 보일러 컨트롤러 교체
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-13.webp' alt='2025-02-11-daily-6days-rest-friend-13'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-14.webp' alt='2025-02-11-daily-6days-rest-friend-14'>
-</div><br>
+{% include image-path.html cols=2 start=13 end=14 %}
+
 보일러 컨트롤러까지 손을 대는 나 (요놈이 8~9만원이나 합니다.)<br>
 보일러를 바꾸고 컨트롤러까지 바꿨지만, <br>
 무선지원안해서 바꾼 새로운 컨트롤러<br>
@@ -97,10 +83,8 @@ tag: [daily]
 기존꺼 슉 빼고 선 풀고<br>
 새거 주황선연결하고 전기테이프 감고 쇽 끼우면 된다.<br>
 <br>
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-15.webp' alt='2025-02-11-daily-6days-rest-friend-15'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-16.webp' alt='2025-02-11-daily-6days-rest-friend-16'>
-</div><br>
+{% include image-path.html cols=2 start=15 end=16 %}
+
 이런거까지 기록을 해준다.​<br>
 엄마미가 겨울엔 그래도 보일러 틀고 살자라고 말했다.​<br>
 그래도 큰결심으로 보일러 바꿨는데 돌려는 줘야지 생각하셨나보다.​<br>
@@ -112,10 +96,8 @@ tag: [daily]
 ​<br>
 
 ### 5. 갑자기 추워진 날씨
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-17.webp' alt='2025-02-11-daily-6days-rest-friend-17'>
-    <img src ='/assets/img/2025-02-11-daily-6days-rest-friend-18.webp' alt='2025-02-11-daily-6days-rest-friend-18'>
-</div><br>
+{% include image-path.html cols=2 start=17 end=18 %}
+
 무단 화장실 사용​<br>
 최근 겨울 갑자기 추워졌다.​<br>
 진주사는 두명의 생사가 궁금해지기에 물어본 내용인데,​<br>

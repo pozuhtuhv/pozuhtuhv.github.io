@@ -28,11 +28,8 @@ tags: [mac, background]
 <br>
 
 ### 1. 설정창 확인 방법
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-03-23-mac-background-1.webp' alt='mac-background-1'>
-    <img src ='/assets/img/2025-03-23-mac-background-2.webp' alt='mac-background-2'>
-</div>
-<br>
+{% include image-path.html cols=2 start=1 end=2 %}
+
 <br>
 
 ### 2. 직접 경로 확인

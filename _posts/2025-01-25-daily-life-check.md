@@ -21,11 +21,7 @@ tag: [daily]
 
 ## {{ page.description }}
 
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-01-25-daily-life-check-1.webp' alt='2025-01-25-daily-life-check-1'>
-    <img src ='/assets/img/2025-01-25-daily-life-check-2.webp' alt='2025-01-25-daily-life-check-2'>
-    <img src ='/assets/img/2025-01-25-daily-life-check-3.webp' alt='2025-01-25-daily-life-check-3'>
-</div><br>
+{% include image-path.html cols=2 start=1 end=3 %}
 ​<br>
 
 ### 1. 더욱 이해하고 헤아리는 사람 되기

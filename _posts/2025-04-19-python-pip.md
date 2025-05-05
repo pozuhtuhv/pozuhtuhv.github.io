@@ -29,22 +29,17 @@ tags: [python, pip, upgrade, uninstall, install, library]
 ### 1. pip list
 현재 환경에 설치되어있는 라이브러리들을 모두 표시를 해줌<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-19-python-pip-1.webp' alt='python-pip-1'>
-</div><br>
+{% include image-path.html cols=1 start=1 end=1 %}
+
 
 ### 2. pip freeze > list.txt
 현재 환경에 설치되어있는 라이브러리들을 모두 list.txt 이름의 파일로 저장해줌<br>
 <br>
 
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-19-python-pip-2.webp' alt='python-pip-2'>
-</div><br>
+{% include image-path.html cols=1 start=2 end=2 %}
 
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-19-python-pip-3.webp' alt='python-pip-3'>
-    <img src ='/assets/img/2025-04-19-python-pip-4.webp' alt='python-pip-4'>
-</div><br>
+{% include image-path.html cols=2 start=3 end=4 %}
+
 <br>
 
 ### 3. pip install -r list.txt

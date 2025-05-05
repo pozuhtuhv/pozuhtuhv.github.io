@@ -22,9 +22,7 @@ tag: [github, upload]
 ## {{ page.description }}
 
 ### 1. Github에 NEW 리포지토리 git repo url 확인
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2024-05-08-git-github-repo-upload-1.webp' alt='github-repo-upload-1'>
-</div><br>
+{% include image-path.html cols=1 start=1 end=1 %}
 git repo url copy
 <br>
 

@@ -33,10 +33,8 @@ M1 맥북에어에는 좌측에 C 타입 2개, 우측엔 3.5mm 이어폰 이 있
 마침 알리에서 15주년 웰컴 이벤트 기간이었었고, 알리에서의 첫구매를 해서 그런가 1~2천원대로 할인이 되어서 구매했다.<br>
 <br>
 
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-03-25-mac-ugreen-1.webp' alt='mac-ugreen-1'>
-</div>
-<br>
+{% include image-path.html cols=1 start=1 end=1 %}
+
 <br>
 
 ### 2. 배송현황
@@ -60,13 +58,8 @@ M1 맥북에어에는 좌측에 C 타입 2개, 우측엔 3.5mm 이어폰 이 있
 
 ### 3. 실물
 
-<div class="image-gallery cols-4">
-    <img src ='/assets/img/2025-03-25-mac-ugreen-2.webp' alt='mac-ugreen-2'>
-    <img src ='/assets/img/2025-03-25-mac-ugreen-3.webp' alt='mac-ugreen-3'>
-    <img src ='/assets/img/2025-03-25-mac-ugreen-4.webp' alt='mac-ugreen-4'>
-    <img src ='/assets/img/2025-03-25-mac-ugreen-5.webp' alt='mac-ugreen-5'>
-</div>
-<br>
+{% include image-path.html cols=4 start=2 end=5 %}
+
 포장도 깔끔하게 왔고, 개봉해보니 생각보다 짜임새가 좋다.<br>
 왜 맥북 사는 사람들이 `유그린 유그린` 하는지 알겠다. 가격에 비해 은근 고급진느낌이 좋다.<br>
 포트 구성으로는 `USB2.0 (2EA), USB3.0(1EA), C타입 썬더볼트(1EA), HDMI 4K 30FPS (1EA)`<br>

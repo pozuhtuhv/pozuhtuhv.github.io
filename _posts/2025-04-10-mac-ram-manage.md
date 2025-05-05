@@ -29,26 +29,22 @@ tags: [mac, ram, manage]
 <br>
 
 ### 1. Stats로 보는 현재 상태
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-10-mac-ram-manage-1.webp' alt='mac-ram-manage-1'>
-</div>
+{% include image-path.html cols=1 start=1 end=1 %}
+
 [CPU 3%, RAM 48%]<br>
 진짜 아무런 작업을 진행하지 않는, 기본적인 백그라운드 프로그램만 설정해놓은 상태이다.<br>
 <br>
 
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-10-mac-ram-manage-2.webp' alt='mac-ram-manage-2'>
-</div>
+{% include image-path.html cols=1 start=2 end=2 %}
+
 [CPU 9%, RAM 70%]<br>
 현재 글 작성을 진행하는 상황, 글작성은 VSCODE 로 진행하고 있다.<br>
 대충 몇개 더 켜도 차이는 [±9%, ±15%]<br>
 <br>
 
 ### 2. '활성 상태 보기'에서 보는 현재 상태
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-10-mac-ram-manage-3.webp' alt='mac-ram-manage-3'>
-    <img src ='/assets/img/2025-04-10-mac-ram-manage-4.webp' alt='mac-ram-manage-4'>
-</div>
+{% include image-path.html cols=2 start=3 end=4 %}
+
 
 따로 켜놓는 백그라운드 응용 프로그램도 없는 편이긴하다.<br>
 작업을 하면서도 여러개 많이 켜놓는건 별로 좋아하지도 않는편이라, 이외 프로그램들은 다 꺼놓는 편이다.<br>

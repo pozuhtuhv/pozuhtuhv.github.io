@@ -37,21 +37,21 @@ pip install ultralytics opencv-python labelme2yolo numpy
 ### 2. 라벨링 프로그램 다운로드
 [Download](https://github.com/wkentaro/labelme)
 
-![yolov8-imglabel-1](/assets/img/2024-09-05-python-yolov8-imglabel-1.webp)<br>
-![yolov8-imglabel-2](/assets/img/2024-09-05-python-yolov8-imglabel-2.webp)<br>
+{% include image-path.html cols=1 start=1 end=1 %}
+{% include image-path.html cols=1 start=2 end=2 %}
 <br>
 
 ### 3. 라벨링 실행
 Open Dir -> 학습할 이미지가 있는 폴더<br>
-![yolov8-imglabel-3](/assets/img/2024-09-05-python-yolov8-imglabel-3.webp)<br>
-![yolov8-imglabel-4](/assets/img/2024-09-05-python-yolov8-imglabel-4.webp)<br>
+{% include image-path.html cols=1 start=3 end=3 %}
+{% include image-path.html cols=1 start=4 end=4 %}
 
 A : 이전이미지<br>
 D : 다음이미지
 <br>
 
 ### 4. 라벨링 결과 확인
-![yolov8-imglabel-5](/assets/img/2024-09-05-python-yolov8-imglabel-5.webp)<br>
+{% include image-path.html cols=1 start=5 end=5 %}
 json과 함께 같이 저장됨<br>
 <br>
 
@@ -71,7 +71,7 @@ train, val, test
 yolo detect train data=[dataset.yaml파일위치 .yaml까지] model=yolov8n.pt epochs=100 imgsz=640`
 ```
 
-![yolov8-imglabel-6](/assets/img/2024-09-05-python-yolov8-imglabel-6.webp)<br>
+{% include image-path.html cols=1 start=6 end=6 %}
 
 n 에서 x로 갈수록 학습 속도 느려짐<br>
 

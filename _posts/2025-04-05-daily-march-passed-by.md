@@ -22,9 +22,8 @@ tags: [daily]
 ## {{ page.description }}
 
 ### 1. 전 직장 동료 결혼식
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-1.webp' alt='daily-march-passed-by-1'>
-</div><br>
+{% include image-path.html cols=1 start=1 end=1 %}
+
 이건 2월이긴하지만<br>
 특별한 이벤트가 없던 생활에서 날라온 새로운 이벤트.<br>
 활기가 생기는 특별한 날이었다.<br>
@@ -35,18 +34,14 @@ tags: [daily]
 <br>
 
 ### 2. 친구들 만나러 진주간 날
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-2.webp' alt='daily-march-passed-by-2'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-3.webp' alt='daily-march-passed-by-3'>
-</div><br>
+{% include image-path.html cols=2 start=2 end=3 %}
+
 진주에사는 친구들 보러갔다.<br>
 이직하고나서 적응 잘하고 잘 지내나보다.<br>
 항공우주박물관가서 이것저것 구경한날.<br>
 <br>
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-4.webp' alt='daily-march-passed-by-4'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-5.webp' alt='daily-march-passed-by-5'>
-</div><br>
+{% include image-path.html cols=2 start=4 end=5 %}
+
 날씨가 거의 앞이 안보이는 가시거리였는데<br>
 날이 비가 많이와서 여기저기 구경하는건 못갔다.<br>
 순천만습지 갈려 했는데 날씨도 날씬데 입장료 1인 1만원이라서 포기.<br>
@@ -55,10 +50,8 @@ tags: [daily]
 <br>
 
 ### 3. 맥북 구매를 진행했던 날
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-6.webp' alt='daily-march-passed-by-6'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-7.webp' alt='daily-march-passed-by-7'>
-</div><br>
+{% include image-path.html cols=2 start=6 end=7 %}
+
 3월 초 부터 맥북을 찾아봤다.<br>
 괜찮은 금액이 나와있어 바로 구매<br>
 한번쯤은 제대로 쓰고싶었고, 신품보단 중고로 구매하는게 맘편할거 같아서 중고로 샀다.<br>
@@ -67,10 +60,8 @@ tags: [daily]
 받기전에는 박스랑 파우치만 보내주시겠지 하고 있었는데<br>
 플라스틱 케이스도 같이 보내주셨다.<br>
 <br>
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-8.webp' alt='daily-march-passed-by-8'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-9.webp' alt='daily-march-passed-by-9'>
-</div><br>
+{% include image-path.html cols=2 start=8 end=9 %}
+
 받고 거의 새거라고 봐도 컨디션이 좋은 제품을 받았다.<br>
 (판매자님 방향으로 절 한번)<br>
 늘 그렇듯 뭐든 초반 적응은 어려워도 잘쓸만하다.<br>
@@ -80,27 +71,19 @@ tags: [daily]
 <br>
 
 ### 4. 산책하고 마트 갔다온 사진
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-10.webp' alt='daily-march-passed-by-10'>
-</div><br>
+{% include image-path.html cols=1 start=10 end=10 %}
+
 진해루 산책중에 바닷물이 많이 빠졌네~ 하면서 걷고있었는데<br>
 왜가리 발견<br>
 <br>
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-11.webp' alt='daily-march-passed-by-11'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-12.webp' alt='daily-march-passed-by-12'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-13.webp' alt='daily-march-passed-by-13'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-14.webp' alt='daily-march-passed-by-14'>
-</div><br>
+{% include image-path.html cols=2 start=11 end=14 %}
+
 날씨도 따뜻해지고있고,<br>
 벚꽃이 이렇게까지 하얗더라.<br>
 이날 날씨가 많이 따뜻했다.<br>
 <br>
-<div class="image-gallery cols-3">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-15.webp' alt='daily-march-passed-by-15'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-16.webp' alt='daily-march-passed-by-16'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-17.webp' alt='daily-march-passed-by-17'>
-</div><br>
+{% include image-path.html cols=3 start=5 end=7 %}
+
 마트에서 사온 아몬드와 호두 그리고 상추<br>
 아몬드랑 호두는 간식겸해서 샀다.<br>
 오랜만에 먹었는데 아몬드가 그렇게 맛있더라.<br>
@@ -114,9 +97,8 @@ tags: [daily]
 <br>
 
 ### 5. 유튜브 보다가 발견한 댓글
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-18.webp' alt='daily-march-passed-by-18'>
-</div><br>
+{% include image-path.html cols=1 start=18 end=18 %}
+
 이건 유튜브 보다가 본 적당히 공감된 글<br>
 ​<br>
 감정의 교루라는게 완전히 없는 건 아니지만,<br>
@@ -130,10 +112,8 @@ tags: [daily]
 <br>
 
 ### 6. 취업계획과 이후 계획
-<div class="image-gallery cols-2">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-19.webp' alt='daily-march-passed-by-19'>
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-20.webp' alt='daily-march-passed-by-20'>
-</div><br>
+{% include image-path.html cols=2 start=19 end=20 %}
+
 요즘은 취업준비를 하면서 진주와 대구에 대해서 생각을 한다.<br>
 어디로 가야할지<br>
 ​<br>
@@ -155,9 +135,8 @@ tags: [daily]
 물론.. 아직 미정이다...<br>
 ​<br>
 
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-05-daily-march-passed-by-21.webp' alt='daily-march-passed-by-21'>
-</div><br>
+{% include image-path.html cols=1 start=21 end=21 %}
+
 만약에 대구에 가게된다면 가고싶은곳도 많다. 저장해놓은곳이 있기에​<br>
 사전답사로 한번 가봐야하나...​<br>
 ​​<br>

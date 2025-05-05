@@ -82,9 +82,7 @@ print("이미지 변환 완료.")
 <br>
 
 ### 3. 적용
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-05-01-python-img-webp-1.webp' alt='python-img-webp-1'>
-</div>
+{% include image-path.html cols=1 start=1 end=1 %}
 이미 현재 블로그에는 `.webp` 가 모두 적용되었다.<br>
 이미지 폴더의 크기가 `120MB` -> `28MB` 로 약 `80%` 크게 개선되었다.<br>
 이 코드에서는 이미지 배경 투명도에 대한코드가 적용되었지만,<br>

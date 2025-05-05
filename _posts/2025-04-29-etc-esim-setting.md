@@ -51,52 +51,42 @@ tags: [skt, esim]
 <br>
 
 ### 2. 교체과정
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-2.webp' alt='metc-esim-setting-2'>
-</div>
+{% include image-path.html cols=1 start=1 end=1 %}
+
 `Tworld -> T다이렉트샵 -> USIM/eSIM -> eSIM 셀프 가입` 에서 신청하기 가능<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-3.webp' alt='metc-esim-setting-3'>
-</div>
+{% include image-path.html cols=1 start=3 end=3 %}
+
 주의 해야할 사항은 월~토 에만 진행 가능하다.<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-4.webp' alt='metc-esim-setting-4'>
-</div>
+{% include image-path.html cols=1 start=4 end=4 %}
+
 기기의 IMEI는 `설정 -> 일반 -> 정보` 에서 확인가능하다.<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-5.webp' alt='metc-esim-setting-5'>
-</div>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-6.webp' alt='metc-esim-setting-6'>
-</div>
+{% include image-path.html cols=1 start=5 end=5 %}
+
+{% include image-path.html cols=1 start=6 end=6 %}
+
 본인 정보들을 입력해 가면서 진행하면 된다.<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-7.webp' alt='metc-esim-setting-7'>
-</div>
+{% include image-path.html cols=1 start=7 end=7 %}
+
 이전까지는 기기의 정보 확인을 위해서 였다면 이제부턴 진짜 eSIM 변경 과정이다.<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-8.webp' alt='metc-esim-setting-8'>
-</div>
+{% include image-path.html cols=1 start=8 end=8 %}
+
 여긴 이제 가입자 정보 입력하는 곳<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-9.webp' alt='metc-esim-setting-9'>
-</div>
+{% include image-path.html cols=1 start=9 end=9 %}
+
 인증하고 다음 진행을 하면 다음과 같이 안내문이 나온다.<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-10.webp' alt='metc-esim-setting-10'>
-</div>
+{% include image-path.html cols=1 start=10 end=10 %}
+
 이젠 계약서 정보를 받을 수 있는 이메일, 번호 정보를 입력<br>
 <br>
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-11.webp' alt='metc-esim-setting-11'>
-</div>
+{% include image-path.html cols=1 start=11 end=11 %}
+
 <b>(필수)</b><br>
 이 화면에서는 eSIM을 활성화 하는 작업인데 밑에 QR 코드가 나온다.<br>
 카메라로 QR 접속을 해주면 설정 창이 나오면서 서버에서 정보를 다운로드 받아야 <b>완전 활성화</b>가 된다.<br>
