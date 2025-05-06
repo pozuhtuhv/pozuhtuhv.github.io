@@ -39,43 +39,41 @@ Terminal(터미널) -> curl ipinfo.io/ip
 
 ### 2. 아이피 필터링 설정하기
 
-1. 관리 -> 데이터 스트림
-    {% include image-path.html cols=1 start=2 end=2 %}
+관리 -> 데이터 스트림
+{% include image-path.html cols=1 start=2 end=2 %}
 
-2. 설정할 스트림 선택
-    {% include image-path.html cols=1 start=3 end=3 %}
+설정할 스트림 선택
+{% include image-path.html cols=1 start=3 end=3 %}
 
-3. 태그 설정 구성
-    {% include image-path.html cols=1 start=4 end=4 %}
+태그 설정 구성
+{% include image-path.html cols=1 start=4 end=4 %}
 
-4. 내부 트래픽 정의
-    {% include image-path.html cols=1 start=5 end=5 %}
+내부 트래픽 정의
+{% include image-path.html cols=1 start=5 end=5 %}
 
-5. 구성 아이피 설정하기
-    {% include image-path.html cols=1 start=6 end=6 %}
+구성 아이피 설정하기
+{% include image-path.html cols=1 start=6 end=6 %}
 
-    - 규칙이름 (예시: 내부아이피, 인터널 아이피, 집 주소 등등)
-    - traffic_type 값: internal
-    - ip 주소 (검색 유형) - 특정 집단 인터넷을 따로 쓰지 않는 이상 (IP 주소가 다음과 같음) 으로 설정
-    - 값: [아이피주소 확인](/2025/04/14/seo-google-analytics-internal#1-아이피-확인)에서 진행했던 아이피 입력<br>
+- 규칙이름 (예시: 내부아이피, 인터널 아이피, 집 주소 등등)
+- traffic_type 값: internal
+- ip 주소 (검색 유형) - 특정 집단 인터넷을 따로 쓰지 않는 이상 (IP 주소가 다음과 같음) 으로 설정
+- 값: [아이피주소 확인](/2025/04/14/seo-google-analytics-internal#1-아이피-확인)에서 진행했던 아이피 입력<br>
 <br>
 <br>
 
-6. 설정이 만들어졌는지 확인
-    {% include image-path.html cols=1 start=7 end=7 %}
+설정이 만들어졌는지 확인
+{% include image-path.html cols=1 start=7 end=7 %}
 
-7. 관리 -> 데이터 필터
-    {% include image-path.html cols=1 start=8 end=8 %}
+관리 -> 데이터 필터
+{% include image-path.html cols=1 start=8 end=8 %}
 
-8. 기본적으로 만들어진 필터 클릭
-    {% include image-path.html cols=1 start=9 end=9 %}
-
-
-9. 필터 상태 -> '사용중' 으로 변경
-    {% include image-path.html cols=1 start=10 end=10 %}
+기본적으로 만들어진 필터 클릭
+{% include image-path.html cols=1 start=9 end=9 %}
 
 
-10. 저장 -> 필터 활성화
-    {% include image-path.html cols=1 start=11 end=11 %}
+필터 상태 -> '사용중' 으로 변경
+{% include image-path.html cols=1 start=10 end=10 %}
 
-    <br>
+
+저장 -> 필터 활성화
+{% include image-path.html cols=1 start=11 end=11 %}
