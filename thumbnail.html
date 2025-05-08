@@ -28,6 +28,21 @@ layout: default
     margin: 10px 0;
   }
 
+  .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  
+  }
+  .result img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+
 </style>
 
 <section class="page_title">
@@ -91,7 +106,7 @@ layout: default
         section.innerHTML = `
         <div class="thumbnail">
           <p>${size_num[index]}</p>
-          <div>
+          <div class="result">
           <a href="${thumbnailUrl}">
             <img src="${thumbnailUrl}">
           </a>
