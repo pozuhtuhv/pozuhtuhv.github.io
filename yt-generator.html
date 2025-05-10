@@ -48,8 +48,8 @@ layout: default
     }
 
     function generateAndCopyCommand() {
-        let url = document.getElementById("url").value.trim();
-        let username = document.getElementById("username").value.trim();
+        let url = document.getElementById("inputurl").value.trim();
+        let username = document.getElementById("inputusername").value.trim();
         let quality = document.getElementById("quality").value;
         let audioOnly = document.getElementById("audioOnly").checked ? "--extract-audio" : "";
         let parallel = document.getElementById("parallel").checked ? "-N 4" : "";
@@ -66,7 +66,7 @@ layout: default
             String(now.getHours()).padStart(2, "0") + "-" +
             String(now.getMinutes()).padStart(2, "0");
 
-        let filename = document.getElementById("filename").value.trim() || `${timestamp}${file_extension}`;
+        let filename = document.getElementById("inputfilename").value.trim() || `${timestamp}${file_extension}`;
 
         if (!url || !username) {
             alert("URL과 사용자 계정 이름을 입력해주세요.");
@@ -113,9 +113,9 @@ layout: default
 </section>
 <hr>
 <section>
-    <input type="text" id="username" placeholder="운영체제 사용자 계정 이름 입력">
-    <input type="text" id="url" placeholder="다운로드할 URL (일반 또는 M3U8 지원)">
-    <input type="text" id="filename" placeholder="파일 이름 (기본: (현재날짜시간).mp4)">
+    <input type="text" id="inputusername" placeholder="운영체제 사용자 계정 이름 입력">
+    <input type="text" id="inputurl" placeholder="다운로드할 URL (일반 또는 M3U8 지원)">
+    <input type="text" id="inputfilename" placeholder="파일 이름 (기본: (현재날짜시간).mp4)">
     <br>
     <br>
     <label>화질 선택:</label>

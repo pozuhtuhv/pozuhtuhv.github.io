@@ -21,16 +21,16 @@ layout: compress
       IDE: {{ site.spec.ide }}<br>
     </div>
     <section class="head">
-      <a href="{{ site.url }}"> &rsaquo; Home</a>
-      <a href="{{ site.url }}/about/"> &rsaquo; About</a>
-      <a href="{{ site.url }}/archive/"> &rsaquo; Archive</a>
-      <a href="{{ site.url }}/categories/"> &rsaquo; Categories</a>
-      <a href="{{ site.url }}/guestbook/"> &rsaquo; Guestbook</a>
+      <a href="{{ site.url }}" id="menu_Home"> &rsaquo; Home</a>
+      <a href="{{ site.url }}/about/" id="menu_About"> &rsaquo; About</a>
+      <a href="{{ site.url }}/archive/" id="menu_Archive"> &rsaquo; Archive</a>
+      <a href="{{ site.url }}/categories/" id="menu_Categories"> &rsaquo; Categories</a>
+      <a href="{{ site.url }}/guestbook/" id="menu_Guestbook"> &rsaquo; Guestbook</a>
       <!-- <a href="{{ site.url }}/yt-generator/"> &rsaquo; Yt-Generator</a>
       <a href="{{ site.url }}/ffmpeg-generator/"> &rsaquo; FFmpeg-Generator</a>
       <a href="{{ site.url }}/thumbnail/"> &rsaquo; Youtube Thumbnail</a> -->
     </section>
-    <button id="topButton" title="Go to top">Top</button>
+    <button id="topButton">Top</button>
     
     <div>
       {% assign modified_content = content 

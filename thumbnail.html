@@ -58,7 +58,7 @@ layout: default
   <br>   
   <div>
     <div>
-      <input type="text" id="url" name="url" placeholder="https://www.youtube.com/watch?v=VIDEO_ID" /><br>
+      <input type="text" id="inputurl" name="inputurl" placeholder="https://www.youtube.com/watch?v=VIDEO_ID" /><br>
       <button style="width: 100%;" id="generate" type="button">썸네일 가져오기</button><br>
     
     </div>
@@ -69,7 +69,7 @@ layout: default
 
 <script>
   document.getElementById("generate").addEventListener("click", () => {
-    const input = document.getElementById("url").value.trim();
+    const input = document.getElementById("inputurl").value.trim();
     const output = document.getElementById("output");
     output.innerHTML = "";
 
@@ -122,7 +122,7 @@ layout: default
     }
   });
 
-  document.getElementById("url").addEventListener("keypress", (event) => {
+  document.getElementById("inputurl").addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
       document.getElementById("generate").click();
     }

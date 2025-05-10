@@ -54,7 +54,7 @@ layout: default
     <!-- 카테고리 목록 -->
     <div id="category-list">
         {% for category in site.categories %}
-            <div class="category-item" data-count="{{ category[1] | size }}" id="{{ category[0] | slugify }}">
+            <div class="category-item" data-count="{{ category[1] | size }}">
                 <h2>{{ category[0] | upcase }} ({{ category[1] | size }})</h2>
                     <ul>
                         {% for post in category[1] %}

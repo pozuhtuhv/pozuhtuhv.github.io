@@ -48,7 +48,7 @@ layout: default
     }
 
     function convertCurlToFfmpeg() {
-      const input = document.getElementById("curlInput").value;
+      const input = document.getElementById("inputcurl").value;
       const urlMatch = input.match(/curl\s+'([^']+)'/);
       const headers = [...input.matchAll(/-H\s+'([^']+)'/g)].map(m => m[1]);
 
@@ -60,8 +60,8 @@ layout: default
       const url = urlMatch[1];
       const useRe = document.getElementById("useRe").checked;
       const cutAB = document.getElementById("cutAB").checked;
-      const startTime = document.getElementById("startTime").value;
-      const endTime = document.getElementById("endTime").value;
+      const startTime = document.getElementById("inputstartTime").value;
+      const endTime = document.getElementById("inputendTime").value;
 
       const filteredHeaders = headers.filter(h => !h.toLowerCase().startsWith("range:"));
       const headerLines = filteredHeaders.map(h => h + "\\r\\n").join('');
@@ -99,7 +99,7 @@ layout: default
 </section>
 <hr>
 <section>
-  <textarea id="curlInput" rows="10" placeholder="curl 'https://...' -H 'Header: ...' ..."></textarea>
+  <textarea id="inputcurl" rows="10" placeholder="curl 'https://...' -H 'Header: ...' ..."></textarea>
   
   <div class="checkbox-container">
     <label><input type="checkbox" id="useRe"> 스트리밍처럼 다운로드 서버 부하방지</label>
@@ -107,8 +107,8 @@ layout: default
   </div>
 
   <div id="timeInputs" style="display: none;">
-      <input type="text" id="startTime" placeholder="시작 시간 (예: 00:01:23)">
-      <input type="text" id="endTime" placeholder="종료 시간 (예: 00:02:34)">
+      <input type="text" id="inputstartTime" placeholder="시작 시간 (예: 00:01:23)">
+      <input type="text" id="inputendTime" placeholder="종료 시간 (예: 00:02:34)">
   </div>
 
   <button class="bluebutton" onclick="convertCurlToFfmpeg()">FFmpeg 명령어 생성</button>
