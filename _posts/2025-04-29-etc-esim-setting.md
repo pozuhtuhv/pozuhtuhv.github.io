@@ -23,9 +23,7 @@ tags: [skt, esim]
 
 ### 0. 개요
 
-<div class="image-gallery cols-1">
-    <img src ='/assets/img/2025-04-29-etc-esim-setting-1.webp' alt='metc-esim-setting-1'>
-</div><br>
+{% include image-path.html cols=1 start=1 end=1 %}
 
 최근 SKT가 USIM/eSIM 정보가 해킹을 당하면서 신경쓸게 또 하나 생겼다.<br>
 결국엔 이미 다 유출된 상황이고, 밖에 줄서는 상황까지 나오니<br>
@@ -51,7 +49,7 @@ tags: [skt, esim]
 <br>
 
 ### 2. 교체과정
-{% include image-path.html cols=1 start=1 end=1 %}
+{% include image-path.html cols=1 start=2 end=2 %}
 
 `Tworld -> T다이렉트샵 -> USIM/eSIM -> eSIM 셀프 가입` 에서 신청하기 가능<br>
 <br>
