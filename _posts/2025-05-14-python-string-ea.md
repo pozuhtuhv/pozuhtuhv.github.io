@@ -27,6 +27,7 @@ tags: [python, if]
 <br>
 
 ### 1. 예시
+
 | 계산식 | True 조건 | False 조건 |
 | --- | -- | -- |
 | x < y | x가 y보다 작다 | x와 y가 같거나, x가 y보다 클 때 |
