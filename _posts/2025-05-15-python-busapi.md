@@ -214,3 +214,5 @@ for bus_info in matching_buses:
 내가 다시 공공데이터포털을 사용할수도 있으니깐,<br>
 위에 작성한 코드 자체를 읽는건 어려울수도 있겠으나,<br>
 <b>반환되어지는 값(JSON)</b>을 정해져 있으니, 그걸 어찌저찌 주무르는건 사용자의 재량이다.<br>
+<br>
+[깃허브에 업로드한 레포지토리](https://github.com/pozuhtuhv/api_CHANGWONBUS)
