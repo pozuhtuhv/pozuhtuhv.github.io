@@ -159,6 +159,16 @@ pre {
     background: var(--code-bg-color)
 }
 
+blockquote {
+	font-style: italic;
+	border-left: 5px solid var(--dark-text-color);
+	padding-left: 0.5rem;
+}
+
+blockquote p {
+    font-size: 1rem !important;
+}
+
 .timeline:before,
 hr {
     background: var(--light-text-color)
@@ -171,7 +181,7 @@ code {
 
 pre {
     color: var(--code-text-color);
-    padding: .8rem;
+    padding: 0.8rem;
     white-space: pre;
     border-style: none none none solid;
     border-color: var(--light-text-color);
