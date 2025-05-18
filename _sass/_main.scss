@@ -226,9 +226,11 @@ pre {
 }
 
 .image-gallery img {
-    width: 90%;
-    height: 95%;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
+
 
 .video-container {
     position: relative;
