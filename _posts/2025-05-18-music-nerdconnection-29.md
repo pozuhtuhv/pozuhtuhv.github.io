@@ -4,8 +4,8 @@ description: "너드커넥션 - 29"
 layout: post
 categories: ["Music"]
 published: true
-date: 2025-05-08
-last_modified_at: 2025-05-08
+date: 2025-05-18
+last_modified_at: 2025-05-18
 tags: [music, 너드커넥션]
 ---
 ---
