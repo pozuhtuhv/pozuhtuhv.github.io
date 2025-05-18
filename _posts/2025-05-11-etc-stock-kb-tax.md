@@ -2,7 +2,7 @@
 title: "KB 해외주식 양도소득세 신청 및 납부"
 description: "KB 해외주식 양도소득세 신청 및 납부 설명"
 layout: post
-categories: ["etc"]
+categories: ["ETC"]
 published: true
 date: 2025-05-11
 last_modified_at: 2025-05-11

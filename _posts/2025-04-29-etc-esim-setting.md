@@ -2,7 +2,7 @@
 title: "SKT eSIM 셀프개통"
 description: "SKT eSIM 셀프개통 설명"
 layout: post
-categories: ["etc"]
+categories: ["ETC"]
 published: true
 date: 2025-04-29
 last_modified_at: 2025-04-29

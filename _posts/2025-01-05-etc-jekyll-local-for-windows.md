@@ -2,7 +2,7 @@
 title: "Jekyll 로컬 세팅 (For Windows)"
 description: "깃허브 블로그의 로컬세팅의 설치와 테스트 방법"
 layout: post
-categories: ["etc"]
+categories: ["ETC"]
 published: true
 date: 2025-01-05
 last_modified_at: 2025-01-05
