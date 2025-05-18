@@ -24,5 +24,5 @@ tags: [music, mild_high_club]
 {% include image-path.html cols=1 start=1 end=1 %}
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/oRGDhgITetc?si=5nXGzB2QvF6gNtJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/oRGDhgITetc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
