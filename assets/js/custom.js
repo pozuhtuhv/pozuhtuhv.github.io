@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // 모달 관련 요소
-    const cards = document.querySelectorAll('.project-card');
     const modal = document.getElementById('projectModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalBody = document.getElementById('modalBody');

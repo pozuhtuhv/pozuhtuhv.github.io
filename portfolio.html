@@ -386,3 +386,18 @@ layout: default
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.querySelectorAll('*').forEach(child => {
+        child.addEventListener('click', function (e) {
+          if (e.currentTarget !== card) {
+            e.stopPropagation();
+            card.click();
+          }
+        });
+      });
+    });
+  });
+</script>
