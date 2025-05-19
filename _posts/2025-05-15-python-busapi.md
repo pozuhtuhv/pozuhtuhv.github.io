@@ -33,7 +33,7 @@ tags: [python, data.go.kr]
 데이터마다 지원하는 형식이 차이가 있기 때문에 [`OpenAPI`, `파일데이터`] 본인의 상황에 맞춰서 사용하면 된다.<br>
 
 ### 2. 필요한 데이터
-{% include image-path.html cols=4 start=2 end=5 %}
+{% include image-path.html cols=1 start=2 end=2 %}
 
 1. 버스 및 정류소 데이터 - [경상남도 창원시_기반정보조회서비스](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000096)
 
@@ -63,6 +63,8 @@ tags: [python, data.go.kr]
 
 <br>
 
+{% include image-path.html cols=1 start=3 end=3 %}
+
 2. 버스 도착 정보 - [경상남도 창원시_버스도착정보조회](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000386)
 
 - 정류소버스도착정보 - [2-1]busarrives.json
@@ -77,6 +79,8 @@ tags: [python, data.go.kr]
 > UPDN_DIR: 상/하행 구분 (0: 하행, 1: 상행)  
 
 <br>
+
+{% include image-path.html cols=1 start=4 end=4 %}
 
 3. 버스정류소목록 - [경상남도 창원시_노선버스위치정류소](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000254)
 
@@ -93,6 +97,8 @@ tags: [python, data.go.kr]
 > EVENT_CD: 이벤트 코드 (17: 진입, 18: 진출)  
 
 <br>
+
+{% include image-path.html cols=1 start=5 end=5 %}
 
 4. 현재 운행 버스위치 - [경상남도 창원시_노선별 버스위치목록](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000416)
 
