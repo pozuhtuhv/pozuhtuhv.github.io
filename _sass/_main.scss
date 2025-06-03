@@ -225,19 +225,27 @@ pre {
     grid-template-columns: repeat(6, 1fr);
 }
 
-.image-gallery img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
+.image-gallery {
+    max-height: 90vh;
+    min-height: fit-content;
+    padding: 2vh 0; /* 상하 여백 */
 }
 
+.image-gallery img {
+    max-width: 90%;
+    max-height: 90vh;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 2vh auto; /* 상하 2vh, 좌우 auto */
+}
 
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .video-container iframe {
