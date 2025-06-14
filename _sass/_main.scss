@@ -676,16 +676,33 @@ tr:hover {
     }
 }
 
-#topButton {
-    bottom: 20px;
-    right: 30px;
+#topButton{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 3%;
+    bottom: 9%;
     z-index: 99;
     border: 0;
     outline: 0;
-    background-color: #555;
-    color: #bfbfbf;
-    padding: 13px;
-    border-radius: 5px
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+    #topButton{
+        width: 35px;
+        height: 35px;
+    }
+    
+    #topButton {
+      display: none;
+      bottom: 9%;
+    }
 }
 
 .blog-header {
