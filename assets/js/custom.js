@@ -2,19 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // topButton - 모든 페이지에서 작동
   var topButton = document.getElementById("topButton");
 
-  if (topButton) {
-    window.addEventListener("scroll", function () {
+  window.addEventListener("scroll", function () {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topButton.style.display = "block";
+          if (topButton) topButton.style.display = "block";
       } else {
-        topButton.style.display = "none";
+          if (topButton) topButton.style.display = "none";
       }
-    });
+  });
 
-    topButton.addEventListener("click", function () {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    });
+  if (topButton) {
+      topButton.addEventListener("click", function () {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
   }
 
   // portfolio 관련 기능 - portfolio 페이지에서만 작동
