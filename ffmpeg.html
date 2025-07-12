@@ -60,12 +60,19 @@ layout: default
       const url = urlMatch[1];
       const useRe = document.getElementById("useRe").checked;
       const cutAB = document.getElementById("cutAB").checked;
+      const fastMode = document.getElementById("fastMode").checked;
       const startTime = document.getElementById("inputstartTime").value;
       const endTime = document.getElementById("inputendTime").value;
 
       const filteredHeaders = headers.filter(h => !h.toLowerCase().startsWith("range:"));
       const headerLines = filteredHeaders.map(h => h + "\\r\\n").join('');
-      const reLine = useRe ? `-re \\\n` : "";
+
+      let reLine = "";
+      if (fastMode) {
+        reLine = `-fflags +discardcorrupt \\\n-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 10 \\\n`;
+      } else if (useRe) {
+        reLine = `-re \\\n`;
+      }
 
       let timeOptions = "";
       if (cutAB && startTime && endTime) {
@@ -104,6 +111,7 @@ layout: default
   <div class="checkbox-container">
     <label><input type="checkbox" id="useRe"> 스트리밍처럼 다운로드 서버 부하방지</label>
     <label><input type="checkbox" id="cutAB" onchange="toggleTimeInputs()"> AB 구간 나누어 저장</label>
+    <label><input type="checkbox" id="fastMode"> 최대 속도로 다운로드 (안정성 포함)</label>
   </div>
 
   <div id="timeInputs" style="display: none;">
