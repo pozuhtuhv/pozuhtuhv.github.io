@@ -696,6 +696,10 @@ tr:hover {
       display: none;
       bottom: 9%;
     }
+
+    #specButton {
+      display: none;
+    }
 }
 
 .blog-header {
@@ -704,7 +708,7 @@ tr:hover {
     align-items: center;
     background-color: var(--code-bg-color);
     padding-left: 3%;
-    border-radius: 30px
+    border-radius: 5px
 }
 
 .blog-more {
@@ -714,7 +718,7 @@ tr:hover {
     height: 27px;
     color: #99c3ff;
     font-size: 20px;
-    border-radius: 50%;
+    border-radius: 5px;
     transition: color .3s, transform .2s
 }
 
