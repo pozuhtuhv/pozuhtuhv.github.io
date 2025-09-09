@@ -19,8 +19,6 @@ tag: [python, yolo]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 0. Yolov8 소개
 YOLOv8(You Only Look Once version 8)는 Ultralytics에서 개발한 객체 탐지(Object Detection) 및 분할(Segmentation) 알고리즘
 YOLO 시리즈는 실시간 객체 탐지에서 높은 성능과 속도가 장점임

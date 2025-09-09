@@ -19,8 +19,6 @@ tags: [kb, tax]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 0. 개요
 {% include image-path.html cols=1 start=1 end=1 %}
 작년에 해외주식으로인한 수익으로 양도소득세를 내야할게 나왔다.<br>

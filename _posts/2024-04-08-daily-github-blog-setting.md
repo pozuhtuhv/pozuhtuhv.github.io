@@ -19,8 +19,6 @@ tag: [daily]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. 고통의 고통이었다.
 <div class="image-gallery cols-1">
     <img src ='/assets/img/githubbanner.webp' alt='githubbanner.webp'>

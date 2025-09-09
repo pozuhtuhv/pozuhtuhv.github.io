@@ -19,8 +19,6 @@ tags: [mac, network, service]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 0. 개요
 Mac 에서 네트워크 사용중에 WiFi 와 LAN 연결 사용중 어느 서비스가 우선순위로 사용되는지 설정하는 방법을 성명<br>
 <br>

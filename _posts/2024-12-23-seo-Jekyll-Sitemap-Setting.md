@@ -19,8 +19,6 @@ tag: [github, seo, jekyll]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### Jekyll 사이트맵 세팅
 사이트맵을 설정하면 검색 엔진이 사이트의 구조 정확하게 수집할 수 있다.
 <br>

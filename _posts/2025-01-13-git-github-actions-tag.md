@@ -19,8 +19,6 @@ tag: [git, actions, jekyll, tag]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. Jekyll 블로그의 Jekyll-tagging
 Jekyll 의 태깅 기능은 버전 오류를 뱉어내서 포기하고 다른방법을 쓰기로함
 

@@ -19,6 +19,5 @@ tags: [daily, daegu, alien]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
 
 ### 1. 순항

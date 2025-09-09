@@ -19,8 +19,6 @@ tag: [github, jekyll, ruby]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### Jekyll 로컬 세팅 (For Windows)
 - Jekyll Ruby 로컬로 확인하는 이유
 <br>

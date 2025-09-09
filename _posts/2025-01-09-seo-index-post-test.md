@@ -19,8 +19,6 @@ tag: [seo]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. SEO 최적화
 SEO 색인이 언제 진행되는지<br>
 SEO 카운트 1 테스트<br>

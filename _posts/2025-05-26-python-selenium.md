@@ -19,8 +19,6 @@ tags: [python, selenum, edge, chrome]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 0. 개요
 셀레니움의 기본 구성을 작성할려고 한다.<br>
 매번 자료를 가져올 때마다 버전이 다른경우가 많고,<br>

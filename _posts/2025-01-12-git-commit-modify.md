@@ -19,8 +19,6 @@ tag: [git, comment]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. 마지막 커밋 메시지 수정
 ```bash
 git commit --amend

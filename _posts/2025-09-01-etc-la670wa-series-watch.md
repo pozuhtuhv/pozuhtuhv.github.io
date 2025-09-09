@@ -19,8 +19,6 @@ tags: [etc, la670wa, watch, casio]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 미니멀한 손목시계를 찾다보니 예전부터 사고싶었던 시계를 찾았다.<br>
 LA670WA 시리즈 시계이다<br>
 <br>

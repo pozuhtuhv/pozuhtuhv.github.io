@@ -19,8 +19,6 @@ tag: [python, review]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### Movie Script 코드리뷰
 `-1년전에 쓴 파이썬 코드 리뷰-`<br>
 `영어자막에 대한 것을 찾다가 발견한 자막 사이트`<br>

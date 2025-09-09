@@ -19,8 +19,6 @@ tag: [python, tensorflow, keras, error]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### TensorFlow Error 소개
 ```bash
 2025-01-14 17:54:21.357200: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.

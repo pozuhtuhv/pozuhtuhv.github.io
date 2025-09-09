@@ -19,8 +19,6 @@ tag: [sql, example, group]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. 나이 구간별 인원수 구하기
 ```sql
 SELECT FLOOR(AGE / 10) * 10 AS AGE_GROUP, COUNT(*) AS PEOPLE

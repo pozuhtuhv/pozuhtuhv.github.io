@@ -19,8 +19,6 @@ tag: [git, error]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. fatal: protocol 'https' is not supported
 git bash 를 이용하다보면 나오는 그것<br>
 '프로토콜 지원을 안함'<br>

@@ -19,8 +19,6 @@ tag: [python, tensorflow, keras, scrapbook]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### TensorFlow, Keras 모듈 세팅
 ```bash
 pip install tensorflow yfinance pandas numpy python-dateutil scikit-learn matplotlib

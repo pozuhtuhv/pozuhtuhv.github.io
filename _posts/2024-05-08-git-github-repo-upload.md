@@ -19,8 +19,6 @@ tag: [github, upload]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 1. Github에 NEW 리포지토리 git repo url 확인
 {% include image-path.html cols=1 start=1 end=1 %}
 git repo url copy

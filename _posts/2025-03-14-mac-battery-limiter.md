@@ -19,8 +19,6 @@ tags: [mac, battery, power management]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 ### 0. 개요
 일반적으로 배터리 관리를 위해 `Aldente`, `Batfi` 등의 소프트웨어가 사용되지만, 다음과 같은 단점이 있음.
 

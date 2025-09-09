@@ -19,8 +19,6 @@ tags: [music, 이무진]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
-
 {% include image-path.html cols=1 start=1 end=1 %}
 
 <div class="video-container">

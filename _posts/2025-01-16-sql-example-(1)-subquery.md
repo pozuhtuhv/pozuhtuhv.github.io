@@ -19,7 +19,6 @@ tag: [sql, database, subquery]
     나머지 큰 제목은 ###
     이후 나머지는 3개이상 -->
 
-## {{ page.description }}
 회사에서 역순정렬의 순차정렬을 위해 사용했던 한 사례의 예제.
 <br>
 
