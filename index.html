@@ -29,10 +29,10 @@ layout: default
         <a href="{{ site.url }}/archive/" class="blog-more" id="blog-more">+</a>
     </h2>
     <ul>
-        {% for post in site.posts limit:5 %}
-        <li>
-            - [{{ post.date | date: "%Y-%m-%d" }}] ﾠ<a href="{{ site.url }}{{ post.url }}"> {{ post.title }}</a>
-        </li>
+        {% for post in site.posts limit:10 %}
+            <li>
+                - [{{ post.date | date: "%Y-%m-%d" }}]&nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            </li>
         {% endfor %}
     </ul>
 </section>
