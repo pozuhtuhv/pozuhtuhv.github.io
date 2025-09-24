@@ -38,7 +38,7 @@ layout: default
         selectedOS = selectedOS === "windows" ? "mac" : "windows";
         document.getElementById("selectedOS").textContent = selectedOS === "windows" ? "Windows" : "Mac";
         document.getElementById("installCommand").textContent = selectedOS === "windows"
-            ? "choco install yt-dlp ffmpeg"
+            ? "winget install --id yt-dlp.yt-dlp -e && winget install --id Gyan.FFmpeg -e"
             : "brew install yt-dlp ffmpeg";
     }
 
@@ -107,7 +107,7 @@ layout: default
     <p>- Mac: <a href="https://pozuhtuhv.github.io/2025/04/07/mac-homebrew">Homebrew</a> 사용</p>
     <br>
     <div class="install-box">
-        <pre id="installCommand">winget install -e --id yt-dlp.yt-dlp</pre>
+        <pre id="installCommand">winget install --id yt-dlp.yt-dlp -e && winget install --id Gyan.FFmpeg -e</pre>
         <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
     </div>
 </section>

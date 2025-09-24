@@ -38,7 +38,7 @@ layout: default
       selectedOS = selectedOS === "windows" ? "mac" : "windows";
       document.getElementById("selectedOS").textContent = selectedOS === "windows" ? "Windows" : "Mac";
       document.getElementById("installCommand").textContent = selectedOS === "windows"
-        ? "choco install yt-dlp ffmpeg"
+        ? "winget install --id yt-dlp.yt-dlp -e && winget install --id Gyan.FFmpeg -e"
         : "brew install yt-dlp ffmpeg";
     }
 
@@ -56,8 +56,55 @@ layout: default
           document.getElementById("ffmpegOutput").textContent = "❌ URL을 찾을 수 없습니다.";
           return;
       }
+    function guessOutputFilename(inputCurl, urlStr) {
+      const decode = (s) => { try { return decodeURIComponent(s); } catch { return s; } };
+
+      let name = "";
+      try {
+        const u = new URL(urlStr);
+        const keys = [
+          "filename","file","fname","name","attname",
+          "download","downloadfilename","dl","title",
+          "response-content-disposition"
+        ];
+        for (const k of keys) {
+          if (u.searchParams.has(k)) {
+            let v = decode(u.searchParams.get(k) || "");
+            const m = v.match(/filename\*?=(?:UTF-8'')?["']?([^"';]+)["']?/i);
+            name = m ? m[1] : v;
+            break;
+          }
+        }
+        if (!name) {
+          const last = u.pathname.split("/").filter(Boolean).pop() || "";
+          name = decode(last);
+        }
+      } catch { /* 무시 */ }
+
+      if (!name) {
+        const m = inputCurl.match(/filename\*?=(?:UTF-8'')?["']?([^"';\s]+)["']?/i);
+        if (m) name = decode(m[1]);
+      }
+
+      name = (name || "").replace(/[/\\?%*:|"<>]/g, "_").replace(/\s+/g, " ").trim();
+
+      const extMatch = name.match(/\.(mp4|m4a|mp3|webm|mkv|ts|mov|flv|avi|aac|opus|m3u8)$/i);
+      if (!extMatch) {
+        const ext = /\.m3u8(\b|$)/i.test(urlStr) ? "mp4" : "mp4";
+        name = name ? `${name}.${ext}` : `output.${ext}`;
+      } else {
+        name = name.replace(/\.m3u8$/i, ".mp4");
+      }
+
+      if (!name || name === ".mp4") {
+        const ts = new Date().toISOString().replace(/[:.]/g, "-").slice(0,19);
+        name = `download-${ts}.mp4`;
+      }
+      return name;
+    }
 
       const url = urlMatch[1];
+      const outputName = guessOutputFilename(input, url);
       const useRe = document.getElementById("useRe").checked;
       const cutAB = document.getElementById("cutAB").checked;
       const fastMode = document.getElementById("fastMode").checked;
@@ -79,7 +126,7 @@ layout: default
           timeOptions = `-ss ${startTime} -to ${endTime} \\\n`;
       }
 
-      const ffmpeg = `ffmpeg \\\n${reLine}-headers $'${headerLines}' \\\n-i "${url}" \\\n${timeOptions}-c copy \\\noutput.mp4`;
+      const ffmpeg = `ffmpeg \\\n${reLine}-headers $'${headerLines}' \\\n-i "${url}" \\\n${timeOptions}-c copy \\\n"${outputName}"`;
 
       document.getElementById("ffmpegOutput").textContent = ffmpeg;
       document.getElementById("ffmpegOutput").select();
@@ -100,7 +147,7 @@ layout: default
   <p>- Mac: <a href="https://pozuhtuhv.github.io/2025/04/07/mac-homebrew">Homebrew</a> 사용</p>
   <br>
   <div class="install-box">
-    <pre id="installCommand">choco install yt-dlp ffmpeg</pre>
+    <pre id="installCommand">winget install --id yt-dlp.yt-dlp -e && winget install --id Gyan.FFmpeg -e</pre>
     <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
   </div>
 </section>
