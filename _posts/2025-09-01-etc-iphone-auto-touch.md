@@ -3,7 +3,7 @@ title: "아이폰 오토 터치."
 description: "아이폰 오토 터치."
 layout: post
 categories: ["ETC"]
-published: false
+published: true
 date: 2025-09-01
 last_modified_at: 2025-09-01
 tags: [etc, iphone, auto,touch]
