@@ -3,7 +3,7 @@ title: "퇴사를 했다. 다시 입사를 했다."
 description: "퇴사를 했다. 다시 입사를 했다."
 layout: post
 categories: ["ETC"]
-published: true
+published: false
 date: 2025-10-18
 last_modified_at: 2025-10-18
 tags: [daily, company]
