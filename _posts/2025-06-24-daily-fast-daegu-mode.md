@@ -2,7 +2,7 @@
 title: "어쩌다보니 대구인"
 description: "어쩌다보니 대구인 "
 layout: post
-categories: ["Mac"]
+categories: ["Daily"]
 published: true
 date: 2025-06-24
 last_modified_at: 2025-06-24
