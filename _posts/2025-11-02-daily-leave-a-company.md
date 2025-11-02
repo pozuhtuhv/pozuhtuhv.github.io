@@ -4,7 +4,7 @@ description: "퇴사를 했다. 다시 입사를 했다."
 layout: post
 categories: ["Daily"]
 published: true
-date: 2025-10-18
+date: 2025-11-02
 last_modified_at: 2025-11-02
 tags: [daily, company]
 ---
