@@ -1,0 +1,30 @@
+{% comment %}
+이미지 갤러리를 자동으로 생성하는 include 파일
+사용 예시:
+  {% include video_path.html cols=1 start=1 end=1 %}
+  {% include video_path.html cols=2 start=1 end=2 %}
+  {% include video_path.html cols=3 start=1 end=6 %}
+{% endcomment %}
+
+{% assign filename = page.path | split: '/' | last | split: '.' | first %}
+{% assign cols = include.cols | default: 1 %}
+{% assign start_num = include.start | default: 1 %}
+{% assign end_num = include.end | default: start_num %}
+
+<div class="image-gallery cols-{{ cols }}">
+  {% for i in (start_num..end_num) %}
+    {% capture video_path %}{{ "/assets/video/" | append: filename | append: "-" | append: i | append: ".mp4" }}{% endcapture %}
+    
+    <figure style="max-width:900px;margin:0 auto;">
+      <video
+      id="blog-video"
+      controls
+      preload="metadata"
+      playsinline
+      style="width:100%;height:auto;display:block;">
+        <source src="{{ video_path }}" type="video/mp4" alt="{{ filename }}-{{ i }}">
+        해당 브라우저는 동영상을 지원하지 않습니다.
+      </video>
+    </figure>
+  {% endfor %}
+</div>
