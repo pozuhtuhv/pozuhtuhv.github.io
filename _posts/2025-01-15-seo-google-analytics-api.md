@@ -3,7 +3,7 @@ title: "구글 애널리틱스 GA4 API"
 description: "구글 애널리틱스 GA4 API 코드"
 layout: post
 categories: ["SEO"]
-published: true
+published: false
 date: 2025-01-15
 last_modified_at: 2025-01-15
 tag: [python, google, analytics, seo]

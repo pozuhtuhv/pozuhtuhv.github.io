@@ -3,7 +3,7 @@ title: "MySQL 'Too many connections' Error"
 description: "MySQL Error 경험"
 layout: post
 categories: ["SQL"]
-published: true
+published: false
 date: 2025-01-18
 last_modified_at: 2025-01-18
 tag: [sql, error, connections]

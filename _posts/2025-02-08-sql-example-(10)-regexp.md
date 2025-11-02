@@ -3,7 +3,7 @@ title: "SQL 예시 - (10) 정규표현식 (feat. REGEXP)"
 description: "SQL 정규표현식 예시"
 layout: post
 categories: ["SQL"]
-published: true
+published: false
 date: 2025-02-08
 last_modified_at: 2025-02-08
 tag: [sql, example, regexp]

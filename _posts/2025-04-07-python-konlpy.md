@@ -3,7 +3,7 @@ title: "Konlpy 설치 및 예시"
 description: "Konlpy 튜토리얼"
 layout: post
 categories: ["Python"]
-published: true
+published: false
 date: 2025-04-07
 last_modified_at: 2025-04-07
 tags: [python, konlpy, 형태소]

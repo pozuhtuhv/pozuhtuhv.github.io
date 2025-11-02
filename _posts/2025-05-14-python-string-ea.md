@@ -3,7 +3,7 @@ title: "IF함수 비교연산자"
 description: "IF함수 비교연산자 설명"
 layout: post
 categories: ["Python"]
-published: true
+published: false
 date: 2025-05-14
 last_modified_at: 2025-05-14
 tags: [python, if]

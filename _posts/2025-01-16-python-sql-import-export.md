@@ -3,7 +3,7 @@ title: "Python 을 이용한 SQL의 데이터 임포트 / 엑스포트"
 description: "MySQL 입출력 코드에 대한 예시 코드"
 layout: post
 categories: ["Python"]
-published: true
+published: false
 date: 2025-01-16
 last_modified_at: 2025-01-16
 tag: [python, sql, database]

@@ -3,7 +3,7 @@ title: "구글 애널리틱스 GA4 내부아이피 필터 세팅"
 description: "구글 애널리틱스 GA4 내부아이피 필터 세팅 방법 설명"
 layout: post
 categories: ["SEO"]
-published: true
+published: false
 date: 2025-04-14
 last_modified_at: 2025-04-14
 tags: [seo, google, analytics, internalip]

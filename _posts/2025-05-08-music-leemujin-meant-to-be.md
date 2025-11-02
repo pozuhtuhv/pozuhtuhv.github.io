@@ -3,7 +3,7 @@ title: "이무진 - 운명"
 description: "이무진 - 운명"
 layout: post
 categories: ["Music"]
-published: true
+published: false
 date: 2025-05-08
 last_modified_at: 2025-05-08
 tags: [music, 이무진]

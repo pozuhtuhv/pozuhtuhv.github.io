@@ -3,7 +3,7 @@ title: "SQL 예시 - (3) 특정 조건에 맞는 데이터 COUNT (feat. LIKE)"
 description: "SQL LIKE 예시"
 layout: post
 categories: ["SQL"]
-published: true
+published: false
 date: 2025-01-25
 last_modified_at: 2025-01-29
 tag: [sql, example, like]

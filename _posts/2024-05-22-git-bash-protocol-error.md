@@ -3,7 +3,7 @@ title: "Git Bash protocol 오류"
 description: "Git Bash의 에러에 대한 해결법"
 layout: post
 categories: ["Git"]
-published : true
+published : false
 date: 2024-05-22
 last_modified_at: 2024-05-22
 tag: [git, error]

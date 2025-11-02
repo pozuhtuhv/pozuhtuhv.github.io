@@ -3,7 +3,7 @@ title: "Git 푸시 전 마지막 커밋 메시지 수정"
 description: "마지막 커밋 메시지 수정"
 layout: post
 categories: ["Git"]
-published : true
+published : false
 date: 2025-01-12
 last_modified_at: 2025-01-12
 tag: [git, comment]

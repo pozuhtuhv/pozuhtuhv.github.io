@@ -3,7 +3,7 @@ title: "잔나비 - 초록을거머쥔우리는"
 description: "잔나비 - 초록을거머쥔우리는"
 layout: post
 categories: ["Music"]
-published: true
+published: false
 date: 2022-05-10
 last_modified_at: 2022-05-10
 tags: [music, 잔나비]

@@ -3,7 +3,7 @@ title: "SQL 예시 - (5) JOIN문 예시 (feat. JOIN)"
 description: "SQL JOIN 예시"
 layout: post
 categories: ["SQL"]
-published: true
+published: false
 date: 2025-02-03
 last_modified_at: 2025-02-03
 tag: [sql, example, inner_join]

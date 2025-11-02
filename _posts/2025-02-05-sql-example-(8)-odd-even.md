@@ -3,7 +3,7 @@ title: "SQL 예시 - (8) 홀짝 (feat. ODD, EVEN)"
 description: "SQL ODD, EVEN (홀, 짝) 예시"
 layout: post
 categories: ["SQL"]
-published: true
+published: false
 date: 2025-02-05
 last_modified_at: 2025-02-05
 tag: [sql, example, odd, even]

@@ -3,7 +3,7 @@ title: "Jekyll 사이트맵 세팅"
 description: "Jekyll 사이트맵 세팅 및 커스텀 예시 코드"
 layout: post
 categories: ["SEO"]
-published: true
+published: false
 date: 2024-12-23
 last_modified_at: 2024-12-26
 tag: [github, seo, jekyll]

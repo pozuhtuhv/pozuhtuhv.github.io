@@ -3,7 +3,7 @@ title: "Github 레포 업로드"
 description: "깃허브 레포 업로드 방법 설명"
 layout: post
 categories: ["Git"]
-published : true
+published : false
 date: 2024-05-08
 last_modified_at: 2024-12-23
 tag: [github, upload]

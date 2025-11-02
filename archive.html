@@ -25,9 +25,9 @@ layout: default
     {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
     {% for year in postsByYear %}
         <div class="archive-year">
-        <h2>{{ year.name }}</h2>
+        <h2>{{ year.name }} [{{ year.items | size }}]</h2>
           <ul>
-              {% for post in year.items %}
+              {% for post in year.items %} 
               <li>
                   <a href="{{ post.url }}">[{{ post.date | date: "%Y-%m-%d" }}] - {{ post.title }}</a>
               </li>

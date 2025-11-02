@@ -3,7 +3,7 @@ title: "TensorFlow, Keras 기본적인 세팅"
 description: "TensorFlow, Keras 기본적인 세팅 설명"
 layout: post
 categories: ["TensorFlow"]
-published: true
+published: false
 date: 2025-01-08
 last_modified_at: 2025-01-14
 tag: [python, tensorflow, keras]

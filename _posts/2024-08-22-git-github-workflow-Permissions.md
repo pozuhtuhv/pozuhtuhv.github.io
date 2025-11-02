@@ -3,7 +3,7 @@ title: "Github 워크플로우 권한 세팅"
 description: "Github 액션 워크플로우 권한 세팅 설명"
 layout: post
 categories: ["Git"]
-published : true
+published : false
 date: 2024-08-22
 last_modified_at: 2024-08-22
 tag: [github, workflow, actions]

@@ -3,7 +3,7 @@ title: "Django Requests 세팅"
 description: "장고API의 리퀘스트 세팅 및 예시 코드"
 layout: post
 categories: ["Python"]
-published: true
+published: false
 date: 2024-05-18
 last_modified_at: 2024-05-23
 tag: [python, django, framework]
