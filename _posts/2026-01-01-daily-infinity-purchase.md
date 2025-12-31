@@ -82,7 +82,7 @@ tags: [daily, life]
 {% include image-path.html cols=2 start=16 end=17 %}
 첫번째는, 스퀴즈의 모습을 보고,<br>
 두번째는, 다람쥐 사진을 보고 철없이 웃고있는 모습입니다. ㅋㅋㅋㅋ<br>
-아 ㅋㅋㅋ 이게 왜 이렇게 웃긴지 모르겠어요.<br>
+아ㅋㅋㅋ 이게 왜 이렇게 웃긴지 모르겠어요ㅋㅋㅋ<br>
 
 ### 3. 26년의 난 어떤삶을 살 것인가?
 {% include image-path.html cols=1 start=18 end=18 %}
