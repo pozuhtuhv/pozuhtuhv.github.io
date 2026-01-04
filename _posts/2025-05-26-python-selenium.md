@@ -3,7 +3,7 @@ title: "셀레니움의 자동화설치(feat. edge, chrome)"
 description: "셀레니움의 자동화설치 설명"
 layout: post
 categories: ["Python"]
-published: false
+published: true
 date: 2025-05-26
 last_modified_at: 2025-05-26
 tags: [python, selenum, edge, chrome]

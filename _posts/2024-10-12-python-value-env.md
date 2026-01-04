@@ -3,7 +3,7 @@ title: "변수.env"
 description: "환경변수 모듈의 설치와 예시 코드"
 layout: post
 categories: ["Python"]
-published: false
+published: true
 date: 2024-10-12
 last_modified_at: 2024-10-12
 tag: [python, module]

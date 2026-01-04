@@ -3,7 +3,7 @@ title: "파이썬의 개발환경 라이브러리 관리"
 description: "Python 개발환경 라이브러리 관리 설명"
 layout: post
 categories: ["Python"]
-published: false
+published: true
 date: 2025-04-19
 last_modified_at: 2025-04-19
 tags: [python, pip, upgrade, uninstall, install, library]

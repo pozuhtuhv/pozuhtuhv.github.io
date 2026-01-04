@@ -3,7 +3,7 @@ title: "이미지의 .webp 변환"
 description: ".webp 변환에 대한 소개글"
 layout: post
 categories: ["Python"]
-published: false
+published: true
 date: 2025-05-01
 last_modified_at: 2025-05-01
 tags: [python, venv]

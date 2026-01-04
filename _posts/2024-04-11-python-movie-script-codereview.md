@@ -3,7 +3,7 @@ title: "1년전에 쓴 파이썬 코드 리뷰"
 description: "초반에 진행했던 코딩 코드를 리뷰하는 글"
 layout: post
 categories: ["Python"]
-published: false
+published: true
 date: 2024-04-11
 last_modified_at: 2024-04-11
 tag: [python, review]
