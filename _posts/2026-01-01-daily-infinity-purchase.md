@@ -77,15 +77,8 @@ tags: [daily, life]
 {% include image-path.html cols=2 start=14 end=15 %}
 생일인 형수님 생일도 챙겨봅니다.<br>
 
-### 3. 맥북 가지고 놀기
-맥북을 이리저리 구경하다가 'Photo Booth' 발견하긴 했는데, 신기해서 가지고 놀았어요. ㅋㅋㅋ<br>
-{% include image-path.html cols=2 start=16 end=17 %}
-첫번째는, 스퀴즈의 모습을 보고,<br>
-두번째는, 다람쥐 사진을 보고 철없이 웃고있는 모습입니다. ㅋㅋㅋㅋ<br>
-아ㅋㅋㅋ 이게 왜 이렇게 웃긴지 모르겠어요ㅋㅋㅋ<br>
-
 ### 3. 26년의 난 어떤삶을 살 것인가?
-{% include image-path.html cols=1 start=18 end=18 %}
+{% include image-path.html cols=1 start=16 end=16 %}
 첫번째, 현재 직장 열심히 다니기<br>
 현재 일하고 있는 직장과 업무가 제가 딱 이상적이게 생각하는 여건이라,<br>
 더 열심히 지내볼 생각입니다.<br>
@@ -95,7 +88,7 @@ tags: [daily, life]
 안해본것, 몰랐던것 차근차근 천천히 완성해나가려고 합니다.<br>
 <br>
 세번째, 라식라섹, 교정<br>
-{% include image-path.html cols=1 start=19 end=19 %}
+{% include image-path.html cols=1 start=17 end=17 %}
 예전부터 생각해오던 것들인데, 이번년도에는 꼭 실행해보려합니다.<br>
 <br>
 요즘 혼자있다보니 많은 생각을 하게 됩니다.<br>

@@ -32,7 +32,8 @@ vscode_path_win: "C:/Users/pozuhtuhv/Desktop/pozuhtuhv.github.io"
 vscode_path_mac: "/Users/pozuhtuhv/Desktop/pozuhtuhv.github.io"
 
 # SEO Related
-google_site_verification: "iD1CAgKMzTXNTOmz_cbPmrHX7Nxd4toYeCwBC5ZAdKM"
+webmaster_verifications:
+  google: 1iD1CAgKMzTXNTOmz_cbPmrHX7Nxd4toYeCwBC5ZAdKM
 
 markdown: kramdown
 kramdown:
@@ -59,7 +60,8 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-relative-links
-  
+  - jekyll-seo-tag
+
 collections:
   pages:
     output: true
