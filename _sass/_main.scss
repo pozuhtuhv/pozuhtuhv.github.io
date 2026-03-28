@@ -7,9 +7,8 @@
   }
 
 .bio a,
-.post p,
 .posts ul li {
-    font-size: 14px
+    font-size: 12px
 }
 
 #specTooltip,
@@ -141,6 +140,7 @@ a {
 
 .post p {
     line-height: 22px;
+    font-size: 12px
 }
 
 .post img {
@@ -348,6 +348,10 @@ time {
     visibility: visible;
     transition: none;
     pointer-events: auto
+}
+
+.posts-item {
+  font-family: monospace;
 }
 
 .posts ul {
