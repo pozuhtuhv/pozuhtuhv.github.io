@@ -1,0 +1,197 @@
+---
+layout: default
+---
+
+<style>
+    input, textarea, .bluebutton {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: #252525;
+        color: #e0e0e0;
+    }
+    
+    select {
+        margin-top: 10px;
+        width: auto;
+        padding: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: #252525;
+        color: #e0e0e0;
+    }
+    .bluebutton {
+        background-color: var(--link-color);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+        padding: 0;
+    }
+
+    .checkbox-container label {
+        margin-right: 20px;
+    }
+</style>
+
+<script>
+    let selectedOS = "windows";
+
+    function toggleOS() {
+      selectedOS = selectedOS === "windows" ? "mac" : "windows";
+      document.getElementById("selectedOS").textContent = selectedOS === "windows" ? "Windows" : "Mac";
+      document.getElementById("installCommand").textContent = selectedOS === "windows"
+        ? "winget install --id aria2.aria2 -e"
+        : "brew install aria2";
+    }
+
+    function toggleSpeedInput() {
+      const speedDiv = document.getElementById("speedInputs");
+      speedDiv.style.display = document.getElementById("limitSpeed").checked ? "block" : "none";
+    }
+
+    function convertCurlToAria2() {
+      const input = document.getElementById("inputcurl").value;
+      const urlMatch = input.match(/curl\s+'([^']+)'/);
+      const headers = [...input.matchAll(/-H\s+'([^']+)'/g)].map(m => m[1]);
+
+      if (!urlMatch) {
+          document.getElementById("aria2Output").textContent = "❌ URL을 찾을 수 없습니다.";
+          return;
+      }
+    function guessOutputFilename(inputCurl, urlStr) {
+      const decode = (s) => { try { return decodeURIComponent(s); } catch { return s; } };
+
+      let name = "";
+      try {
+        const u = new URL(urlStr);
+        const keys = [
+          "filename","file","fname","name","attname",
+          "download","downloadfilename","dl","title",
+          "response-content-disposition"
+        ];
+        for (const k of keys) {
+          if (u.searchParams.has(k)) {
+            let v = decode(u.searchParams.get(k) || "");
+            const m = v.match(/filename\*?=(?:UTF-8'')?["']?([^"';]+)["']?/i);
+            name = m ? m[1] : v;
+            break;
+          }
+        }
+        if (!name) {
+          const last = u.pathname.split("/").filter(Boolean).pop() || "";
+          name = decode(last);
+        }
+      } catch { /* 무시 */ }
+
+      if (!name) {
+        const m = inputCurl.match(/filename\*?=(?:UTF-8'')?["']?([^"';\s]+)["']?/i);
+        if (m) name = decode(m[1]);
+      }
+
+      name = (name || "").replace(/[/\\?%*:|"<>]/g, "_").replace(/\s+/g, " ").trim();
+
+      const extMatch = name.match(/\.(mp4|m4a|mp3|webm|mkv|ts|mov|flv|avi|aac|opus|zip|rar|pdf|exe|iso)$/i);
+      if (!extMatch) {
+        name = name ? `${name}.bin` : `output.bin`;
+      }
+
+      if (!name || name === ".bin") {
+        const ts = new Date().toISOString().replace(/[:.]/g, "-").slice(0,19);
+        name = `download-${ts}.bin`;
+      }
+      return name;
+    }
+
+      const url = urlMatch[1];
+      const outputName = guessOutputFilename(input, url);
+      const splitConnections = document.getElementById("splitConnections").value;
+      const continueDownload = document.getElementById("continueDownload").checked;
+      const limitSpeed = document.getElementById("limitSpeed").checked;
+      const speedValue = document.getElementById("inputSpeedLimit").value || "1M";
+
+      const filteredHeaders = headers.filter(h => !h.toLowerCase().startsWith("range:"));
+      const headerFlags = filteredHeaders.map(h => `--header="${h}"`).join(" \\\n");
+
+      let options = "";
+      if (splitConnections !== "1") {
+        options += `-s ${splitConnections} -x ${splitConnections} \\\n`;
+      }
+      if (continueDownload) {
+        options += `-c \\\n`;
+      }
+      if (limitSpeed) {
+        options += `--max-download-limit=${speedValue} \\\n`;
+      }
+
+      const aria2 = `aria2c \\\n${options}${headerFlags ? headerFlags + " \\\n" : ""}--out="${outputName}" \\\n"${url}"`;
+
+      document.getElementById("aria2Output").textContent = aria2;
+      document.getElementById("aria2Output").select();
+      document.execCommand("copy");
+      alert("명령어가 복사되었습니다.");
+    }
+</script>
+
+<section class="page_title">
+  <h1>Aria2-Generator</h1>
+</section>
+
+<section class="posts">
+  <p>- cURL 패킷정보를 aria2 다운로드 명령어를 생성하는 도구입니다.</p>
+  <p>- Windows: 명령프롬프트 사용</p>
+  <p>- Mac: <a href="https://pozuhtuhv.github.io/2025/04/07/mac-homebrew">Homebrew</a> 사용</p>
+  <br>
+  <div class="install-box">
+    <pre id="installCommand">winget install --id aria2.aria2 -e</pre>
+    <button class="bluebutton" onclick="toggleOS()">OS 변경 (현재: <span id="selectedOS">Windows</span>)</button>
+  </div>
+</section>
+<hr>
+<section>
+  <textarea id="inputcurl" rows="10" placeholder="curl 'https://...' -H 'Header: ...' ..."></textarea>
+
+  <div class="checkbox-container">
+    <label>분할 다운로드:
+      <select id="splitConnections">
+        <option value="1">사용 안함</option>
+        <option value="4">4 connections</option>
+        <option value="8">8 connections</option>
+        <option value="12">12 connections</option>
+        <option value="16" selected>16 connections</option>
+      </select>
+    </label>
+    <label><input type="checkbox" id="continueDownload"> 이어받기 (-c)</label>
+    <label><input type="checkbox" id="limitSpeed" onchange="toggleSpeedInput()"> 속도 제한</label>
+  </div>
+
+  <div id="speedInputs" style="display: none;">
+      <input type="text" id="inputSpeedLimit" placeholder="최대 속도 (예: 1M, 500K)">
+  </div>
+
+  <button class="bluebutton" onclick="convertCurlToAria2()">Aria2 명령어 생성</button>
+
+  <textarea id="aria2Output" rows="5" readonly></textarea>
+</section>
+
+<script src="https://giscus.app/client.js"
+        data-repo="pozuhtuhv/pozuhtuhv.github.io"
+        data-repo-id="R_kgDONmo7OQ"
+        data-category="General"
+        data-category-id="DIC_kwDONmo7Oc4CmCEh"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="https://pozuhtuhv.github.io/assets/css/giscus.css"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
