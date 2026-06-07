@@ -41,3 +41,22 @@ layout: default
         {% endfor %}
     </ul>
 </section>
+
+<section class="posts" style="padding: 0;">
+    {% assign coupang_posts = site.posts | where_exp: "post", "post.categories contains 'Coupang'" %}
+    <h2 class="blog-header" style="font-size: 1em !important; padding-top: 1% !important; padding-bottom: 1% !important; background-color: #1c1c1c;">
+        Review Post [{{ coupang_posts | size }}]
+    </h2>
+    <ul>
+        {% assign count = 0 %}
+        {% for post in site.posts %}
+            {% if count == 5 %}{% break %}{% endif %}
+            {% if post.categories contains 'Coupang' %}
+                <li class="posts-item">
+                    - [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% assign count = count | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</section>
