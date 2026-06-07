@@ -29,10 +29,15 @@ layout: default
         <a href="{{ site.url }}/archive/" class="blog-more" id="blog-more">+</a>
     </h2>
     <ul>
-        {% for post in site.posts limit:10 %}
-            <li class="posts-item">
-                - [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-            </li>
+        {% assign count = 0 %}
+        {% for post in site.posts %}
+            {% if count == 10 %}{% break %}{% endif %}
+            {% unless post.categories contains 'Coupang' %}
+                <li class="posts-item">
+                    - [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% assign count = count | plus: 1 %}
+            {% endunless %}
         {% endfor %}
     </ul>
 </section>
