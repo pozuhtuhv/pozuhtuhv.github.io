@@ -10,8 +10,7 @@ layout: null
   </url>
     {% endunless %}
   {% endfor %}
-
-  {% for post in site.collections.posts.docs %}
+  {% for post in site.posts %}
     {% unless post.sitemap == false %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
