@@ -2,7 +2,7 @@
 title: "FastAPI 세팅"
 description: "FastAPI의 세팅 및 예시 코드"
 layout: post
-categories: ["coding"]
+categories: ["Coding"]
 published: true
 date: 2024-05-09
 last_modified_at: 2024-05-09
