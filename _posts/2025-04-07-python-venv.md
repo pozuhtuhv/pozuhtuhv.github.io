@@ -2,11 +2,11 @@
 title: "venv 가상환경 세팅"
 description: "가상환경 세팅"
 layout: post
-categories: ["Python"]
+categories: ["Coding"]
 published: true
 date: 2025-04-07
 last_modified_at: 2025-04-07
-tags: [python, venv]
+tags: [coding, python, venv]
 ---
 ---
 {: .no_toc .text-delta }

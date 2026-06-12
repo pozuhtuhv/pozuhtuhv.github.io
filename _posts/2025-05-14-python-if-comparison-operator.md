@@ -2,11 +2,11 @@
 title: "문자열 갯수 변환"
 description: "문자열 갯수 변환 설명"
 layout: post
-categories: ["Python"]
+categories: ["Coding"]
 published: true
 date: 2025-05-14
 last_modified_at: 2025-05-14
-tags: [python, len]
+tags: [coding, python, len]
 ---
 ---
 {: .no_toc .text-delta }

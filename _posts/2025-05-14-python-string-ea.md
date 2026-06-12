@@ -2,11 +2,11 @@
 title: "IF함수 비교연산자"
 description: "IF함수 비교연산자 설명"
 layout: post
-categories: ["Python"]
+categories: ["Coding"]
 published: true
 date: 2025-05-14
 last_modified_at: 2025-05-14
-tags: [python, if]
+tags: [coding, python, if]
 ---
 ---
 {: .no_toc .text-delta }

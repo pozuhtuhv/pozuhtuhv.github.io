@@ -2,11 +2,11 @@
 title: "공공데이터포털 API활용(feat. 창원버스)"
 description: "공공데이터포털 API활용 설명"
 layout: post
-categories: ["Python"]
+categories: ["Coding"]
 published: true
 date: 2025-05-15
 last_modified_at: 2025-05-15
-tags: [python, data.go.kr]
+tags: [coding, python, data.go.kr]
 ---
 ---
 {: .no_toc .text-delta }

@@ -6,7 +6,7 @@ categories: ["Git"]
 published : false
 date: 2024-05-22
 last_modified_at: 2024-05-22
-tag: [git, error]
+tag: [git, github, error]
 ---
 ---
 {: .no_toc .text-delta }

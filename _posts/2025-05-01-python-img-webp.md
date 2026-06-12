@@ -2,11 +2,11 @@
 title: "이미지의 .webp 변환"
 description: ".webp 변환에 대한 소개글"
 layout: post
-categories: ["Python"]
+categories: ["Coding"]
 published: true
 date: 2025-05-01
 last_modified_at: 2025-05-01
-tags: [python, venv]
+tags: [coding, python, venv]
 ---
 ---
 {: .no_toc .text-delta }

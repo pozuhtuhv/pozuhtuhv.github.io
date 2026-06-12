@@ -6,7 +6,7 @@ categories: ["SEO"]
 published : false
 date: 2025-01-09
 last_modified_at: 2025-01-09
-tag: [seo]
+tag: [git, github, seo]
 ---
 ---
 {: .no_toc .text-delta }

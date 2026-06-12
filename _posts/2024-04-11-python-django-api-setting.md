@@ -2,11 +2,11 @@
 title: "Django API 세팅"
 description: "장고API의 기본 세팅 설명과 예시 코드"
 layout: post
-categories: ["Python"]
+categories: ["Coding"]
 published: true
 date: 2024-04-11
 last_modified_at: 2024-04-11
-tag: [python, django, framework]
+tag: [coding, python, django, framework]
 ---
 ---
 {: .no_toc .text-delta }
