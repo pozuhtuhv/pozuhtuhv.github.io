@@ -5,7 +5,7 @@ layout: none
   {% for post in site.posts %}
     {
       "title": "{{ post.title | escape }}",
-      "tags": "{{ post.tags | join: ', ' }}",
+      "tag": "{{ post.tag | join: ', ' }}",
       "url": "{{ site.baseurl }}{{ post.url }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
