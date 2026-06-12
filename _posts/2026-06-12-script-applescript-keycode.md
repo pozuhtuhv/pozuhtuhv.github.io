@@ -45,7 +45,7 @@ tags: [coding, applescript, keycode]
 | W | 13 | X | 7 |
 | Y | 16 | Z | 6 |
 
-### 숫자
+### 1. 숫자
 
 | 키 | 코드 |
 |-----|-----|
@@ -60,7 +60,7 @@ tags: [coding, applescript, keycode]
 | 9 | 25 |
 | 0 | 29 |
 
-### 기호
+### 2. 기호
 
 | 키 | 코드 |
 |-----|-----|
@@ -76,7 +76,7 @@ tags: [coding, applescript, keycode]
 | \ | 42 |
 | ` | 50 |
 
-### 입력키
+### 3. 입력키
 
 | 키 | 코드 |
 |-----|-----|
@@ -87,7 +87,7 @@ tags: [coding, applescript, keycode]
 | Escape | 53 |
 | Forward Delete | 117 |
 
-### 기타
+### 4. 기타
 
 | 키 | 코드 |
 |-----|-----|
@@ -146,7 +146,7 @@ tags: [coding, applescript, keycode]
 | Keypad - | 78 |
 | Keypad = | 81 |
 
-### 키코드 사용 예시
+### 5. 키코드 사용 예시
 
 {% include image-path.html cols=1 start=1 end=1 %}
 
