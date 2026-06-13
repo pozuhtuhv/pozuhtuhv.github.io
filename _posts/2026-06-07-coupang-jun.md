@@ -30,7 +30,7 @@ tags: [coupang, life]
 #### * 이 포스팅은 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받습니다.
 
 <div style="display:flex; justify-content:center;">
-    <a href="https://link.coupang.com/a/enI5nDr0jA" target="_blank">
+    <a href="https://link.coupang.com/a/exkMZudBEi" target="_blank">
         <img src="https://image4.coupangcdn.com/image/affiliate/banner/8fe1e705dffad4cb9518b5a18480bd32@2x.jpg" alt="배너">
     </a>
 </div>
