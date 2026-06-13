@@ -6,7 +6,7 @@ categories: ["TensorFlow"]
 published: false
 date: 2025-01-08
 last_modified_at: 2025-01-14
-tag: [coding, python, tensorflow, keras, scrapbook]
+tags: [coding, python, tensorflow, keras, scrapbook]
 ---
 ---
 {: .no_toc .text-delta }

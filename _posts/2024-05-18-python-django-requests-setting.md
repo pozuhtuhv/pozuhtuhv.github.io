@@ -6,7 +6,7 @@ categories: ["Coding"]
 published: true
 date: 2024-05-18
 last_modified_at: 2024-05-23
-tag: [coding, python, django, framework]
+tags: [coding, python, django, framework]
 ---
 ---
 {: .no_toc .text-delta }

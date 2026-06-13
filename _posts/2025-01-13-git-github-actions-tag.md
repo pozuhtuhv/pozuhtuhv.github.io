@@ -6,7 +6,7 @@ categories: ["Git"]
 published : false
 date: 2025-01-13
 last_modified_at: 2025-01-13
-tag: [git, github, actions, jekyll, tag]
+tags: [git, github, actions, jekyll, tag]
 ---
 ---
 {: .no_toc .text-delta }

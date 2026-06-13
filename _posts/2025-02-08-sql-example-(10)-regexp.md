@@ -6,7 +6,7 @@ categories: ["SQL"]
 published: false
 date: 2025-02-08
 last_modified_at: 2025-02-08
-tag: [sql, example, regexp]
+tags: [sql, example, regexp]
 ---
 ---
 {: .no_toc .text-delta }

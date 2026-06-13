@@ -6,7 +6,7 @@ categories: ["Daily"]
 published: true
 date: 2025-02-07
 last_modified_at: 2025-02-07
-tag: [daily, codingtest]
+tags: [daily, codingtest]
 ---
 ---
 {: .no_toc .text-delta }

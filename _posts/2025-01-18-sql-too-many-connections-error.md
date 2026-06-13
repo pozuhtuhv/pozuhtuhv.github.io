@@ -6,7 +6,7 @@ categories: ["SQL"]
 published: false
 date: 2025-01-18
 last_modified_at: 2025-01-18
-tag: [sql, error, connections]
+tags: [sql, error, connections]
 ---
 ---
 {: .no_toc .text-delta }

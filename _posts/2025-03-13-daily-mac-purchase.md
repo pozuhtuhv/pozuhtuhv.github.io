@@ -6,7 +6,7 @@ categories: ["Daily"]
 published: true
 date: 2025-03-13
 last_modified_at: 2025-03-13
-tag: [mac, m1]
+tags: [mac, m1]
 ---
 ---
 {: .no_toc .text-delta }

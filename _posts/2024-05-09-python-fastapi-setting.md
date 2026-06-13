@@ -6,7 +6,7 @@ categories: ["Coding"]
 published: true
 date: 2024-05-09
 last_modified_at: 2024-05-09
-tag: [coding, python, fastapi, framework]
+tags: [coding, python, fastapi, framework]
 ---
 ---
 {: .no_toc .text-delta }

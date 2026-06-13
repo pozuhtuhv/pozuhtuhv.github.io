@@ -6,7 +6,7 @@ categories: ["TensorFlow"]
 published: false
 date: 2025-01-14
 last_modified_at: 2025-01-14
-tag: [coding, python, tensorflow, keras, error]
+tags: [coding, python, tensorflow, keras, error]
 ---
 ---
 {: .no_toc .text-delta }

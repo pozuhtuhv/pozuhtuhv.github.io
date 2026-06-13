@@ -6,7 +6,7 @@ categories: ["Coding"]
 published: true
 date: 2024-10-12
 last_modified_at: 2024-10-12
-tag: [coding, python, module]
+tags: [coding, python, module]
 ---
 ---
 {: .no_toc .text-delta }

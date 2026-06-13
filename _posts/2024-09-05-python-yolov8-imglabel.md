@@ -6,7 +6,7 @@ categories: ["Coding"]
 published: true
 date: 2024-09-05
 last_modified_at: 2024-09-05
-tag: [coding, python, yolo]
+tags: [coding, python, yolo]
 ---
 ---
 {: .no_toc .text-delta }

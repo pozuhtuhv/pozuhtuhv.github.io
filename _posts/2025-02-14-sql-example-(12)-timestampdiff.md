@@ -6,7 +6,7 @@ categories: ["SQL"]
 published: false
 date: 2025-02-14
 last_modified_at: 2025-02-14
-tag: [sql, example, timestampdiff, join]
+tags: [sql, example, timestampdiff, join]
 ---
 ---
 {: .no_toc .text-delta }

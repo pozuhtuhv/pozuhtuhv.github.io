@@ -6,7 +6,7 @@ categories: ["SQL"]
 published: false
 date: 2025-03-05
 last_modified_at: 2025-03-05
-tag: [sql, example, recursive]
+tags: [sql, example, recursive]
 ---
 ---
 {: .no_toc .text-delta }

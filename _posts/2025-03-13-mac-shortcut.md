@@ -6,7 +6,7 @@ categories: ["Mac"]
 published: true
 date: 2025-03-13
 last_modified_at: 2025-03-13
-tag: [mac, shortcut]
+tags: [mac, shortcut]
 ---
 ---
 {: .no_toc .text-delta }

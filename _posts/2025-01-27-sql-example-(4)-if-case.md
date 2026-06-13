@@ -6,7 +6,7 @@ categories: ["SQL"]
 published: false
 date: 2025-01-27
 last_modified_at: 2025-01-27
-tag: [sql, example, if, case]
+tags: [sql, example, if, case]
 ---
 ---
 {: .no_toc .text-delta }

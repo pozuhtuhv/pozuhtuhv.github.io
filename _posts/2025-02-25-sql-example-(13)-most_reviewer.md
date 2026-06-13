@@ -6,7 +6,7 @@ categories: ["SQL"]
 published: false
 date: 2025-02-25
 last_modified_at: 2025-02-25
-tag: [sql, example, subquery, join]
+tags: [sql, example, subquery, join]
 ---
 ---
 {: .no_toc .text-delta }

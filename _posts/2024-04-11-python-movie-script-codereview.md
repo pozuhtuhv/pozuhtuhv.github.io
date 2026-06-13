@@ -6,7 +6,7 @@ categories: ["Coding"]
 published: true
 date: 2024-04-11
 last_modified_at: 2024-04-11
-tag: [coding, python, review]
+tags: [coding, python, review]
 ---
 ---
 {: .no_toc .text-delta }

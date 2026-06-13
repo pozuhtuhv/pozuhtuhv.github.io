@@ -6,7 +6,7 @@ categories: ["SEO"]
 published: false
 date: 2025-01-05
 last_modified_at: 2025-01-05
-tag: [git, github, jekyll, ruby]
+tags: [git, github, jekyll, ruby]
 ---
 ---
 {: .no_toc .text-delta }

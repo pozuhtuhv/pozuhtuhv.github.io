@@ -6,7 +6,7 @@ categories: ["SEO"]
 published: false
 date: 2025-01-15
 last_modified_at: 2025-01-15
-tag: [python, google, analytics, seo]
+tags: [python, google, analytics, seo]
 ---
 ---
 {: .no_toc .text-delta }
