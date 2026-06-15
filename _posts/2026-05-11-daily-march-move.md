@@ -68,12 +68,12 @@ tags: [daily, life]
 한번씩 기분전환겸 동네 주변 1~2시간 달리는데 참 잘산거 같아 기분이 좋네요.<br>
 
 ### 4. 단골이 될거같은 집
-{% include image-path.html cols=2 start=12 end=13 %}
+{% include image-path.html cols=2 start=11 end=12 %}
 `가마치통닭`이랍니다. 포장하러 가면 10분동안 기다리라고 하는데,<br>
 그 사이 자전거타고 한바퀴돌면 금방이라서 자주 간답니다.<br>
 아주 맛도 좋아요. (가마치 최고)<br>
 
-{% include image-path.html cols=2 start=14 end=15 %}
+{% include image-path.html cols=2 start=13 end=14 %}
 주변에 또 `소금빵 트럭` 한번씩 오시는데,<br>
 이거 못막습니다. 여기 존맛탱이에요, 진짜 추천<br>
 <br>
@@ -81,7 +81,7 @@ tags: [daily, life]
 날이 이제 따듯해져서 안오실거같기도 한데, 다음에 사야지 하고 사진 찍었는데,<br>
 아쉽게도 타이밍이 안맞는건지 한번도 못마주쳤답니다.<br>
 
-{% include image-path.html cols=2 start=16 end=17 %}
+{% include image-path.html cols=2 start=15 end=16 %}
 다음은 `햄버거`입니다.<br>
 마침 집 주변에 맥날, 노브랜드, 맘스터치가 있습니다.<br>
 자주 먹는데 오랜만에 맘스터치에 신메뉴가 나왔길래 `후덕죽 싸이버거` 시켜봤습니다.<br>
@@ -92,7 +92,7 @@ tags: [daily, life]
 제일 좋아하는건 메가바이트인데, 여러분도 꼭 한번 드셔보시길<br>
 주에 2~3번은 꼭 포장하러 가는것 같네요.<br>
 
-{% include image-path.html cols=2 start=18 end=19 %}
+{% include image-path.html cols=2 start=17 end=18 %}
 아.. 간식을 원래는 잘 안먹는데, `노브랜드 초코칩쿠키` 입니다.<br>
 생각보다 그렇게 퀄리티가 좋은 초코칩은 아닌데 그 중독되는 맛에 두통을 사먹는 기록을 가지게 되었습니다. (이젠 안사긴합니다.)<br>
 <br>
@@ -103,7 +103,7 @@ tags: [daily, life]
 그렇게 포만감이 있는 느낌은 아니지만, 아무것도 안먹는 것보다는 아침에 뭘 먹는게 나아서 잘 해먹는 중이랍니다.<br>
 
 ### 5. 세탁세제 추천
-{% include image-path.html cols=1 start=20 end=20 %}
+{% include image-path.html cols=1 start=19 end=19 %}
 이사하고 하나가 또 바뀐게 있다면 세탁세제입니다.<br>
 생전 액체세제 쓰고 다녔었는데, 캡슐세제 추천해요.<br>
 향도 생각보다 괜찮아서 잘한 소비라고 생각중입니다.<br>
@@ -121,4 +121,4 @@ tags: [daily, life]
 마지막으로 사진 올리고 글 마치고, 다음에 글 한번 더 쓰겠습니다~ (참고로 순서는 뒤죽박죽 입니다.)<br>
 `날이 이제 슬슬 더워지는 요즘 다들 건강하게 잘 지내시길 바랍니다!`<br>
 
-{% include image-path.html cols=2 start=21 end=31 %}
+{% include image-path.html cols=2 start=20 end=30 %}
