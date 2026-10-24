@@ -34,7 +34,7 @@ tags: [discord, chat, backup]
 `터미널`에서 명령어 실행 사양은 `맥북 M1` 기준으로 작성됨.
 
 ### 1. Homebrew 설치
-이전 글 보기
+<a href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
 
 ### 1. .NET 런타임 설치
 `brew install --cask dotnet-sdk`
@@ -43,7 +43,7 @@ tags: [discord, chat, backup]
 
 ### 2. DiscordChatExporter CLI 다운로드
 https://github.com/Tyrrrz/DiscordChatExporter/releases/latest 접속<br>
-Assets 에서 DiscordChatExporter.Cli 중에 osx-arm64 가 붙어있는 걸 다운로드
+Assets 에서 DiscordChatExporter.Cli 중에 osx-arm64 가 붙어있는 파일로 다운로드
 
 ### 3. 설치를 위한 터미널 세팅
 ```bash
