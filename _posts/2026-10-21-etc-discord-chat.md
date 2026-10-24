@@ -34,7 +34,7 @@ tags: [discord, chat, backup]
 `터미널`에서 명령어 실행 사양은 `맥북 M1` 기준으로 작성됨.
 
 ### 1. Homebrew 설치
-<a href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
+<a href="/etc/2026/10/21/etc-homebrew-install/">{{ page.next.title }} →</a>
 
 ### 1. .NET 런타임 설치
 `brew install --cask dotnet-sdk`
