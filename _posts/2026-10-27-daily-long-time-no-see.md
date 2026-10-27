@@ -57,4 +57,4 @@ tags: [daily, life]
 다들 환절기에 건강 챙기시고,<br>
 다음에는 조금 더 가벼운 소식으로 인사드릴게요.<br>
 
-{% include image-path.html cols=1 start=1 end=2 %}
+{% include image-path.html cols=2 start=1 end=2 %}
