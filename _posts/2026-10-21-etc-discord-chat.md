@@ -6,7 +6,7 @@ categories: ["ETC"]
 published: true
 date: 2026-10-21
 last_modified_at: 2026-10-21
-tags: [discord, chat, backup]
+tags: [etc, discord, chat, backup]
 ---
 ---
 {: .no_toc .text-delta }

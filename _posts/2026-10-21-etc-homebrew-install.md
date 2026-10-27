@@ -6,7 +6,7 @@ categories: ["ETC"]
 published: true
 date: 2026-10-21
 last_modified_at: 2026-10-21
-tags: [mac, homebrew]
+tags: [etc, mac, homebrew]
 ---
 ---
 {: .no_toc .text-delta }

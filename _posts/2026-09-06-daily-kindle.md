@@ -2,7 +2,7 @@
 title: "킨들 사용하기"
 description: "킨들 사용하기"
 layout: post
-categories: ["Daily"]
+categories: ["ETC"]
 published: true
 date: 2026-09-06
 last_modified_at: 2026-09-06
