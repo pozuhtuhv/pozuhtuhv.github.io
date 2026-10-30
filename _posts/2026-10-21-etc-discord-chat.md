@@ -73,8 +73,8 @@ DM을 드나들다 보면 `science` 항목이 계속 뜰텐데, 요청 부분에
 ### 5. 채팅 빼오기
 일단 나는 DM 기준으로 가져올거라서 DM 기준으로 작성
 ```bash
-cd ~/dce
-mkdir -p ~/Desktop/discord_export
+cd ~/dce # 터미널 재시동시 해당 기능이 설치되어있는 폴더로 이동
+mkdir -p ~/Desktop/discord_export # 폴더가 없을수도 있으니 다시 폴더 만들기
 ./DiscordChatExporter.Cli export -t "토큰" -c 채널ID -o ~/Desktop/discord_export
 ```
-실행하면 바탕화면에 html 형식으로 저장 진행됨
+실행하면 바탕화면에 `discord_export` 폴더에 html 형식으로 저장 진행됨
