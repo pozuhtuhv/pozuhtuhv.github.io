@@ -48,7 +48,7 @@ dce 채널ID
 
 ### 2. 사전 준비
 Homebrew와 .NET 런타임이 필요함. 이미 설치되어 있다면 건너뛰기.<br>
-<a href="/etc/2026/10/21/etc-homebrew-install/">Homebrew 설치하기 →</a>
+<a href="/etc/2026/10/21/mac-homebrew-install/">Homebrew 설치하기 →</a>
 
 ```bash
 brew install --cask dotnet-sdk
