@@ -3,6 +3,6 @@ layout: default
 ---
 
 <section class="post">
-  <h2>{{ page.title }}</h2>
+  {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
   {{ content }}
 </section>

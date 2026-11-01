@@ -2,7 +2,7 @@ site: pozuhtuhv
 title: "less in more." # 타이틀
 greetings: "포장되지 않는 간결함." # 인삿말 
 description: "minimal: less in more"
-lang: en-US
+lang: ko-KR
 timezone: Asia/Seoul
 repo: https://github.com/pozuhtuhv/pozuhtuhv.github.io # site repo [optional]
 
@@ -58,13 +58,12 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-paginate
   - jekyll-relative-links
 
 collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: /:name/
   
 defaults:
   -
@@ -72,12 +71,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
   -
     scope:
       path: ""

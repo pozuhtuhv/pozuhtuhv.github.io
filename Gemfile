@@ -1,7 +1,6 @@
 ruby '>= 3.0.0'
 source "https://rubygems.org"
 gem 'jekyll'
-gem 'jekyll-paginate'
 gem 'jekyll-relative-links'
 gem "tzinfo-data", "~> 1.2021"
 gem "kramdown-parser-gfm"

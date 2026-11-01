@@ -50,10 +50,10 @@ layout: default
 
 <section class="post">
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
-  <h4 style="font-weight: lighter;">Categories : <a href="{{ site.url }}/categories/#{{ page.categories | join: ',' | downcase }}">{{page.categories}}</a></h4>
+  <h4 style="font-weight: lighter;">Categories : <a href="{{ site.url }}/categories/#{{ page.categories | join: ',' | downcase }}">{{ page.categories | join: ', ' }}</a></h4>
   <h1 class="title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }} - {% if page.minute %} {{page.minute}}{% else %}{{minute}}{% endif %}min read</time><br><br>
-  {{ content }}
+  {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' }}
   <br>
   
   <nav class="post-nav">
@@ -126,9 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   overlay.addEventListener("click", (e) => e.target === overlay && closeOverlay());
   document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeOverlay();
-      if (e.key === "ArrowRight" && currentIndex < imageArray.length - 1) showImage(imageArray[++currentIndex].src);
-      if (e.key === "ArrowLeft" && currentIndex > 0) showImage(imageArray[--currentIndex].src);
+    if (overlay.style.display !== "flex") return;   // 추가
+    if (e.key === "Escape") closeOverlay();
+    if (e.key === "ArrowRight" && currentIndex < imageArray.length - 1) showImage(imageArray[++currentIndex].src);
+    if (e.key === "ArrowLeft" && currentIndex > 0) showImage(imageArray[--currentIndex].src);
   });
 });
 </script>

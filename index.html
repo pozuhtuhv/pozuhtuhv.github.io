@@ -2,61 +2,56 @@
 layout: default
 ---
 <section id="intro">
-        <h1 class="m_description">{{ site.description }}</span></h1>
-    <div class="bio">
-    </div>
+  <h1 class="m_description">{{ site.description }}</h1>
 </section>
 
 <div class="search-article">
-    <label for="search-input">
-        <span class="sr-only">Search</span>
-        <!-- Magnifier -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-        stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="feather feather-search" style="margin-top: 3px;">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-    </label>
-
-    <input type="search" id="search-input" placeholder="Find some articles here">
-    <ul id="search-results"></ul>
+  <label for="search-input">
+    <span class="sr-only">Search</span>
+    <!-- Magnifier (기존 svg 그대로) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+         stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+         class="feather feather-search" style="margin-top: 3px;">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </label>
+  <input type="search" id="search-input" placeholder="Find some articles here">
+  <ul id="search-results"></ul>
 </div>
 
+{% assign review_posts = site.posts | where_exp: "p", "p.categories contains 'Coupang'" %}
+
 <section class="posts">
-    <h2 class="blog-header">
-        Recent POST [{{ site.posts | size }}]
-        <a href="{{ site.url }}/archive/" class="blog-more" id="blog-more">+</a>
-    </h2>
-    <ul>
-        {% assign count = 0 %}
-        {% for post in site.posts %}
-            {% if count == 10 %}{% break %}{% endif %}
-            {% unless post.categories contains 'Coupang' %}
-                <li class="posts-item">
-                    - [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                </li>
-                {% assign count = count | plus: 1 %}
-            {% endunless %}
-        {% endfor %}
-    </ul>
+  <h2 class="blog-header">
+    Recent POST [{{ site.posts.size | minus: review_posts.size }}]
+    <a href="{{ '/archive/' | relative_url }}" class="blog-more" id="blog-more">+</a>
+  </h2>
+  <ul>
+    {% assign count = 0 %}
+    {% for post in site.posts %}
+      {% unless post.categories contains 'Coupang' %}
+        <li class="posts-item">
+          [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp;
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% assign count = count | plus: 1 %}
+        {% if count == 10 %}{% break %}{% endif %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="posts" style="padding: 0;">
-    {% assign coupang_posts = site.posts | where_exp: "post", "post.categories contains 'Coupang'" %}
-    <h2 class="blog-header" style="font-size: 1em !important; padding-top: 1% !important; padding-bottom: 1% !important; background-color: #1c1c1c;">
-        Review Post [{{ coupang_posts | size }}]
-    </h2>
-    <ul>
-        {% assign count = 0 %}
-        {% for post in site.posts %}
-            {% if count == 5 %}{% break %}{% endif %}
-            {% if post.categories contains 'Coupang' %}
-                <li class="posts-item">
-                    - [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                </li>
-                {% assign count = count | plus: 1 %}
-            {% endif %}
-        {% endfor %}
-    </ul>
+  <h2 class="blog-header" style="font-size: 1em !important; padding-top: 1% !important; padding-bottom: 1% !important; background-color: #1c1c1c;">
+    Review Post [{{ review_posts.size }}]
+  </h2>
+  <ul>
+    {% for post in review_posts limit: 5 %}
+      <li class="posts-item">
+        [{{ post.date | date: "%Y-%m-%d" }} - {{ post.categories[0] | slice: 0, 1 | upcase }}]&nbsp;
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </section>

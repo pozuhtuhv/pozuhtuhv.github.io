@@ -2,7 +2,7 @@
 title: "Homebrew 설치하기"
 description: "Homebrew 설치하기"
 layout: post
-categories: ["ETC"]
+categories: ["Mac"]
 published: true
 date: 2026-10-21
 last_modified_at: 2026-10-21
