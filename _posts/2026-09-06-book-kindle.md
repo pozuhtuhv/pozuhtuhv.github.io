@@ -2,11 +2,11 @@
 title: "킨들 사용하기"
 description: "킨들 사용하기"
 layout: post
-categories: ["ETC"]
+categories: ["BOOK"]
 published: true
 date: 2026-09-06
 last_modified_at: 2026-09-06
-tags: [kindle, jailbreak]
+tags: [book, kindle, jailbreak]
 ---
 ---
 {: .no_toc .text-delta }

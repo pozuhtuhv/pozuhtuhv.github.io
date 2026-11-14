@@ -1,0 +1,39 @@
+---
+title: "이기적 유전자"
+description: "이기적 유전자"
+layout: post
+categories: ["BOOK"]
+published: true
+date: 2026-11-15
+last_modified_at: 2026-11-15
+tags: [book, kindle]
+---
+---
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+---
+
+<!-- 
+    bundle exec jekyll serve
+    1. 글의 제목은 ## / 큰 제목은 ### / 나머지는 3개이상
+    2. 이미지 작성법 
+        - 이미지 저장할 경로는 '/assets/img/'
+        - 저장할 이미지명은 '[확장자를 제외한 포스트 파일명]-[숫자].webp'
+        - 이미지 다음에 공백(줄바꿈)이 되어있으니, 이미지 셋팅 코드 뒤에는 <br> 추가 안해도됨.
+        -'{% include image-path.html cols=1 start=1 end=1 %}' 
+            ㄴ cols -> 사진 열 / start -> 이미지 순서 시작 / end -> 이미지 순서 끝
+            ㄴ ex ) cols=2 start=1 end=4 -> 두개의 이미지 열로 1번째 이미지부터 4번째 이미지까지 표시 (행은 자동계산) 
+    3. 글 서식 
+        - ` ` 사이에 단어 강조
+    -->
+
+### 0. 이기적 유전자
+{% include image-path.html cols=1 start=1 end=1 %}
+
+### 1. 책 정보
+저자 : 리처드 도킨스<br>
+출판 : 을유문화사<br>
+번역 : 홍영남, 이상임<br>
+쪽수 : 632쪽
