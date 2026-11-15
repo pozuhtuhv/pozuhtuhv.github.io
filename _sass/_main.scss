@@ -11,14 +11,6 @@
     font-size: 12px
 }
 
-#specTooltip,
-.posts ul li,
-.posts ul li a,
-.sr-only {
-    overflow: hidden;
-    white-space: nowrap
-}
-
 a,
 header a {
     text-decoration: none
@@ -36,12 +28,6 @@ th {
 td,
 th {
     text-align: left
-}
-
-#specButton,
-#topButton,
-.zoom-img {
-    cursor: pointer
 }
 
 html {
@@ -297,12 +283,6 @@ section {
     transition: var(background-color) .2s, color .2s
 }
 
-#specButton:hover,
-.head a:hover {
-    background-color: #e0e0e0;
-    color: #0073e6
-}
-
 #topButton:hover,
 th {
     background-color: #333
@@ -312,42 +292,6 @@ th {
 h1,
 time {
     color: var(--main-text-color)
-}
-
-#specButton,
-#specTooltip {
-    position: fixed;
-    right: 2%;
-    border-radius: 5px
-}
-
-#specButton,
-.head a {
-    background-color: #f5f5f5;
-    color: #333;
-    padding: .5rem 1rem
-}
-
-#specButton {
-    top: 2.9%;
-    z-index: 100
-}
-
-#specTooltip {
-    top: 6.9%;
-    background-color: #f9f9f9;
-    color: #000;
-    padding: 10px;
-    opacity: 0;
-    z-index: 99;
-    pointer-events: none
-}
-
-#specButton:hover+#specTooltip {
-    opacity: 1;
-    visibility: visible;
-    transition: none;
-    pointer-events: auto
 }
 
 .posts-item {
@@ -689,10 +633,6 @@ tr:hover {
         width: 35px;
         height: 35px;
         bottom: 9%;
-    }
-
-    #specButton {
-        display: none;
     }
 }
 
