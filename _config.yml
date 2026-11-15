@@ -10,7 +10,7 @@ author:
   name: pozuhtuhv
   bio: "minimal: less in more"
   userpicture: /assets/img/computersolo.jpg # img path
-  username: Hyeounseok-Cho # general username
+  username: Hyeonseok-Cho # general username
   github: pozuhtuhv # github username
   email: pozuhtuhv@email.com # email adress
 
@@ -48,6 +48,8 @@ exclude:
   - LICENSE.md
   - README.md
   - CONTRIBUTING.md
+  - vendor
+  - node_modules
   
 compress_html:
   clippings: all
