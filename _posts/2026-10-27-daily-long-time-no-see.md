@@ -3,7 +3,7 @@ title: "오랜만입니다."
 description: "오랜만입니다."
 layout: post
 categories: ["Daily"]
-published: true
+published: false
 date: 2026-10-27
 last_modified_at: 2026-10-27
 tags: [daily, life]
