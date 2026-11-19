@@ -3,7 +3,7 @@ title: "스쳐지나간 3월"
 description: "스쳐지나간 3월의 정리"
 layout: post
 categories: ["Daily"]
-published: true
+published: false
 date: 2025-04-05
 last_modified_at: 2025-04-05
 tags: [daily]
@@ -113,14 +113,6 @@ tags: [daily]
 {% include image-path.html cols=2 start=19 end=20 %}
 
 요즘은 취업준비를 하면서 진주와 대구에 대해서 생각을 한다.<br>
-어디로 가야할지<br>
-​<br>
-후보지에선 부산도 있었긴 했지만<br>
-주변사람들은 알고있는 <br>
-3월말에 관계를 정리했다는 이유가 1순위<br>
-​<br>
-괜찮은 기업이 있다고 해도 위치가 애매한 부분이 있기에<br>
-부산은 생각보다 손이 잘 안가게 된다.<br>
 ​<br>
 진주는 아직 내가 찾는 일은 거의 없었다.<br>
 '여긴 친구가 2명이 있기에 적응도 편하겠다'<br>
